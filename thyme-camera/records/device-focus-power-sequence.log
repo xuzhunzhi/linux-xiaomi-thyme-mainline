@@ -1,0 +1,134 @@
+main off, camss on, lens open 1
+suspending
+main off, camss on, lens open 2
+suspending
+main off, camss auto, lens open
+suspended
+suspending
+regulators
+ regulator                      use open bypass  opmode voltage current     min     max
+---------------------------------------------------------------------------------------
+ regulator-dummy                  5    9      0 unknown     0mV     0mA     0mV     0mV 
+    3d00000.gpu-vddcx             0                                 0mA     0mV     0mV
+    3d00000.gpu-vdd               0                                 0mA     0mV     0mV
+    1c10000.pcie-vddpe-3v3        1                                 0mA     0mV     0mV
+    1c10000.pcie-vdda             1                                 0mA     0mV     0mV
+    1c00000.pcie-vddpe-3v3        1                                 0mA     0mV     0mV
+    1c00000.pcie-vdda             1                                 0mA     0mV     0mV
+    vreg_l1f_cam_dvdd1_1p1        0    1      0  normal  1104mV     0mA  1104mV  1104mV 
+       21-003d-dvdd               0                                 0mA     0mV     0mV
+    vreg_l3f_cam_dvdd2_1p05       0    1      0  normal  1200mV     0mA  1200mV  1200mV 
+       23-0036-dvdd               0                                 0mA     0mV     0mV
+    vreg_l4f_cam_dvdd_front_1p1   0    1      0  normal  1104mV     0mA  1104mV  1104mV 
+       22-0010-dvdd               0                                 0mA     0mV     0mV
+ vph_pwr                          9    8      0 unknown  3700mV     0mA  3700mV  3700mV 
+    3-0042-VP                     1                                 0mA     0mV     0mV
+    3-0040-VP                     1                                 0mA     0mV     0mV
+    vreg_s4a_1p8                  8    8      0 unknown  1800mV     0mA  1800mV  1800mV 
+       1d84000.ufshc-vccq2        1                                 1mA     0mV     0mV
+       qca6390-pmu-vddio          1                                 0mA     0mV     0mV
+       audio-codec-vdd-buck       1                                 0mA     0mV     0mV
+       audio-codec-vdd-io         1                                 0mA     0mV     0mV
+       audio-codec-vdd-rxtx       1                                 0mA     0mV     0mV
+       vreg_l1c_1p8               1    1      0  normal  1800mV     0mA  1800mV  1800mV 
+          13-0049-avdd            1                                 0mA     0mV     0mV
+       vreg_l8c_1p8               2    2      0  normal  1800mV     0mA  1800mV  1800mV 
+          3-0042-VA               1                                 0mA     0mV     0mV
+          3-0040-VA               1                                 0mA     0mV     0mV
+       vreg_l7f_1p8               0    4      0  normal  1800mV     0mA  1800mV  1800mV 
+          21-000c-vio             0                                 0mA     0mV     0mV
+          22-0010-dovdd           0                                 0mA     0mV     0mV
+          21-003d-dovdd           0                                 0mA     0mV     0mV
+          23-0036-dovdd           0                                 0mA     0mV     0mV
+    vreg_s6c_0p88                 1    0      0 unknown   880mV     0mA   880mV   880mV 
+    vreg_bob                      3   20      0  normal  3032mV     0mA  3032mV  3992mV 
+       audio-codec-vdd-mic-bias   1                                 0mA     0mV     0mV
+       vreg_l4c_1p7               0    0      0  normal  1704mV     0mA  1704mV  2928mV 
+       vreg_l5c_1p8               0    0      0  normal  1800mV     0mA  1800mV  2928mV 
+       vreg_l6c_2p9               0    0      0  normal  1800mV     0mA  1800mV  2960mV 
+       vreg_l7c_cam_vcm0_2p85     0    0      0  normal  2856mV     0mA  2856mV  3104mV 
+       vreg_l9c_2p9               0    0      0  normal  2704mV     0mA  2704mV  2960mV 
+       vreg_l10c_3p0              0    0      0  normal  3000mV     0mA  3000mV  3000mV 
+       vreg_l11c_3p3              0    0      0  normal  3000mV     0mA  3000mV  3312mV 
+       thyme_camera_macro_avdd    0    3      0 unknown  2800mV     0mA  2800mV  2800mV 
+          22-0010-avdd2           0                                 0mA     0mV     0mV
+          21-003d-avdd2           0                                 0mA     0mV     0mV
+          23-0036-avdd2           0                                 0mA     0mV     0mV
+       thyme_camera_wide_avdd     0    1      0 unknown  2800mV     0mA  2800mV  2800mV 
+          21-003d-avdd            0                                 0mA     0mV     0mV
+       thyme_camera_front_avdd    0    3      0 unknown  2800mV     0mA  2800mV  2800mV 
+          22-0010-avdd            0                                 0mA     0mV     0mV
+          21-003d-avdd3           0                                 0mA     0mV     0mV
+          23-0036-avdd3           0                                 0mA     0mV     0mV
+       thyme_camera_ultra_avdd    0    1      0 unknown  2800mV     0mA  2800mV  2800mV 
+          23-0036-avdd            0                                 0mA     0mV     0mV
+       vreg_l2a_3p1               2    3      0  normal  3072mV     0mA  3072mV  3072mV 
+          ae94000.dsi.0-vci       0                                 0mA     0mV     0mV
+          c440000.spmi:pmic@2:typec@1500-vdd-pdphy   1                                 0mA     0mV     0mV
+          88e3000.phy-vdda33      1                                 0mA     0mV     0mV
+       vreg_s2f_0p95              2    2      0  normal   912mV     0mA   912mV   944mV 
+          qca6390-pmu-vddrfa0p95   1                                 0mA     0mV     0mV
+          qca6390-pmu-vddpmu      1                                 0mA     0mV     0mV
+       vreg_l5f_cam_avdd0_2p85    0    0      0  normal  2800mV     0mA  2800mV  2800mV 
+       vreg_l10a_1p8              0    0      0  normal  1800mV     0mA  1800mV  1800mV 
+       vreg_l6f_cam_avdd1_2p85    0    2      0  normal  2856mV     0mA  2856mV  2856mV 
+          21-000c-vdd             0                                 0mA     0mV     0mV
+          21-003d-afvdd           0                                 0mA     0mV     0mV
+       vreg_l13a_ts_3p0           0    0      0  normal  3008mV     0mA  3008mV  3008mV 
+       vreg_l16a_3p3              0    0      0  normal  3024mV     0mA  3024mV  3304mV 
+       vreg_l17a_3p0              0    1      0  normal  2856mV     0mA  2856mV  3008mV 
+          1d84000.ufshc-vcc       0                                 0mA     0mV     0mV
+    vreg_s8c_1p3                  4    7      0    fast  1352mV     0mA  1352mV  1352mV 
+       qca6390-pmu-vddpcie1p3     1                                 0mA     0mV     0mV
+       qca6390-pmu-vddrfa1p3      1                                 0mA     0mV     0mV
+       vreg_l2c_1p2               0    0      0  normal  1200mV     0mA  1200mV  1200mV 
+       vreg_l3c_0p92              0    0      0  normal   920mV     0mA   920mV   920mV 
+       vreg_l6a_1p2               1    1      0  normal  1200mV     0mA  1200mV  1200mV 
+          1d84000.ufshc-vccq      1                                 1mA     0mV     0mV
+       vreg_l2f_cam_dvdd0_1p2     0    0      0  normal  1200mV     0mA  1200mV  1200mV 
+       vreg_l9a_1p2               4   11      0  normal  1200mV     0mA  1200mV  1200mV 
+          ac6a000.camss-vdda-pll   0                                10mA*    0mV     0mV
+          ac6a000.camss-vdda-pll   0                                10mA*    0mV     0mV
+          ac6a000.camss-vdda-pll   0                                10mA*    0mV     0mV
+          ac6a000.camss-vdda-pll   0                                10mA*    0mV     0mV
+          ac6a000.camss-vdda-pll   0                                10mA*    0mV     0mV
+          ac6a000.camss-vdda-pll   0                                10mA*    0mV     0mV
+          ae94000.dsi-vdda        0                                21mA*    0mV     0mV
+          1d87000.phy-vdda-pll    0                                18mA*    0mV     0mV
+          1c16000.phy-vdda-pll    1                                 0mA     0mV     0mV
+          1c06000.phy-vdda-pll    1                                 0mA     0mV     0mV
+          88e8000.phy-vdda-phy    1                                21mA     0mV     0mV
+    vreg_s5a_1p9                  3    6      0    fast  1904mV     0mA  1904mV  2000mV 
+       qca6390-pmu-vddpcie1p9     1                                 0mA     0mV     0mV
+       qca6390-pmu-vddrfa1p9      1                                 0mA     0mV     0mV
+       vreg_l7a_1p7               0    0      0  normal  1704mV     0mA  1704mV  1800mV 
+       vreg_l12a_1p8              1    1      0  normal  1800mV     0mA  1800mV  1800mV 
+          88e3000.phy-vdda18      1                                 0mA     0mV     0mV
+       vreg_l14a_1p8              0    1      0  normal  1800mV     0mA  1800mV  1880mV 
+          ae94000.dsi.0-vddio     0                                 0mA     0mV     0mV
+       vreg_l15a_11ad_io_1p8      0    0      0  normal  1800mV     0mA  1800mV  1800mV 
+    vreg_s6a_0p95                 3    4      0    fast   920mV     0mA   920mV  1128mV 
+       qca6390-pmu-vddaon         1                                 0mA     0mV     0mV
+       vreg_l3a_0p9               0    0      0  normal   928mV     0mA   928mV   928mV 
+       vreg_l5a_0p875             3   11      0  normal   880mV     0mA   880mV   880mV 
+          ac6a000.camss-vdda-phy   0                                17mA*    0mV     0mV
+          ac6a000.camss-vdda-phy   0                                17mA*    0mV     0mV
+          ac6a000.camss-vdda-phy   0                                17mA*    0mV     0mV
+          ac6a000.camss-vdda-phy   0                                17mA*    0mV     0mV
+          ac6a000.camss-vdda-phy   0                                17mA*    0mV     0mV
+          ac6a000.camss-vdda-phy   0                                17mA*    0mV     0mV
+          ae94400.phy-vdds        0                                36mA*    0mV     0mV
+          88e3000.phy-vdda-pll    1                                 0mA     0mV     0mV
+          1d87000.phy-vdda-phy    0                                89mA*    0mV     0mV
+          1c16000.phy-vdda-phy    1                                 0mA     0mV     0mV
+          1c06000.phy-vdda-phy    1                                 0mA     0mV     0mV
+       vreg_l18a_0p9              1    1      0  normal   912mV     0mA   912mV   912mV 
+          88e8000.phy-vdda-pll    1                                36mA     0mV     0mV
+ refgen                           0    1      0 unknown     0mV     0mA     0mV     0mV 
+    ae94000.dsi-refgen            0                                 0mA     0mV     0mV
+ usb_vbus                         0    0      0 unknown     0mV  3000mA     0mV     0mV 
+ ext_5v_boost                     0    1      0 unknown  5000mV     0mA  5000mV  5000mV 
+    c440000.spmi:pmic@2:typec@1500-vdd-vbus   0                                 0mA     0mV     0mV
+ disp_vddio_vreg                  1    1      0 unknown  1800mV     0mA  1800mV  1800mV 
+    13-0049-vdd                   1                                 0mA     0mV     0mV
+ vdd_boost_vreg                   1    0      0 unknown  5000mV     0mA  5000mV  5000mV 

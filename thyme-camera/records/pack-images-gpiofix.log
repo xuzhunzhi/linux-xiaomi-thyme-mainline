@@ -1,0 +1,7 @@
+Input Image.gz SHA256: 64c309a988fa83fc69f0c9c3e38014503c49e84b4971926abfb727567524f00f
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-menu-gpiofix.img: kernel(+dtb)=38477400 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused fbcon=font:TER16x32 log_buf_len=4M ignore_loglevel root=/dev/sda38'
+PASS: thyme-camera-menu-gpiofix.img; header/command line, kernel, DTB, gzip, padding, original image verified
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-logdump-gpiofix.img: kernel(+dtb)=38477516 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused'
+PASS: thyme-camera-logdump-gpiofix.img; header/command line, kernel, DTB, gzip, padding, original image verified
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-display-test-gpiofix.img: kernel(+dtb)=38477400 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused initcall_debug'
+PASS: thyme-camera-display-test-gpiofix.img; header/command line, kernel, DTB, gzip, padding, original image verified

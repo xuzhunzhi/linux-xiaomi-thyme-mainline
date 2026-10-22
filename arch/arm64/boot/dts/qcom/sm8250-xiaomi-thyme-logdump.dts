@@ -1,0 +1,47 @@
+// SPDX-License-Identifier: BSD-3-Clause
+/*
+ * Rescue / log-dump variant for the Xiaomi Mi 10S (thyme) stage-2 test.
+ *
+ * Same kernel, display stack fully OFF (alpha-1.0 stage-1 state): the
+ * bootloader splash keeps running via simple-framebuffer, fbcon shows
+ * the boot log, and the initramfs init dumps the pstore records of the
+ * PREVIOUS (crashed) boot to the screen.
+ *
+ * Use: after a failed display-test boot ends in a watchdog reset, hold
+ * vol-down to re-enter fastboot (do NOT let Android boot - it would
+ * reuse the ramoops RAM), then `fastboot boot` this image and
+ * photograph the log.
+ */
+
+#include "sm8250-xiaomi-thyme.dts"
+
+/ {
+	model = "Xiaomi Mi 10S (thyme) - logdump";
+};
+
+&dispcc		{ status = "disabled"; };
+&mdss		{ status = "disabled"; };
+&mdss_dsi0	{ status = "disabled"; };
+&mdss_dsi0_phy	{ status = "disabled"; };
+&apps_smmu	{ status = "disabled"; };
+
+/*
+ * The whole point of this image is to show the previous boot's log on the
+ * screen, but with the display stack disabled nothing claims the rails the
+ * (still running) bootloader scanout needs: panel VDDIO/VCI have no other
+ * consumer, and the DSI PHY rails are only claimed when their driver probes
+ * (which never happens here, or happens after late_initcall).  At the
+ * late_initcall_sync regulator_disable_unused() then cuts them and the
+ * screen dies at ~0.8s - before init can print anything.
+ *
+ * Pin all four rails on so the simple-framebuffer console survives.
+ */
+&vreg_l14a_1p8 { regulator-always-on; };	/* panel vddio */
+&vreg_l2a_3p1  { regulator-always-on; };	/* panel vci   */
+&vreg_l5a_0p875 { regulator-always-on; };	/* dsi phy vdds */
+&vreg_l9a_1p2  { regulator-always-on; };	/* dsi vdda / phy pll */
+
+/* Rescue runs without an IOMMU; keep modem DMA stopped. */
+&mdm0 { status = "disabled"; };
+&pcie2 { status = "disabled"; };
+&pcie2_phy { status = "disabled"; };

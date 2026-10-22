@@ -1,0 +1,6 @@
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-menu.img: kernel(+dtb)=38477329 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused fbcon=font:TER16x32 log_buf_len=4M ignore_loglevel root=/dev/sda38'
+PASS: thyme-camera-menu.img; header/command line, kernel, DTB, gzip, padding, original image verified
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-logdump.img: kernel(+dtb)=38477445 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused'
+PASS: thyme-camera-logdump.img; header/command line, kernel, DTB, gzip, padding, original image verified
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-display-test.img: kernel(+dtb)=38477329 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused initcall_debug'
+PASS: thyme-camera-display-test.img; header/command line, kernel, DTB, gzip, padding, original image verified

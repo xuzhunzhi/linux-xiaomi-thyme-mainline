@@ -1,0 +1,23 @@
+Sun Oct 18 19:22:50 CST 2026
+8427 /usr/bin/gnome-shell --mode=ubuntu
+8480 /usr/libexec/gnome-shell-calendar-server
+253 [disp_snapshot]
+9880 /usr/bin/snapshot --gapplication-service
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.777883240] [9634]  WARN CameraSensorProperties camera_sensor_properties.cpp:540 Please consider updating the camera sensor properties database
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.777889595] [9634]  WARN CameraSensor camera_sensor_legacy.cpp:502 'ov13b10 23-0036': No sensor delays found in static properties. Assuming unverified defaults.
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.790370769] [9634]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 's5k3t2.yaml' not found for IPA module 'simple', falling back to '/opt/thyme-camera/share/libcamera/ipa/simple/uncalibrated.yaml'
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.790437800] [9634]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for s5k3t2
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.790715715] [9634]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@0/camera@10' for pipeline handler simple
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.793748040] [9634]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 's5khmx.yaml' not found for IPA module 'simple', falling back to '/opt/thyme-camera/share/libcamera/ipa/simple/uncalibrated.yaml'
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.793800071] [9634]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for s5khmx
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.793989653] [9634]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac4f000/i2c-bus@1/camera@3d' for pipeline handler simple
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.797114946] [9634]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 'ov13b10.yaml' not found for IPA module 'simple', falling back to '/opt/thyme-camera/share/libcamera/ipa/simple/uncalibrated.yaml'
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.797181144] [9634] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 0 on pad 0/0: 对设备不适当的 ioctl 操作
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.797201144] [9634]  WARN CameraSensor camera_sensor_legacy.cpp:881 'ov13b10 23-0036': The analogue crop rectangle has been defaulted to the active area size
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.797248904] [9634]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for ov13b10
+Oct 18 19:21:51 xiaomi-thyme pipewire[8135]: [0:08:27.797592339] [9634]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@1/camera@36' for pipeline handler simple
+Oct 18 19:22:36 xiaomi-thyme pipewire[8135]: [0:09:12.827455952] [8135]  INFO Camera camera.cpp:1215 configuring streams: (0) 1920x1080-XRGB8888/sRGB
+Oct 18 19:22:36 xiaomi-thyme pipewire[8135]: [0:09:12.827830272] [9634]  INFO IPASoft soft_simple.cpp:258 IPASoft: Exposure 8-2351, gain 32-1024 (1)
+Oct 18 19:22:38 xiaomi-thyme pipewire[8135]: [0:09:15.084393227] [9948]  INFO Benchmark benchmark.cpp:83 Processed 30 frames in 580545us, 19351 us/frame
+auto
+1000

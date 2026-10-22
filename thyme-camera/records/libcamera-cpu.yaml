@@ -1,0 +1,5 @@
+# libcamera 0.7: avoid the failing EGL/Zink debayer path on thyme.
+version: 1
+configuration:
+  software_isp:
+    mode: cpu

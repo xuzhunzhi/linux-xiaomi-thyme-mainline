@@ -1,0 +1,828 @@
+Created symlink '/run/user/1001/systemd/user/pipewire.service' → '/dev/null'.
+Created symlink '/run/user/1001/systemd/user/pipewire.socket' → '/dev/null'.
+Created symlink '/run/user/1001/systemd/user/wireplumber.service' → '/dev/null'.
+Created symlink '/run/user/1000/systemd/user/pipewire.service' → '/dev/null'.
+Created symlink '/run/user/1000/systemd/user/pipewire.socket' → '/dev/null'.
+Created symlink '/run/user/1000/systemd/user/wireplumber.service' → '/dev/null'.
+lens binding
+../../../../../../bus/i2c/drivers/thyme-ak7377-retry
+lens v4l-subdev26
+open 0 OK
+open 1 OK
+open 2 OK
+open 3 OK
+open 4 OK
+power suspended
+
+CAPTURE ROUND 1
+[0:34:41.430089084] [12396]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0
+[0:34:41.475676373] [12397]  WARN CameraSensorProperties camera_sensor_properties.cpp:538 No static properties available for 's5k3t2'
+[0:34:41.475691582] [12397]  WARN CameraSensorProperties camera_sensor_properties.cpp:540 Please consider updating the camera sensor properties database
+[0:34:41.475700853] [12397]  WARN CameraSensor camera_sensor_legacy.cpp:502 's5k3t2 22-0010': No sensor delays found in static properties. Assuming unverified defaults.
+[0:34:41.476247839] [12397]  WARN CameraSensorProperties camera_sensor_properties.cpp:538 No static properties available for 's5khmx'
+[0:34:41.476257162] [12397]  WARN CameraSensorProperties camera_sensor_properties.cpp:540 Please consider updating the camera sensor properties database
+[0:34:41.488054042] [12397]  WARN CameraSensor camera_sensor_legacy.cpp:502 's5khmx 21-003d': No sensor delays found in static properties. Assuming unverified defaults.
+[0:34:41.488619779] [12397] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 2 on pad 0/0: Inappropriate ioctl for device
+[0:34:41.488637956] [12397]  WARN CameraSensor camera_sensor_legacy.cpp:402 'ov13b10 23-0036': The PixelArraySize property has been defaulted to 4208x3120
+[0:34:41.488643581] [12397] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 1 on pad 0/0: Inappropriate ioctl for device
+[0:34:41.488647540] [12397]  WARN CameraSensor camera_sensor_legacy.cpp:413 'ov13b10 23-0036': The PixelArrayActiveAreas property has been defaulted to (0, 0)/4208x3120
+[0:34:41.488657123] [12397] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 0 on pad 0/0: Inappropriate ioctl for device
+[0:34:41.488660925] [12397]  WARN CameraSensor camera_sensor_legacy.cpp:421 'ov13b10 23-0036': Failed to retrieve the sensor crop rectangle
+[0:34:41.488664050] [12397]  WARN CameraSensor camera_sensor_legacy.cpp:427 'ov13b10 23-0036': The sensor kernel driver needs to be fixed
+[0:34:41.488667123] [12397]  WARN CameraSensor camera_sensor_legacy.cpp:429 'ov13b10 23-0036': See Documentation/sensor_driver_requirements.rst in the libcamera sources for more information
+[0:34:41.488756447] [12397]  WARN CameraSensorProperties camera_sensor_properties.cpp:538 No static properties available for 'ov13b10'
+[0:34:41.488760302] [12397]  WARN CameraSensorProperties camera_sensor_properties.cpp:540 Please consider updating the camera sensor properties database
+[0:34:41.488765302] [12397]  WARN CameraSensor camera_sensor_legacy.cpp:502 'ov13b10 23-0036': No sensor delays found in static properties. Assuming unverified defaults.
+[0:34:41.494915750] [12397]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 's5k3t2.yaml' not found for IPA module 'simple', falling back to '/opt/thyme-camera-focus-color/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:34:41.494956428] [12397]  WARN IPASoft soft_simple.cpp:105 IPASoft: Failed to create camera sensor helper for s5k3t2
+[0:34:41.495280859] [12397]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@0/camera@10' for pipeline handler simple
+[0:34:41.499892120] [12397]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /opt/thyme-camera-focus-color/share/libcamera/ipa/simple/s5khmx.yaml
+[0:34:41.500086394] [12397]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac4f000/i2c-bus@1/camera@3d' for pipeline handler simple
+[0:34:41.504457651] [12397]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 'ov13b10.yaml' not found for IPA module 'simple', falling back to '/opt/thyme-camera-focus-color/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:34:41.504473485] [12397] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 0 on pad 0/0: Inappropriate ioctl for device
+[0:34:41.504481298] [12397]  WARN CameraSensor camera_sensor_legacy.cpp:881 'ov13b10 23-0036': The analogue crop rectangle has been defaulted to the active area size
+[0:34:41.504494267] [12397]  WARN IPASoft soft_simple.cpp:105 IPASoft: Failed to create camera sensor helper for ov13b10
+[0:34:41.504761614] [12397]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@1/camera@36' for pipeline handler simple
+Using camera /base/soc@0/cci@ac4f000/i2c-bus@1/camera@3d as cam0
+[0:34:41.505220162] [12396]  INFO Camera camera.cpp:1215 configuring streams: (0) 1280x960-ABGR8888/sRGB
+[0:34:41.505318861] [12397]  INFO IPASoftAf af.cpp:66 Focus range 0-900, steps 112/22
+[0:34:41.505326465] [12397]  INFO IPASoft soft_simple.cpp:260 IPASoft: Exposure 8-2351, gain 1-32 (0.31)
+cam0: Capture 210 frames
+2081.751751 (0.00 fps) cam0-stream0 seq: 000000 bytesused: 4915200
+2081.785072 (30.01 fps) cam0-stream0 seq: 000001 bytesused: 4915200
+2081.818381 (30.02 fps) cam0-stream0 seq: 000002 bytesused: 4915200
+2081.851485 (30.21 fps) cam0-stream0 seq: 000003 bytesused: 4915200
+2081.884954 (29.88 fps) cam0-stream0 seq: 000004 bytesused: 4915200
+2081.918232 (30.05 fps) cam0-stream0 seq: 000005 bytesused: 4915200
+2081.951504 (30.06 fps) cam0-stream0 seq: 000006 bytesused: 4915200
+2081.984622 (30.20 fps) cam0-stream0 seq: 000007 bytesused: 4915200
+2082.018087 (29.88 fps) cam0-stream0 seq: 000008 bytesused: 4915200
+[0:34:42.032861845] [12398] DEBUG IPASoftAf af.cpp:94 Starting autofocus scan
+2082.051378 (30.04 fps) cam0-stream0 seq: 000009 bytesused: 4915200
+2082.084660 (30.05 fps) cam0-stream0 seq: 000010 bytesused: 4915200
+2082.117903 (30.08 fps) cam0-stream0 seq: 000011 bytesused: 4915200
+[0:34:42.167709989] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 0 (sharpness 82662)
+2082.151166 (30.06 fps) cam0-stream0 seq: 000012 bytesused: 4915200
+2082.184430 (30.06 fps) cam0-stream0 seq: 000013 bytesused: 4915200
+2082.217746 (30.02 fps) cam0-stream0 seq: 000014 bytesused: 4915200
+2082.250995 (30.08 fps) cam0-stream0 seq: 000015 bytesused: 4915200
+2082.284284 (30.04 fps) cam0-stream0 seq: 000016 bytesused: 4915200
+2082.317654 (29.97 fps) cam0-stream0 seq: 000017 bytesused: 4915200
+2082.350759 (30.21 fps) cam0-stream0 seq: 000018 bytesused: 4915200
+2082.384229 (29.88 fps) cam0-stream0 seq: 000019 bytesused: 4915200
+[0:34:42.443317346] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 112 (sharpness 222527)
+2082.417427 (30.12 fps) cam0-stream0 seq: 000020 bytesused: 4915200
+2082.450771 (29.99 fps) cam0-stream0 seq: 000021 bytesused: 4915200
+2082.484082 (30.02 fps) cam0-stream0 seq: 000022 bytesused: 4915200
+2082.517184 (30.21 fps) cam0-stream0 seq: 000023 bytesused: 4915200
+2082.550657 (29.87 fps) cam0-stream0 seq: 000024 bytesused: 4915200
+2082.583940 (30.05 fps) cam0-stream0 seq: 000025 bytesused: 4915200
+2082.617140 (30.12 fps) cam0-stream0 seq: 000026 bytesused: 4915200
+2082.650546 (29.93 fps) cam0-stream0 seq: 000027 bytesused: 4915200
+[0:34:42.698362286] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 224 (sharpness 299942)
+2082.683790 (30.08 fps) cam0-stream0 seq: 000028 bytesused: 4915200
+2082.717035 (30.08 fps) cam0-stream0 seq: 000029 bytesused: 4915200
+2082.750365 (30.00 fps) cam0-stream0 seq: 000030 bytesused: 4915200
+2082.783646 (30.05 fps) cam0-stream0 seq: 000031 bytesused: 4915200
+2082.816850 (30.12 fps) cam0-stream0 seq: 000032 bytesused: 4915200
+2082.850217 (29.97 fps) cam0-stream0 seq: 000033 bytesused: 4915200
+2082.883435 (30.10 fps) cam0-stream0 seq: 000034 bytesused: 4915200
+2082.916726 (30.04 fps) cam0-stream0 seq: 000035 bytesused: 4915200
+[0:34:42.968539465] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 336 (sharpness 392180)
+2082.950016 (30.04 fps) cam0-stream0 seq: 000036 bytesused: 4915200
+2082.983390 (29.96 fps) cam0-stream0 seq: 000037 bytesused: 4915200
+2083.016643 (30.07 fps) cam0-stream0 seq: 000038 bytesused: 4915200
+2083.049847 (30.12 fps) cam0-stream0 seq: 000039 bytesused: 4915200
+2083.083163 (30.02 fps) cam0-stream0 seq: 000040 bytesused: 4915200
+2083.116441 (30.05 fps) cam0-stream0 seq: 000041 bytesused: 4915200
+2083.149703 (30.06 fps) cam0-stream0 seq: 000042 bytesused: 4915200
+2083.183068 (29.97 fps) cam0-stream0 seq: 000043 bytesused: 4915200
+[0:34:43.230953517] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 448 (sharpness 385200)
+2083.216357 (30.04 fps) cam0-stream0 seq: 000044 bytesused: 4915200
+2083.249622 (30.06 fps) cam0-stream0 seq: 000045 bytesused: 4915200
+2083.282871 (30.08 fps) cam0-stream0 seq: 000046 bytesused: 4915200
+2083.316210 (29.99 fps) cam0-stream0 seq: 000047 bytesused: 4915200
+2083.349313 (30.21 fps) cam0-stream0 seq: 000048 bytesused: 4915200
+2083.382782 (29.88 fps) cam0-stream0 seq: 000049 bytesused: 4915200
+2083.416022 (30.08 fps) cam0-stream0 seq: 000050 bytesused: 4915200
+2083.449353 (30.00 fps) cam0-stream0 seq: 000051 bytesused: 4915200
+2083.482638 (30.04 fps) cam0-stream0 seq: 000052 bytesused: 4915200
+[0:34:43.510527595] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 560 (sharpness 191482)
+2083.515917 (30.05 fps) cam0-stream0 seq: 000053 bytesused: 4915200
+2083.549210 (30.04 fps) cam0-stream0 seq: 000054 bytesused: 4915200
+2083.582495 (30.04 fps) cam0-stream0 seq: 000055 bytesused: 4915200
+2083.615731 (30.09 fps) cam0-stream0 seq: 000056 bytesused: 4915200
+2083.649016 (30.04 fps) cam0-stream0 seq: 000057 bytesused: 4915200
+2083.682289 (30.05 fps) cam0-stream0 seq: 000058 bytesused: 4915200
+[0:34:43.729958455] [12399]  INFO Benchmark benchmark.cpp:83 Processed 30 frames in 500316us, 16677 us/frame
+2083.715628 (29.99 fps) cam0-stream0 seq: 000059 bytesused: 4915200
+[0:34:43.763575685] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 672 (sharpness 141796)
+2083.748916 (30.04 fps) cam0-stream0 seq: 000060 bytesused: 4915200
+2083.782190 (30.05 fps) cam0-stream0 seq: 000061 bytesused: 4915200
+2083.815304 (30.20 fps) cam0-stream0 seq: 000062 bytesused: 4915200
+2083.848692 (29.95 fps) cam0-stream0 seq: 000063 bytesused: 4915200
+2083.882053 (29.98 fps) cam0-stream0 seq: 000064 bytesused: 4915200
+2083.915344 (30.04 fps) cam0-stream0 seq: 000065 bytesused: 4915200
+2083.948452 (30.20 fps) cam0-stream0 seq: 000066 bytesused: 4915200
+2083.982030 (29.78 fps) cam0-stream0 seq: 000067 bytesused: 4915200
+2084.015115 (30.23 fps) cam0-stream0 seq: 000068 bytesused: 4915200
+[0:34:44.031389290] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 784 (sharpness 178637)
+2084.048303 (30.13 fps) cam0-stream0 seq: 000069 bytesused: 4915200
+2084.081686 (29.96 fps) cam0-stream0 seq: 000070 bytesused: 4915200
+2084.114994 (30.02 fps) cam0-stream0 seq: 000071 bytesused: 4915200
+2084.148341 (29.99 fps) cam0-stream0 seq: 000072 bytesused: 4915200
+2084.181628 (30.04 fps) cam0-stream0 seq: 000073 bytesused: 4915200
+2084.214860 (30.09 fps) cam0-stream0 seq: 000074 bytesused: 4915200
+2084.248199 (29.99 fps) cam0-stream0 seq: 000075 bytesused: 4915200
+2084.281395 (30.12 fps) cam0-stream0 seq: 000076 bytesused: 4915200
+[0:34:44.307468476] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 896 (sharpness 163974)
+2084.314767 (29.97 fps) cam0-stream0 seq: 000077 bytesused: 4915200
+2084.348048 (30.05 fps) cam0-stream0 seq: 000078 bytesused: 4915200
+2084.381333 (30.04 fps) cam0-stream0 seq: 000079 bytesused: 4915200
+2084.414560 (30.10 fps) cam0-stream0 seq: 000080 bytesused: 4915200
+2084.447905 (29.99 fps) cam0-stream0 seq: 000081 bytesused: 4915200
+2084.481107 (30.12 fps) cam0-stream0 seq: 000082 bytesused: 4915200
+2084.514416 (30.02 fps) cam0-stream0 seq: 000083 bytesused: 4915200
+2084.547765 (29.99 fps) cam0-stream0 seq: 000084 bytesused: 4915200
+[0:34:44.563186030] [12398] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 224 (sharpness 362331)
+2084.581045 (30.05 fps) cam0-stream0 seq: 000085 bytesused: 4915200
+2084.614273 (30.10 fps) cam0-stream0 seq: 000086 bytesused: 4915200
+2084.647617 (29.99 fps) cam0-stream0 seq: 000087 bytesused: 4915200
+2084.680812 (30.13 fps) cam0-stream0 seq: 000088 bytesused: 4915200
+2084.714184 (29.97 fps) cam0-stream0 seq: 000089 bytesused: 4915200
+2084.747470 (30.04 fps) cam0-stream0 seq: 000090 bytesused: 4915200
+2084.780575 (30.21 fps) cam0-stream0 seq: 000091 bytesused: 4915200
+2084.814139 (29.79 fps) cam0-stream0 seq: 000092 bytesused: 4915200
+[0:34:44.830737235] [12398] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 246 (sharpness 378208)
+2084.847144 (30.30 fps) cam0-stream0 seq: 000093 bytesused: 4915200
+2084.880554 (29.93 fps) cam0-stream0 seq: 000094 bytesused: 4915200
+2084.913814 (30.07 fps) cam0-stream0 seq: 000095 bytesused: 4915200
+2084.947179 (29.97 fps) cam0-stream0 seq: 000096 bytesused: 4915200
+2084.980471 (30.04 fps) cam0-stream0 seq: 000097 bytesused: 4915200
+2085.013574 (30.21 fps) cam0-stream0 seq: 000098 bytesused: 4915200
+2085.047043 (29.88 fps) cam0-stream0 seq: 000099 bytesused: 4915200
+2085.080327 (30.04 fps) cam0-stream0 seq: 000100 bytesused: 4915200
+[0:34:45.107523358] [12398] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 268 (sharpness 412764)
+2085.113525 (30.12 fps) cam0-stream0 seq: 000101 bytesused: 4915200
+2085.146721 (30.12 fps) cam0-stream0 seq: 000102 bytesused: 4915200
+2085.180180 (29.89 fps) cam0-stream0 seq: 000103 bytesused: 4915200
+2085.213471 (30.04 fps) cam0-stream0 seq: 000104 bytesused: 4915200
+2085.246747 (30.05 fps) cam0-stream0 seq: 000105 bytesused: 4915200
+2085.280038 (30.04 fps) cam0-stream0 seq: 000106 bytesused: 4915200
+2085.313240 (30.12 fps) cam0-stream0 seq: 000107 bytesused: 4915200
+2085.346509 (30.06 fps) cam0-stream0 seq: 000108 bytesused: 4915200
+[0:34:45.360925777] [12398] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 290 (sharpness 440079)
+2085.379860 (29.98 fps) cam0-stream0 seq: 000109 bytesused: 4915200
+2085.413026 (30.15 fps) cam0-stream0 seq: 000110 bytesused: 4915200
+2085.446369 (29.99 fps) cam0-stream0 seq: 000111 bytesused: 4915200
+2085.479570 (30.12 fps) cam0-stream0 seq: 000112 bytesused: 4915200
+2085.512848 (30.05 fps) cam0-stream0 seq: 000113 bytesused: 4915200
+2085.546134 (30.04 fps) cam0-stream0 seq: 000114 bytesused: 4915200
+2085.579417 (30.05 fps) cam0-stream0 seq: 000115 bytesused: 4915200
+[0:34:45.628492972] [12398] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 312 (sharpness 463565)
+2085.612705 (30.04 fps) cam0-stream0 seq: 000116 bytesused: 4915200
+2085.645990 (30.04 fps) cam0-stream0 seq: 000117 bytesused: 4915200
+2085.679273 (30.05 fps) cam0-stream0 seq: 000118 bytesused: 4915200
+2085.712560 (30.04 fps) cam0-stream0 seq: 000119 bytesused: 4915200
+2085.745845 (30.04 fps) cam0-stream0 seq: 000120 bytesused: 4915200
+2085.779132 (30.04 fps) cam0-stream0 seq: 000121 bytesused: 4915200
+2085.812420 (30.04 fps) cam0-stream0 seq: 000122 bytesused: 4915200
+2085.845705 (30.04 fps) cam0-stream0 seq: 000123 bytesused: 4915200
+[0:34:45.902753592] [12398] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 334 (sharpness 471880)
+2085.878984 (30.05 fps) cam0-stream0 seq: 000124 bytesused: 4915200
+2085.912271 (30.04 fps) cam0-stream0 seq: 000125 bytesused: 4915200
+2085.945561 (30.04 fps) cam0-stream0 seq: 000126 bytesused: 4915200
+2085.978845 (30.04 fps) cam0-stream0 seq: 000127 bytesused: 4915200
+2086.012126 (30.05 fps) cam0-stream0 seq: 000128 bytesused: 4915200
+2086.045414 (30.04 fps) cam0-stream0 seq: 000129 bytesused: 4915200
+2086.078696 (30.05 fps) cam0-stream0 seq: 000130 bytesused: 4915200
+2086.111982 (30.04 fps) cam0-stream0 seq: 000131 bytesused: 4915200
+2086.145271 (30.04 fps) cam0-stream0 seq: 000132 bytesused: 4915200
+[0:34:46.160999878] [12398] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 356 (sharpness 459744)
+2086.178556 (30.04 fps) cam0-stream0 seq: 000133 bytesused: 4915200
+2086.211840 (30.04 fps) cam0-stream0 seq: 000134 bytesused: 4915200
+2086.245122 (30.05 fps) cam0-stream0 seq: 000135 bytesused: 4915200
+2086.278408 (30.04 fps) cam0-stream0 seq: 000136 bytesused: 4915200
+2086.311696 (30.04 fps) cam0-stream0 seq: 000137 bytesused: 4915200
+2086.344982 (30.04 fps) cam0-stream0 seq: 000138 bytesused: 4915200
+2086.378264 (30.05 fps) cam0-stream0 seq: 000139 bytesused: 4915200
+2086.411547 (30.05 fps) cam0-stream0 seq: 000140 bytesused: 4915200
+[0:34:46.435927174] [12398] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 378 (sharpness 446209)
+2086.444833 (30.04 fps) cam0-stream0 seq: 000141 bytesused: 4915200
+2086.478120 (30.04 fps) cam0-stream0 seq: 000142 bytesused: 4915200
+2086.511405 (30.04 fps) cam0-stream0 seq: 000143 bytesused: 4915200
+2086.544690 (30.04 fps) cam0-stream0 seq: 000144 bytesused: 4915200
+2086.577976 (30.04 fps) cam0-stream0 seq: 000145 bytesused: 4915200
+2086.611258 (30.05 fps) cam0-stream0 seq: 000146 bytesused: 4915200
+2086.644544 (30.04 fps) cam0-stream0 seq: 000147 bytesused: 4915200
+2086.677829 (30.04 fps) cam0-stream0 seq: 000148 bytesused: 4915200
+[0:34:46.691889783] [12398] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 400 (sharpness 424454)
+2086.711118 (30.04 fps) cam0-stream0 seq: 000149 bytesused: 4915200
+2086.744403 (30.04 fps) cam0-stream0 seq: 000150 bytesused: 4915200
+2086.777691 (30.04 fps) cam0-stream0 seq: 000151 bytesused: 4915200
+2086.810971 (30.05 fps) cam0-stream0 seq: 000152 bytesused: 4915200
+2086.844260 (30.04 fps) cam0-stream0 seq: 000153 bytesused: 4915200
+2086.877545 (30.04 fps) cam0-stream0 seq: 000154 bytesused: 4915200
+2086.910829 (30.04 fps) cam0-stream0 seq: 000155 bytesused: 4915200
+2086.944111 (30.05 fps) cam0-stream0 seq: 000156 bytesused: 4915200
+[0:34:46.959848234] [12398] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 422 (sharpness 346524)
+2086.977397 (30.04 fps) cam0-stream0 seq: 000157 bytesused: 4915200
+2087.010681 (30.04 fps) cam0-stream0 seq: 000158 bytesused: 4915200
+2087.043970 (30.04 fps) cam0-stream0 seq: 000159 bytesused: 4915200
+2087.077253 (30.05 fps) cam0-stream0 seq: 000160 bytesused: 4915200
+2087.110537 (30.04 fps) cam0-stream0 seq: 000161 bytesused: 4915200
+2087.143824 (30.04 fps) cam0-stream0 seq: 000162 bytesused: 4915200
+2087.177109 (30.04 fps) cam0-stream0 seq: 000163 bytesused: 4915200
+[0:34:47.238263025] [12398] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 444 (sharpness 279287)
+[0:34:47.238305629] [12398]  INFO IPASoftAf af.cpp:191 Autofocus completed at 334 (sharpness 471880)
+2087.210396 (30.04 fps) cam0-stream0 seq: 000164 bytesused: 4915200
+2087.243676 (30.05 fps) cam0-stream0 seq: 000165 bytesused: 4915200
+2087.276964 (30.04 fps) cam0-stream0 seq: 000166 bytesused: 4915200
+2087.310246 (30.05 fps) cam0-stream0 seq: 000167 bytesused: 4915200
+2087.343532 (30.04 fps) cam0-stream0 seq: 000168 bytesused: 4915200
+2087.376818 (30.04 fps) cam0-stream0 seq: 000169 bytesused: 4915200
+2087.410107 (30.04 fps) cam0-stream0 seq: 000170 bytesused: 4915200
+2087.443393 (30.04 fps) cam0-stream0 seq: 000171 bytesused: 4915200
+2087.476679 (30.04 fps) cam0-stream0 seq: 000172 bytesused: 4915200
+2087.509965 (30.04 fps) cam0-stream0 seq: 000173 bytesused: 4915200
+2087.543244 (30.05 fps) cam0-stream0 seq: 000174 bytesused: 4915200
+2087.576529 (30.04 fps) cam0-stream0 seq: 000175 bytesused: 4915200
+2087.609819 (30.04 fps) cam0-stream0 seq: 000176 bytesused: 4915200
+2087.643103 (30.04 fps) cam0-stream0 seq: 000177 bytesused: 4915200
+2087.676389 (30.04 fps) cam0-stream0 seq: 000178 bytesused: 4915200
+2087.709674 (30.04 fps) cam0-stream0 seq: 000179 bytesused: 4915200
+2087.742954 (30.05 fps) cam0-stream0 seq: 000180 bytesused: 4915200
+2087.776239 (30.04 fps) cam0-stream0 seq: 000181 bytesused: 4915200
+2087.809525 (30.04 fps) cam0-stream0 seq: 000182 bytesused: 4915200
+2087.842992 (29.88 fps) cam0-stream0 seq: 000183 bytesused: 4915200
+2087.876276 (30.04 fps) cam0-stream0 seq: 000184 bytesused: 4915200
+[0:34:47.892123203] [12398] DEBUG IPASoftAf af.cpp:94 Starting autofocus scan
+2087.909566 (30.04 fps) cam0-stream0 seq: 000185 bytesused: 4915200
+2087.942853 (30.04 fps) cam0-stream0 seq: 000186 bytesused: 4915200
+2087.976154 (30.03 fps) cam0-stream0 seq: 000187 bytesused: 4915200
+2088.009366 (30.11 fps) cam0-stream0 seq: 000188 bytesused: 4915200
+[0:34:48.037081536] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 0 (sharpness 225886)
+2088.042620 (30.07 fps) cam0-stream0 seq: 000189 bytesused: 4915200
+2088.075815 (30.13 fps) cam0-stream0 seq: 000190 bytesused: 4915200
+2088.109274 (29.89 fps) cam0-stream0 seq: 000191 bytesused: 4915200
+2088.142558 (30.04 fps) cam0-stream0 seq: 000192 bytesused: 4915200
+2088.175844 (30.04 fps) cam0-stream0 seq: 000193 bytesused: 4915200
+2088.208950 (30.21 fps) cam0-stream0 seq: 000194 bytesused: 4915200
+2088.242333 (29.96 fps) cam0-stream0 seq: 000195 bytesused: 4915200
+[0:34:48.290325567] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 112 (sharpness 233408)
+2088.275695 (29.97 fps) cam0-stream0 seq: 000196 bytesused: 4915200
+2088.308990 (30.03 fps) cam0-stream0 seq: 000197 bytesused: 4915200
+2088.342232 (30.08 fps) cam0-stream0 seq: 000198 bytesused: 4915200
+2088.375559 (30.01 fps) cam0-stream0 seq: 000199 bytesused: 4915200
+2088.408784 (30.10 fps) cam0-stream0 seq: 000200 bytesused: 4915200
+2088.442145 (29.98 fps) cam0-stream0 seq: 000201 bytesused: 4915200
+2088.475404 (30.07 fps) cam0-stream0 seq: 000202 bytesused: 4915200
+2088.508515 (30.20 fps) cam0-stream0 seq: 000203 bytesused: 4915200
+[0:34:48.556928374] [12398] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 224 (sharpness 76880)
+2088.541921 (29.93 fps) cam0-stream0 seq: 000204 bytesused: 4915200
+2088.575244 (30.01 fps) cam0-stream0 seq: 000205 bytesused: 4915200
+2088.608371 (30.19 fps) cam0-stream0 seq: 000206 bytesused: 4915200
+2088.641838 (29.88 fps) cam0-stream0 seq: 000207 bytesused: 4915200
+2088.675038 (30.12 fps) cam0-stream0 seq: 000208 bytesused: 4915200
+2088.708409 (29.97 fps) cam0-stream0 seq: 000209 bytesused: 4915200
+CAPTURE ROUND 2
+[0:34:49.862114414] [12403]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0
+[0:34:49.910307033] [12404]  WARN CameraSensorProperties camera_sensor_properties.cpp:538 No static properties available for 's5k3t2'
+[0:34:49.910321460] [12404]  WARN CameraSensorProperties camera_sensor_properties.cpp:540 Please consider updating the camera sensor properties database
+[0:34:49.910330575] [12404]  WARN CameraSensor camera_sensor_legacy.cpp:502 's5k3t2 22-0010': No sensor delays found in static properties. Assuming unverified defaults.
+[0:34:49.910708703] [12404]  WARN CameraSensorProperties camera_sensor_properties.cpp:538 No static properties available for 's5khmx'
+[0:34:49.910716411] [12404]  WARN CameraSensorProperties camera_sensor_properties.cpp:540 Please consider updating the camera sensor properties database
+[0:34:49.923521304] [12404]  WARN CameraSensor camera_sensor_legacy.cpp:502 's5khmx 21-003d': No sensor delays found in static properties. Assuming unverified defaults.
+[0:34:49.924081829] [12404] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 2 on pad 0/0: Inappropriate ioctl for device
+[0:34:49.924100110] [12404]  WARN CameraSensor camera_sensor_legacy.cpp:402 'ov13b10 23-0036': The PixelArraySize property has been defaulted to 4208x3120
+[0:34:49.924109538] [12404] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 1 on pad 0/0: Inappropriate ioctl for device
+[0:34:49.924115840] [12404]  WARN CameraSensor camera_sensor_legacy.cpp:413 'ov13b10 23-0036': The PixelArrayActiveAreas property has been defaulted to (0, 0)/4208x3120
+[0:34:49.924124850] [12404] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 0 on pad 0/0: Inappropriate ioctl for device
+[0:34:49.924128548] [12404]  WARN CameraSensor camera_sensor_legacy.cpp:421 'ov13b10 23-0036': Failed to retrieve the sensor crop rectangle
+[0:34:49.924131517] [12404]  WARN CameraSensor camera_sensor_legacy.cpp:427 'ov13b10 23-0036': The sensor kernel driver needs to be fixed
+[0:34:49.924134434] [12404]  WARN CameraSensor camera_sensor_legacy.cpp:429 'ov13b10 23-0036': See Documentation/sensor_driver_requirements.rst in the libcamera sources for more information
+[0:34:49.924256049] [12404]  WARN CameraSensorProperties camera_sensor_properties.cpp:538 No static properties available for 'ov13b10'
+[0:34:49.924262612] [12404]  WARN CameraSensorProperties camera_sensor_properties.cpp:540 Please consider updating the camera sensor properties database
+[0:34:49.924269070] [12404]  WARN CameraSensor camera_sensor_legacy.cpp:502 'ov13b10 23-0036': No sensor delays found in static properties. Assuming unverified defaults.
+[0:34:49.930244794] [12404]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 's5k3t2.yaml' not found for IPA module 'simple', falling back to '/opt/thyme-camera-focus-color/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:34:49.930285107] [12404]  WARN IPASoft soft_simple.cpp:105 IPASoft: Failed to create camera sensor helper for s5k3t2
+[0:34:49.930562036] [12404]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@0/camera@10' for pipeline handler simple
+[0:34:49.934756236] [12404]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /opt/thyme-camera-focus-color/share/libcamera/ipa/simple/s5khmx.yaml
+[0:34:49.934901810] [12404]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac4f000/i2c-bus@1/camera@3d' for pipeline handler simple
+Using camera /base/soc@0/cci@ac4f000/i2c-bus@1/camera@3d as cam0
+[0:34:49.938807258] [12404]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 'ov13b10.yaml' not found for IPA module 'simple', falling back to '/opt/thyme-camera-focus-color/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:34:49.938820174] [12404] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 0 on pad 0/0: Inappropriate ioctl for device
+[0:34:49.938829549] [12404]  WARN CameraSensor camera_sensor_legacy.cpp:881 'ov13b10 23-0036': The analogue crop rectangle has been defaulted to the active area size
+[0:34:49.938842570] [12404]  WARN IPASoft soft_simple.cpp:105 IPASoft: Failed to create camera sensor helper for ov13b10
+[0:34:49.939084812] [12404]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@1/camera@36' for pipeline handler simple
+[0:34:49.939764973] [12403]  INFO Camera camera.cpp:1215 configuring streams: (0) 1280x960-ABGR8888/sRGB
+[0:34:49.939885651] [12404]  INFO IPASoftAf af.cpp:66 Focus range 0-900, steps 112/22
+[0:34:49.939895599] [12404]  INFO IPASoft soft_simple.cpp:260 IPASoft: Exposure 8-2351, gain 1-32 (0.31)
+cam0: Capture 210 frames
+2090.192079 (0.00 fps) cam0-stream0 seq: 000000 bytesused: 4915200
+2090.225398 (30.01 fps) cam0-stream0 seq: 000001 bytesused: 4915200
+2090.258528 (30.18 fps) cam0-stream0 seq: 000002 bytesused: 4915200
+2090.291813 (30.04 fps) cam0-stream0 seq: 000003 bytesused: 4915200
+2090.325276 (29.88 fps) cam0-stream0 seq: 000004 bytesused: 4915200
+2090.358520 (30.08 fps) cam0-stream0 seq: 000005 bytesused: 4915200
+2090.391845 (30.01 fps) cam0-stream0 seq: 000006 bytesused: 4915200
+2090.425035 (30.13 fps) cam0-stream0 seq: 000007 bytesused: 4915200
+2090.458380 (29.99 fps) cam0-stream0 seq: 000008 bytesused: 4915200
+[0:34:50.474740646] [12405] DEBUG IPASoftAf af.cpp:94 Starting autofocus scan
+2090.491676 (30.03 fps) cam0-stream0 seq: 000009 bytesused: 4915200
+2090.524983 (30.02 fps) cam0-stream0 seq: 000010 bytesused: 4915200
+2090.558232 (30.08 fps) cam0-stream0 seq: 000011 bytesused: 4915200
+2090.591559 (30.01 fps) cam0-stream0 seq: 000012 bytesused: 4915200
+[0:34:50.619292982] [12405] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 0 (sharpness 64373)
+2090.624871 (30.02 fps) cam0-stream0 seq: 000013 bytesused: 4915200
+2090.658172 (30.03 fps) cam0-stream0 seq: 000014 bytesused: 4915200
+2090.691413 (30.08 fps) cam0-stream0 seq: 000015 bytesused: 4915200
+2090.724699 (30.04 fps) cam0-stream0 seq: 000016 bytesused: 4915200
+2090.757926 (30.10 fps) cam0-stream0 seq: 000017 bytesused: 4915200
+2090.791266 (29.99 fps) cam0-stream0 seq: 000018 bytesused: 4915200
+2090.824467 (30.12 fps) cam0-stream0 seq: 000019 bytesused: 4915200
+2090.857848 (29.96 fps) cam0-stream0 seq: 000020 bytesused: 4915200
+[0:34:50.886615453] [12405] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 112 (sharpness 93444)
+2090.890936 (30.22 fps) cam0-stream0 seq: 000021 bytesused: 4915200
+2090.924409 (29.87 fps) cam0-stream0 seq: 000022 bytesused: 4915200
+2090.957642 (30.09 fps) cam0-stream0 seq: 000023 bytesused: 4915200
+2090.990884 (30.08 fps) cam0-stream0 seq: 000024 bytesused: 4915200
+2091.024264 (29.96 fps) cam0-stream0 seq: 000025 bytesused: 4915200
+2091.057461 (30.12 fps) cam0-stream0 seq: 000026 bytesused: 4915200
+2091.090825 (29.97 fps) cam0-stream0 seq: 000027 bytesused: 4915200
+[0:34:51.138297643] [12405] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 224 (sharpness 126889)
+2091.123934 (30.20 fps) cam0-stream0 seq: 000028 bytesused: 4915200
+2091.157402 (29.88 fps) cam0-stream0 seq: 000029 bytesused: 4915200
+2091.190688 (30.04 fps) cam0-stream0 seq: 000030 bytesused: 4915200
+2091.223972 (30.04 fps) cam0-stream0 seq: 000031 bytesused: 4915200
+2091.257266 (30.04 fps) cam0-stream0 seq: 000032 bytesused: 4915200
+2091.290544 (30.05 fps) cam0-stream0 seq: 000033 bytesused: 4915200
+2091.323827 (30.05 fps) cam0-stream0 seq: 000034 bytesused: 4915200
+2091.357044 (30.11 fps) cam0-stream0 seq: 000035 bytesused: 4915200
+[0:34:51.406685018] [12405] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 336 (sharpness 81598)
+2091.390392 (29.99 fps) cam0-stream0 seq: 000036 bytesused: 4915200
+2091.423680 (30.04 fps) cam0-stream0 seq: 000037 bytesused: 4915200
+2091.456881 (30.12 fps) cam0-stream0 seq: 000038 bytesused: 4915200
+2091.490174 (30.04 fps) cam0-stream0 seq: 000039 bytesused: 4915200
+2091.523538 (29.97 fps) cam0-stream0 seq: 000040 bytesused: 4915200
+2091.556774 (30.09 fps) cam0-stream0 seq: 000041 bytesused: 4915200
+2091.590103 (30.00 fps) cam0-stream0 seq: 000042 bytesused: 4915200
+2091.623206 (30.21 fps) cam0-stream0 seq: 000043 bytesused: 4915200
+2091.656672 (29.88 fps) cam0-stream0 seq: 000044 bytesused: 4915200
+[0:34:51.672448361] [12405] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 448 (sharpness 48909)
+2091.689959 (30.04 fps) cam0-stream0 seq: 000045 bytesused: 4915200
+2091.723248 (30.04 fps) cam0-stream0 seq: 000046 bytesused: 4915200
+2091.756488 (30.08 fps) cam0-stream0 seq: 000047 bytesused: 4915200
+2091.789828 (29.99 fps) cam0-stream0 seq: 000048 bytesused: 4915200
+2091.823007 (30.14 fps) cam0-stream0 seq: 000049 bytesused: 4915200
+2091.856364 (29.98 fps) cam0-stream0 seq: 000050 bytesused: 4915200
+2091.889585 (30.10 fps) cam0-stream0 seq: 000051 bytesused: 4915200
+[0:34:51.937485761] [12405] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 560 (sharpness 29040)
+2091.922957 (29.97 fps) cam0-stream0 seq: 000052 bytesused: 4915200
+2091.956236 (30.05 fps) cam0-stream0 seq: 000053 bytesused: 4915200
+2091.989516 (30.05 fps) cam0-stream0 seq: 000054 bytesused: 4915200
+2092.022752 (30.09 fps) cam0-stream0 seq: 000055 bytesused: 4915200
+2092.056098 (29.99 fps) cam0-stream0 seq: 000056 bytesused: 4915200
+2092.089287 (30.13 fps) cam0-stream0 seq: 000057 bytesused: 4915200
+2092.122666 (29.96 fps) cam0-stream0 seq: 000058 bytesused: 4915200
+[0:34:52.171048695] [12406]  INFO Benchmark benchmark.cpp:83 Processed 30 frames in 524903us, 17496 us/frame
+2092.155856 (30.13 fps) cam0-stream0 seq: 000059 bytesused: 4915200
+[0:34:52.216223009] [12405] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 672 (sharpness 18559)
+2092.189052 (30.12 fps) cam0-stream0 seq: 000060 bytesused: 4915200
+2092.222540 (29.86 fps) cam0-stream0 seq: 000061 bytesused: 4915200
+2092.255627 (30.22 fps) cam0-stream0 seq: 000062 bytesused: 4915200
+2092.288912 (30.04 fps) cam0-stream0 seq: 000063 bytesused: 4915200
+2092.322194 (30.05 fps) cam0-stream0 seq: 000064 bytesused: 4915200
+2092.355663 (29.88 fps) cam0-stream0 seq: 000065 bytesused: 4915200
+2092.388948 (30.04 fps) cam0-stream0 seq: 000066 bytesused: 4915200
+2092.422136 (30.13 fps) cam0-stream0 seq: 000067 bytesused: 4915200
+[0:34:52.472260443] [12405] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 784 (sharpness 13302)
+2092.455516 (29.96 fps) cam0-stream0 seq: 000068 bytesused: 4915200
+2092.488797 (30.05 fps) cam0-stream0 seq: 000069 bytesused: 4915200
+2092.522015 (30.10 fps) cam0-stream0 seq: 000070 bytesused: 4915200
+2092.555372 (29.98 fps) cam0-stream0 seq: 000071 bytesused: 4915200
+2092.588471 (30.21 fps) cam0-stream0 seq: 000072 bytesused: 4915200
+2092.621900 (29.91 fps) cam0-stream0 seq: 000073 bytesused: 4915200
+2092.655219 (30.01 fps) cam0-stream0 seq: 000074 bytesused: 4915200
+2092.688511 (30.04 fps) cam0-stream0 seq: 000075 bytesused: 4915200
+[0:34:52.736170282] [12405] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 896 (sharpness 10775)
+2092.721616 (30.21 fps) cam0-stream0 seq: 000076 bytesused: 4915200
+2092.755075 (29.89 fps) cam0-stream0 seq: 000077 bytesused: 4915200
+2092.788363 (30.04 fps) cam0-stream0 seq: 000078 bytesused: 4915200
+2092.821576 (30.11 fps) cam0-stream0 seq: 000079 bytesused: 4915200
+2092.854930 (29.98 fps) cam0-stream0 seq: 000080 bytesused: 4915200
+2092.888222 (30.04 fps) cam0-stream0 seq: 000081 bytesused: 4915200
+2092.921323 (30.21 fps) cam0-stream0 seq: 000082 bytesused: 4915200
+2092.954793 (29.88 fps) cam0-stream0 seq: 000083 bytesused: 4915200
+2092.988070 (30.05 fps) cam0-stream0 seq: 000084 bytesused: 4915200
+[0:34:53.017047390] [12405] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 112 (sharpness 81590)
+2093.021256 (30.13 fps) cam0-stream0 seq: 000085 bytesused: 4915200
+2093.054635 (29.96 fps) cam0-stream0 seq: 000086 bytesused: 4915200
+2093.087935 (30.03 fps) cam0-stream0 seq: 000087 bytesused: 4915200
+2093.121213 (30.05 fps) cam0-stream0 seq: 000088 bytesused: 4915200
+2093.154498 (30.04 fps) cam0-stream0 seq: 000089 bytesused: 4915200
+2093.187725 (30.10 fps) cam0-stream0 seq: 000090 bytesused: 4915200
+2093.220985 (30.07 fps) cam0-stream0 seq: 000091 bytesused: 4915200
+[0:34:53.270133394] [12405] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 134 (sharpness 88360)
+2093.254356 (29.97 fps) cam0-stream0 seq: 000092 bytesused: 4915200
+2093.287640 (30.04 fps) cam0-stream0 seq: 000093 bytesused: 4915200
+2093.320924 (30.04 fps) cam0-stream0 seq: 000094 bytesused: 4915200
+2093.354243 (30.01 fps) cam0-stream0 seq: 000095 bytesused: 4915200
+2093.387496 (30.07 fps) cam0-stream0 seq: 000096 bytesused: 4915200
+2093.420696 (30.12 fps) cam0-stream0 seq: 000097 bytesused: 4915200
+2093.454060 (29.97 fps) cam0-stream0 seq: 000098 bytesused: 4915200
+2093.487347 (30.04 fps) cam0-stream0 seq: 000099 bytesused: 4915200
+[0:34:53.535075168] [12405] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 156 (sharpness 94453)
+2093.520632 (30.04 fps) cam0-stream0 seq: 000100 bytesused: 4915200
+2093.553918 (30.04 fps) cam0-stream0 seq: 000101 bytesused: 4915200
+2093.587206 (30.04 fps) cam0-stream0 seq: 000102 bytesused: 4915200
+2093.620408 (30.12 fps) cam0-stream0 seq: 000103 bytesused: 4915200
+2093.653774 (29.97 fps) cam0-stream0 seq: 000104 bytesused: 4915200
+2093.686880 (30.21 fps) cam0-stream0 seq: 000105 bytesused: 4915200
+2093.720344 (29.88 fps) cam0-stream0 seq: 000106 bytesused: 4915200
+2093.753632 (30.04 fps) cam0-stream0 seq: 000107 bytesused: 4915200
+[0:34:53.803806556] [12405] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 178 (sharpness 100290)
+2093.786851 (30.10 fps) cam0-stream0 seq: 000108 bytesused: 4915200
+2093.820203 (29.98 fps) cam0-stream0 seq: 000109 bytesused: 4915200
+2093.853399 (30.12 fps) cam0-stream0 seq: 000110 bytesused: 4915200
+2093.886768 (29.97 fps) cam0-stream0 seq: 000111 bytesused: 4915200
+2093.920058 (30.04 fps) cam0-stream0 seq: 000112 bytesused: 4915200
+2093.953341 (30.05 fps) cam0-stream0 seq: 000113 bytesused: 4915200
+2093.986627 (30.04 fps) cam0-stream0 seq: 000114 bytesused: 4915200
+2094.019911 (30.04 fps) cam0-stream0 seq: 000115 bytesused: 4915200
+2094.053015 (30.21 fps) cam0-stream0 seq: 000116 bytesused: 4915200
+[0:34:54.079240653] [12405] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 200 (sharpness 102952)
+2094.086478 (29.88 fps) cam0-stream0 seq: 000117 bytesused: 4915200
+2094.119770 (30.04 fps) cam0-stream0 seq: 000118 bytesused: 4915200
+2094.153045 (30.05 fps) cam0-stream0 seq: 000119 bytesused: 4915200
+2094.186332 (30.04 fps) cam0-stream0 seq: 000120 bytesused: 4915200
+2094.219616 (30.04 fps) cam0-stream0 seq: 000121 bytesused: 4915200
+2094.252811 (30.13 fps) cam0-stream0 seq: 000122 bytesused: 4915200
+2094.286185 (29.96 fps) cam0-stream0 seq: 000123 bytesused: 4915200
+2094.319471 (30.04 fps) cam0-stream0 seq: 000124 bytesused: 4915200
+[0:34:54.334944959] [12405] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 222 (sharpness 97156)
+2094.352718 (30.08 fps) cam0-stream0 seq: 000125 bytesused: 4915200
+2094.386046 (30.00 fps) cam0-stream0 seq: 000126 bytesused: 4915200
+2094.419331 (30.04 fps) cam0-stream0 seq: 000127 bytesused: 4915200
+2094.452531 (30.12 fps) cam0-stream0 seq: 000128 bytesused: 4915200
+2094.485894 (29.97 fps) cam0-stream0 seq: 000129 bytesused: 4915200
+2094.519115 (30.10 fps) cam0-stream0 seq: 000130 bytesused: 4915200
+2094.552402 (30.04 fps) cam0-stream0 seq: 000131 bytesused: 4915200
+[0:34:54.601950916] [12405] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 244 (sharpness 99492)
+2094.585750 (29.99 fps) cam0-stream0 seq: 000132 bytesused: 4915200
+2094.619043 (30.04 fps) cam0-stream0 seq: 000133 bytesused: 4915200
+2094.652228 (30.13 fps) cam0-stream0 seq: 000134 bytesused: 4915200
+2094.685631 (29.94 fps) cam0-stream0 seq: 000135 bytesused: 4915200
+2094.718895 (30.06 fps) cam0-stream0 seq: 000136 bytesused: 4915200
+2094.752130 (30.09 fps) cam0-stream0 seq: 000137 bytesused: 4915200
+2094.785464 (30.00 fps) cam0-stream0 seq: 000138 bytesused: 4915200
+2094.818751 (30.04 fps) cam0-stream0 seq: 000139 bytesused: 4915200
+2094.852033 (30.05 fps) cam0-stream0 seq: 000140 bytesused: 4915200
+[0:34:54.879634718] [12405] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 266 (sharpness 88896)
+2094.885234 (30.12 fps) cam0-stream0 seq: 000141 bytesused: 4915200
+2094.918421 (30.13 fps) cam0-stream0 seq: 000142 bytesused: 4915200
+2094.951887 (29.88 fps) cam0-stream0 seq: 000143 bytesused: 4915200
+2094.985175 (30.04 fps) cam0-stream0 seq: 000144 bytesused: 4915200
+2095.018459 (30.04 fps) cam0-stream0 seq: 000145 bytesused: 4915200
+2095.051746 (30.04 fps) cam0-stream0 seq: 000146 bytesused: 4915200
+2095.084936 (30.13 fps) cam0-stream0 seq: 000147 bytesused: 4915200
+[0:34:55.133952086] [12405] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 288 (sharpness 83216)
+2095.118308 (29.97 fps) cam0-stream0 seq: 000148 bytesused: 4915200
+2095.151599 (30.04 fps) cam0-stream0 seq: 000149 bytesused: 4915200
+2095.184887 (30.04 fps) cam0-stream0 seq: 000150 bytesused: 4915200
+2095.218166 (30.05 fps) cam0-stream0 seq: 000151 bytesused: 4915200
+2095.251450 (30.04 fps) cam0-stream0 seq: 000152 bytesused: 4915200
+2095.284736 (30.04 fps) cam0-stream0 seq: 000153 bytesused: 4915200
+2095.317931 (30.13 fps) cam0-stream0 seq: 000154 bytesused: 4915200
+2095.351304 (29.96 fps) cam0-stream0 seq: 000155 bytesused: 4915200
+2095.384596 (30.04 fps) cam0-stream0 seq: 000156 bytesused: 4915200
+[0:34:55.398574483] [12405] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 310 (sharpness 73074)
+2095.417880 (30.04 fps) cam0-stream0 seq: 000157 bytesused: 4915200
+2095.451166 (30.04 fps) cam0-stream0 seq: 000158 bytesused: 4915200
+2095.484451 (30.04 fps) cam0-stream0 seq: 000159 bytesused: 4915200
+2095.517736 (30.04 fps) cam0-stream0 seq: 000160 bytesused: 4915200
+2095.551037 (30.03 fps) cam0-stream0 seq: 000161 bytesused: 4915200
+2095.584299 (30.06 fps) cam0-stream0 seq: 000162 bytesused: 4915200
+2095.617585 (30.04 fps) cam0-stream0 seq: 000163 bytesused: 4915200
+2095.650871 (30.04 fps) cam0-stream0 seq: 000164 bytesused: 4915200
+[0:34:55.665365438] [12405] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 332 (sharpness 65914)
+[0:34:55.665455022] [12405]  INFO IPASoftAf af.cpp:191 Autofocus completed at 200 (sharpness 102952)
+2095.684158 (30.04 fps) cam0-stream0 seq: 000165 bytesused: 4915200
+2095.717441 (30.05 fps) cam0-stream0 seq: 000166 bytesused: 4915200
+2095.750645 (30.12 fps) cam0-stream0 seq: 000167 bytesused: 4915200
+2095.783831 (30.13 fps) cam0-stream0 seq: 000168 bytesused: 4915200
+2095.817297 (29.88 fps) cam0-stream0 seq: 000169 bytesused: 4915200
+2095.850586 (30.04 fps) cam0-stream0 seq: 000170 bytesused: 4915200
+2095.883817 (30.09 fps) cam0-stream0 seq: 000171 bytesused: 4915200
+2095.917151 (30.00 fps) cam0-stream0 seq: 000172 bytesused: 4915200
+2095.950436 (30.04 fps) cam0-stream0 seq: 000173 bytesused: 4915200
+2095.983641 (30.12 fps) cam0-stream0 seq: 000174 bytesused: 4915200
+2096.016918 (30.05 fps) cam0-stream0 seq: 000175 bytesused: 4915200
+2096.050296 (29.96 fps) cam0-stream0 seq: 000176 bytesused: 4915200
+2096.083571 (30.05 fps) cam0-stream0 seq: 000177 bytesused: 4915200
+2096.116866 (30.03 fps) cam0-stream0 seq: 000178 bytesused: 4915200
+2096.150062 (30.12 fps) cam0-stream0 seq: 000179 bytesused: 4915200
+2096.183434 (29.97 fps) cam0-stream0 seq: 000180 bytesused: 4915200
+2096.216625 (30.13 fps) cam0-stream0 seq: 000181 bytesused: 4915200
+2096.249961 (30.00 fps) cam0-stream0 seq: 000182 bytesused: 4915200
+2096.283284 (30.01 fps) cam0-stream0 seq: 000183 bytesused: 4915200
+2096.316489 (30.12 fps) cam0-stream0 seq: 000184 bytesused: 4915200
+2096.349854 (29.97 fps) cam0-stream0 seq: 000185 bytesused: 4915200
+2096.383086 (30.09 fps) cam0-stream0 seq: 000186 bytesused: 4915200
+2096.416431 (29.99 fps) cam0-stream0 seq: 000187 bytesused: 4915200
+2096.449715 (30.04 fps) cam0-stream0 seq: 000188 bytesused: 4915200
+2096.482812 (30.21 fps) cam0-stream0 seq: 000189 bytesused: 4915200
+2096.516285 (29.87 fps) cam0-stream0 seq: 000190 bytesused: 4915200
+2096.549475 (30.13 fps) cam0-stream0 seq: 000191 bytesused: 4915200
+2096.582812 (30.00 fps) cam0-stream0 seq: 000192 bytesused: 4915200
+2096.616045 (30.09 fps) cam0-stream0 seq: 000193 bytesused: 4915200
+2096.649425 (29.96 fps) cam0-stream0 seq: 000194 bytesused: 4915200
+2096.682703 (30.05 fps) cam0-stream0 seq: 000195 bytesused: 4915200
+2096.715992 (30.04 fps) cam0-stream0 seq: 000196 bytesused: 4915200
+2096.749275 (30.05 fps) cam0-stream0 seq: 000197 bytesused: 4915200
+2096.782511 (30.09 fps) cam0-stream0 seq: 000198 bytesused: 4915200
+2096.815844 (30.00 fps) cam0-stream0 seq: 000199 bytesused: 4915200
+2096.849135 (30.04 fps) cam0-stream0 seq: 000200 bytesused: 4915200
+2096.882325 (30.13 fps) cam0-stream0 seq: 000201 bytesused: 4915200
+2096.915699 (29.96 fps) cam0-stream0 seq: 000202 bytesused: 4915200
+2096.948989 (30.04 fps) cam0-stream0 seq: 000203 bytesused: 4915200
+2096.982219 (30.09 fps) cam0-stream0 seq: 000204 bytesused: 4915200
+2097.015375 (30.16 fps) cam0-stream0 seq: 000205 bytesused: 4915200
+2097.048839 (29.88 fps) cam0-stream0 seq: 000206 bytesused: 4915200
+2097.082035 (30.12 fps) cam0-stream0 seq: 000207 bytesused: 4915200
+2097.115400 (29.97 fps) cam0-stream0 seq: 000208 bytesused: 4915200
+2097.148579 (30.14 fps) cam0-stream0 seq: 000209 bytesused: 4915200
+CAPTURE ROUND 3
+[0:34:58.324817064] [12410]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0
+[0:34:58.360347968] [12411]  WARN CameraSensorProperties camera_sensor_properties.cpp:538 No static properties available for 's5k3t2'
+[0:34:58.360361146] [12411]  WARN CameraSensorProperties camera_sensor_properties.cpp:540 Please consider updating the camera sensor properties database
+[0:34:58.360368021] [12411]  WARN CameraSensor camera_sensor_legacy.cpp:502 's5k3t2 22-0010': No sensor delays found in static properties. Assuming unverified defaults.
+[0:34:58.360644794] [12411]  WARN CameraSensorProperties camera_sensor_properties.cpp:538 No static properties available for 's5khmx'
+[0:34:58.360649325] [12411]  WARN CameraSensorProperties camera_sensor_properties.cpp:540 Please consider updating the camera sensor properties database
+[0:34:58.371356180] [12411]  WARN CameraSensor camera_sensor_legacy.cpp:502 's5khmx 21-003d': No sensor delays found in static properties. Assuming unverified defaults.
+[0:34:58.371665506] [12411] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 2 on pad 0/0: Inappropriate ioctl for device
+[0:34:58.371685245] [12411]  WARN CameraSensor camera_sensor_legacy.cpp:402 'ov13b10 23-0036': The PixelArraySize property has been defaulted to 4208x3120
+[0:34:58.371693422] [12411] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 1 on pad 0/0: Inappropriate ioctl for device
+[0:34:58.371699464] [12411]  WARN CameraSensor camera_sensor_legacy.cpp:413 'ov13b10 23-0036': The PixelArrayActiveAreas property has been defaulted to (0, 0)/4208x3120
+[0:34:58.371713058] [12411] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 0 on pad 0/0: Inappropriate ioctl for device
+[0:34:58.371718683] [12411]  WARN CameraSensor camera_sensor_legacy.cpp:421 'ov13b10 23-0036': Failed to retrieve the sensor crop rectangle
+[0:34:58.371723318] [12411]  WARN CameraSensor camera_sensor_legacy.cpp:427 'ov13b10 23-0036': The sensor kernel driver needs to be fixed
+[0:34:58.371727902] [12411]  WARN CameraSensor camera_sensor_legacy.cpp:429 'ov13b10 23-0036': See Documentation/sensor_driver_requirements.rst in the libcamera sources for more information
+[0:34:58.371852434] [12411]  WARN CameraSensorProperties camera_sensor_properties.cpp:538 No static properties available for 'ov13b10'
+[0:34:58.371858111] [12411]  WARN CameraSensorProperties camera_sensor_properties.cpp:540 Please consider updating the camera sensor properties database
+[0:34:58.371865663] [12411]  WARN CameraSensor camera_sensor_legacy.cpp:502 'ov13b10 23-0036': No sensor delays found in static properties. Assuming unverified defaults.
+[0:34:58.376059655] [12411]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 's5k3t2.yaml' not found for IPA module 'simple', falling back to '/opt/thyme-camera-focus-color/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:34:58.376090228] [12411]  WARN IPASoft soft_simple.cpp:105 IPASoft: Failed to create camera sensor helper for s5k3t2
+[0:34:58.376315334] [12411]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@0/camera@10' for pipeline handler simple
+[0:34:58.379046449] [12411]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /opt/thyme-camera-focus-color/share/libcamera/ipa/simple/s5khmx.yaml
+[0:34:58.379151137] [12411]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac4f000/i2c-bus@1/camera@3d' for pipeline handler simple
+[0:34:58.381803294] [12411]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 'ov13b10.yaml' not found for IPA module 'simple', falling back to '/opt/thyme-camera-focus-color/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:34:58.381812148] [12411] ERROR V4L2 v4l2_subdevice.cpp:1192 'ov13b10 23-0036': Unable to get rectangle 0 on pad 0/0: Inappropriate ioctl for device
+[0:34:58.381816054] [12411]  WARN CameraSensor camera_sensor_legacy.cpp:881 'ov13b10 23-0036': The analogue crop rectangle has been defaulted to the active area size
+[0:34:58.381826211] [12411]  WARN IPASoft soft_simple.cpp:105 IPASoft: Failed to create camera sensor helper for ov13b10
+[0:34:58.381992462] [12411]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@1/camera@36' for pipeline handler simple
+Using camera /base/soc@0/cci@ac4f000/i2c-bus@1/camera@3d as cam0
+[0:34:58.383049606] [12410]  INFO Camera camera.cpp:1215 configuring streams: (0) 1280x960-ABGR8888/sRGB
+[0:34:58.383265753] [12411]  INFO IPASoftAf af.cpp:66 Focus range 0-900, steps 112/22
+[0:34:58.383297837] [12411]  INFO IPASoft soft_simple.cpp:260 IPASoft: Exposure 8-2351, gain 1-32 (0.31)
+cam0: Capture 210 frames
+2098.610608 (0.00 fps) cam0-stream0 seq: 000000 bytesused: 4915200
+2098.643782 (30.14 fps) cam0-stream0 seq: 000001 bytesused: 4915200
+2098.677074 (30.04 fps) cam0-stream0 seq: 000002 bytesused: 4915200
+2098.710358 (30.04 fps) cam0-stream0 seq: 000003 bytesused: 4915200
+2098.743778 (29.92 fps) cam0-stream0 seq: 000004 bytesused: 4915200
+2098.777042 (30.06 fps) cam0-stream0 seq: 000005 bytesused: 4915200
+2098.810387 (29.99 fps) cam0-stream0 seq: 000006 bytesused: 4915200
+2098.843588 (30.12 fps) cam0-stream0 seq: 000007 bytesused: 4915200
+[0:34:58.891696789] [12412] DEBUG IPASoftAf af.cpp:94 Starting autofocus scan
+2098.876954 (29.97 fps) cam0-stream0 seq: 000008 bytesused: 4915200
+2098.910221 (30.06 fps) cam0-stream0 seq: 000009 bytesused: 4915200
+2098.943529 (30.02 fps) cam0-stream0 seq: 000010 bytesused: 4915200
+2098.976818 (30.04 fps) cam0-stream0 seq: 000011 bytesused: 4915200
+2099.010080 (30.06 fps) cam0-stream0 seq: 000012 bytesused: 4915200
+[0:34:59.037873253] [12412] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 0 (sharpness 48210)
+2099.043298 (30.10 fps) cam0-stream0 seq: 000013 bytesused: 4915200
+2099.076672 (29.96 fps) cam0-stream0 seq: 000014 bytesused: 4915200
+2099.109955 (30.05 fps) cam0-stream0 seq: 000015 bytesused: 4915200
+2099.143245 (30.04 fps) cam0-stream0 seq: 000016 bytesused: 4915200
+2099.176522 (30.05 fps) cam0-stream0 seq: 000017 bytesused: 4915200
+2099.209805 (30.05 fps) cam0-stream0 seq: 000018 bytesused: 4915200
+2099.243052 (30.08 fps) cam0-stream0 seq: 000019 bytesused: 4915200
+[0:34:59.290959622] [12412] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 112 (sharpness 74275)
+2099.276318 (30.06 fps) cam0-stream0 seq: 000020 bytesused: 4915200
+2099.309665 (29.99 fps) cam0-stream0 seq: 000021 bytesused: 4915200
+2099.342951 (30.04 fps) cam0-stream0 seq: 000022 bytesused: 4915200
+2099.376235 (30.04 fps) cam0-stream0 seq: 000023 bytesused: 4915200
+2099.409521 (30.04 fps) cam0-stream0 seq: 000024 bytesused: 4915200
+2099.442712 (30.13 fps) cam0-stream0 seq: 000025 bytesused: 4915200
+2099.475907 (30.13 fps) cam0-stream0 seq: 000026 bytesused: 4915200
+2099.509371 (29.88 fps) cam0-stream0 seq: 000027 bytesused: 4915200
+[0:34:59.557292657] [12412] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 224 (sharpness 91184)
+2099.542657 (30.04 fps) cam0-stream0 seq: 000028 bytesused: 4915200
+2099.575940 (30.05 fps) cam0-stream0 seq: 000029 bytesused: 4915200
+2099.609232 (30.04 fps) cam0-stream0 seq: 000030 bytesused: 4915200
+2099.642460 (30.10 fps) cam0-stream0 seq: 000031 bytesused: 4915200
+2099.675706 (30.08 fps) cam0-stream0 seq: 000032 bytesused: 4915200
+2099.709018 (30.02 fps) cam0-stream0 seq: 000033 bytesused: 4915200
+2099.742370 (29.98 fps) cam0-stream0 seq: 000034 bytesused: 4915200
+2099.775597 (30.10 fps) cam0-stream0 seq: 000035 bytesused: 4915200
+[0:34:59.824165593] [12412] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 336 (sharpness 61459)
+2099.808938 (29.99 fps) cam0-stream0 seq: 000036 bytesused: 4915200
+2099.842254 (30.02 fps) cam0-stream0 seq: 000037 bytesused: 4915200
+2099.875452 (30.12 fps) cam0-stream0 seq: 000038 bytesused: 4915200
+2099.908709 (30.07 fps) cam0-stream0 seq: 000039 bytesused: 4915200
+2099.942070 (29.98 fps) cam0-stream0 seq: 000040 bytesused: 4915200
+2099.975309 (30.09 fps) cam0-stream0 seq: 000041 bytesused: 4915200
+2100.008646 (30.00 fps) cam0-stream0 seq: 000042 bytesused: 4915200
+2100.041875 (30.09 fps) cam0-stream0 seq: 000043 bytesused: 4915200
+2100.075224 (29.99 fps) cam0-stream0 seq: 000044 bytesused: 4915200
+[0:35:00.103121540] [12412] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 448 (sharpness 35104)
+2100.108410 (30.13 fps) cam0-stream0 seq: 000045 bytesused: 4915200
+2100.141789 (29.96 fps) cam0-stream0 seq: 000046 bytesused: 4915200
+2100.175071 (30.05 fps) cam0-stream0 seq: 000047 bytesused: 4915200
+2100.208355 (30.04 fps) cam0-stream0 seq: 000048 bytesused: 4915200
+2100.241638 (30.05 fps) cam0-stream0 seq: 000049 bytesused: 4915200
+2100.274837 (30.12 fps) cam0-stream0 seq: 000050 bytesused: 4915200
+2100.308188 (29.98 fps) cam0-stream0 seq: 000051 bytesused: 4915200
+[0:35:00.357281511] [12412] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 560 (sharpness 21575)
+2100.341488 (30.03 fps) cam0-stream0 seq: 000052 bytesused: 4915200
+2100.374758 (30.06 fps) cam0-stream0 seq: 000053 bytesused: 4915200
+2100.408028 (30.06 fps) cam0-stream0 seq: 000054 bytesused: 4915200
+2100.441375 (29.99 fps) cam0-stream0 seq: 000055 bytesused: 4915200
+2100.474641 (30.06 fps) cam0-stream0 seq: 000056 bytesused: 4915200
+2100.507925 (30.04 fps) cam0-stream0 seq: 000057 bytesused: 4915200
+2100.541116 (30.13 fps) cam0-stream0 seq: 000058 bytesused: 4915200
+[0:35:00.588299789] [12413]  INFO Benchmark benchmark.cpp:83 Processed 30 frames in 515370us, 17179 us/frame
+2100.574630 (29.84 fps) cam0-stream0 seq: 000059 bytesused: 4915200
+2100.607728 (30.21 fps) cam0-stream0 seq: 000060 bytesused: 4915200
+[0:35:00.622430422] [12412] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 672 (sharpness 14612)
+2100.641001 (30.05 fps) cam0-stream0 seq: 000061 bytesused: 4915200
+2100.674345 (29.99 fps) cam0-stream0 seq: 000062 bytesused: 4915200
+2100.707630 (30.04 fps) cam0-stream0 seq: 000063 bytesused: 4915200
+2100.740915 (30.04 fps) cam0-stream0 seq: 000064 bytesused: 4915200
+2100.774121 (30.12 fps) cam0-stream0 seq: 000065 bytesused: 4915200
+2100.807488 (29.97 fps) cam0-stream0 seq: 000066 bytesused: 4915200
+2100.840758 (30.06 fps) cam0-stream0 seq: 000067 bytesused: 4915200
+2100.873876 (30.20 fps) cam0-stream0 seq: 000068 bytesused: 4915200
+[0:35:00.889256066] [12412] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 784 (sharpness 11095)
+2100.907347 (29.88 fps) cam0-stream0 seq: 000069 bytesused: 4915200
+2100.940630 (30.05 fps) cam0-stream0 seq: 000070 bytesused: 4915200
+2100.973822 (30.13 fps) cam0-stream0 seq: 000071 bytesused: 4915200
+2101.007017 (30.13 fps) cam0-stream0 seq: 000072 bytesused: 4915200
+2101.040483 (29.88 fps) cam0-stream0 seq: 000073 bytesused: 4915200
+2101.073766 (30.05 fps) cam0-stream0 seq: 000074 bytesused: 4915200
+2101.107000 (30.09 fps) cam0-stream0 seq: 000075 bytesused: 4915200
+2101.140290 (30.04 fps) cam0-stream0 seq: 000076 bytesused: 4915200
+[0:35:01.156478379] [12412] DEBUG IPASoftAf af.cpp:154 Coarse focus sample at 896 (sharpness 8773)
+2101.173625 (30.00 fps) cam0-stream0 seq: 000077 bytesused: 4915200
+2101.206814 (30.13 fps) cam0-stream0 seq: 000078 bytesused: 4915200
+2101.240127 (30.02 fps) cam0-stream0 seq: 000079 bytesused: 4915200
+2101.273474 (29.99 fps) cam0-stream0 seq: 000080 bytesused: 4915200
+2101.306749 (30.05 fps) cam0-stream0 seq: 000081 bytesused: 4915200
+2101.340054 (30.03 fps) cam0-stream0 seq: 000082 bytesused: 4915200
+2101.373335 (30.05 fps) cam0-stream0 seq: 000083 bytesused: 4915200
+2101.406559 (30.10 fps) cam0-stream0 seq: 000084 bytesused: 4915200
+[0:35:01.434163379] [12412] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 112 (sharpness 67883)
+2101.439840 (30.05 fps) cam0-stream0 seq: 000085 bytesused: 4915200
+2101.473184 (29.99 fps) cam0-stream0 seq: 000086 bytesused: 4915200
+2101.506469 (30.04 fps) cam0-stream0 seq: 000087 bytesused: 4915200
+2101.539761 (30.04 fps) cam0-stream0 seq: 000088 bytesused: 4915200
+2101.573045 (30.04 fps) cam0-stream0 seq: 000089 bytesused: 4915200
+2101.606233 (30.13 fps) cam0-stream0 seq: 000090 bytesused: 4915200
+2101.639613 (29.96 fps) cam0-stream0 seq: 000091 bytesused: 4915200
+2101.672804 (30.13 fps) cam0-stream0 seq: 000092 bytesused: 4915200
+[0:35:01.699718179] [12412] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 134 (sharpness 73380)
+2101.706181 (29.96 fps) cam0-stream0 seq: 000093 bytesused: 4915200
+2101.739409 (30.10 fps) cam0-stream0 seq: 000094 bytesused: 4915200
+2101.772754 (29.99 fps) cam0-stream0 seq: 000095 bytesused: 4915200
+2101.805980 (30.10 fps) cam0-stream0 seq: 000096 bytesused: 4915200
+2101.839320 (29.99 fps) cam0-stream0 seq: 000097 bytesused: 4915200
+2101.872605 (30.04 fps) cam0-stream0 seq: 000098 bytesused: 4915200
+2101.905797 (30.13 fps) cam0-stream0 seq: 000099 bytesused: 4915200
+[0:35:01.955113524] [12412] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 156 (sharpness 78972)
+2101.939171 (29.96 fps) cam0-stream0 seq: 000100 bytesused: 4915200
+2101.972464 (30.04 fps) cam0-stream0 seq: 000101 bytesused: 4915200
+2102.005566 (30.21 fps) cam0-stream0 seq: 000102 bytesused: 4915200
+2102.039052 (29.86 fps) cam0-stream0 seq: 000103 bytesused: 4915200
+2102.072319 (30.06 fps) cam0-stream0 seq: 000104 bytesused: 4915200
+2102.105596 (30.05 fps) cam0-stream0 seq: 000105 bytesused: 4915200
+2102.138929 (30.00 fps) cam0-stream0 seq: 000106 bytesused: 4915200
+2102.172169 (30.08 fps) cam0-stream0 seq: 000107 bytesused: 4915200
+[0:35:02.222637246] [12412] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 178 (sharpness 83048)
+2102.205454 (30.04 fps) cam0-stream0 seq: 000108 bytesused: 4915200
+2102.238771 (30.01 fps) cam0-stream0 seq: 000109 bytesused: 4915200
+2102.271933 (30.15 fps) cam0-stream0 seq: 000110 bytesused: 4915200
+2102.305295 (29.97 fps) cam0-stream0 seq: 000111 bytesused: 4915200
+2102.338514 (30.10 fps) cam0-stream0 seq: 000112 bytesused: 4915200
+2102.371878 (29.97 fps) cam0-stream0 seq: 000113 bytesused: 4915200
+2102.405170 (30.04 fps) cam0-stream0 seq: 000114 bytesused: 4915200
+2102.438439 (30.06 fps) cam0-stream0 seq: 000115 bytesused: 4915200
+[0:35:02.490750920] [12412] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 200 (sharpness 84080)
+2102.471739 (30.03 fps) cam0-stream0 seq: 000116 bytesused: 4915200
+2102.505019 (30.05 fps) cam0-stream0 seq: 000117 bytesused: 4915200
+2102.538220 (30.12 fps) cam0-stream0 seq: 000118 bytesused: 4915200
+2102.571569 (29.99 fps) cam0-stream0 seq: 000119 bytesused: 4915200
+2102.604875 (30.02 fps) cam0-stream0 seq: 000120 bytesused: 4915200
+2102.638175 (30.03 fps) cam0-stream0 seq: 000121 bytesused: 4915200
+2102.671448 (30.05 fps) cam0-stream0 seq: 000122 bytesused: 4915200
+2102.704733 (30.04 fps) cam0-stream0 seq: 000123 bytesused: 4915200
+2102.737957 (30.10 fps) cam0-stream0 seq: 000124 bytesused: 4915200
+[0:35:02.765543033] [12412] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 222 (sharpness 88261)
+2102.771228 (30.06 fps) cam0-stream0 seq: 000125 bytesused: 4915200
+2102.804577 (29.99 fps) cam0-stream0 seq: 000126 bytesused: 4915200
+2102.837811 (30.09 fps) cam0-stream0 seq: 000127 bytesused: 4915200
+2102.871156 (29.99 fps) cam0-stream0 seq: 000128 bytesused: 4915200
+2102.904441 (30.04 fps) cam0-stream0 seq: 000129 bytesused: 4915200
+2102.937721 (30.05 fps) cam0-stream0 seq: 000130 bytesused: 4915200
+2102.970919 (30.12 fps) cam0-stream0 seq: 000131 bytesused: 4915200
+2103.004294 (29.96 fps) cam0-stream0 seq: 000132 bytesused: 4915200
+[0:35:03.019946807] [12412] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 244 (sharpness 86980)
+2103.037533 (30.09 fps) cam0-stream0 seq: 000133 bytesused: 4915200
+2103.070867 (30.00 fps) cam0-stream0 seq: 000134 bytesused: 4915200
+2103.104153 (30.04 fps) cam0-stream0 seq: 000135 bytesused: 4915200
+2103.137436 (30.05 fps) cam0-stream0 seq: 000136 bytesused: 4915200
+2103.170629 (30.13 fps) cam0-stream0 seq: 000137 bytesused: 4915200
+2103.203947 (30.01 fps) cam0-stream0 seq: 000138 bytesused: 4915200
+2103.237288 (29.99 fps) cam0-stream0 seq: 000139 bytesused: 4915200
+2103.270575 (30.04 fps) cam0-stream0 seq: 000140 bytesused: 4915200
+[0:35:03.285116552] [12412] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 266 (sharpness 79510)
+2103.303816 (30.08 fps) cam0-stream0 seq: 000141 bytesused: 4915200
+2103.337099 (30.05 fps) cam0-stream0 seq: 000142 bytesused: 4915200
+2103.370430 (30.00 fps) cam0-stream0 seq: 000143 bytesused: 4915200
+2103.403623 (30.13 fps) cam0-stream0 seq: 000144 bytesused: 4915200
+2103.436998 (29.96 fps) cam0-stream0 seq: 000145 bytesused: 4915200
+2103.470289 (30.04 fps) cam0-stream0 seq: 000146 bytesused: 4915200
+2103.503573 (30.04 fps) cam0-stream0 seq: 000147 bytesused: 4915200
+2103.536814 (30.08 fps) cam0-stream0 seq: 000148 bytesused: 4915200
+[0:35:03.553629449] [12412] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 288 (sharpness 75077)
+2103.570142 (30.00 fps) cam0-stream0 seq: 000149 bytesused: 4915200
+2103.603344 (30.12 fps) cam0-stream0 seq: 000150 bytesused: 4915200
+2103.636663 (30.01 fps) cam0-stream0 seq: 000151 bytesused: 4915200
+2103.669993 (30.00 fps) cam0-stream0 seq: 000152 bytesused: 4915200
+2103.703278 (30.04 fps) cam0-stream0 seq: 000153 bytesused: 4915200
+2103.736533 (30.07 fps) cam0-stream0 seq: 000154 bytesused: 4915200
+2103.769849 (30.02 fps) cam0-stream0 seq: 000155 bytesused: 4915200
+2103.803139 (30.04 fps) cam0-stream0 seq: 000156 bytesused: 4915200
+[0:35:03.830984550] [12412] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 310 (sharpness 66251)
+2103.836336 (30.12 fps) cam0-stream0 seq: 000157 bytesused: 4915200
+2103.869708 (29.97 fps) cam0-stream0 seq: 000158 bytesused: 4915200
+2103.902994 (30.04 fps) cam0-stream0 seq: 000159 bytesused: 4915200
+2103.936194 (30.12 fps) cam0-stream0 seq: 000160 bytesused: 4915200
+2103.969545 (29.98 fps) cam0-stream0 seq: 000161 bytesused: 4915200
+2104.002844 (30.03 fps) cam0-stream0 seq: 000162 bytesused: 4915200
+2104.036045 (30.12 fps) cam0-stream0 seq: 000163 bytesused: 4915200
+2104.069404 (29.98 fps) cam0-stream0 seq: 000164 bytesused: 4915200
+[0:35:04.097404982] [12412] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 332 (sharpness 62671)
+[0:35:04.097502378] [12412]  INFO IPASoftAf af.cpp:191 Autofocus completed at 222 (sharpness 88261)
+2104.102692 (30.04 fps) cam0-stream0 seq: 000165 bytesused: 4915200
+2104.135979 (30.04 fps) cam0-stream0 seq: 000166 bytesused: 4915200
+2104.169250 (30.06 fps) cam0-stream0 seq: 000167 bytesused: 4915200
+2104.202558 (30.02 fps) cam0-stream0 seq: 000168 bytesused: 4915200
+2104.235782 (30.10 fps) cam0-stream0 seq: 000169 bytesused: 4915200
+2104.269128 (29.99 fps) cam0-stream0 seq: 000170 bytesused: 4915200
+2104.302329 (30.12 fps) cam0-stream0 seq: 000171 bytesused: 4915200
+2104.335635 (30.02 fps) cam0-stream0 seq: 000172 bytesused: 4915200
+2104.368983 (29.99 fps) cam0-stream0 seq: 000173 bytesused: 4915200
+2104.402266 (30.05 fps) cam0-stream0 seq: 000174 bytesused: 4915200
+2104.435551 (30.04 fps) cam0-stream0 seq: 000175 bytesused: 4915200
+2104.468839 (30.04 fps) cam0-stream0 seq: 000176 bytesused: 4915200
+2104.502028 (30.13 fps) cam0-stream0 seq: 000177 bytesused: 4915200
+2104.535402 (29.96 fps) cam0-stream0 seq: 000178 bytesused: 4915200
+2104.568690 (30.04 fps) cam0-stream0 seq: 000179 bytesused: 4915200
+2104.601793 (30.21 fps) cam0-stream0 seq: 000180 bytesused: 4915200
+2104.635262 (29.88 fps) cam0-stream0 seq: 000181 bytesused: 4915200
+2104.668546 (30.04 fps) cam0-stream0 seq: 000182 bytesused: 4915200
+2104.701815 (30.06 fps) cam0-stream0 seq: 000183 bytesused: 4915200
+2104.735108 (30.04 fps) cam0-stream0 seq: 000184 bytesused: 4915200
+2104.768402 (30.04 fps) cam0-stream0 seq: 000185 bytesused: 4915200
+2104.801687 (30.04 fps) cam0-stream0 seq: 000186 bytesused: 4915200
+2104.834972 (30.04 fps) cam0-stream0 seq: 000187 bytesused: 4915200
+2104.868253 (30.05 fps) cam0-stream0 seq: 000188 bytesused: 4915200
+2104.901515 (30.06 fps) cam0-stream0 seq: 000189 bytesused: 4915200
+2104.934677 (30.15 fps) cam0-stream0 seq: 000190 bytesused: 4915200
+2104.968105 (29.92 fps) cam0-stream0 seq: 000191 bytesused: 4915200
+2105.001397 (30.04 fps) cam0-stream0 seq: 000192 bytesused: 4915200
+2105.034682 (30.04 fps) cam0-stream0 seq: 000193 bytesused: 4915200
+2105.067966 (30.04 fps) cam0-stream0 seq: 000194 bytesused: 4915200
+2105.101199 (30.09 fps) cam0-stream0 seq: 000195 bytesused: 4915200
+2105.134453 (30.07 fps) cam0-stream0 seq: 000196 bytesused: 4915200
+2105.167817 (29.97 fps) cam0-stream0 seq: 000197 bytesused: 4915200
+2105.201043 (30.10 fps) cam0-stream0 seq: 000198 bytesused: 4915200
+2105.234388 (29.99 fps) cam0-stream0 seq: 000199 bytesused: 4915200
+2105.267673 (30.04 fps) cam0-stream0 seq: 000200 bytesused: 4915200
+2105.300958 (30.04 fps) cam0-stream0 seq: 000201 bytesused: 4915200
+2105.334163 (30.12 fps) cam0-stream0 seq: 000202 bytesused: 4915200
+2105.367528 (29.97 fps) cam0-stream0 seq: 000203 bytesused: 4915200
+2105.400808 (30.05 fps) cam0-stream0 seq: 000204 bytesused: 4915200
+2105.434101 (30.04 fps) cam0-stream0 seq: 000205 bytesused: 4915200
+2105.467389 (30.04 fps) cam0-stream0 seq: 000206 bytesused: 4915200
+2105.500648 (30.07 fps) cam0-stream0 seq: 000207 bytesused: 4915200
+2105.533958 (30.02 fps) cam0-stream0 seq: 000208 bytesused: 4915200
+2105.567236 (30.05 fps) cam0-stream0 seq: 000209 bytesused: 4915200
+Removed '/run/user/1001/systemd/user/pipewire.service'.
+Removed '/run/user/1001/systemd/user/pipewire.socket'.
+Removed '/run/user/1001/systemd/user/wireplumber.service'.
+Removed '/run/user/1000/systemd/user/pipewire.service'.
+Removed '/run/user/1000/systemd/user/pipewire.socket'.
+Removed '/run/user/1000/systemd/user/wireplumber.service'.
+Running as unit: thyme-camera-preview-retry.service; invocation ID: fada7db8ef31440bbcfe247dadec575a

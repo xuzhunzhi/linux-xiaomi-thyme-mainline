@@ -1,0 +1,14 @@
+Created symlink '/run/user/1001/systemd/user/pipewire.service' → '/dev/null'.
+Created symlink '/run/user/1001/systemd/user/pipewire.socket' → '/dev/null'.
+Created symlink '/run/user/1001/systemd/user/wireplumber.service' → '/dev/null'.
+on
+auto
+on
+active
+21-000c
+21-000c
+
+Camera Controls
+
+                 focus_absolute 0x009a090a (int)    : min=0 max=1023 step=1 default=0 value=0 flags=has-min-max
+suspended

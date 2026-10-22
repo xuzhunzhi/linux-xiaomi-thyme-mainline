@@ -1,0 +1,518 @@
+// SPDX-License-Identifier: GPL-2.0-only
+// Copyright (c) 2026 FIXME
+// Generated with linux-mdss-dsi-panel-driver-generator from vendor device tree:
+//   Copyright (c) 2013, The Linux Foundation. All rights reserved. (FIXME)
+
+#include <linux/backlight.h>
+#include <linux/delay.h>
+#include <linux/gpio/consumer.h>
+#include <linux/mod_devicetable.h>
+#include <linux/module.h>
+#include <linux/mutex.h>
+#include <linux/regulator/consumer.h>
+
+#include <video/mipi_display.h>
+
+#include <drm/display/drm_dsc.h>
+#include <drm/display/drm_dsc_helper.h>
+#include <drm/drm_crtc.h>
+#include <drm/drm_mipi_dsi.h>
+#include <drm/drm_modes.h>
+#include <drm/drm_panel.h>
+#include <drm/drm_probe_helper.h>
+
+struct j2s_mp_42_02_0b_dsc {
+	struct drm_panel panel;
+	struct mipi_dsi_device *dsi;
+	struct drm_dsc_config dsc;
+	struct regulator_bulk_data *supplies;
+	struct gpio_desc *reset_gpio;
+	struct drm_connector *connector;
+	/* Serialize brightness transfers with reset, init and power-off. */
+	struct mutex lock;
+	bool prepared;
+	u16 brightness;
+};
+
+static const struct regulator_bulk_data j2s_mp_42_02_0b_dsc_supplies[] = {
+	{ .supply = "vddio" },
+	{ .supply = "vci" },
+};
+
+static inline
+struct j2s_mp_42_02_0b_dsc *to_j2s_mp_42_02_0b_dsc(struct drm_panel *panel)
+{
+	return container_of(panel, struct j2s_mp_42_02_0b_dsc, panel);
+}
+
+static void j2s_mp_42_02_0b_dsc_reset(struct j2s_mp_42_02_0b_dsc *ctx)
+{
+	gpiod_set_value_cansleep(ctx->reset_gpio, 0);
+	usleep_range(1000, 2000);
+	gpiod_set_value_cansleep(ctx->reset_gpio, 1);
+	usleep_range(1000, 2000);
+	gpiod_set_value_cansleep(ctx->reset_gpio, 0);
+	usleep_range(10000, 11000);
+}
+
+static int j2s_mp_42_02_0b_dsc_on(struct j2s_mp_42_02_0b_dsc *ctx, u8 rate)
+{
+	struct mipi_dsi_multi_context dsi_ctx = { .dsi = ctx->dsi };
+
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x3b, 0x00, 0x18, 0x00, 0x18);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x03, 0x01);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x90, 0x01);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x91,
+				     0x89, 0x28, 0x00, 0x0c, 0xc2, 0x00, 0x03,
+				     0x1c, 0x01, 0x7e, 0x00, 0x0f, 0x08, 0xbb,
+				     0x04, 0x3d, 0x10, 0xf0);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, MIPI_DCS_WRITE_MEMORY_START);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0xf0,
+				     0x55, 0xaa, 0x52, 0x08, 0x00);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0xc0, 0x66, 0xf3, 0xc1);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x6f, 0x06);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0xb5, 0x2b, 0x0a, 0x32);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x6f, 0x0b);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0xb5, 0x33, 0x23, 0x2b);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0xf0,
+				     0x55, 0xaa, 0x52, 0x08, 0x01);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x6f, 0x01);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0xd2, 0x00, 0x22, 0x33);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0xce,
+				     0x00, 0x00, 0x01, 0x00, 0x04);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0xc3,
+				     0x95, 0x01, 0x92, 0xd0, 0x22, 0x02, 0x00);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, MIPI_DCS_WRITE_CONTROL_DISPLAY,
+				     0x20);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x35);
+	mipi_dsi_dcs_set_column_address_multi(&dsi_ctx, 0x0000, 0x0437);
+	mipi_dsi_dcs_set_page_address_multi(&dsi_ctx, 0x0000, 0x0923);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0xff, 0xaa, 0x55, 0xa5, 0x81);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x6f, 0x0f);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0xfd, 0x01);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x6f, 0x10);
+	mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0xfd, 0x41);
+	/*
+	 * DDIC refresh-rate select (j2s_mp_42_02_0b_dsc_rate_code()).
+	 * mipi_dsi_dcs_write_seq_multi() expands to a const array initialiser,
+	 * so it rejects a runtime value; branch on the two constant cases.
+	 */
+	if (rate == 0x02)
+		mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x2f, 0x02);
+	else
+		mipi_dsi_dcs_write_seq_multi(&dsi_ctx, 0x2f, 0x01);
+	mipi_dsi_dcs_exit_sleep_mode_multi(&dsi_ctx);
+	mipi_dsi_msleep(&dsi_ctx, 120);
+	mipi_dsi_dcs_set_display_on_multi(&dsi_ctx);
+	mipi_dsi_msleep(&dsi_ctx, 20);
+
+	return dsi_ctx.accum_err;
+}
+
+static int j2s_mp_42_02_0b_dsc_off(struct j2s_mp_42_02_0b_dsc *ctx)
+{
+	struct mipi_dsi_multi_context dsi_ctx = { .dsi = ctx->dsi };
+
+	mipi_dsi_dcs_set_display_off_multi(&dsi_ctx);
+	mipi_dsi_dcs_enter_sleep_mode_multi(&dsi_ctx);
+	mipi_dsi_msleep(&dsi_ctx, 120);
+
+	return dsi_ctx.accum_err;
+}
+
+/*
+ * The DDIC frame rate is selected by the 0x2f register, so the panel must be
+ * told which rate to run at every time it is (re)initialised. In DRM a
+ * refresh-rate change is a mode change, i.e. a full modeset: the CRTC is
+ * disabled and re-enabled, which makes drm_panel_bridge call our
+ * unprepare()/prepare()/enable() again. At that point the connector's atomic
+ * state already points at the newly chosen mode, so we read it here and pick
+ * the matching DDIC refresh-rate code.
+ *
+ * Per the vendor DT the code is 0x01 for the 60 Hz timing and 0x02 for the
+ * 90 Hz one. two_f_swap flips it, settable at runtime (no rebuild) to A/B
+ * the polarity on-device.
+ */
+static bool two_f_swap;
+module_param(two_f_swap, bool, 0644);
+MODULE_PARM_DESC(two_f_swap,
+		 "Invert the DDIC 0x2f refresh code (test/AB only)");
+
+/* Returns the 0x2f refresh-rate code to send to the DDIC. */
+static u8 j2s_mp_42_02_0b_dsc_rate_code(struct j2s_mp_42_02_0b_dsc *ctx)
+{
+	struct drm_connector_state *cstate = ctx->connector ?
+		ctx->connector->state : NULL;
+	struct drm_crtc_state *crstate = (cstate && cstate->crtc) ?
+		cstate->crtc->state : NULL;
+	u8 code;
+
+	if (crstate && crstate->adjusted_mode.vtotal) {
+		int req = drm_mode_vrefresh(&crstate->mode);
+		int adj = drm_mode_vrefresh(&crstate->adjusted_mode);
+
+		code = adj >= 90 ? 0x02 : 0x01;
+		dev_info(&ctx->dsi->dev,
+			 "thyme-panel: requested \"%s\"=%dHz adjusted \"%s\"=%dHz -> 0x2f=%02x%s\n",
+			 crstate->mode.name, req,
+			 crstate->adjusted_mode.name, adj, code,
+			 two_f_swap ? " (swapped)" : "");
+	} else {
+		code = 0x02;
+		dev_info(&ctx->dsi->dev,
+			 "thyme-panel: no crtc state, assume 90Hz\n");
+	}
+
+	if (two_f_swap)
+		code = (code == 0x02) ? 0x01 : 0x02;
+
+	return code;
+}
+
+static int j2s_mp_42_02_0b_dsc_prepare(struct drm_panel *panel)
+{
+	struct j2s_mp_42_02_0b_dsc *ctx = to_j2s_mp_42_02_0b_dsc(panel);
+	struct device *dev = &ctx->dsi->dev;
+	struct drm_dsc_picture_parameter_set pps;
+	int ret;
+
+	mutex_lock(&ctx->lock);
+	if (ctx->prepared) {
+		ret = 0;
+		goto unlock;
+	}
+
+	ret = regulator_bulk_enable(ARRAY_SIZE(j2s_mp_42_02_0b_dsc_supplies), ctx->supplies);
+	if (ret < 0) {
+		dev_err(dev, "Failed to enable regulators: %d\n", ret);
+		goto unlock;
+	}
+
+	j2s_mp_42_02_0b_dsc_reset(ctx);
+
+	ret = j2s_mp_42_02_0b_dsc_on(ctx, j2s_mp_42_02_0b_dsc_rate_code(ctx));
+	if (ret < 0) {
+		dev_err(dev, "Failed to initialize panel: %d\n", ret);
+		goto power_off;
+	}
+
+	drm_dsc_pps_payload_pack(&pps, &ctx->dsc);
+
+	ret = mipi_dsi_picture_parameter_set(ctx->dsi, &pps);
+	if (ret < 0) {
+		dev_err(panel->dev, "failed to transmit PPS: %d\n", ret);
+		goto power_off;
+	}
+
+	ret = mipi_dsi_compression_mode(ctx->dsi, true);
+	if (ret < 0) {
+		dev_err(dev, "failed to enable compression mode: %d\n", ret);
+		goto power_off;
+	}
+
+	msleep(28); /* TODO: Is this panel-dependent? */
+	ctx->prepared = true;
+	ret = 0;
+	goto unlock;
+
+power_off:
+	gpiod_set_value_cansleep(ctx->reset_gpio, 1);
+	regulator_bulk_disable(ARRAY_SIZE(j2s_mp_42_02_0b_dsc_supplies), ctx->supplies);
+unlock:
+	mutex_unlock(&ctx->lock);
+	return ret;
+}
+
+static int j2s_mp_42_02_0b_dsc_unprepare(struct drm_panel *panel)
+{
+	struct j2s_mp_42_02_0b_dsc *ctx = to_j2s_mp_42_02_0b_dsc(panel);
+	struct device *dev = &ctx->dsi->dev;
+	int ret;
+
+	mutex_lock(&ctx->lock);
+	if (!ctx->prepared)
+		goto unlock;
+
+	ctx->prepared = false;
+	ret = j2s_mp_42_02_0b_dsc_off(ctx);
+	if (ret < 0)
+		dev_err(dev, "Failed to un-initialize panel: %d\n", ret);
+
+	gpiod_set_value_cansleep(ctx->reset_gpio, 1);
+	regulator_bulk_disable(ARRAY_SIZE(j2s_mp_42_02_0b_dsc_supplies), ctx->supplies);
+	ctx->brightness = 0;
+
+unlock:
+	mutex_unlock(&ctx->lock);
+	return 0;
+}
+
+/* 60 Hz: hfp16/hbp8/hpw8, vbp560/vfp600/vpw32 (vtotal 3532) */
+static const struct drm_display_mode j2s_mp_42_02_0b_dsc_mode_60 = {
+	.clock = 1112 * 3532 * 60 / 1000,
+	.hdisplay = 1080,
+	.hsync_start = 1080 + 16,
+	.hsync_end = 1080 + 16 + 8,
+	.htotal = 1080 + 16 + 8 + 8,
+	.vdisplay = 2340,
+	.vsync_start = 2340 + 600,
+	.vsync_end = 2340 + 600 + 32,
+	.vtotal = 2340 + 600 + 32 + 560,
+	.width_mm = 710,
+	.height_mm = 1537,
+	.type = DRM_MODE_TYPE_DRIVER,
+};
+
+/*
+ * 90 Hz: hfp16/hbp8/hpw8, vbp8/vfp4/vpw4 (vtotal 2356). Same DSI pixel clock
+ * as 60 Hz - the panel raises its refresh rate purely by shrinking the
+ * vertical blanking, exactly as in the vendor DT (3532 * 60 == 2356 * 90).
+ */
+static const struct drm_display_mode j2s_mp_42_02_0b_dsc_mode_90 = {
+	.clock = 1112 * 2356 * 90 / 1000,
+	.hdisplay = 1080,
+	.hsync_start = 1080 + 16,
+	.hsync_end = 1080 + 16 + 8,
+	.htotal = 1080 + 16 + 8 + 8,
+	.vdisplay = 2340,
+	.vsync_start = 2340 + 8,
+	.vsync_end = 2340 + 8 + 4,
+	.vtotal = 2340 + 8 + 4 + 4,
+	.width_mm = 710,
+	.height_mm = 1537,
+	.type = DRM_MODE_TYPE_DRIVER | DRM_MODE_TYPE_PREFERRED,
+};
+
+static int j2s_mp_42_02_0b_dsc_get_modes(struct drm_panel *panel,
+					 struct drm_connector *connector)
+{
+	struct j2s_mp_42_02_0b_dsc *ctx = to_j2s_mp_42_02_0b_dsc(panel);
+	const struct drm_display_mode *modes[] = {
+		&j2s_mp_42_02_0b_dsc_mode_90,
+		&j2s_mp_42_02_0b_dsc_mode_60,
+	};
+	int i;
+
+	/*
+	 * Remember the connector so prepare() can find out which refresh rate
+	 * userspace selected (see j2s_mp_42_02_0b_dsc_refresh()).
+	 */
+	ctx->connector = connector;
+
+	for (i = 0; i < ARRAY_SIZE(modes); i++) {
+		struct drm_display_mode *mode;
+
+		mode = drm_mode_duplicate(connector->dev, modes[i]);
+		if (!mode)
+			return i;
+		drm_mode_set_name(mode);
+		drm_mode_probed_add(connector, mode);
+	}
+
+	connector->display_info.width_mm = 71;
+	connector->display_info.height_mm = 154;
+
+	return ARRAY_SIZE(modes);
+}
+
+static const struct drm_panel_funcs j2s_mp_42_02_0b_dsc_panel_funcs = {
+	.prepare = j2s_mp_42_02_0b_dsc_prepare,
+	.unprepare = j2s_mp_42_02_0b_dsc_unprepare,
+	.get_modes = j2s_mp_42_02_0b_dsc_get_modes,
+};
+
+static int j2s_mp_42_02_0b_dsc_bl_update_status(struct backlight_device *bl)
+{
+	struct j2s_mp_42_02_0b_dsc *ctx = bl_get_data(bl);
+	u16 brightness = backlight_get_brightness(bl);
+	int ret = 0;
+
+	mutex_lock(&ctx->lock);
+	/* DRM replays the requested brightness when the panel is enabled. */
+	if (!ctx->prepared)
+		goto unlock;
+
+	/* Keep control commands in LP mode, as in the panel's vendor setup. */
+	ret = mipi_dsi_dcs_set_display_brightness_large(ctx->dsi, brightness);
+	if (!ret)
+		ctx->brightness = brightness;
+
+unlock:
+	mutex_unlock(&ctx->lock);
+	return ret;
+}
+
+static int j2s_mp_42_02_0b_dsc_bl_get_brightness(struct backlight_device *bl)
+{
+	struct j2s_mp_42_02_0b_dsc *ctx = bl_get_data(bl);
+	u16 brightness;
+
+	/* Avoid a BTA/read transaction on the active command-mode DSC link. */
+	mutex_lock(&ctx->lock);
+	brightness = ctx->brightness;
+	mutex_unlock(&ctx->lock);
+	return brightness;
+}
+
+static const struct backlight_ops j2s_mp_42_02_0b_dsc_bl_ops = {
+	.update_status = j2s_mp_42_02_0b_dsc_bl_update_status,
+	.get_brightness = j2s_mp_42_02_0b_dsc_bl_get_brightness,
+};
+
+static struct backlight_device *
+j2s_mp_42_02_0b_dsc_create_backlight(struct mipi_dsi_device *dsi)
+{
+	struct device *dev = &dsi->dev;
+	const struct backlight_properties props = {
+		.type = BACKLIGHT_RAW,
+		.brightness = 536,
+		.max_brightness = 2047,
+	};
+
+	return devm_backlight_device_register(dev, dev_name(dev), dev,
+					      mipi_dsi_get_drvdata(dsi),
+					      &j2s_mp_42_02_0b_dsc_bl_ops, &props);
+}
+
+static int j2s_mp_42_02_0b_dsc_probe(struct mipi_dsi_device *dsi)
+{
+	struct device *dev = &dsi->dev;
+	struct j2s_mp_42_02_0b_dsc *ctx;
+	int ret;
+
+	ctx = devm_drm_panel_alloc(dev, struct j2s_mp_42_02_0b_dsc, panel,
+				   &j2s_mp_42_02_0b_dsc_panel_funcs,
+				   DRM_MODE_CONNECTOR_DSI);
+	if (IS_ERR(ctx))
+		return PTR_ERR(ctx);
+
+	mutex_init(&ctx->lock);
+
+	ret = devm_regulator_bulk_get_const(dev,
+					    ARRAY_SIZE(j2s_mp_42_02_0b_dsc_supplies),
+					    j2s_mp_42_02_0b_dsc_supplies,
+					    &ctx->supplies);
+	if (ret < 0) {
+		dev_err(dev, "Failed to get regulators: %d\n", ret);
+		return ret;
+	}
+
+	ctx->reset_gpio = devm_gpiod_get(dev, "reset", GPIOD_OUT_HIGH);
+	if (IS_ERR(ctx->reset_gpio))
+		return dev_err_probe(dev, PTR_ERR(ctx->reset_gpio),
+				     "Failed to get reset-gpios\n");
+
+	ctx->dsi = dsi;
+	mipi_dsi_set_drvdata(dsi, ctx);
+
+	dsi->lanes = 4;
+	dsi->format = MIPI_DSI_FMT_RGB888;
+	/*
+	 * This is a COMMAND mode panel (vendor DT: qcom,mdss-dsi-panel-type =
+	 * "dsi_cmd_mode"). It must not carry any MIPI_DSI_MODE_VIDEO* flag:
+	 * the msm DSI host branches on MIPI_DSI_MODE_VIDEO when programming
+	 * itself (dsi_timing_setup()) and would then generate a video stream
+	 * instead of command-mode frames - the DDIC would never be fed.
+	 *
+	 * The vendor DT's qcom,mdss-dsi-traffic-mode = "burst_mode" is
+	 * meaningless for a command mode panel and must not be translated
+	 * into MIPI_DSI_MODE_VIDEO_BURST.
+	 */
+	dsi->mode_flags = MIPI_DSI_CLOCK_NON_CONTINUOUS | MIPI_DSI_MODE_LPM;
+
+	ctx->panel.prepare_prev_first = true;
+
+	ctx->panel.backlight = j2s_mp_42_02_0b_dsc_create_backlight(dsi);
+	if (IS_ERR(ctx->panel.backlight))
+		return dev_err_probe(dev, PTR_ERR(ctx->panel.backlight),
+				     "Failed to create backlight\n");
+
+	drm_panel_add(&ctx->panel);
+
+	/* This panel only supports DSC; unconditionally enable it */
+	dsi->dsc = &ctx->dsc;
+
+	ctx->dsc.dsc_version_major = 1;
+	ctx->dsc.dsc_version_minor = 1;
+
+	/*
+	 * Vendor DT: qcom,mdss-dsc-slice-width = <1080> (== the panel width)
+	 * with qcom,mdss-dsc-slice-per-pkt = <2>. The vendor DSI driver feeds
+	 * those into dsi_dsc_pclk_param_calc():
+	 *
+	 *   slice_per_intf = intf_width / slice_width = 1080 / 1080 = 1;
+	 *   if (slice_per_pkt > slice_per_intf) slice_per_pkt = 1;
+	 *   bytes_per_pkt  = bytes_in_slice (1080) * slice_per_pkt (1) = 1080;
+	 *   pkt_per_line   = slice_per_intf / slice_per_pkt = 1;
+	 *
+	 * i.e. on the device every line arrives as ONE DCS long write packet
+	 * carrying 1080 compressed bytes (word count 1081), one slice per line.
+	 *
+	 * This panel is the odd one out of the "42 02 0b" family: every other
+	 * variant (j1u, j2, j2-mp, j2-p1, j2-p2-1) is 540 wide / 8 bpc, this
+	 * one is 1080 wide / 10 bpc. The DDIC is told the slice geometry by the
+	 * PPS, and by its own DSC configuration registers written in the init
+	 * sequence (0x90 0x01, then the 18 byte 0x91 payload), both of which
+	 * describe a single full width slice. Feeding it two 540 wide 8 bpc
+	 * slices instead makes its decoder desynchronise: the picture comes out
+	 * as large colour blocks with misplaced edges, and even a solid frame
+	 * turns into garbage - something a plain geometry error could not do.
+	 *
+	 * The mainline DPU can express this, but only with a single DSC block:
+	 * when two blocks are multiplexed onto one interface,
+	 * dpu_hw_dsc_1_2.c programs slice_count / 2 slices per block, which is
+	 * zero for slice_count = 1. dpu_encoder_update_topology() therefore
+	 * keeps num_dsc = 1 for this panel.
+	 */
+	dsi->dsc_slice_per_pkt = 1;
+
+	ctx->dsc.slice_height = 12;
+	ctx->dsc.slice_width = 1080;
+	WARN_ON(1080 % ctx->dsc.slice_width);
+	ctx->dsc.slice_count = 1080 / ctx->dsc.slice_width;
+	ctx->dsc.pic_width = 1080;
+	ctx->dsc.pic_height = 2340;
+	ctx->dsc.bits_per_component = 10;
+	ctx->dsc.bits_per_pixel = 8 << 4; /* 4 fractional bits */
+	ctx->dsc.block_pred_enable = true;
+
+	ret = mipi_dsi_attach(dsi);
+	if (ret < 0) {
+		drm_panel_remove(&ctx->panel);
+		return dev_err_probe(dev, ret, "Failed to attach to DSI host\n");
+	}
+
+	return 0;
+}
+
+static void j2s_mp_42_02_0b_dsc_remove(struct mipi_dsi_device *dsi)
+{
+	struct j2s_mp_42_02_0b_dsc *ctx = mipi_dsi_get_drvdata(dsi);
+	int ret;
+
+	ret = mipi_dsi_detach(dsi);
+	if (ret < 0)
+		dev_err(&dsi->dev, "Failed to detach from DSI host: %d\n", ret);
+
+	drm_panel_remove(&ctx->panel);
+}
+
+static const struct of_device_id j2s_mp_42_02_0b_dsc_of_match[] = {
+	{ .compatible = "mdss,j2s-mp-42-02-0b-dsc" }, // FIXME
+	{ /* sentinel */ }
+};
+MODULE_DEVICE_TABLE(of, j2s_mp_42_02_0b_dsc_of_match);
+
+static struct mipi_dsi_driver j2s_mp_42_02_0b_dsc_driver = {
+	.probe = j2s_mp_42_02_0b_dsc_probe,
+	.remove = j2s_mp_42_02_0b_dsc_remove,
+	.driver = {
+		.name = "panel-j2s-mp-42-02-0b-dsc",
+		.of_match_table = j2s_mp_42_02_0b_dsc_of_match,
+	},
+};
+module_mipi_dsi_driver(j2s_mp_42_02_0b_dsc_driver);
+
+MODULE_AUTHOR("linux-mdss-dsi-panel-driver-generator <fix@me>"); // FIXME
+MODULE_DESCRIPTION("DRM driver for xiaomi 42 02 0b cmd mode dsc dsi panel");
+MODULE_LICENSE("GPL");

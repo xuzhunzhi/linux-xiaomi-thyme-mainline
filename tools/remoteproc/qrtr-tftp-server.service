@@ -1,0 +1,18 @@
+[Unit]
+Description=SDX55 remote filesystem (upstream TFTP over QRTR, raw instance 3)
+After=local-fs.target tqftpserv.service
+Conflicts=tqftpserv.service
+
+[Service]
+Type=simple
+ExecStartPre=/bin/mkdir -p /mnt/modemfw /var/lib/tqftpserv
+ExecStartPre=/bin/sh -c 'mountpoint -q /mnt/modemfw || mount -o ro /dev/disk/by-partlabel/modem_a /mnt/modemfw'
+ExecStartPre=/bin/sh -c '[ -e /lib/firmware/sdx55m/modem_pr ] || ln -s /mnt/modemfw/image/modem_pr /lib/firmware/sdx55m/modem_pr'
+ExecStart=/usr/local/bin/tqftpserv-sdx55 -d
+Restart=always
+RestartSec=2
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

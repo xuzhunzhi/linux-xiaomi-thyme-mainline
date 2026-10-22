@@ -1,0 +1,7 @@
+Input Image.gz SHA256: 4d73d2420a1472a9b73337d2ab7584f46c00d76e7f5fc84855a35d099c115cd1
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-menu-focus-retry.img: kernel(+dtb)=38482055 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused fbcon=font:TER16x32 log_buf_len=4M ignore_loglevel root=/dev/sda38'
+PASS: thyme-camera-menu-focus-retry.img; header/command line, kernel, DTB, gzip, padding, original image verified
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-logdump-focus-retry.img: kernel(+dtb)=38482171 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused'
+PASS: thyme-camera-logdump-focus-retry.img; header/command line, kernel, DTB, gzip, padding, original image verified
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-display-test-focus-retry.img: kernel(+dtb)=38482055 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused initcall_debug'
+PASS: thyme-camera-display-test-focus-retry.img; header/command line, kernel, DTB, gzip, padding, original image verified

@@ -1,0 +1,5 @@
+DropInPaths=/home/ubuntu/.config/systemd/user/pipewire.service.d/90-thyme-camera.conf /home/ubuntu/.config/systemd/user/pipewire.service.d/95-thyme-focus.conf
+Environment=LD_LIBRARY_PATH=/opt/thyme-camera-focus/lib
+21830 /usr/bin/gnome-shell --mode=ubuntu
+21892 /usr/libexec/gnome-shell-calendar-server
+Linux xiaomi-thyme 7.2.0-rc5-sm8250-modem #17 SMP PREEMPT Sun Oct 18 10:45:22 CST 2026 aarch64 GNU/Linux

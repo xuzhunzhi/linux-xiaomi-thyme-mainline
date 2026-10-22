@@ -1,0 +1,37 @@
+[
+  {
+    "position": 0,
+    "mean_green": 72.55854166666667,
+    "sharpness": 0.00241887250292951
+  },
+  {
+    "position": 200,
+    "mean_green": 69.14609375,
+    "sharpness": 0.0032291089162322173
+  },
+  {
+    "position": 343,
+    "mean_green": 67.85510416666666,
+    "sharpness": 0.002878357392699525
+  },
+  {
+    "position": 450,
+    "mean_green": 65.85333333333334,
+    "sharpness": 0.0029383441926510516
+  },
+  {
+    "position": 600,
+    "mean_green": 64.44072916666667,
+    "sharpness": 0.002978926439591671
+  },
+  {
+    "position": 750,
+    "mean_green": 62.22015625,
+    "sharpness": 0.003245141853339161
+  },
+  {
+    "position": 900,
+    "mean_green": 59.82015625,
+    "sharpness": 0.0036071239562622853
+  }
+]

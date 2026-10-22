@@ -1,0 +1,13 @@
+Running as unit: thyme-camera-preview-final.service; invocation ID: 92127114e5bb4820849ca3e20a3fb6a1
+ActiveState=active
+Environment=LD_LIBRARY_PATH=/opt/thyme-camera-focus-color/lib
+
+ActiveState=active
+Environment=GIO_USE_VFS=local LD_LIBRARY_PATH=/opt/thyme-camera-focus-color/lib
+no runtime masks
+enabled
+enabled
+enabled
+no forced power
+auto
+auto

@@ -1,0 +1,180 @@
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.641609079] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 2
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.641645485] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 19
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.641679600] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.14353 exp 2351 again 32
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.663741675] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85765, 1, 1.4602  }; matrix=Matrix { [ 1.85765, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.4602 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.695907103] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85601, 1, 1.45998  }; matrix=Matrix { [ 1.85601, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45998 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.730323212] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85601, 1, 1.45998  }; matrix=Matrix { [ 1.85601, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45998 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.763157600] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85601, 1, 1.45998  }; matrix=Matrix { [ 1.85601, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45998 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.772529233] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85572, 1, 1.46588  }; temperature: 5741
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.772718192] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 121268
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.772737931] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 1940
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.772754390] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 6369
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.772767254] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 5
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.772780432] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 18
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.772794963] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.11393 exp 2351 again 32
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.796236363] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85601, 1, 1.45998  }; matrix=Matrix { [ 1.85601, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45998 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.830115232] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85572, 1, 1.46588  }; matrix=Matrix { [ 1.85572, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46588 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.863463371] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85572, 1, 1.46588  }; matrix=Matrix { [ 1.85572, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46588 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.895867393] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85572, 1, 1.46588  }; matrix=Matrix { [ 1.85572, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46588 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.910957006] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.8553, 1, 1.46412  }; temperature: 5749
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.911100444] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 121600
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.911119923] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 1936
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.911209090] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 6044
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.911226955] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 3
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.911240600] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 17
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.911255132] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.1088 exp 2351 again 32
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.930350221] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85572, 1, 1.46588  }; matrix=Matrix { [ 1.85572, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46588 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.962182368] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8553, 1, 1.46412  }; matrix=Matrix { [ 1.8553, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46412 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:31.996630196] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8553, 1, 1.46412  }; matrix=Matrix { [ 1.8553, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46412 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.029147031] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8553, 1, 1.46412  }; matrix=Matrix { [ 1.8553, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46412 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.042713829] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85498, 1, 1.46206  }; temperature: 5758
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.042869766] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 121628
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.042909298] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 1897
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.042943048] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 6053
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.042975392] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 6
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.043076954] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 16
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.043116225] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.10868 exp 2351 again 32
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.063348296] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8553, 1, 1.46412  }; matrix=Matrix { [ 1.8553, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46412 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.096463570] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85498, 1, 1.46206  }; matrix=Matrix { [ 1.85498, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46206 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.129580250] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85498, 1, 1.46206  }; matrix=Matrix { [ 1.85498, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46206 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.162673753] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85498, 1, 1.46206  }; matrix=Matrix { [ 1.85498, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46206 ] }
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.175450549] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85288, 1, 1.46152  }; temperature: 5758
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.175599924] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 121252
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.175639507] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 1990
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.175679976] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 6340
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.175711747] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 2
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.175741435] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 16
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.175775289] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.11373 exp 2351 again 32
+Oct 18 20:16:20 xiaomi-thyme pipewire[8286]: [0:18:32.195030483] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85498, 1, 1.46206  }; matrix=Matrix { [ 1.85498, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46206 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.229158050] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85288, 1, 1.46152  }; matrix=Matrix { [ 1.85288, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46152 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.262179366] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85288, 1, 1.46152  }; matrix=Matrix { [ 1.85288, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46152 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.295822297] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85288, 1, 1.46152  }; matrix=Matrix { [ 1.85288, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46152 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.305634712] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85453, 1, 1.46226  }; temperature: 5756
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.305743618] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 121132
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.305762472] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2075
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.305776431] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 6375
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.305889244] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 1
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.305904296] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 17
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.305921535] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.11494 exp 2351 again 32
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.329690384] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85288, 1, 1.46152  }; matrix=Matrix { [ 1.85288, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46152 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.362544512] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85453, 1, 1.46226  }; matrix=Matrix { [ 1.85453, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46226 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.395975671] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85453, 1, 1.46226  }; matrix=Matrix { [ 1.85453, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46226 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.429612352] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85453, 1, 1.46226  }; matrix=Matrix { [ 1.85453, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46226 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.450069736] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85494, 1, 1.46025  }; temperature: 5766
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.450178643] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 121023
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.450196612] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2132
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.450210518] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 6426
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.450222862] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 4
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.450237237] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 15
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.450252810] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.11617 exp 2351 again 32
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.461592936] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85453, 1, 1.46226  }; matrix=Matrix { [ 1.85453, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46226 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.495364565] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85494, 1, 1.46025  }; matrix=Matrix { [ 1.85494, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46025 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.529508383] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85494, 1, 1.46025  }; matrix=Matrix { [ 1.85494, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46025 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.562290583] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85494, 1, 1.46025  }; matrix=Matrix { [ 1.85494, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46025 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.578021030] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85575, 1, 1.46061  }; temperature: 5765
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.578133374] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 119774
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.578151499] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2234
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.578168374] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 7571
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.578181551] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 4
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.578194260] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 17
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.578209885] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.13469 exp 2351 again 32
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.594645855] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85494, 1, 1.46025  }; matrix=Matrix { [ 1.85494, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46025 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.630183425] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85575, 1, 1.46061  }; matrix=Matrix { [ 1.85575, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46061 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.661117965] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85575, 1, 1.46061  }; matrix=Matrix { [ 1.85575, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46061 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.695667148] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85575, 1, 1.46061  }; matrix=Matrix { [ 1.85575, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46061 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.711400981] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85417, 1, 1.46029  }; temperature: 5765
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.711526085] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 120063
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.711544419] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2212
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.711557960] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 7306
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.711570981] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 3
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.711584158] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 16
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.711600513] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.13038 exp 2351 again 32
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.727831013] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85575, 1, 1.46061  }; matrix=Matrix { [ 1.85575, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46061 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.762714728] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85417, 1, 1.46029  }; matrix=Matrix { [ 1.85417, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46029 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.794664791] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85417, 1, 1.46029  }; matrix=Matrix { [ 1.85417, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46029 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.828578504] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85417, 1, 1.46029  }; matrix=Matrix { [ 1.85417, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46029 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.842378323] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85439, 1, 1.45939  }; temperature: 5769
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.842494156] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 120004
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.842512854] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2218
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.842526708] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 7360
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.842708063] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 0
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.842745094] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 18
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.842780771] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.13125 exp 2351 again 32
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.860760078] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85417, 1, 1.46029  }; matrix=Matrix { [ 1.85417, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46029 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.895382906] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85439, 1, 1.45939  }; matrix=Matrix { [ 1.85439, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45939 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.928398492] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85439, 1, 1.45939  }; matrix=Matrix { [ 1.85439, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45939 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.960488868] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85439, 1, 1.45939  }; matrix=Matrix { [ 1.85439, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45939 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.975378845] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.8549, 1, 1.45984  }; temperature: 5768
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.975555929] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 119730
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.975601554] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2171
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.975637127] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 7680
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.975669054] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 4
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.975699211] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 15
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.975733794] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.13583 exp 2351 again 32
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:32.994859092] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85439, 1, 1.45939  }; matrix=Matrix { [ 1.85439, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45939 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.028682909] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8549, 1, 1.45984  }; matrix=Matrix { [ 1.8549, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45984 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.061044066] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8549, 1, 1.45984  }; matrix=Matrix { [ 1.8549, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45984 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.093719235] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8549, 1, 1.45984  }; matrix=Matrix { [ 1.8549, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45984 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.106973897] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85561, 1, 1.46031  }; temperature: 5766
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.107162022] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 119499
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.107201814] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2223
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.107234105] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 7858
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.107264939] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 4
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.107295304] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 16
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.107335460] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.139 exp 2351 again 32
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.128031699] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8549, 1, 1.45984  }; matrix=Matrix { [ 1.8549, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45984 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.160815097] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85561, 1, 1.46031  }; matrix=Matrix { [ 1.85561, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46031 ] }
+Oct 18 20:16:21 xiaomi-thyme pipewire[8286]: [0:18:33.193693234] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85561, 1, 1.46031  }; matrix=Matrix { [ 1.85561, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46031 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.227713666] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85561, 1, 1.46031  }; matrix=Matrix { [ 1.85561, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46031 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.243778073] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85583, 1, 1.45816  }; temperature: 5777
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.243947969] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 119475
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.243988073] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2220
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.244061250] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 7888
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.244099636] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 0
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.244133855] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 17
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.244168126] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.13938 exp 2351 again 32
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.261175607] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85561, 1, 1.46031  }; matrix=Matrix { [ 1.85561, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.46031 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.294073484] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85583, 1, 1.45816  }; matrix=Matrix { [ 1.85583, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45816 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.328066833] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85583, 1, 1.45816  }; matrix=Matrix { [ 1.85583, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45816 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.360626637] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85583, 1, 1.45816  }; matrix=Matrix { [ 1.85583, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45816 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.375513853] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85578, 1, 1.45961  }; temperature: 5770
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.375683593] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 119300
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.375729687] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2202
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.375763854] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 8078
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.375794479] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 4
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.375825885] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 16
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.375861875] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.14224 exp 2351 again 32
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.394872277] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85583, 1, 1.45816  }; matrix=Matrix { [ 1.85583, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45816 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.427332810] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85578, 1, 1.45961  }; matrix=Matrix { [ 1.85578, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45961 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.460633813] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85578, 1, 1.45961  }; matrix=Matrix { [ 1.85578, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45961 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.493081429] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85578, 1, 1.45961  }; matrix=Matrix { [ 1.85578, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45961 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.506840779] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85581, 1, 1.45923  }; temperature: 5772
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.507033332] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 119103
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.507076821] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2259
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.507109842] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 8218
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.507143176] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 6
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.507173384] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 14
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.507212134] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.14482 exp 2351 again 32
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.527363424] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85578, 1, 1.45961  }; matrix=Matrix { [ 1.85578, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45961 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.560027707] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85581, 1, 1.45923  }; matrix=Matrix { [ 1.85581, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45923 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.593276418] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85581, 1, 1.45923  }; matrix=Matrix { [ 1.85581, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45923 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.627456486] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85581, 1, 1.45923  }; matrix=Matrix { [ 1.85581, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45923 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.634568739] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.8537, 1, 1.45679  }; temperature: 5781
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.634724313] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 120338
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.634756136] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2345
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.634782542] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 6897
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.634807490] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 3
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.634831657] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 17
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.634861448] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.12512 exp 2351 again 32
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.659921758] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.85581, 1, 1.45923  }; matrix=Matrix { [ 1.85581, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45923 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.693050001] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8537, 1, 1.45679  }; matrix=Matrix { [ 1.8537, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45679 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.726338348] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8537, 1, 1.45679  }; matrix=Matrix { [ 1.8537, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45679 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.759868674] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8537, 1, 1.45679  }; matrix=Matrix { [ 1.8537, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45679 ] }
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.775506726] [8433] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.85287, 1, 1.45645  }; temperature: 5781
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.776585895] [8433] DEBUG IPASoftExposure agc.cpp:165 0: 121003
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.776841781] [8433] DEBUG IPASoftExposure agc.cpp:165 1: 2391
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.777273396] [8433] DEBUG IPASoftExposure agc.cpp:165 2: 6184
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.777312250] [8433] DEBUG IPASoftExposure agc.cpp:165 3: 7
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.777341729] [8433] DEBUG IPASoftExposure agc.cpp:165 4: 15
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.777380219] [8433] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.11451 exp 2351 again 32
+Oct 18 20:16:22 xiaomi-thyme pipewire[8286]: [0:18:33.793019677] [8434] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.8537, 1, 1.45679  }; matrix=Matrix { [ 1.8537, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.45679 ] }

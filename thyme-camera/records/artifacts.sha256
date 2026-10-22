@@ -1,0 +1,3 @@
+64c309a988fa83fc69f0c9c3e38014503c49e84b4971926abfb727567524f00f  kernel-build/arch/arm64/boot/Image.gz
+053c4f376dac32c449b163369e27a3c49810cf02bb72038eff667fe5e7a27d70  kernel-build/arch/arm64/boot/dts/qcom/sm8250-xiaomi-thyme.dtb
+1705feda4fc4abba3f3138ce792049ee1377b1d373be4732d4f158693bae0e69  kernel-build/arch/arm64/boot/dts/qcom/sm8250-xiaomi-thyme-logdump.dtb

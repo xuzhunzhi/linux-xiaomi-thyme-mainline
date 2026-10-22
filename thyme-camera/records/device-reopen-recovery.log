@@ -1,0 +1,24 @@
+Sun Oct 18 19:22:16 CST 2026
+ 19:22:16 up 8 min,  3 users,  load average: 1.13, 0.82, 0.41
+ 1 1000 user   -     2149 manager -    no -
+17 1000 user   -     5940 user    -    no -
+30 1001 ubuntu seat0 8101 user    tty2 no -
+31 1001 ubuntu -     8111 manager -    no -
+34 1000 user   -     9771 user    -    no -
+8427 /usr/bin/gnome-shell --mode=ubuntu
+8480 /usr/libexec/gnome-shell-calendar-server
+● thyme-camera-probe-retry.service - Retry missing Xiaomi thyme camera sensors
+     Loaded: loaded (/etc/systemd/system/thyme-camera-probe-retry.service; enabled; preset: enabled)
+     Active: active (exited) since Sun 2026-10-18 19:19:16 CST; 3min 0s ago
+ Invocation: de7d9b28c0ef4ff888eb5f29bd50118b
+    Process: 6807 ExecStart=/usr/local/sbin/thyme-camera-probe-retry (code=exited, status=0/SUCCESS)
+   Main PID: 6807 (code=exited, status=0/SUCCESS)
+   Mem peak: 6.5M
+        CPU: 48ms
+
+Oct 18 19:19:16 xiaomi-thyme systemd[1]: Starting thyme-camera-probe-retry.service - Retry missing Xiaomi thyme camera sensors...
+Oct 18 19:19:16 xiaomi-thyme thyme-camera-probe-retry[6807]: All three thyme camera sensors are bound
+Oct 18 19:19:16 xiaomi-thyme systemd[1]: Finished thyme-camera-probe-retry.service - Retry missing Xiaomi thyme camera sensors.
+auto
+1000
+auto

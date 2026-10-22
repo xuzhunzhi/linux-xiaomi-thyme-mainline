@@ -1,0 +1,43 @@
+exit=0
+Setting pipeline to PAUSED ...
+Pipeline is live and does not need PREROLL ...
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+New clock: GstSystemClock
+Redistribute latency...
+Got EOS from element "pipeline0".
+EOS received - stopping pipeline...
+Execution ended after 0:00:00.144381254
+Setting pipeline to NULL ...
+Freeing pipeline ...
+[0:08:53.391029402] [7208]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0
+[0:08:53.408977201] [7212] ERROR V4L2 v4l2_subdevice.cpp:1201 'ov13b10 23-0036': Unable to get rectangle 2 on pad 0/0: Inappropriate ioctl for device
+[0:08:53.408992149] [7212]  WARN CameraSensor camera_sensor_legacy.cpp:402 'ov13b10 23-0036': The PixelArraySize property has been defaulted to 4208x3120
+[0:08:53.408995170] [7212] ERROR V4L2 v4l2_subdevice.cpp:1201 'ov13b10 23-0036': Unable to get rectangle 1 on pad 0/0: Inappropriate ioctl for device
+[0:08:53.408997357] [7212]  WARN CameraSensor camera_sensor_legacy.cpp:413 'ov13b10 23-0036': The PixelArrayActiveAreas property has been defaulted to (0, 0)/4208x3120
+[0:08:53.409000170] [7212] ERROR V4L2 v4l2_subdevice.cpp:1201 'ov13b10 23-0036': Unable to get rectangle 0 on pad 0/0: Inappropriate ioctl for device
+[0:08:53.409009649] [7212]  WARN CameraSensor camera_sensor_legacy.cpp:421 'ov13b10 23-0036': Failed to retrieve the sensor crop rectangle
+[0:08:53.409012826] [7212]  WARN CameraSensor camera_sensor_legacy.cpp:427 'ov13b10 23-0036': The sensor kernel driver needs to be fixed
+[0:08:53.409016316] [7212]  WARN CameraSensor camera_sensor_legacy.cpp:429 'ov13b10 23-0036': See Documentation/sensor_driver_requirements.rst in the libcamera sources for more information
+[0:08:53.409104285] [7212]  WARN CameraSensorProperties camera_sensor_properties.cpp:548 No static properties available for 'ov13b10'
+[0:08:53.409107150] [7212]  WARN CameraSensorProperties camera_sensor_properties.cpp:550 Please consider updating the camera sensor properties database
+[0:08:53.409111577] [7212]  WARN CameraSensor camera_sensor_legacy.cpp:502 'ov13b10 23-0036': No sensor delays found in static properties. Assuming unverified defaults.
+[0:08:53.409386579] [7212]  WARN CameraSensorProperties camera_sensor_properties.cpp:548 No static properties available for 's5k3t2'
+[0:08:53.409393142] [7212]  WARN CameraSensorProperties camera_sensor_properties.cpp:550 Please consider updating the camera sensor properties database
+[0:08:53.409397204] [7212]  WARN CameraSensor camera_sensor_legacy.cpp:502 's5k3t2 22-0010': No sensor delays found in static properties. Assuming unverified defaults.
+[0:08:53.409693509] [7212]  WARN CameraSensorProperties camera_sensor_properties.cpp:548 No static properties available for 's5khmx'
+[0:08:53.409699186] [7212]  WARN CameraSensorProperties camera_sensor_properties.cpp:550 Please consider updating the camera sensor properties database
+[0:08:53.409702311] [7212]  WARN CameraSensor camera_sensor_legacy.cpp:502 's5khmx 21-003d': No sensor delays found in static properties. Assuming unverified defaults.
+[0:08:53.410274919] [7212]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 'ov13b10.yaml' not found for IPA module 'simple', falling back to '/usr/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:08:53.410284503] [7212] ERROR V4L2 v4l2_subdevice.cpp:1201 'ov13b10 23-0036': Unable to get rectangle 0 on pad 0/0: Inappropriate ioctl for device
+[0:08:53.410287836] [7212]  WARN CameraSensor camera_sensor_legacy.cpp:881 'ov13b10 23-0036': The analogue crop rectangle has been defaulted to the active area size
+[0:08:53.410299347] [7212]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for ov13b10
+[0:08:53.410471536] [7212]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@1/camera@36' for pipeline handler simple
+[0:08:53.410647214] [7212]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 's5k3t2.yaml' not found for IPA module 'simple', falling back to '/usr/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:08:53.410660756] [7212]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for s5k3t2
+[0:08:53.410758465] [7212]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@0/camera@10' for pipeline handler simple
+[0:08:53.410927060] [7212]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 's5khmx.yaml' not found for IPA module 'simple', falling back to '/usr/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:08:53.410938779] [7212]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for s5khmx
+[0:08:53.411018832] [7212]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac4f000/i2c-bus@1/camera@3d' for pipeline handler simple
+[0:08:53.412486656] [7213]  INFO Camera camera.cpp:1215 configuring streams: (0) 640x480-ABGR8888/sRGB
+[0:08:53.412672230] [7212]  INFO IPASoft soft_simple.cpp:258 IPASoft: Exposure 4-792, gain 128-1984 (1)

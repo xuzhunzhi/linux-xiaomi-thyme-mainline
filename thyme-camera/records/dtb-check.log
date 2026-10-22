@@ -1,0 +1,8 @@
+sm8250-xiaomi-thyme: samsung,s5khmx: CCI/PHY3/reset/DVDD/19.2MHz/graph OK
+sm8250-xiaomi-thyme: samsung,s5k3t2: CCI/PHY4/reset/DVDD/19.2MHz/graph OK
+sm8250-xiaomi-thyme: ovti,ov13b10: CCI/PHY2/reset/DVDD/19.2MHz/graph OK
+sm8250-xiaomi-thyme: CAMSS enabled; OV13B10 GPIO hog removed; GC02M1s held off
+sm8250-xiaomi-thyme-logdump: samsung,s5khmx: CCI/PHY3/reset/DVDD/19.2MHz/graph OK
+sm8250-xiaomi-thyme-logdump: samsung,s5k3t2: CCI/PHY4/reset/DVDD/19.2MHz/graph OK
+sm8250-xiaomi-thyme-logdump: ovti,ov13b10: CCI/PHY2/reset/DVDD/19.2MHz/graph OK
+sm8250-xiaomi-thyme-logdump: CAMSS enabled; OV13B10 GPIO hog removed; GC02M1s held off

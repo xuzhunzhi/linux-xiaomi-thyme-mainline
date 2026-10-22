@@ -1,0 +1,29 @@
+Created symlink '/run/user/1001/systemd/user/pipewire.service' → '/dev/null'.
+Created symlink '/run/user/1001/systemd/user/pipewire.socket' → '/dev/null'.
+Created symlink '/run/user/1001/systemd/user/wireplumber.service' → '/dev/null'.
+Created symlink '/run/user/1000/systemd/user/pipewire.service' → '/dev/null'.
+Created symlink '/run/user/1000/systemd/user/pipewire.socket' → '/dev/null'.
+Created symlink '/run/user/1000/systemd/user/wireplumber.service' → '/dev/null'.
+SUPPLY None main suspended
+OPEN OK
+SUPPLY dvdd main suspended
+OPEN OK
+SUPPLY None main suspended
+OPEN OK
+SUPPLY avdd main suspended
+OPEN FAILED OSError(6, 'No such device or address')
+SUPPLY None main suspended
+OPEN FAILED OSError(6, 'No such device or address')
+SUPPLY avdd2 main suspended
+OPEN FAILED OSError(6, 'No such device or address')
+SUPPLY avdd3 main suspended
+OPEN FAILED OSError(6, 'No such device or address')
+SUPPLY None main suspended
+OPEN FAILED OSError(6, 'No such device or address')
+Removed '/run/user/1001/systemd/user/pipewire.service'.
+Removed '/run/user/1001/systemd/user/pipewire.socket'.
+Removed '/run/user/1001/systemd/user/wireplumber.service'.
+Removed '/run/user/1000/systemd/user/pipewire.service'.
+Removed '/run/user/1000/systemd/user/pipewire.socket'.
+Removed '/run/user/1000/systemd/user/wireplumber.service'.
+Running as unit: thyme-camera-preview-color.service; invocation ID: c8755c9c0a864df89e4a5e495257f31c

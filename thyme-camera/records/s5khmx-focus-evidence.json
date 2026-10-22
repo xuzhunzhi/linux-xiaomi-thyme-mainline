@@ -1,0 +1,54 @@
+{
+  "board": "Xiaomi Mi 10S (thyme)",
+  "sensor": "s5khmx",
+  "actuator_module": "umi_ak7377_s5khmx",
+  "vendor_module_sha256": "b8305d133b87def04e90faac06e3d5a763d8baf1c0975ada1e71911523aed3fa",
+  "source": "https://github.com/TheMuppets/proprietary_vendor_xiaomi_thyme/tree/lineage-23.2/proprietary/vendor/lib64/camera",
+  "wiring": {
+    "bus": "CCI0 master 1 / Linux I2C 21",
+    "address_7bit": "0x0c (live ACK and register readback verified)",
+    "vdd": "PM8009 L6 2856000 uV",
+    "vio": "PM8009 L7 1800000 uV"
+  },
+  "vendor_register_parameter": {
+    "address_bytes": 1,
+    "data_bytes": 2,
+    "position_register": 0,
+    "data_shift": 6
+  },
+  "vendor_init": {
+    "register": 2,
+    "data": 0,
+    "delay_us": 1000
+  },
+  "vendor_focus_boundary": 900,
+  "vendor_power_optimal_position": 343,
+  "live_test": {
+    "mode_register_before": "0x20",
+    "mode_active": "0x00",
+    "position_343_written": "0x55c0",
+    "position_343_readback": "0x55 0xc0",
+    "positions_tested": [
+      0,
+      200,
+      343,
+      450,
+      600,
+      750,
+      900
+    ],
+    "visual_result": "200 resolves star edge and keyboard details better than 0; 750/900 are defocused. Scalar noisy sharpness score alone did not reliably select focus."
+  },
+  "gain": {
+    "source_library_sha256": "d920ee9c02377a6c07bca2d5dfb9b3115f14e2af4f9e87e3c86966e74b0f8a4d",
+    "disassembly": "0x105c fcvtzu w8,d3,#5; 0x109c multiply code by 1/32; analogue gain code = gain * 32, clamped 1x..32x"
+  },
+  "af_source": "/home/ubuntu/hotdog-linux-bringup/aports/temp/libcamera/0005-libcamera-software-isp-add-contrast-autofocus.patch",
+  "adaptations": [
+    "libcamera 0.7.0 API and single statistics buffer",
+    "freeze AE during focus scan",
+    "average four green samples before edge metric",
+    "limit HMX AF sweep to vendor boundary 900",
+    "omit uncalibrated LensPosition in dioptres"
+  ]
+}

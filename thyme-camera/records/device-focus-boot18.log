@@ -1,0 +1,86 @@
+[   14.581552] xiaomi-thyme kernel: /soc@0/cci@ac4f000/i2c-bus@1/camera@3d: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.581569] xiaomi-thyme kernel: /soc@0/cci@ac50000/i2c-bus@0/camera@10: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.581585] xiaomi-thyme kernel: /soc@0/cci@ac50000/i2c-bus@1/camera@36: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.581605] xiaomi-thyme kernel: /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@0/camera@10
+[   14.581620] xiaomi-thyme kernel: /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac4f000/i2c-bus@1/camera@3d
+[   14.581638] xiaomi-thyme kernel: /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@1/camera@36
+[   14.583372] xiaomi-thyme kernel: /soc@0/cci@ac4f000/i2c-bus@1/camera@3d: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.583405] xiaomi-thyme kernel: /soc@0/cci@ac50000/i2c-bus@0/camera@10: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.583434] xiaomi-thyme kernel: /soc@0/cci@ac50000/i2c-bus@1/camera@36: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.583450] xiaomi-thyme kernel: /soc@0/cci@ac50000/i2c-bus@1/camera@36: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.583464] xiaomi-thyme kernel: /soc@0/cci@ac50000/i2c-bus@0/camera@10: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.583478] xiaomi-thyme kernel: /soc@0/cci@ac4f000/i2c-bus@1/camera@3d: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.583496] xiaomi-thyme kernel: /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@0/camera@10
+[   14.583511] xiaomi-thyme kernel: /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac4f000/i2c-bus@1/camera@3d
+[   14.583525] xiaomi-thyme kernel: /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@1/camera@36
+[   14.583923] xiaomi-thyme kernel: /soc@0/rsc@18200000/regulators-0: Fixed dependency cycle(s) with /soc@0/rsc@18200000/regulators-0/smps5
+[   14.583936] xiaomi-thyme kernel: /soc@0/rsc@18200000/regulators-0: Fixed dependency cycle(s) with /soc@0/rsc@18200000/regulators-0/smps6
+[   14.583949] xiaomi-thyme kernel: /soc@0/rsc@18200000/regulators-1: Fixed dependency cycle(s) with /soc@0/rsc@18200000/regulators-1/bob
+[   14.583967] xiaomi-thyme kernel: /soc@0/rsc@18200000/regulators-1: Fixed dependency cycle(s) with /soc@0/rsc@18200000/regulators-1/smps8
+[   14.593411] xiaomi-thyme kernel: platform ac6a000.camss: Adding to iommu group 11
+[   14.600062] xiaomi-thyme kernel: /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac4f000/i2c-bus@1/camera@3d
+[   14.600072] xiaomi-thyme kernel: /soc@0/cci@ac4f000/i2c-bus@1/camera@3d: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.600085] xiaomi-thyme kernel: /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@0/camera@10
+[   14.600095] xiaomi-thyme kernel: /soc@0/cci@ac50000/i2c-bus@0/camera@10: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.600105] xiaomi-thyme kernel: /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@1/camera@36
+[   14.600115] xiaomi-thyme kernel: /soc@0/cci@ac50000/i2c-bus@1/camera@36: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[   14.607966] xiaomi-thyme kernel: ufshcd-qcom 1d84000.ufshc: ufshcd_populate_vreg: Unable to find vdd-hba-supply regulator, assuming enabled
+[   14.608311] xiaomi-thyme kernel: qcom-pcie 1c00000.pcie: supply vdda not found, using dummy regulator
+[   14.608467] xiaomi-thyme kernel: qcom-pcie 1c00000.pcie: supply vddpe-3v3 not found, using dummy regulator
+[   14.609184] xiaomi-thyme kernel: qcom-pcie 1c10000.pcie: supply vdda not found, using dummy regulator
+[   14.609347] xiaomi-thyme kernel: qcom-pcie 1c10000.pcie: supply vddpe-3v3 not found, using dummy regulator
+[   14.611526] xiaomi-thyme kernel: ufshcd-qcom 1d84000.ufshc: ufshcd_populate_vreg: Unable to find vdd-hba-supply regulator, assuming enabled
+[   14.620987] xiaomi-thyme kernel: adreno 3d00000.gpu: supply vdd not found, using dummy regulator
+[   14.621156] xiaomi-thyme kernel: adreno 3d00000.gpu: supply vddcx not found, using dummy regulator
+[   14.636476] xiaomi-thyme kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[   14.636638] xiaomi-thyme kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+[   14.636652] xiaomi-thyme kernel: cfg80211: failed to load regulatory.db
+[   16.138044] xiaomi-thyme kernel: ak7375 21-000c: ak7375_vcm_resume I2C failure: -6
+[  113.449058] xiaomi-thyme kernel: i2c-qcom-cci ac50000.cci: master 1 queue 0 timeout
+[  113.450777] xiaomi-thyme kernel: ov13b10 23-0036: ov13b10_start_streaming failed to set powerup registers
+[  224.969308] xiaomi-thyme kernel: cam_cc_mclk1_clk status stuck at 'off'
+[  224.969957] xiaomi-thyme kernel:  s5khmx_power_on+0x12c/0x174
+[  225.042662] xiaomi-thyme kernel: ak7375 21-000c: ak7375_vcm_resume I2C failure: -6
+[  272.864124] xiaomi-thyme kernel: i2c-qcom-cci ac4f000.cci: master 1 queue 0 timeout
+[  734.200234] xiaomi-thyme kernel: ak7375 21-000c: ak7375_vcm_resume I2C failure: -6
+installed tuning
+# SPDX-License-Identifier: CC0-1.0
+%YAML 1.1
+---
+version: 1
+algorithms:
+  - BlackLevel:
+  - Awb:
+  - Adjust:
+  - Agc:
+  - Af:
+      maxPosition: 900
+...
+kernel suppliers
+lrwxrwxrwx 1 root root 0 Oct 18 20:03 /sys/bus/i2c/devices/21-000c/supplier:platform:18200000.rsc:regulators-2 -> ../../../../../virtual/devlink/platform:18200000.rsc:regulators-2--i2c:21-000c
+lrwxrwxrwx 1 root root 0 Oct 18 20:11 /sys/bus/i2c/devices/21-000c/supplier:regulator:regulator.40 -> ../../../../../virtual/devlink/regulator:regulator.40--i2c:21-000c
+lrwxrwxrwx 1 root root 0 Oct 18 20:11 /sys/bus/i2c/devices/21-000c/supplier:regulator:regulator.42 -> ../../../../../virtual/devlink/regulator:regulator.42--i2c:21-000c
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:platform:18200000.rsc:regulators-2 -> ../../../../../virtual/devlink/platform:18200000.rsc:regulators-2--i2c:21-003d
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:platform:ad00000.clock-controller -> ../../../../../virtual/devlink/platform:ad00000.clock-controller--i2c:21-003d
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:platform:camera-front-avdd-regulator -> ../../../../../virtual/devlink/platform:camera-front-avdd-regulator--i2c:21-003d
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:platform:camera-macro-avdd-regulator -> ../../../../../virtual/devlink/platform:camera-macro-avdd-regulator--i2c:21-003d
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:platform:camera-wide-avdd-regulator -> ../../../../../virtual/devlink/platform:camera-wide-avdd-regulator--i2c:21-003d
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:platform:f100000.pinctrl -> ../../../../../virtual/devlink/platform:f100000.pinctrl--i2c:21-003d
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:regulator:regulator.22 -> ../../../../../virtual/devlink/regulator:regulator.22--i2c:21-003d
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:regulator:regulator.23 -> ../../../../../virtual/devlink/regulator:regulator.23--i2c:21-003d
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:regulator:regulator.24 -> ../../../../../virtual/devlink/regulator:regulator.24--i2c:21-003d
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:regulator:regulator.32 -> ../../../../../virtual/devlink/regulator:regulator.32--i2c:21-003d
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:regulator:regulator.40 -> ../../../../../virtual/devlink/regulator:regulator.40--i2c:21-003d
+lrwxrwxrwx 1 root root 0 Oct 18 20:04 /sys/bus/i2c/devices/21-003d/supplier:regulator:regulator.42 -> ../../../../../virtual/devlink/regulator:regulator.42--i2c:21-003d
+libcamera package
+lrwxrwxrwx 1 root root       21 Oct 18 19:45 /opt/thyme-camera-focus/lib/libcamera-base.so -> libcamera-base.so.0.7
+lrwxrwxrwx 1 root root       23 Oct 18 19:45 /opt/thyme-camera-focus/lib/libcamera-base.so.0.7 -> libcamera-base.so.0.7.0
+-rwxr-xr-x 1 root root  2702536 Oct 18 19:43 /opt/thyme-camera-focus/lib/libcamera-base.so.0.7.0
+lrwxrwxrwx 1 root root       16 Oct 18 19:45 /opt/thyme-camera-focus/lib/libcamera.so -> libcamera.so.0.7
+lrwxrwxrwx 1 root root       18 Oct 18 19:45 /opt/thyme-camera-focus/lib/libcamera.so.0.7 -> libcamera.so.0.7.0
+-rwxr-xr-x 1 root root 32969688 Oct 18 19:45 /opt/thyme-camera-focus/lib/libcamera.so.0.7.0
+-rwxr-xr-x 1 root root   264736 Feb 18  2026 /usr/bin/cam
+
+/opt/thyme-camera-focus/lib/libcamera:
+total 4
+drwxr-xr-x 2 root root 4096 Oct 18 19:45 ipa

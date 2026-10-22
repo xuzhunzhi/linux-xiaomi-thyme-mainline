@@ -1,0 +1,386 @@
+exit=0
+Setting pipeline to PAUSED ...
+Pipeline is live and does not need PREROLL ...
+Pipeline is PREROLLED ...
+Setting pipeline to PLAYING ...
+New clock: GstSystemClock
+Redistribute latency...
+Got EOS from element "pipeline0".
+EOS received - stopping pipeline...
+Execution ended after 0:00:00.325730951
+Setting pipeline to NULL ...
+Freeing pipeline ...
+[0:09:41.696200935] [7463] DEBUG IPAModule ipa_module.cpp:333 ipa_mali_c55.so: IPA module /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_mali_c55.so is signed
+[0:09:41.696243018] [7463] DEBUG IPAManager ipa_manager.cpp:239 Loaded IPA module '/usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_mali_c55.so'
+[0:09:41.696274946] [7463] DEBUG IPAModule ipa_module.cpp:333 ipa_rkisp1.so: IPA module /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_rkisp1.so is signed
+[0:09:41.696290571] [7463] DEBUG IPAManager ipa_manager.cpp:239 Loaded IPA module '/usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_rkisp1.so'
+[0:09:41.696321301] [7463] DEBUG IPAModule ipa_module.cpp:333 ipa_rpi_pisp.so: IPA module /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_rpi_pisp.so is signed
+[0:09:41.696340311] [7463] DEBUG IPAManager ipa_manager.cpp:239 Loaded IPA module '/usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_rpi_pisp.so'
+[0:09:41.696370207] [7463] DEBUG IPAModule ipa_module.cpp:333 ipa_rpi_vc4.so: IPA module /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_rpi_vc4.so is signed
+[0:09:41.696387239] [7463] DEBUG IPAManager ipa_manager.cpp:239 Loaded IPA module '/usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_rpi_vc4.so'
+[0:09:41.696402395] [7463] DEBUG IPAModule ipa_module.cpp:333 ipa_soft_simple.so: IPA module /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_soft_simple.so is signed
+[0:09:41.696410781] [7463] DEBUG IPAManager ipa_manager.cpp:239 Loaded IPA module '/usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_soft_simple.so'
+[0:09:41.696424271] [7463] DEBUG IPAModule ipa_module.cpp:333 ipa_vimc.so: IPA module /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_vimc.so is signed
+[0:09:41.696431979] [7463] DEBUG IPAManager ipa_manager.cpp:239 Loaded IPA module '/usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_vimc.so'
+[0:09:41.696435989] [7463]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0
+[0:09:41.696785733] [7467] DEBUG Camera camera_manager.cpp:74 Starting camera manager
+[0:09:41.707881538] [7467] DEBUG DeviceEnumerator device_enumerator.cpp:275 New media device "qcom-camss" created from /dev/media0
+[0:09:41.708100447] [7467] DEBUG DeviceEnumerator device_enumerator_udev.cpp:111 Defer media device /dev/media0 due to 38 missing dependencies
+[0:09:41.711491580] [7467] DEBUG DeviceEnumerator device_enumerator_udev.cpp:346 All dependencies for media device /dev/media0 found
+[0:09:41.711499757] [7467] DEBUG DeviceEnumerator device_enumerator.cpp:303 Added device /dev/media0: qcom-camss
+[0:09:41.712150650] [7467] DEBUG Camera camera_manager.cpp:143 Found registered pipeline handler 'virtual'
+[0:09:41.712188984] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/linux,cma: Permission denied
+[0:09:41.712213151] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/reserved: No such file or directory
+[0:09:41.712227734] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/system: Permission denied
+[0:09:41.712245287] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:112 Using /dev/udmabuf
+[0:09:41.712260651] [7467] DEBUG Virtual virtual.cpp:385 Configuration file not found, skipping virtual cameras
+[0:09:41.712278360] [7467] DEBUG Camera camera_manager.cpp:143 Found registered pipeline handler 'vimc'
+[0:09:41.712293621] [7467] DEBUG Camera camera_manager.cpp:143 Found registered pipeline handler 'uvcvideo'
+[0:09:41.712301069] [7467] DEBUG Camera camera_manager.cpp:143 Found registered pipeline handler 'simple'
+[0:09:41.712308829] [7467] DEBUG DeviceEnumerator device_enumerator.cpp:363 Successful match for media device "qcom-camss"
+[0:09:41.712334767] [7467] DEBUG SimplePipeline simple.cpp:1903 Sensor found for /dev/media0
+[0:09:41.712404038] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid0': Control: Test Pattern (0x009f0903)
+[0:09:41.712435653] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid1': Control: Test Pattern (0x009f0903)
+[0:09:41.712451331] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid2': Control: Test Pattern (0x009f0903)
+[0:09:41.712464768] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid3': Control: Test Pattern (0x009f0903)
+[0:09:41.712614458] [7467] DEBUG SimplePipeline simple.cpp:501 Found capture device msm_vfe0_video0
+[0:09:41.712621385] [7467] DEBUG CameraSensor camera_sensor_raw.cpp:213 ov13b10 23-0036: unsupported number of sinks (0) or sources (1)
+[0:09:41.712631281] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Exposure (0x00980911)
+[0:09:41.712635708] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Horizontal Flip (0x00980914)
+[0:09:41.712639302] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Vertical Flip (0x00980915)
+[0:09:41.712642531] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Camera Orientation (0x009a0922)
+[0:09:41.712647114] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Camera Sensor Rotation (0x009a0923)
+[0:09:41.712651125] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Vertical Blanking (0x009e0901)
+[0:09:41.712653573] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Horizontal Blanking (0x009e0902)
+[0:09:41.712656021] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Analogue Gain (0x009e0903)
+[0:09:41.712659198] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Link Frequency (0x009f0901)
+[0:09:41.712662219] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Pixel Rate (0x009f0902)
+[0:09:41.712664614] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Test Pattern (0x009f0903)
+[0:09:41.712668885] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Digital Gain (0x009f0905)
+[0:09:41.712691854] [7467] ERROR V4L2 v4l2_subdevice.cpp:1201 'ov13b10 23-0036': Unable to get rectangle 2 on pad 0/0: Inappropriate ioctl for device
+[0:09:41.712695604] [7467]  WARN CameraSensor camera_sensor_legacy.cpp:402 'ov13b10 23-0036': The PixelArraySize property has been defaulted to 4208x3120
+[0:09:41.712698052] [7467] ERROR V4L2 v4l2_subdevice.cpp:1201 'ov13b10 23-0036': Unable to get rectangle 1 on pad 0/0: Inappropriate ioctl for device
+[0:09:41.712700136] [7467]  WARN CameraSensor camera_sensor_legacy.cpp:413 'ov13b10 23-0036': The PixelArrayActiveAreas property has been defaulted to (0, 0)/4208x3120
+[0:09:41.712702844] [7467] ERROR V4L2 v4l2_subdevice.cpp:1201 'ov13b10 23-0036': Unable to get rectangle 0 on pad 0/0: Inappropriate ioctl for device
+[0:09:41.712704563] [7467]  WARN CameraSensor camera_sensor_legacy.cpp:421 'ov13b10 23-0036': Failed to retrieve the sensor crop rectangle
+[0:09:41.712705969] [7467]  WARN CameraSensor camera_sensor_legacy.cpp:427 'ov13b10 23-0036': The sensor kernel driver needs to be fixed
+[0:09:41.712707636] [7467]  WARN CameraSensor camera_sensor_legacy.cpp:429 'ov13b10 23-0036': See Documentation/sensor_driver_requirements.rst in the libcamera sources for more information
+[0:09:41.712804981] [7467]  WARN CameraSensorProperties camera_sensor_properties.cpp:548 No static properties available for 'ov13b10'
+[0:09:41.712807429] [7467]  WARN CameraSensorProperties camera_sensor_properties.cpp:550 Please consider updating the camera sensor properties database
+[0:09:41.712811439] [7467] DEBUG CameraSensor camera_sensor.cpp:476 Entity 'ov13b10 23-0036' matched by CameraSensorLegacy
+[0:09:41.712813522] [7467]  WARN CameraSensor camera_sensor_legacy.cpp:502 'ov13b10 23-0036': No sensor delays found in static properties. Assuming unverified defaults.
+[0:09:41.712818106] [7467] DEBUG DelayedControls delayed_controls.cpp:99 Set a delay of 2 and priority write flag 0 for Exposure
+[0:09:41.712820814] [7467] DEBUG DelayedControls delayed_controls.cpp:99 Set a delay of 1 and priority write flag 0 for Analogue Gain
+[0:09:41.712827481] [7467] DEBUG SimplePipeline simple.cpp:575 Found pipeline: [ov13b10 23-0036|0] -> [0|msm_csiphy2|1] -> [0|msm_csid0|1] -> [0|msm_vfe0_rdi0|1] -> [0|msm_vfe0_video0]
+[0:09:41.712845762] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid0': Control: Test Pattern (0x009f0903)
+[0:09:41.712859356] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid1': Control: Test Pattern (0x009f0903)
+[0:09:41.712870450] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid2': Control: Test Pattern (0x009f0903)
+[0:09:41.712887534] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid3': Control: Test Pattern (0x009f0903)
+[0:09:41.713066650] [7467] DEBUG SimplePipeline simple.cpp:501 Found capture device msm_vfe0_video0
+[0:09:41.713072015] [7467] DEBUG CameraSensor camera_sensor_raw.cpp:213 s5k3t2 22-0010: unsupported number of sinks (0) or sources (1)
+[0:09:41.713081703] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Exposure (0x00980911)
+[0:09:41.713086859] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Horizontal Flip (0x00980914)
+[0:09:41.713089932] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Vertical Flip (0x00980915)
+[0:09:41.713093161] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Camera Orientation (0x009a0922)
+[0:09:41.713097276] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Camera Sensor Rotation (0x009a0923)
+[0:09:41.713100297] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Vertical Blanking (0x009e0901)
+[0:09:41.713102901] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Horizontal Blanking (0x009e0902)
+[0:09:41.713105245] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Analogue Gain (0x009e0903)
+[0:09:41.713108317] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Link Frequency (0x009f0901)
+[0:09:41.713111859] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Pixel Rate (0x009f0902)
+[0:09:41.713114151] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Test Pattern (0x009f0903)
+[0:09:41.713167120] [7467]  WARN CameraSensorProperties camera_sensor_properties.cpp:548 No static properties available for 's5k3t2'
+[0:09:41.713169204] [7467]  WARN CameraSensorProperties camera_sensor_properties.cpp:550 Please consider updating the camera sensor properties database
+[0:09:41.713171547] [7467] DEBUG CameraSensor camera_sensor.cpp:476 Entity 's5k3t2 22-0010' matched by CameraSensorLegacy
+[0:09:41.713173422] [7467]  WARN CameraSensor camera_sensor_legacy.cpp:502 's5k3t2 22-0010': No sensor delays found in static properties. Assuming unverified defaults.
+[0:09:41.713175402] [7467] DEBUG DelayedControls delayed_controls.cpp:99 Set a delay of 2 and priority write flag 0 for Exposure
+[0:09:41.713177381] [7467] DEBUG DelayedControls delayed_controls.cpp:99 Set a delay of 1 and priority write flag 0 for Analogue Gain
+[0:09:41.713181547] [7467] DEBUG SimplePipeline simple.cpp:575 Found pipeline: [s5k3t2 22-0010|0] -> [0|msm_csiphy4|1] -> [0|msm_csid0|1] -> [0|msm_vfe0_rdi0|1] -> [0|msm_vfe0_video0]
+[0:09:41.713196808] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid0': Control: Test Pattern (0x009f0903)
+[0:09:41.713210714] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid1': Control: Test Pattern (0x009f0903)
+[0:09:41.713222746] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid2': Control: Test Pattern (0x009f0903)
+[0:09:41.713233111] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid3': Control: Test Pattern (0x009f0903)
+[0:09:41.713378164] [7467] DEBUG SimplePipeline simple.cpp:501 Found capture device msm_vfe0_video0
+[0:09:41.713383477] [7467] DEBUG CameraSensor camera_sensor_raw.cpp:213 s5khmx 21-003d: unsupported number of sinks (0) or sources (1)
+[0:09:41.713393112] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Exposure (0x00980911)
+[0:09:41.713398321] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Horizontal Flip (0x00980914)
+[0:09:41.713401550] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Vertical Flip (0x00980915)
+[0:09:41.713404519] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Camera Orientation (0x009a0922)
+[0:09:41.713408165] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Camera Sensor Rotation (0x009a0923)
+[0:09:41.713411029] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Vertical Blanking (0x009e0901)
+[0:09:41.713413321] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Horizontal Blanking (0x009e0902)
+[0:09:41.713415561] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Analogue Gain (0x009e0903)
+[0:09:41.713418425] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Link Frequency (0x009f0901)
+[0:09:41.713421342] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Pixel Rate (0x009f0902)
+[0:09:41.713423686] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Test Pattern (0x009f0903)
+[0:09:41.713475926] [7467]  WARN CameraSensorProperties camera_sensor_properties.cpp:548 No static properties available for 's5khmx'
+[0:09:41.713478061] [7467]  WARN CameraSensorProperties camera_sensor_properties.cpp:550 Please consider updating the camera sensor properties database
+[0:09:41.713480457] [7467] DEBUG CameraSensor camera_sensor.cpp:476 Entity 's5khmx 21-003d' matched by CameraSensorLegacy
+[0:09:41.713482176] [7467]  WARN CameraSensor camera_sensor_legacy.cpp:502 's5khmx 21-003d': No sensor delays found in static properties. Assuming unverified defaults.
+[0:09:41.713484051] [7467] DEBUG DelayedControls delayed_controls.cpp:99 Set a delay of 2 and priority write flag 0 for Exposure
+[0:09:41.713486030] [7467] DEBUG DelayedControls delayed_controls.cpp:99 Set a delay of 1 and priority write flag 0 for Analogue Gain
+[0:09:41.713490197] [7467] DEBUG SimplePipeline simple.cpp:575 Found pipeline: [s5khmx 21-003d|0] -> [0|msm_csiphy3|1] -> [0|msm_csid0|1] -> [0|msm_vfe0_rdi0|1] -> [0|msm_vfe0_video0]
+[0:09:41.713510926] [7467] DEBUG V4L2 v4l2_device.cpp:742 'msm_csid0': Control: Test Pattern (0x009f0903)
+[0:09:41.713532906] [7467] DEBUG V4L2 v4l2_videodevice.cpp:633 /dev/video2[17:cap]: Opened device platform:ac6a000.camss: qcom-camss: Qualcomm Camera Subsystem
+[0:09:41.713562750] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Exposure (0x00980911)
+[0:09:41.713565979] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Horizontal Flip (0x00980914)
+[0:09:41.713568375] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Vertical Flip (0x00980915)
+[0:09:41.713571031] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Camera Orientation (0x009a0922)
+[0:09:41.713574885] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Camera Sensor Rotation (0x009a0923)
+[0:09:41.713577854] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Vertical Blanking (0x009e0901)
+[0:09:41.713580146] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Horizontal Blanking (0x009e0902)
+[0:09:41.713582490] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Analogue Gain (0x009e0903)
+[0:09:41.713585302] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Link Frequency (0x009f0901)
+[0:09:41.713588167] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Pixel Rate (0x009f0902)
+[0:09:41.713590667] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Test Pattern (0x009f0903)
+[0:09:41.713594729] [7467] DEBUG V4L2 v4l2_device.cpp:742 'ov13b10 23-0036': Control: Digital Gain (0x009f0905)
+[0:09:41.713603323] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Exposure (0x00980911)
+[0:09:41.713605771] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Horizontal Flip (0x00980914)
+[0:09:41.713608167] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Vertical Flip (0x00980915)
+[0:09:41.713610823] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Camera Orientation (0x009a0922)
+[0:09:41.713614209] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Camera Sensor Rotation (0x009a0923)
+[0:09:41.713616761] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Vertical Blanking (0x009e0901)
+[0:09:41.713619053] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Horizontal Blanking (0x009e0902)
+[0:09:41.713621396] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Analogue Gain (0x009e0903)
+[0:09:41.713624053] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Link Frequency (0x009f0901)
+[0:09:41.713627438] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Pixel Rate (0x009f0902)
+[0:09:41.713629730] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5k3t2 22-0010': Control: Test Pattern (0x009f0903)
+[0:09:41.713639105] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Exposure (0x00980911)
+[0:09:41.713643792] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Horizontal Flip (0x00980914)
+[0:09:41.713647855] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Vertical Flip (0x00980915)
+[0:09:41.713650720] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Camera Orientation (0x009a0922)
+[0:09:41.713654105] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Camera Sensor Rotation (0x009a0923)
+[0:09:41.713657022] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Vertical Blanking (0x009e0901)
+[0:09:41.713659261] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Horizontal Blanking (0x009e0902)
+[0:09:41.713661605] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Analogue Gain (0x009e0903)
+[0:09:41.713664313] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Link Frequency (0x009f0901)
+[0:09:41.713666918] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Pixel Rate (0x009f0902)
+[0:09:41.713669209] [7467] DEBUG V4L2 v4l2_device.cpp:742 's5khmx 21-003d': Control: Test Pattern (0x009f0903)
+[0:09:41.713678845] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/linux,cma: Permission denied
+[0:09:41.713684939] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/reserved: No such file or directory
+[0:09:41.713687387] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/system: Permission denied
+[0:09:41.713690876] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:112 Using /dev/udmabuf
+[0:09:41.713901295] [7467] DEBUG IPAManager ipa_manager.cpp:309 IPA module /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_soft_simple.so signature is valid
+[0:09:41.713923066] [7467] DEBUG IPAProxy soft_ipa_proxy.cpp:44 initializing soft proxy in thread: loading IPA from /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_soft_simple.so
+[0:09:41.714145048] [7467]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 'ov13b10.yaml' not found for IPA module 'simple', falling back to '/usr/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:09:41.714155725] [7467] ERROR V4L2 v4l2_subdevice.cpp:1201 'ov13b10 23-0036': Unable to get rectangle 0 on pad 0/0: Inappropriate ioctl for device
+[0:09:41.714160309] [7467]  WARN CameraSensor camera_sensor_legacy.cpp:881 'ov13b10 23-0036': The analogue crop rectangle has been defaulted to the active area size
+[0:09:41.714172496] [7467]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for ov13b10
+[0:09:41.714202653] [7467] DEBUG IPASoft soft_simple.cpp:127 IPASoft: Tuning file version 1
+[0:09:41.714207966] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'BlackLevel'
+[0:09:41.714211507] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'Awb'
+[0:09:41.714215049] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'Adjust'
+[0:09:41.714216820] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'Agc'
+[0:09:41.714244008] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csiphy4'[1] -> 'msm_csid0'[0]: 0
+[0:09:41.714248904] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: 0
+[0:09:41.714252862] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csiphy2'[1] -> 'msm_csid0'[0]: 1
+[0:09:41.714256299] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: 1
+[0:09:41.714279529] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'ov13b10 23-0036'[0] -> 'msm_csiphy2'[0]: configured with format 1364x768-SGRBG10_1X10/Rec709/sRGB/Rec601/Limited
+[0:09:41.714286821] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csiphy2'[1] -> 'msm_csid0'[0]: configured with format 1364x768-SGRBG10_1X10/sRGB
+[0:09:41.714290310] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: configured with format 1364x768-SGRBG10_1X10/sYCC
+[0:09:41.714292602] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_vfe0_rdi0'[1] -> 'msm_vfe0_video0'[0]: configured with format 1364x768-SGRBG10_1X10/sYCC
+[0:09:41.714298592] [7467] DEBUG SimplePipeline simple.cpp:716 Adding configuration for 1364x768 in pixel formats [ pgAA ]
+[0:09:41.714316404] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'ov13b10 23-0036'[0] -> 'msm_csiphy2'[0]: configured with format 2080x1170-SGRBG10_1X10/Rec709/sRGB/Rec601/Limited
+[0:09:41.714323748] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csiphy2'[1] -> 'msm_csid0'[0]: configured with format 2080x1170-SGRBG10_1X10/sRGB
+[0:09:41.714328488] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: configured with format 2080x1170-SGRBG10_1X10/sYCC
+[0:09:41.714331613] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_vfe0_rdi0'[1] -> 'msm_vfe0_video0'[0]: configured with format 2080x1170-SGRBG10_1X10/sYCC
+[0:09:41.714335571] [7467] DEBUG SimplePipeline simple.cpp:716 Adding configuration for 2080x1170 in pixel formats [ pgAA ]
+[0:09:41.714349842] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'ov13b10 23-0036'[0] -> 'msm_csiphy2'[0]: configured with format 2104x1560-SGRBG10_1X10/Rec709/sRGB/Rec601/Limited
+[0:09:41.714352967] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csiphy2'[1] -> 'msm_csid0'[0]: configured with format 2104x1560-SGRBG10_1X10/sRGB
+[0:09:41.714355415] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: configured with format 2104x1560-SGRBG10_1X10/sYCC
+[0:09:41.714357342] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_vfe0_rdi0'[1] -> 'msm_vfe0_video0'[0]: configured with format 2104x1560-SGRBG10_1X10/sYCC
+[0:09:41.714360155] [7467] DEBUG SimplePipeline simple.cpp:716 Adding configuration for 2104x1560 in pixel formats [ pgAA ]
+[0:09:41.714374426] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'ov13b10 23-0036'[0] -> 'msm_csiphy2'[0]: configured with format 4160x2340-SGRBG10_1X10/Rec709/sRGB/Rec601/Limited
+[0:09:41.714377447] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csiphy2'[1] -> 'msm_csid0'[0]: configured with format 4160x2340-SGRBG10_1X10/sRGB
+[0:09:41.714379947] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: configured with format 4160x2340-SGRBG10_1X10/sYCC
+[0:09:41.714381926] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_vfe0_rdi0'[1] -> 'msm_vfe0_video0'[0]: configured with format 4160x2340-SGRBG10_1X10/sYCC
+[0:09:41.714384738] [7467] DEBUG SimplePipeline simple.cpp:716 Adding configuration for 4160x2340 in pixel formats [ pgAA ]
+[0:09:41.714397030] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'ov13b10 23-0036'[0] -> 'msm_csiphy2'[0]: configured with format 4160x3120-SGRBG10_1X10/Rec709/sRGB/Rec601/Limited
+[0:09:41.714399843] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csiphy2'[1] -> 'msm_csid0'[0]: configured with format 4160x3120-SGRBG10_1X10/sRGB
+[0:09:41.714402187] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: configured with format 4160x3120-SGRBG10_1X10/sYCC
+[0:09:41.714404062] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_vfe0_rdi0'[1] -> 'msm_vfe0_video0'[0]: configured with format 4160x3120-SGRBG10_1X10/sYCC
+[0:09:41.714406822] [7467] DEBUG SimplePipeline simple.cpp:716 Adding configuration for 4160x3120 in pixel formats [ pgAA ]
+[0:09:41.714419114] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'ov13b10 23-0036'[0] -> 'msm_csiphy2'[0]: configured with format 4208x3120-SGRBG10_1X10/Rec709/sRGB/Rec601/Limited
+[0:09:41.714421926] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csiphy2'[1] -> 'msm_csid0'[0]: configured with format 4208x3120-SGRBG10_1X10/sRGB
+[0:09:41.714424322] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: configured with format 4208x3120-SGRBG10_1X10/sYCC
+[0:09:41.714426197] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_vfe0_rdi0'[1] -> 'msm_vfe0_video0'[0]: configured with format 4208x3120-SGRBG10_1X10/sYCC
+[0:09:41.714428958] [7467] DEBUG SimplePipeline simple.cpp:716 Adding configuration for 4208x3120 in pixel formats [ pgAA ]
+[0:09:41.714443906] [7467]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@1/camera@36' for pipeline handler simple
+[0:09:41.714449843] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/linux,cma: Permission denied
+[0:09:41.714455937] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/reserved: No such file or directory
+[0:09:41.714458646] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/system: Permission denied
+[0:09:41.714462760] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:112 Using /dev/udmabuf
+[0:09:41.714612449] [7467] DEBUG IPAManager ipa_manager.cpp:309 IPA module /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_soft_simple.so signature is valid
+[0:09:41.714630054] [7467] DEBUG IPAProxy soft_ipa_proxy.cpp:44 initializing soft proxy in thread: loading IPA from /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_soft_simple.so
+[0:09:41.714641460] [7467]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 's5k3t2.yaml' not found for IPA module 'simple', falling back to '/usr/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:09:41.714653700] [7467]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for s5k3t2
+[0:09:41.714674429] [7467] DEBUG IPASoft soft_simple.cpp:127 IPASoft: Tuning file version 1
+[0:09:41.714679586] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'BlackLevel'
+[0:09:41.714682606] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'Awb'
+[0:09:41.714686044] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'Adjust'
+[0:09:41.714687607] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'Agc'
+[0:09:41.714704482] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csiphy2'[1] -> 'msm_csid0'[0]: 0
+[0:09:41.714708232] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: 0
+[0:09:41.714711878] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csiphy4'[1] -> 'msm_csid0'[0]: 1
+[0:09:41.714714794] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: 1
+[0:09:41.714736513] [7467] DEBUG SimplePipeline simple.cpp:870 Link 's5k3t2 22-0010'[0] -> 'msm_csiphy4'[0]: configured with format 1280x720-SGRBG10_1X10/Rec709/sRGB/Rec601/Limited
+[0:09:41.714741409] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csiphy4'[1] -> 'msm_csid0'[0]: configured with format 1280x720-SGRBG10_1X10/sRGB
+[0:09:41.714744378] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: configured with format 1280x720-SGRBG10_1X10/sYCC
+[0:09:41.714746618] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_vfe0_rdi0'[1] -> 'msm_vfe0_video0'[0]: configured with format 1280x720-SGRBG10_1X10/sYCC
+[0:09:41.714750784] [7467] DEBUG SimplePipeline simple.cpp:716 Adding configuration for 1280x720 in pixel formats [ pgAA ]
+[0:09:41.714765472] [7467] DEBUG SimplePipeline simple.cpp:870 Link 's5k3t2 22-0010'[0] -> 'msm_csiphy4'[0]: configured with format 2592x1940-SGRBG10_1X10/Rec709/sRGB/Rec601/Limited
+[0:09:41.714768649] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csiphy4'[1] -> 'msm_csid0'[0]: configured with format 2592x1940-SGRBG10_1X10/sRGB
+[0:09:41.714771097] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: configured with format 2592x1940-SGRBG10_1X10/sYCC
+[0:09:41.714773076] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_vfe0_rdi0'[1] -> 'msm_vfe0_video0'[0]: configured with format 2592x1940-SGRBG10_1X10/sYCC
+[0:09:41.714776045] [7467] DEBUG SimplePipeline simple.cpp:716 Adding configuration for 2592x1940 in pixel formats [ pgAA ]
+[0:09:41.714789795] [7467] DEBUG SimplePipeline simple.cpp:870 Link 's5k3t2 22-0010'[0] -> 'msm_csiphy4'[0]: configured with format 5184x3880-SGRBG10_1X10/Rec709/sRGB/Rec601/Limited
+[0:09:41.714796045] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csiphy4'[1] -> 'msm_csid0'[0]: configured with format 5184x3880-SGRBG10_1X10/sRGB
+[0:09:41.714800681] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: configured with format 5184x3880-SGRBG10_1X10/sYCC
+[0:09:41.714804118] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_vfe0_rdi0'[1] -> 'msm_vfe0_video0'[0]: configured with format 5184x3880-SGRBG10_1X10/sYCC
+[0:09:41.714807816] [7467] DEBUG SimplePipeline simple.cpp:716 Adding configuration for 5184x3880 in pixel formats [ pgAA ]
+[0:09:41.714816098] [7467]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac50000/i2c-bus@0/camera@10' for pipeline handler simple
+[0:09:41.714821358] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/linux,cma: Permission denied
+[0:09:41.714826931] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/reserved: No such file or directory
+[0:09:41.714829535] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:106 Failed to open /dev/dma_heap/system: Permission denied
+[0:09:41.714833754] [7467] DEBUG DmaBufAllocator dma_buf_allocator.cpp:112 Using /dev/udmabuf
+[0:09:41.714977037] [7467] DEBUG IPAManager ipa_manager.cpp:309 IPA module /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_soft_simple.so signature is valid
+[0:09:41.714993548] [7467] DEBUG IPAProxy soft_ipa_proxy.cpp:44 initializing soft proxy in thread: loading IPA from /usr/lib/aarch64-linux-gnu/libcamera/ipa/ipa_soft_simple.so
+[0:09:41.715027246] [7467]  WARN IPAProxy ipa_proxy.cpp:192 Configuration file 's5khmx.yaml' not found for IPA module 'simple', falling back to '/usr/share/libcamera/ipa/simple/uncalibrated.yaml'
+[0:09:41.715038444] [7467]  WARN IPASoft soft_simple.cpp:104 IPASoft: Failed to create camera sensor helper for s5khmx
+[0:09:41.715057663] [7467] DEBUG IPASoft soft_simple.cpp:127 IPASoft: Tuning file version 1
+[0:09:41.715061205] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'BlackLevel'
+[0:09:41.715063913] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'Awb'
+[0:09:41.715067090] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'Adjust'
+[0:09:41.715069017] [7467] DEBUG IPAModuleAlgo module.h:103 IPASoft: Instantiated algorithm 'Agc'
+[0:09:41.715095893] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csiphy4'[1] -> 'msm_csid0'[0]: 0
+[0:09:41.715101726] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: 0
+[0:09:41.715106570] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csiphy3'[1] -> 'msm_csid0'[0]: 1
+[0:09:41.715109695] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: 1
+[0:09:41.715126726] [7467] DEBUG SimplePipeline simple.cpp:870 Link 's5khmx 21-003d'[0] -> 'msm_csiphy3'[0]: configured with format 3008x2256-SGRBG10_1X10/Rec709/sRGB/Rec601/Limited
+[0:09:41.715131310] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csiphy3'[1] -> 'msm_csid0'[0]: configured with format 3008x2256-SGRBG10_1X10/sRGB
+[0:09:41.715134174] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: configured with format 3008x2256-SGRBG10_1X10/sYCC
+[0:09:41.715136258] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_vfe0_rdi0'[1] -> 'msm_vfe0_video0'[0]: configured with format 3008x2256-SGRBG10_1X10/sYCC
+[0:09:41.715140685] [7467] DEBUG SimplePipeline simple.cpp:716 Adding configuration for 3008x2256 in pixel formats [ pgAA ]
+[0:09:41.715148601] [7467]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc@0/cci@ac4f000/i2c-bus@1/camera@3d' for pipeline handler simple
+[0:09:41.715151206] [7467] DEBUG SimplePipeline simple.cpp:2027 Matched on device: /dev/media0
+[0:09:41.715152872] [7467] DEBUG Camera camera_manager.cpp:164 Pipeline handler "simple" matched
+[0:09:41.715156258] [7467] DEBUG Camera camera_manager.cpp:143 Found registered pipeline handler 'rpi/vc4'
+[0:09:41.715159383] [7467] DEBUG RPI vc4.cpp:192 Unable to acquire a Unicam instance
+[0:09:41.715161050] [7467] DEBUG RPI vc4.cpp:192 Unable to acquire a Unicam instance
+[0:09:41.715162612] [7467] DEBUG Camera camera_manager.cpp:143 Found registered pipeline handler 'rpi/pisp'
+[0:09:41.715167404] [7467] DEBUG RPI pisp.cpp:891 Trying old entity search patterns for CFE instance
+[0:09:41.715169227] [7467] DEBUG RPI pisp.cpp:901 Unable to acquire CFE instance
+[0:09:41.715171102] [7467] DEBUG Camera camera_manager.cpp:143 Found registered pipeline handler 'rkisp1'
+[0:09:41.715175581] [7467] DEBUG Camera camera_manager.cpp:143 Found registered pipeline handler 'mali-c55'
+[0:09:41.715178914] [7467] DEBUG Camera camera_manager.cpp:143 Found registered pipeline handler 'imx8-isi'
+[0:09:41.716535649] [7467] DEBUG SimplePipeline simple.cpp:1165 Largest processed stream size is 5176x3880
+[0:09:41.716557576] [7467] DEBUG SimplePipeline simple.cpp:1167 Largest raw stream size is 0x0
+[0:09:41.716569816] [7467] DEBUG SimplePipeline simple.cpp:1243 Picked 5184x3880-SGRBG10_1X10/Unset -> 5184x3880-SGRBG10_CSI2P for max processed stream size 5176x3880 and max raw stream size 0x0
+[0:09:41.716587837] [7467] DEBUG SimplePipeline simple.cpp:1325 Unspecified color space set to sRGB
+[0:09:41.716600493] [7467] DEBUG SimplePipeline simple.cpp:1389 Adjusting bufferCount from 0 to 4
+[0:09:41.716627681] [7468] DEBUG Camera camera.cpp:1150 streams configuration: (0) 5176x3880-ABGR8888/sRGB
+[0:09:41.716938101] [7468] DEBUG SimplePipeline simple.cpp:1165 Largest processed stream size is 1920x1080
+[0:09:41.716944403] [7468] DEBUG SimplePipeline simple.cpp:1167 Largest raw stream size is 0x0
+[0:09:41.716948570] [7468] DEBUG SimplePipeline simple.cpp:1243 Picked 2592x1940-SGRBG10_1X10/Unset -> 2592x1940-SGRBG10_CSI2P for max processed stream size 1920x1080 and max raw stream size 0x0
+[0:09:41.716953310] [7468] DEBUG SimplePipeline simple.cpp:1165 Largest processed stream size is 1920x1080
+[0:09:41.716954976] [7468] DEBUG SimplePipeline simple.cpp:1167 Largest raw stream size is 0x0
+[0:09:41.716956643] [7468] DEBUG SimplePipeline simple.cpp:1243 Picked 2592x1940-SGRBG10_1X10/Unset -> 2592x1940-SGRBG10_CSI2P for max processed stream size 1920x1080 and max raw stream size 0x0
+[0:09:41.716960549] [7468]  INFO Camera camera.cpp:1215 configuring streams: (0) 1920x1080-ABGR8888/sRGB
+[0:09:41.717094197] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csiphy3'[1] -> 'msm_csid0'[0]: 0
+[0:09:41.717123781] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: 0
+[0:09:41.717142010] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csiphy4'[1] -> 'msm_csid0'[0]: 1
+[0:09:41.717158729] [7467] DEBUG MediaDevice media_device.cpp:854 /dev/media0[qcom-camss]: 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: 1
+[0:09:41.717247636] [7467] DEBUG SimplePipeline simple.cpp:870 Link 's5k3t2 22-0010'[0] -> 'msm_csiphy4'[0]: configured with format 2592x1940-SGRBG10_1X10/Rec709/sRGB/Rec601/Limited
+[0:09:41.717276595] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csiphy4'[1] -> 'msm_csid0'[0]: configured with format 2592x1940-SGRBG10_1X10/sRGB
+[0:09:41.717295449] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_csid0'[1] -> 'msm_vfe0_rdi0'[0]: configured with format 2592x1940-SGRBG10_1X10/sYCC
+[0:09:41.717309981] [7467] DEBUG SimplePipeline simple.cpp:870 Link 'msm_vfe0_rdi0'[1] -> 'msm_vfe0_video0'[0]: configured with format 2592x1940-SGRBG10_1X10/sYCC
+[0:09:41.717364096] [7467]  INFO IPASoft soft_simple.cpp:258 IPASoft: Exposure 8-2042, gain 32-1024 (1)
+[0:09:41.724705587] [7467] DEBUG Buffer framebuffer.cpp:358 Buffer is contiguous
+[0:09:41.727589891] [7467] DEBUG Buffer framebuffer.cpp:358 Buffer is contiguous
+[0:09:41.730301068] [7467] DEBUG Buffer framebuffer.cpp:358 Buffer is contiguous
+[0:09:41.733014068] [7467] DEBUG Buffer framebuffer.cpp:358 Buffer is contiguous
+[0:09:41.733600065] [7468] DEBUG Camera camera.cpp:1409 Starting capture
+[0:09:41.734426480] [7467] DEBUG V4L2 v4l2_videodevice.cpp:1337 /dev/video2[17:cap]: 4 buffers requested.
+[0:09:41.734451689] [7467] DEBUG Buffer framebuffer.cpp:358 Buffer is contiguous
+[0:09:41.734460075] [7467] DEBUG Buffer framebuffer.cpp:358 Buffer is contiguous
+[0:09:41.734468356] [7467] DEBUG Buffer framebuffer.cpp:358 Buffer is contiguous
+[0:09:41.734475752] [7467] DEBUG Buffer framebuffer.cpp:358 Buffer is contiguous
+[0:09:41.815320957] [7467] DEBUG V4L2 v4l2_videodevice.cpp:2028 /dev/video2[17:cap]: Queueing buffer 0
+[0:09:41.815528251] [7467] DEBUG V4L2 v4l2_videodevice.cpp:2028 /dev/video2[17:cap]: Queueing buffer 1
+[0:09:41.815684242] [7467] DEBUG V4L2 v4l2_videodevice.cpp:2028 /dev/video2[17:cap]: Queueing buffer 2
+[0:09:41.815835911] [7467] DEBUG V4L2 v4l2_videodevice.cpp:2028 /dev/video2[17:cap]: Queueing buffer 3
+[0:09:41.816267947] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.816323260] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.816351073] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.816365292] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.816378261] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.892758049] [7467] DEBUG V4L2 v4l2_videodevice.cpp:1747 /dev/video2[17:cap]: Dequeuing buffer 0
+[0:09:41.893853218] [7471] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0, 0, 0  }; gamma=0; contrastExp=0; gains=Vector { -nan, -9.40395e-38, 0  }; matrix=Matrix { [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 0 ] }
+[0:09:41.925549783] [7467] DEBUG V4L2 v4l2_videodevice.cpp:1747 /dev/video2[17:cap]: Dequeuing buffer 1
+[0:09:41.944642972] [7467] DEBUG DelayedControls delayed_controls.cpp:214 Reading Analogue Gain to 1024 at index 0
+[0:09:41.944687035] [7467] DEBUG DelayedControls delayed_controls.cpp:214 Reading Exposure to 970 at index 0
+[0:09:41.944727869] [7467] DEBUG V4L2 v4l2_videodevice.cpp:2028 /dev/video2[17:cap]: Queueing buffer 0
+[0:09:41.944757348] [7470] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.88106, 1, 1.854  }; temperature: 4682
+[0:09:41.944782974] [7470] DEBUG IPASoftExposure agc.cpp:161 0: 129466
+[0:09:41.944787765] [7470] DEBUG IPASoftExposure agc.cpp:161 1: 0
+[0:09:41.944791307] [7470] DEBUG IPASoftExposure agc.cpp:161 2: 0
+[0:09:41.944794484] [7470] DEBUG IPASoftExposure agc.cpp:161 3: 0
+[0:09:41.944797609] [7470] DEBUG IPASoftExposure agc.cpp:161 4: 0
+[0:09:41.944800630] [7470] DEBUG IPASoftExposure agc.cpp:97 exposureMSV 1 exp 1067 again 1024
+[0:09:41.945137561] [7467] DEBUG Request request.cpp:137 Request(0:C:0/1:0)
+[0:09:41.945208551] [7467] DEBUG DelayedControls delayed_controls.cpp:177 Queuing Analogue Gain to 1024 at index 1
+[0:09:41.945215687] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.945223447] [7467] DEBUG DelayedControls delayed_controls.cpp:177 Queuing Exposure to 1067 at index 1
+[0:09:41.945834132] [7471] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1, 1, 1  }; matrix=Matrix { [ 1, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1 ] }
+[0:09:41.954033601] [7467] DEBUG DelayedControls delayed_controls.cpp:214 Reading Analogue Gain to 1024 at index 0
+[0:09:41.954131207] [7467] DEBUG DelayedControls delayed_controls.cpp:214 Reading Exposure to 970 at index 0
+[0:09:41.954298656] [7467] DEBUG V4L2 v4l2_videodevice.cpp:2028 /dev/video2[17:cap]: Queueing buffer 1
+[0:09:41.955080280] [7467] DEBUG Request request.cpp:137 Request(1:C:0/1:0)
+[0:09:41.955196427] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.955204344] [7467] DEBUG DelayedControls delayed_controls.cpp:177 Queuing Analogue Gain to 1024 at index 2
+[0:09:41.955246428] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.955241792] [7467] DEBUG DelayedControls delayed_controls.cpp:177 Queuing Exposure to 1067 at index 2
+[0:09:41.955259709] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.958698603] [7467] DEBUG V4L2 v4l2_videodevice.cpp:1747 /dev/video2[17:cap]: Dequeuing buffer 2
+[0:09:41.958920481] [7471] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1, 1, 1  }; matrix=Matrix { [ 1, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1 ] }
+[0:09:41.966679893] [7467] DEBUG DelayedControls delayed_controls.cpp:214 Reading Analogue Gain to 1024 at index 0
+[0:09:41.966735831] [7467] DEBUG DelayedControls delayed_controls.cpp:214 Reading Exposure to 970 at index 0
+[0:09:41.966786353] [7467] DEBUG V4L2 v4l2_videodevice.cpp:2028 /dev/video2[17:cap]: Queueing buffer 2
+[0:09:41.967463340] [7467] DEBUG Request request.cpp:137 Request(2:C:0/1:0)
+[0:09:41.967582872] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.967638602] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.967654279] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:41.967688967] [7467] DEBUG DelayedControls delayed_controls.cpp:177 Queuing Analogue Gain to 1024 at index 3
+[0:09:41.967731885] [7467] DEBUG DelayedControls delayed_controls.cpp:177 Queuing Exposure to 1067 at index 3
+[0:09:41.992146750] [7467] DEBUG V4L2 v4l2_videodevice.cpp:1747 /dev/video2[17:cap]: Dequeuing buffer 3
+[0:09:41.992914832] [7471] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.88106, 1, 1.854  }; matrix=Matrix { [ 1.88106, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.854 ] }
+[0:09:42.004258713] [7467] DEBUG DelayedControls delayed_controls.cpp:214 Reading Analogue Gain to 1024 at index 1
+[0:09:42.004351735] [7467] DEBUG DelayedControls delayed_controls.cpp:214 Reading Exposure to 1067 at index 1
+[0:09:42.004434652] [7467] DEBUG V4L2 v4l2_videodevice.cpp:2028 /dev/video2[17:cap]: Queueing buffer 3
+[0:09:42.005202578] [7467] DEBUG Request request.cpp:137 Request(3:C:0/1:0)
+[0:09:42.005319558] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:42.005323881] [7467] DEBUG DelayedControls delayed_controls.cpp:177 Queuing Analogue Gain to 1024 at index 4
+[0:09:42.005361851] [7467] DEBUG DelayedControls delayed_controls.cpp:177 Queuing Exposure to 1067 at index 4
+[0:09:42.005385809] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:42.005406539] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:42.025517656] [7467] DEBUG V4L2 v4l2_videodevice.cpp:1747 /dev/video2[17:cap]: Dequeuing buffer 0
+[0:09:42.026505949] [7471] DEBUG Debayer debayer_cpu.cpp:835 Debayer parameters: blackLevel=Vector { 0.0627451, 0.0627451, 0.0627451  }; gamma=0.454545; contrastExp=1; gains=Vector { 1.88106, 1, 1.854  }; matrix=Matrix { [ 1.88106, 0, 0 ], [ 0, 1, 0 ], [ 0, 0, 1.854 ] }
+[0:09:42.040552570] [7467] DEBUG DelayedControls delayed_controls.cpp:214 Reading Analogue Gain to 1024 at index 2
+[0:09:42.040642154] [7467] DEBUG DelayedControls delayed_controls.cpp:214 Reading Exposure to 1067 at index 2
+[0:09:42.040729655] [7467] DEBUG V4L2 v4l2_videodevice.cpp:2028 /dev/video2[17:cap]: Queueing buffer 0
+[0:09:42.040907261] [7470] DEBUG IPASoftAwb awb.cpp:103 gain R/B: Vector { 1.87303, 1, 1.84507  }; temperature: 4690
+[0:09:42.040988356] [7470] DEBUG IPASoftExposure agc.cpp:161 0: 129527
+[0:09:42.041208306] [7470] DEBUG IPASoftExposure agc.cpp:161 1: 0
+[0:09:42.041237473] [7470] DEBUG IPASoftExposure agc.cpp:161 2: 0
+[0:09:42.041261692] [7470] DEBUG IPASoftExposure agc.cpp:161 3: 0
+[0:09:42.041284714] [7470] DEBUG IPASoftExposure agc.cpp:161 4: 0
+[0:09:42.041308464] [7470] DEBUG IPASoftExposure agc.cpp:97 exposureMSV 1 exp 1173 again 1024
+[0:09:42.041492685] [7467] DEBUG Request request.cpp:137 Request(4:C:0/1:0)
+[0:09:42.041615238] [7468] DEBUG Request request.cpp:370 Created request - cookie: 0
+[0:09:42.041620342] [7467] DEBUG DelayedControls delayed_controls.cpp:177 Queuing Analogue Gain to 1024 at index 5
+[0:09:42.041657843] [7467] DEBUG DelayedControls delayed_controls.cpp:177 Queuing Exposure to 1173 at index 5
+[0:09:42.041738573] [7468] DEBUG Camera camera.cpp:1461 Stopping capture
+[0:09:42.046235344] [7467] DEBUG Request request.cpp:137 Request(5:C:0/1:0)
+[0:09:42.046318782] [7467] DEBUG Request request.cpp:137 Request(6:C:0/1:0)
+[0:09:42.046371908] [7467] DEBUG V4L2 v4l2_videodevice.cpp:1622 /dev/video2[17:cap]: Releasing buffers
+[0:09:42.046431283] [7467] DEBUG V4L2 v4l2_videodevice.cpp:1337 /dev/video2[17:cap]: 0 buffers requested.

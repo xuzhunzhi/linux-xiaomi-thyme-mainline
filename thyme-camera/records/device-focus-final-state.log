@@ -1,0 +1,57 @@
+kernel and uptime
+Linux xiaomi-thyme 7.2.0-rc5-sm8250-modem #18 SMP PREEMPT Sun Oct 18 19:39:48 CST 2026 aarch64 GNU/Linux
+ 20:34:13 up 36 min,  2 users,  load average: 0.81, 1.00, 0.97
+binding and power
+../../../../../../bus/i2c/drivers/thyme-ak7377-retry
+/sys/bus/i2c/devices/21-000c
+auto
+active
+/sys/bus/i2c/devices/21-003d
+auto
+active
+/sys/bus/platform/devices/ac6a000.camss
+auto
+active
+desktop services
+ActiveState=active
+MainPID=12429
+Environment=LD_LIBRARY_PATH=/opt/thyme-camera-focus-color/lib LIBCAMERA_LOG_LEVELS=IPASoftAwb:DEBUG,IPASoftExposure:DEBUG,IPASoftAf:DEBUG,Debayer:DEBUG
+
+ActiveState=active
+MainPID=12430
+Environment=GIO_USE_VFS=local LD_LIBRARY_PATH=/opt/thyme-camera-focus-color/lib
+active camera nodes
+ 		node.description = "Xiaomi Mi 10S Front (S5K3T2)"
+ 		node.name = "libcamera_input._base_soc_0_cci_ac50000_i2c-bus_0_camera_10"
+ 		node.description = "Xiaomi Mi 10S Main (S5KHMX)"
+ 		node.name = "libcamera_input._base_soc_0_cci_ac4f000_i2c-bus_1_camera_3d"
+ 		node.description = "Xiaomi Mi 10S Ultrawide (OV13B10)"
+ 		node.name = "libcamera_input._base_soc_0_cci_ac50000_i2c-bus_1_camera_36"
+GNOME
+2545 /usr/bin/gnome-shell --mode=ubuntu
+modules
+thyme_ak7377_retry     12288  3
+current focus
+focus_absolute: 470
+recent autofocus
+Oct 18 20:33:47 xiaomi-thyme pipewire[12429]: [0:35:58.722740418] [12621] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 536 (sharpness 4526)
+Oct 18 20:33:47 xiaomi-thyme pipewire[12429]: [0:35:58.982243712] [12621] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 558 (sharpness 4631)
+Oct 18 20:33:48 xiaomi-thyme pipewire[12429]: [0:35:59.255471386] [12621] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 580 (sharpness 4575)
+Oct 18 20:33:48 xiaomi-thyme pipewire[12429]: [0:35:59.516078282] [12621] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 602 (sharpness 4459)
+Oct 18 20:33:48 xiaomi-thyme pipewire[12429]: [0:35:59.792118686] [12621] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 624 (sharpness 4559)
+Oct 18 20:33:48 xiaomi-thyme pipewire[12429]: [0:36:00.048561383] [12621] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 646 (sharpness 4571)
+Oct 18 20:33:49 xiaomi-thyme pipewire[12429]: [0:36:00.324233346] [12621] DEBUG IPASoftAf af.cpp:154 Fine focus sample at 668 (sharpness 4505)
+Oct 18 20:33:49 xiaomi-thyme pipewire[12429]: [0:36:00.324270586] [12621]  INFO IPASoftAf af.cpp:191 Autofocus completed at 470 (sharpness 4637)
+dynamic linking
+	linux-vdso.so.1 (0x0000ffffb5696000)
+	libcamera-base.so.0.7 => /opt/thyme-camera-focus-color/lib/libcamera-base.so.0.7 (0x0000ffffb5450000)
+	libcrypto.so.3 => /usr/lib/aarch64-linux-gnu/libcrypto.so.3 (0x0000ffffb4e20000)
+	libudev.so.1 => /usr/lib/aarch64-linux-gnu/libudev.so.1 (0x0000ffffb4dc0000)
+	libyaml-0.so.2 => /usr/lib/aarch64-linux-gnu/libyaml-0.so.2 (0x0000ffffb4d80000)
+	libstdc++.so.6 => /usr/lib/aarch64-linux-gnu/libstdc++.so.6 (0x0000ffffb4ae0000)
+	libm.so.6 => /usr/lib/aarch64-linux-gnu/libm.so.6 (0x0000ffffb4a10000)
+	libgcc_s.so.1 => /usr/lib/aarch64-linux-gnu/libgcc_s.so.1 (0x0000ffffb49d0000)
+	libc.so.6 => /usr/lib/aarch64-linux-gnu/libc.so.6 (0x0000ffffb4800000)
+	/lib/ld-linux-aarch64.so.1 (0x0000ffffb5650000)
+	libz.so.1 => /usr/lib/aarch64-linux-gnu/libz.so.1 (0x0000ffffb47c0000)
+	libzstd.so.1 => /usr/lib/aarch64-linux-gnu/libzstd.so.1 (0x0000ffffb4700000)

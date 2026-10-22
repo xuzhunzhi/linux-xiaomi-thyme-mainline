@@ -1,0 +1,5 @@
+Oct 18 20:22:15 xiaomi-thyme pipewire[10793]: [0:24:26.358264084] [10886]  WARN IPASoftAf af.cpp:44 No focus lens control available
+Oct 18 20:22:44 xiaomi-thyme pipewire[10793]: [0:24:55.698619875] [10886]  WARN IPASoftAf af.cpp:44 No focus lens control available
+Oct 18 20:23:41 xiaomi-thyme pipewire[10793]: [0:25:52.407105748] [10886]  WARN IPASoftAf af.cpp:44 No focus lens control available
+Oct 18 20:25:28 xiaomi-thyme pipewire[10793]: [0:27:39.721254627] [10886]  WARN IPASoftAf af.cpp:44 No focus lens control available
+Oct 18 20:26:50 xiaomi-thyme pipewire[10793]: [0:29:01.937536723] [10886]  WARN IPASoftAf af.cpp:44 No focus lens control available

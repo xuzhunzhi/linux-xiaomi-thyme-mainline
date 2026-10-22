@@ -1,0 +1,120 @@
+af state
+Failed to open /dev/v4l-subdev26: Invalid argument
+0x60
+0x00
+0x00
+Oct 18 20:27:04 xiaomi-thyme pipewire[10793]: [0:29:15.929759072] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.20431 exp 2351 again 32
+Oct 18 20:27:04 xiaomi-thyme pipewire[10793]: [0:29:16.075862494] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.20639 exp 2351 again 32
+Oct 18 20:27:04 xiaomi-thyme pipewire[10793]: [0:29:16.209103975] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.19657 exp 2351 again 32
+Oct 18 20:27:05 xiaomi-thyme pipewire[10793]: [0:29:16.332048217] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.18361 exp 2351 again 32
+Oct 18 20:27:05 xiaomi-thyme pipewire[10793]: [0:29:16.475907551] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.17403 exp 2351 again 32
+Oct 18 20:27:05 xiaomi-thyme pipewire[10793]: [0:29:16.609525738] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.16486 exp 2351 again 32
+Oct 18 20:27:05 xiaomi-thyme pipewire[10793]: [0:29:16.731908906] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.15817 exp 2351 again 32
+Oct 18 20:27:05 xiaomi-thyme pipewire[10793]: [0:29:16.874445631] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.15887 exp 2351 again 32
+Oct 18 20:27:05 xiaomi-thyme pipewire[10793]: [0:29:17.007481390] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.16009 exp 2351 again 32
+Oct 18 20:27:05 xiaomi-thyme pipewire[10793]: [0:29:17.141517167] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.15711 exp 2351 again 32
+Oct 18 20:27:06 xiaomi-thyme pipewire[10793]: [0:29:17.274832291] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.15587 exp 2351 again 32
+Oct 18 20:27:06 xiaomi-thyme pipewire[10793]: [0:29:17.407692432] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.15979 exp 2351 again 32
+Oct 18 20:27:06 xiaomi-thyme pipewire[10793]: [0:29:17.529828577] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.16183 exp 2351 again 32
+Oct 18 20:27:06 xiaomi-thyme pipewire[10793]: [0:29:17.674427208] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.16254 exp 2351 again 32
+Oct 18 20:27:06 xiaomi-thyme pipewire[10793]: [0:29:17.806070778] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.16625 exp 2351 again 32
+Oct 18 20:27:06 xiaomi-thyme pipewire[10793]: [0:29:17.942407826] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.16604 exp 2351 again 32
+Oct 18 20:27:06 xiaomi-thyme pipewire[10793]: [0:29:18.063788009] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.16466 exp 2351 again 32
+Oct 18 20:27:06 xiaomi-thyme pipewire[10793]: [0:29:18.205118735] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.16415 exp 2351 again 32
+Oct 18 20:27:07 xiaomi-thyme pipewire[10793]: [0:29:18.339626474] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.16391 exp 2351 again 32
+Oct 18 20:27:07 xiaomi-thyme pipewire[10793]: [0:29:18.473106124] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.131 exp 2351 again 32
+Oct 18 20:27:07 xiaomi-thyme pipewire[10793]: [0:29:18.596312648] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.17316 exp 2351 again 32
+Oct 18 20:27:07 xiaomi-thyme pipewire[10793]: [0:29:18.726700688] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.23526 exp 2351 again 32
+Oct 18 20:27:07 xiaomi-thyme pipewire[10793]: [0:29:18.871546603] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.28321 exp 2351 again 32
+Oct 18 20:27:07 xiaomi-thyme pipewire[10793]: [0:29:19.006430734] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.29116 exp 2351 again 32
+Oct 18 20:27:07 xiaomi-thyme pipewire[10793]: [0:29:19.128720051] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.25293 exp 2351 again 32
+Oct 18 20:27:08 xiaomi-thyme pipewire[10793]: [0:29:19.272400642] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.21507 exp 2351 again 32
+Oct 18 20:27:08 xiaomi-thyme pipewire[10793]: [0:29:19.405132506] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.16475 exp 2351 again 32
+Oct 18 20:27:08 xiaomi-thyme pipewire[10793]: [0:29:19.527190321] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.13069 exp 2351 again 32
+Oct 18 20:27:08 xiaomi-thyme pipewire[10793]: [0:29:19.660412844] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.10253 exp 2351 again 32
+Oct 18 20:27:08 xiaomi-thyme pipewire[10793]: [0:29:19.807087809] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.06005 exp 2351 again 32
+Oct 18 20:27:08 xiaomi-thyme pipewire[10793]: [0:29:19.939335315] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.06442 exp 2351 again 32
+Oct 18 20:27:08 xiaomi-thyme pipewire[10793]: [0:29:20.067433384] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.08513 exp 2351 again 32
+Oct 18 20:27:08 xiaomi-thyme pipewire[10793]: [0:29:20.194588987] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.07794 exp 2351 again 32
+Oct 18 20:27:09 xiaomi-thyme pipewire[10793]: [0:29:20.324864220] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.04449 exp 2351 again 32
+Oct 18 20:27:09 xiaomi-thyme pipewire[10793]: [0:29:20.470890613] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.01741 exp 2351 again 32
+Oct 18 20:27:09 xiaomi-thyme pipewire[10793]: [0:29:20.602832661] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00218 exp 2351 again 32
+Oct 18 20:27:09 xiaomi-thyme pipewire[10793]: [0:29:20.727291224] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00094 exp 2351 again 32
+Oct 18 20:27:09 xiaomi-thyme pipewire[10793]: [0:29:20.857777022] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00093 exp 2351 again 32
+Oct 18 20:27:09 xiaomi-thyme pipewire[10793]: [0:29:21.000660922] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00133 exp 2351 again 32
+Oct 18 20:27:09 xiaomi-thyme pipewire[10793]: [0:29:21.137240098] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00075 exp 2351 again 32
+Oct 18 20:27:10 xiaomi-thyme pipewire[10793]: [0:29:21.269496041] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00183 exp 2351 again 32
+Oct 18 20:27:10 xiaomi-thyme pipewire[10793]: [0:29:21.391654790] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00387 exp 2351 again 32
+Oct 18 20:27:10 xiaomi-thyme pipewire[10793]: [0:29:21.532500533] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00806 exp 2351 again 32
+Oct 18 20:27:10 xiaomi-thyme pipewire[10793]: [0:29:21.666681200] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.01055 exp 2351 again 32
+Oct 18 20:27:10 xiaomi-thyme pipewire[10793]: [0:29:21.790401612] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.03005 exp 2351 again 32
+Oct 18 20:27:10 xiaomi-thyme pipewire[10793]: [0:29:21.922895099] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.0204 exp 2351 again 32
+Oct 18 20:27:10 xiaomi-thyme pipewire[10793]: [0:29:22.068448332] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.02648 exp 2351 again 32
+Oct 18 20:27:10 xiaomi-thyme pipewire[10793]: [0:29:22.200227365] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.04789 exp 2351 again 32
+Oct 18 20:27:11 xiaomi-thyme pipewire[10793]: [0:29:22.333363850] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.01802 exp 2351 again 32
+Oct 18 20:27:11 xiaomi-thyme pipewire[10793]: [0:29:22.455840140] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00166 exp 2351 again 32
+Oct 18 20:27:11 xiaomi-thyme pipewire[10793]: [0:29:22.602412972] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1 exp 2351 again 32
+Oct 18 20:27:11 xiaomi-thyme pipewire[10793]: [0:29:22.725888497] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00071 exp 2351 again 32
+Oct 18 20:27:11 xiaomi-thyme pipewire[10793]: [0:29:22.864054179] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00162 exp 2351 again 32
+Oct 18 20:27:11 xiaomi-thyme pipewire[10793]: [0:29:22.988668310] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00176 exp 2351 again 32
+Oct 18 20:27:11 xiaomi-thyme pipewire[10793]: [0:29:23.119991213] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00185 exp 2351 again 32
+Oct 18 20:27:12 xiaomi-thyme pipewire[10793]: [0:29:23.255427512] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00122 exp 2351 again 32
+Oct 18 20:27:12 xiaomi-thyme pipewire[10793]: [0:29:23.388083858] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00151 exp 2351 again 32
+Oct 18 20:27:12 xiaomi-thyme pipewire[10793]: [0:29:23.521120295] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00218 exp 2351 again 32
+Oct 18 20:27:12 xiaomi-thyme pipewire[10793]: [0:29:23.652522050] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00265 exp 2351 again 32
+Oct 18 20:27:12 xiaomi-thyme pipewire[10793]: [0:29:23.784801638] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00264 exp 2351 again 32
+Oct 18 20:27:12 xiaomi-thyme pipewire[10793]: [0:29:23.917883229] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.0028 exp 2351 again 32
+Oct 18 20:27:12 xiaomi-thyme pipewire[10793]: [0:29:24.056524884] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00254 exp 2351 again 32
+Oct 18 20:27:12 xiaomi-thyme pipewire[10793]: [0:29:24.196106297] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00161 exp 2351 again 32
+Oct 18 20:27:13 xiaomi-thyme pipewire[10793]: [0:29:24.318869972] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00132 exp 2351 again 32
+Oct 18 20:27:13 xiaomi-thyme pipewire[10793]: [0:29:24.464592939] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00115 exp 2351 again 32
+Oct 18 20:27:13 xiaomi-thyme pipewire[10793]: [0:29:24.587471818] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00103 exp 2351 again 32
+Oct 18 20:27:13 xiaomi-thyme pipewire[10793]: [0:29:24.717419562] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00093 exp 2351 again 32
+Oct 18 20:27:13 xiaomi-thyme pipewire[10793]: [0:29:24.862182979] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00006 exp 2351 again 32
+Oct 18 20:27:13 xiaomi-thyme pipewire[10793]: [0:29:24.995098118] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1 exp 2351 again 32
+Oct 18 20:27:13 xiaomi-thyme pipewire[10793]: [0:29:25.119855629] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1 exp 2351 again 32
+Oct 18 20:27:14 xiaomi-thyme pipewire[10793]: [0:29:25.249698741] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1 exp 2351 again 32
+Oct 18 20:27:14 xiaomi-thyme pipewire[10793]: [0:29:25.384510583] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1 exp 2351 again 32
+Oct 18 20:27:14 xiaomi-thyme pipewire[10793]: [0:29:25.527187459] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1 exp 2351 again 32
+Oct 18 20:27:14 xiaomi-thyme pipewire[10793]: [0:29:25.652268969] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.00008 exp 2351 again 32
+Oct 18 20:27:14 xiaomi-thyme pipewire[10793]: [0:29:25.795372758] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.03397 exp 2351 again 32
+Oct 18 20:27:14 xiaomi-thyme pipewire[10793]: [0:29:25.915448091] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.06082 exp 2351 again 32
+Oct 18 20:27:14 xiaomi-thyme pipewire[10793]: [0:29:26.060321400] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.06508 exp 2351 again 32
+Oct 18 20:27:14 xiaomi-thyme pipewire[10793]: [0:29:26.185192552] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.10377 exp 2351 again 32
+Oct 18 20:27:15 xiaomi-thyme pipewire[10793]: [0:29:26.326566715] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.1377 exp 2351 again 32
+Oct 18 20:27:15 xiaomi-thyme pipewire[10793]: [0:29:26.459587579] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.15994 exp 2351 again 32
+Oct 18 20:27:15 xiaomi-thyme pipewire[10793]: [0:29:26.594467023] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.17221 exp 2351 again 32
+Oct 18 20:27:15 xiaomi-thyme pipewire[10793]: [0:29:26.718141864] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.15714 exp 2351 again 32
+Oct 18 20:27:15 xiaomi-thyme pipewire[10793]: [0:29:26.848814686] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.18871 exp 2351 again 32
+Oct 18 20:27:15 xiaomi-thyme pipewire[10793]: [0:29:26.993587113] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.20688 exp 2351 again 32
+Oct 18 20:27:15 xiaomi-thyme pipewire[10793]: [0:29:27.126592749] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.2218 exp 2351 again 32
+Oct 18 20:27:16 xiaomi-thyme pipewire[10793]: [0:29:27.251408913] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.22562 exp 2351 again 32
+Oct 18 20:27:16 xiaomi-thyme pipewire[10793]: [0:29:27.380679271] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.22387 exp 2351 again 32
+Oct 18 20:27:16 xiaomi-thyme pipewire[10793]: [0:29:27.513960075] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.20676 exp 2351 again 32
+Oct 18 20:27:16 xiaomi-thyme pipewire[10793]: [0:29:27.646358435] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.19846 exp 2351 again 32
+Oct 18 20:27:16 xiaomi-thyme pipewire[10793]: [0:29:27.784927178] [11364] DEBUG IPASoftExposure agc.cpp:99 exposureMSV 1.18214 exp 2351 again 32
+kernel errors
+Oct 18 20:22:21 xiaomi-thyme kernel: cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+Oct 18 20:22:21 xiaomi-thyme kernel: cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: format 3 timestamp 0x5ddc3d36
+Oct 18 20:22:21 xiaomi-thyme kernel: cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+Oct 18 20:22:22 xiaomi-thyme kernel: cs35l41 3-0042: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+Oct 18 20:22:22 xiaomi-thyme kernel: cs35l41 3-0040: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+Oct 18 20:22:22 xiaomi-thyme kernel: cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.bin (v1): v0.3.0
+Oct 18 20:22:22 xiaomi-thyme kernel: cs35l41 3-0042: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-RCV-revb2.bin
+Oct 18 20:22:22 xiaomi-thyme kernel: cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.bin (v1): v0.3.0
+Oct 18 20:22:22 xiaomi-thyme kernel: cs35l41 3-0040: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-revb2.bin
+Oct 18 20:22:22 xiaomi-thyme kernel: cs35l41 3-0042: DSP1: Legacy support not available
+Oct 18 20:22:22 xiaomi-thyme kernel: cs35l41 3-0040: DSP1: Legacy support not available
+Oct 18 20:22:28 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal = 11 00 00 00 00 00
+Oct 18 20:22:32 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal = 11 00 00 00 00 00
+Oct 18 20:22:33 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal = 11 00 00 00 00 00
+Oct 18 20:23:16 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal = 11 00 00 00 00 00
+Oct 18 20:27:00 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal = 11 00 00 00 00 00
+Oct 18 20:27:02 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal = 11 00 00 00 00 00
+Oct 18 20:27:05 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal in Idle mode = 13 00 00 00 00 00
+Oct 18 20:27:08 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal in Idle mode = 13 00 00 00 00 00
+Oct 18 20:27:09 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal in Idle mode = 13 00 00 00 00 00
+Oct 18 20:27:11 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal in Idle mode = 13 00 00 00 00 00
+Oct 18 20:27:12 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal = 11 00 00 00 00 00
+Oct 18 20:27:12 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal in Idle mode = 13 00 00 00 00 00
+Oct 18 20:27:14 xiaomi-thyme kernel: [ FTS ] fts_status_event_handler SS negative detect Force cal = 11 00 00 00 00 00

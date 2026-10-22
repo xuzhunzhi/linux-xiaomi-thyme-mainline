@@ -1,0 +1,24 @@
+Created symlink '/run/user/1001/systemd/user/pipewire.service' → '/dev/null'.
+Created symlink '/run/user/1001/systemd/user/pipewire.socket' → '/dev/null'.
+Created symlink '/run/user/1001/systemd/user/wireplumber.service' → '/dev/null'.
+Created symlink '/run/user/1000/systemd/user/pipewire.service' → '/dev/null'.
+Created symlink '/run/user/1000/systemd/user/pipewire.socket' → '/dev/null'.
+Created symlink '/run/user/1000/systemd/user/wireplumber.service' → '/dev/null'.
+only_camss before active suspended suspended suspended
+OPEN OK active suspended active active
+after suspended
+all_auto before suspended suspended suspended suspended
+OPEN FAILED OSError(6, 'No such device or address')
+after error
+only_cci before suspended suspended active suspended
+OPEN FAILED OSError(6, 'No such device or address')
+after error
+camss_again before active suspended suspended suspended
+OPEN FAILED OSError(6, 'No such device or address')
+after error
+Removed '/run/user/1001/systemd/user/pipewire.service'.
+Removed '/run/user/1001/systemd/user/pipewire.socket'.
+Removed '/run/user/1001/systemd/user/wireplumber.service'.
+Removed '/run/user/1000/systemd/user/pipewire.service'.
+Removed '/run/user/1000/systemd/user/pipewire.socket'.
+Removed '/run/user/1000/systemd/user/wireplumber.service'.

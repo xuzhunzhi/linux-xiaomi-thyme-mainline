@@ -1,0 +1,7 @@
+Input Image.gz SHA256: 8f240db12ce29933891dfee49f7664174c194b366d149b53c5a74086a1df83c7
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-menu-focus.img: kernel(+dtb)=38479117 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused fbcon=font:TER16x32 log_buf_len=4M ignore_loglevel root=/dev/sda38'
+PASS: thyme-camera-menu-focus.img; header/command line, kernel, DTB, gzip, padding, original image verified
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-logdump-focus.img: kernel(+dtb)=38479233 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused'
+PASS: thyme-camera-logdump-focus.img; header/command line, kernel, DTB, gzip, padding, original image verified
+packed /home/ubuntu/桌面/etc/thyme-call-repair/boot-images/thyme-camera-display-test-focus.img: kernel(+dtb)=38479117 bytes, cmdline=b'console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused initcall_debug'
+PASS: thyme-camera-display-test-focus.img; header/command line, kernel, DTB, gzip, padding, original image verified

@@ -1,0 +1,332 @@
+The Meson build system
+Version: 1.10.1
+Source dir: /tmp/thyme-libcamera-v070
+Build dir: /tmp/thyme-libcamera-color-build
+Build type: native build
+Project name: libcamera
+Project version: 0.7.0
+C compiler for the host machine: /usr/bin/ccache cc (gcc 15.2.0 "cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0")
+C linker for the host machine: cc ld.bfd 2.46
+C++ compiler for the host machine: /usr/bin/ccache c++ (gcc 15.2.0 "c++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.46
+Host machine cpu family: aarch64
+Host machine cpu: aarch64
+Header "unistd.h" has symbol "close_range" : YES 
+Header "fcntl.h" has symbol "F_ADD_SEALS" : YES 
+Header "unistd.h" has symbol "issetugid" : NO 
+Header "locale.h" has symbol "locale_t" : YES 
+Header "sys/mman.h" has symbol "memfd_create" : YES 
+Header "stdlib.h" has symbol "secure_getenv" : YES 
+Header "ciso646" has symbol "_LIBCPP_VERSION" : NO 
+Header "ciso646" has symbol "__GLIBCXX__" : YES 
+Message: Detected C++ standard library: libstdc++
+Compiler for C supports arguments -Wno-c99-designator: NO 
+Dependency lttng-ust skipped: feature tracing disabled
+Program ./parser.py found: YES (/tmp/thyme-libcamera-v070/utils/codegen/ipc/./parser.py)
+Program ./generate.py found: YES (/tmp/thyme-libcamera-v070/utils/codegen/ipc/./generate.py)
+Program ./extract-docs.py found: YES (/tmp/thyme-libcamera-v070/utils/codegen/ipc/./extract-docs.py)
+Configuring version.h using configuration
+Program openssl found: YES (/usr/bin/openssl)
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Did not find CMake 'cmake'
+Found CMake: NO
+Run-time dependency libyuv found: NO (tried pkgconfig and cmake)
+Has header "libyuv.h" : NO 
+Library atomic found: YES
+Run-time dependency threads found: YES
+Check usable header "EGL/egl.h" : NO 
+Run-time dependency egl found: NO (tried pkgconfig and cmake)
+Run-time dependency glesv2 found: NO (tried pkgconfig and cmake)
+Run-time dependency libdw found: NO (tried pkgconfig and cmake)
+Dependency libunwind skipped: feature libunwind disabled
+Header "execinfo.h" has symbol "backtrace" : YES 
+Found pkg-config: YES (/usr/bin/pkg-config) 2.5.1
+Run-time dependency dl found: YES
+Run-time dependency libudev found: YES 259
+Run-time dependency yaml-0.1 found: YES 0.2.5
+Run-time dependency gnutls found: NO (tried pkgconfig and cmake)
+Run-time dependency libcrypto found: YES 3.5.5
+Dependency libexif skipped: feature android disabled
+Dependency libjpeg skipped: feature android disabled
+Dependency libevent_pthreads skipped: feature cam disabled
+Dependency libevent_pthreads skipped: feature lc-compliance disabled
+Run-time dependency libtiff-4 found: NO (tried pkgconfig and cmake)
+Dependency gtest skipped: feature lc-compliance disabled
+Dependency qt6(modules: Core, Gui, OpenGL, OpenGLWidgets, Widgets) skipped: feature qcam disabled
+Dependency glib-2.0 skipped: feature gstreamer disabled
+Dependency gstreamer-video-1.0 skipped: feature gstreamer disabled
+Dependency gstreamer-allocators-1.0 skipped: feature gstreamer disabled
+Program python3 found: NO (disabled by: pycamera )
+Dependency pybind11 skipped: feature pycamera disabled
+Program doxygen skipped: feature documentation disabled
+Program dot skipped: feature documentation disabled
+Program sphinx-build-3 sphinx-build skipped: feature documentation disabled
+Configuring config.h using configuration
+Build targets in project: 38
+
+libcamera 0.7.0
+
+  Versions
+    Sources                  : 0.7.0
+
+  Paths
+    LIBCAMERA_DATA_DIR       : "/opt/thyme-camera-focus-color/share/libcamera"
+    LIBCAMERA_SYSCONF_DIR    : "/opt/thyme-camera-focus-color/etc/libcamera"
+    IPA_PROXY_DIR            : "/opt/thyme-camera-focus-color/libexec/libcamera"
+    IPA_CONFIG_DIR           : "/opt/thyme-camera-focus-color/etc/libcamera/ipa:/opt/thyme-camera-focus-color/share/libcamera/ipa"
+    IPA_MODULE_DIR           : "/opt/thyme-camera-focus-color/lib/libcamera/ipa"
+
+  Configuration
+    SoftISP support          : true
+    SoftISP GPU acceleration : false
+    IPA modules signed with  : libcrypto
+    Enabled pipelines        : simple
+    Enabled IPA modules      : simple
+    Controls files           : control_ids_core.yaml
+                               control_ids_debug.yaml
+                               control_ids_draft.yaml
+    Properties files         : property_ids_draft.yaml
+                               property_ids_core.yaml
+    Hotplug support          : YES
+    Tracing support          : NO
+    Android support          : NO
+    GStreamer support        : NO
+    Python bindings          : NO
+    V4L2 emulation support   : NO
+    cam application          : NO
+    qcam application         : NO
+    lc-compliance application: NO
+    Unit tests               : NO
+
+  User defined options
+    buildtype                : debugoptimized
+    cam                      : disabled
+    documentation            : disabled
+    gstreamer                : disabled
+    ipas                     : simple
+    lc-compliance            : disabled
+    libdir                   : lib
+    libunwind                : disabled
+    pipelines                : simple
+    prefix                   : /opt/thyme-camera-focus-color
+    pycamera                 : disabled
+    qcam                     : disabled
+    test                     : false
+    tracing                  : disabled
+    v4l2                     : disabled
+
+Found ninja-1.13.2 at /usr/bin/ninja
+ninja: Entering directory `/tmp/thyme-libcamera-color-build'
+[1/160] Generating include/libcamera/ipa/core_mojom_module with a custom command (wrapped by meson to set env)
+[2/160] Generating include/libcamera/property_ids_core.yaml_h with a custom command (wrapped by meson to set env)
+[3/160] Generating include/libcamera/control_ids_rpi.yaml_h with a custom command (wrapped by meson to set env)
+[4/160] Generating utils/codegen/ipc/mojom_templates with a custom command (wrapped by meson to set env)
+[5/160] Generating include/libcamera/formats_h with a custom command
+[6/160] Generating include/libcamera/ipa/soft_mojom_module with a custom command (wrapped by meson to set env)
+[7/160] Generating src/ipa-priv-key with a custom command
+.+..+...+++++++++++++++++++++++++++++++++++++++*.....+..............+...+...+++++++++++++++++++++++++++++++++++++++*...........+...+.......+..+......+.+......+..+......+.+.........+...........+......+...+.+.....+.+...............+...+..+.......+......+......+...+......+...........+...+...............+............+...+......+....+...+.................+...............+................+............+...+...........+.+.....+.......+.....+......+.+...........+............+.......+...+...............+......+...........+.+........+.+......+..+......+.+...+...+.....+....+...+..+.++++++
+......+.+...+..+++++++++++++++++++++++++++++++++++++++*.....+......+.+..+.......+.........+.........+.....+++++++++++++++++++++++++++++++++++++++*.+...+.....+......+.+...+...+..+......+.+...+...+..+.......+......+........+.+......+.........+.....+.+.................+.+......+.........+..+....+.........+......+........+.+......+.........+..+.........+.........+....+..+......+.............+......+...+........+.......+...+...+..+...+.+.....................+...+......+...+..+......+....+.....+......+.......+..+.+............+........+...+....+.....+...+.........+.........+.+......+...++++++
+[8/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/flags.cpp.o
+[9/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/class.cpp.o
+[10/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/bound_method.cpp.o
+[11/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/signal.cpp.o
+[12/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/object.cpp.o
+[13/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/shared_fd.cpp.o
+[14/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/unique_fd.cpp.o
+[15/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/event_dispatcher.cpp.o
+[16/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/backtrace.cpp.o
+[17/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/event_dispatcher_poll.cpp.o
+[18/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/event_notifier.cpp.o
+[19/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/file.cpp.o
+[20/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/mutex.cpp.o
+[21/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/memfd.cpp.o
+[22/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/semaphore.cpp.o
+[23/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/message.cpp.o
+[24/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/log.cpp.o
+[25/160] Generating include/libcamera/internal/tp_header with a custom command
+[26/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/timer.cpp.o
+[27/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/utils.cpp.o
+[28/160] Generating include/libcamera/ipa/core_ipa_interface_h with a custom command (wrapped by meson to set env)
+[29/160] Compiling C++ object src/libcamera/base/libcamera-base.so.0.7.0.p/thread.cpp.o
+[30/160] Generating include/libcamera/ipa/core_ipa_serializer_h with a custom command (wrapped by meson to set env)
+[31/160] Generating include/libcamera/gen-header with a custom command
+[32/160] Generating include/libcamera/ipa/soft_ipa_interface_h with a custom command (wrapped by meson to set env)
+[33/160] Generating include/libcamera/ipa/soft_ipa_serializer_h with a custom command (wrapped by meson to set env)
+[34/160] Linking target src/libcamera/base/libcamera-base.so.0.7.0
+[35/160] Generating include/libcamera/ipa/soft_proxy_h with a custom command (wrapped by meson to set env)
+[36/160] Generating src/libcamera/version.cpp with a custom command
+[37/160] Generating src/libcamera/ipa_pub_key_cpp with a custom command
+writing RSA key
+[38/160] Generating src/libcamera/proxy/soft_proxy_cpp with a custom command (wrapped by meson to set env)
+[39/160] Generating src/libcamera/properties_ids_cpp with a custom command (wrapped by meson to set env)
+[40/160] Generating src/libcamera/controls_ids_cpp with a custom command (wrapped by meson to set env)
+[41/160] Generating src/libcamera/gen-shader-headers with a custom command
+[SHADER-GEN] bayer_1x_packed_frag
+[SHADER-GEN] bayer_unpacked_frag
+[SHADER-GEN] bayer_unpacked_vert
+[SHADER-GEN] identity_vert
+[42/160] Generating symbol file src/libcamera/base/libcamera-base.so.0.7.0.p/libcamera-base.so.0.7.0.symbols
+[43/160] Compiling C++ object src/ipa/libipa/libipa.a.p/algorithm.cpp.o
+[44/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/meson-generated_.._property_ids.cpp.o
+[45/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/meson-generated_.._version.cpp.o
+[46/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/meson-generated_.._ipa_pub_key.cpp.o
+[47/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/meson-generated_.._control_ids.cpp.o
+[48/160] Compiling C++ object src/ipa/libipa/libipa.a.p/agc_mean_luminance.cpp.o
+[49/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/color_space.cpp.o
+[50/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/camera_manager.cpp.o
+[51/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/fence.cpp.o
+[52/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/meson-generated_.._proxy_soft_ipa_proxy.cpp.o
+[53/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/camera.cpp.o
+[54/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/framebuffer.cpp.o
+[55/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/controls.cpp.o
+[56/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/orientation.cpp.o
+[57/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/framebuffer_allocator.cpp.o
+[58/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/geometry.cpp.o
+[59/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/pixel_format.cpp.o
+[60/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/transform.cpp.o
+[61/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/stream.cpp.o
+[62/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/byte_stream_buffer.cpp.o
+[63/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/bayer_format.cpp.o
+[64/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/request.cpp.o
+[65/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/camera_controls.cpp.o
+[66/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/control_validator.cpp.o
+[67/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/clock_recovery.cpp.o
+[68/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/camera_lens.cpp.o
+[69/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/debug_controls.cpp.o
+[70/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/converter.cpp.o
+[71/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/control_serializer.cpp.o
+[72/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/delayed_controls.cpp.o
+[73/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/dma_buf_allocator.cpp.o
+[74/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/device_enumerator_sysfs.cpp.o
+[75/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/ipa_controls.cpp.o
+[76/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/device_enumerator.cpp.o
+[77/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/ipa_interface.cpp.o
+[78/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/formats.cpp.o
+[79/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/global_configuration.cpp.o
+[80/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/ipa_module.cpp.o
+[81/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/ipa_data_serializer.cpp.o
+[82/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/ipa_manager.cpp.o
+[83/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/ipc_pipe.cpp.o
+[84/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/ipa_proxy.cpp.o
+[85/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/ipc_pipe_unixsocket.cpp.o
+[86/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/ipc_unixsocket.cpp.o
+[87/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/mapped_framebuffer.cpp.o
+[88/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/matrix.cpp.o
+[89/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/media_object.cpp.o
+[90/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/process.cpp.o
+[91/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/media_device.cpp.o
+[92/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/media_pipeline.cpp.o
+[93/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/pipeline_handler.cpp.o
+[94/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/shared_mem_object.cpp.o
+[95/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/pub_key.cpp.o
+[96/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/source_paths.cpp.o
+[97/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/sysfs.cpp.o
+[98/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/v4l2_pixelformat.cpp.o
+[99/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/v4l2_request.cpp.o
+[100/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/vector.cpp.o
+[101/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/v4l2_device.cpp.o
+[102/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/v4l2_videodevice.cpp.o
+[103/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/yaml_parser.cpp.o
+[104/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/converter_converter_dw100_vertexmap.cpp.o
+[105/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/v4l2_subdevice.cpp.o
+[106/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/converter_converter_dw100.cpp.o
+[107/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/converter_converter_v4l2_m2m.cpp.o
+[108/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/sensor_camera_sensor.cpp.o
+[109/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/sensor_camera_sensor_properties.cpp.o
+[110/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/sensor_camera_sensor_legacy.cpp.o
+[111/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/software_isp_benchmark.cpp.o
+[112/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/software_isp_debayer.cpp.o
+[113/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/sensor_camera_sensor_raw.cpp.o
+[114/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/software_isp_swstats_cpu.cpp.o
+[115/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/pipeline_simple_simple.cpp.o
+[116/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/software_isp_debayer_cpu.cpp.o
+[117/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/software_isp_software_isp.cpp.o
+[118/160] Compiling C++ object src/libcamera/libcamera.so.0.7.0.p/device_enumerator_udev.cpp.o
+[119/160] Linking target src/libcamera/libcamera.so.0.7.0
+[120/160] Compiling C++ object src/ipa/libipa/libipa.a.p/awb_bayes.cpp.o
+[121/160] Compiling C++ object src/ipa/libipa/libipa.a.p/awb_grey.cpp.o
+[122/160] Compiling C++ object src/ipa/libipa/libipa.a.p/awb.cpp.o
+[123/160] Compiling C++ object src/ipa/libipa/libipa.a.p/colours.cpp.o
+[124/160] Compiling C++ object src/ipa/libipa/libipa.a.p/fixedpoint.cpp.o
+[125/160] Compiling C++ object src/ipa/libipa/libipa.a.p/exposure_mode_helper.cpp.o
+[126/160] Compiling C++ object src/ipa/libipa/libipa.a.p/fc_queue.cpp.o
+[127/160] Compiling C++ object src/ipa/libipa/libipa.a.p/camera_sensor_helper.cpp.o
+[128/160] Compiling C++ object src/ipa/libipa/libipa.a.p/histogram.cpp.o
+[129/160] Compiling C++ object src/ipa/libipa/libipa.a.p/interpolator.cpp.o
+[130/160] Compiling C++ object src/ipa/libipa/libipa.a.p/lsc_polynomial.cpp.o
+[131/160] Compiling C++ object src/ipa/libipa/libipa.a.p/lux.cpp.o
+[132/160] Generating symbol file src/libcamera/libcamera.so.0.7.0.p/libcamera.so.0.7.0.symbols
+[133/160] Compiling C++ object src/ipa/libipa/libipa.a.p/module.cpp.o
+[134/160] Compiling C++ object src/ipa/libipa/libipa.a.p/v4l2_params.cpp.o
+[135/160] Generating src/libcamera/proxy/worker/soft_proxy_worker with a custom command (wrapped by meson to set env)
+[136/160] Compiling C++ object src/ipa/libipa/libipa.a.p/pwl.cpp.o
+[137/160] Linking static target src/ipa/libipa/libipa.a
+[138/160] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/ipa_context.cpp.o
+[139/160] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_adjust.cpp.o
+[140/160] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/soft_simple.cpp.o
+[141/160] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_af.cpp.o
+[142/160] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_awb.cpp.o
+[143/160] Compiling C object utils/ipu3/ipu3-pack.p/ipu3-pack.c.o
+[144/160] Compiling C object utils/ipu3/ipu3-unpack.p/ipu3-unpack.c.o
+[145/160] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_agc.cpp.o
+[146/160] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_blc.cpp.o
+[147/160] Compiling C++ object src/ipa/simple/ipa_soft_simple.so.p/algorithms_ccm.cpp.o
+[148/160] Linking target src/ipa/simple/ipa_soft_simple.so
+[149/160] Compiling C++ object src/apps/common/libapps.a.p/image.cpp.o
+[150/160] Compiling C++ object src/apps/common/libapps.a.p/ppm_writer.cpp.o
+[151/160] Compiling C++ object src/apps/common/libapps.a.p/stream_options.cpp.o
+[152/160] Linking target utils/ipu3/ipu3-pack
+[153/160] Linking target utils/ipu3/ipu3-unpack
+[154/160] Generating src/ipa/simple/ipa_soft_simple.so.sign with a custom command
+[155/160] Compiling C++ object src/apps/ipa-verify/ipa_verify.p/main.cpp.o
+[156/160] Linking target src/apps/ipa-verify/ipa_verify
+[157/160] Compiling C++ object src/libcamera/proxy/worker/soft_ipa_proxy.p/meson-generated_.._soft_ipa_proxy_worker.cpp.o
+[158/160] Linking target src/libcamera/proxy/worker/soft_ipa_proxy
+[159/160] Compiling C++ object src/apps/common/libapps.a.p/options.cpp.o
+[160/160] Linking static target src/apps/common/libapps.a
+Regenerating IPA modules signatures
+Installing include/libcamera/ipa/core_ipa_interface.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/ipa
+Installing include/libcamera/ipa/soft_ipa_interface.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/ipa
+Installing include/libcamera/control_ids.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing include/libcamera/property_ids.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing include/libcamera/formats.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing include/libcamera/libcamera.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing src/libcamera/base/libcamera-base.so.0.7.0 to /opt/thyme-camera-focus-color/lib
+Installing src/libcamera/libcamera.so.0.7.0 to /opt/thyme-camera-focus-color/lib
+Installing src/libcamera/proxy/worker/soft_ipa_proxy to /opt/thyme-camera-focus-color/libexec/libcamera
+Installing src/ipa/simple/ipa_soft_simple.so to /opt/thyme-camera-focus-color/lib/libcamera/ipa
+Installing /tmp/thyme-libcamera-v070/include/libcamera/base/bound_method.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/base
+Installing /tmp/thyme-libcamera-v070/include/libcamera/base/class.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/base
+Installing /tmp/thyme-libcamera-v070/include/libcamera/base/flags.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/base
+Installing /tmp/thyme-libcamera-v070/include/libcamera/base/object.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/base
+Installing /tmp/thyme-libcamera-v070/include/libcamera/base/shared_fd.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/base
+Installing /tmp/thyme-libcamera-v070/include/libcamera/base/signal.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/base
+Installing /tmp/thyme-libcamera-v070/include/libcamera/base/span.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/base
+Installing /tmp/thyme-libcamera-v070/include/libcamera/base/unique_fd.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/base
+Installing /tmp/thyme-libcamera-v070/include/libcamera/ipa/ipa_controls.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/ipa
+Installing /tmp/thyme-libcamera-v070/include/libcamera/ipa/ipa_interface.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/ipa
+Installing /tmp/thyme-libcamera-v070/include/libcamera/ipa/ipa_module_info.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera/ipa
+Installing /tmp/thyme-libcamera-v070/include/libcamera/camera.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/camera_manager.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/color_space.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/controls.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/fence.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/framebuffer.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/framebuffer_allocator.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/geometry.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/logging.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/orientation.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/pixel_format.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/request.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/stream.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-v070/include/libcamera/transform.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-color-build/include/libcamera/version.h to /opt/thyme-camera-focus-color/include/libcamera/libcamera
+Installing /tmp/thyme-libcamera-color-build/meson-private/libcamera-base.pc to /opt/thyme-camera-focus-color/lib/pkgconfig
+Installing /tmp/thyme-libcamera-color-build/meson-private/libcamera.pc to /opt/thyme-camera-focus-color/lib/pkgconfig
+Installing /tmp/thyme-libcamera-v070/src/ipa/simple/data/uncalibrated.yaml to /opt/thyme-camera-focus-color/share/libcamera/ipa/simple
+Installing /tmp/thyme-libcamera-v070/src/ipa/simple/data/s5khmx.yaml to /opt/thyme-camera-focus-color/share/libcamera/ipa/simple
+Installing symlink pointing to libcamera-base.so.0.7.0 to /opt/thyme-camera-focus-color/lib/libcamera-base.so.0.7
+Installing symlink pointing to libcamera-base.so.0.7 to /opt/thyme-camera-focus-color/lib/libcamera-base.so
+Installing symlink pointing to libcamera.so.0.7.0 to /opt/thyme-camera-focus-color/lib/libcamera.so.0.7
+Installing symlink pointing to libcamera.so.0.7 to /opt/thyme-camera-focus-color/lib/libcamera.so
+Running custom install script '/tmp/thyme-libcamera-v070/src/ipa/ipa-sign-install.sh /tmp/thyme-libcamera-color-build/src/ipa-priv-key.pem lib/libcamera/ipa/ipa_soft_simple.so'

@@ -1,0 +1,14 @@
+[Unit]
+Description=Retry missing Xiaomi thyme camera sensors
+After=systemd-modules-load.service systemd-udev-trigger.service
+Before=systemd-user-sessions.service display-manager.service
+ConditionPathExists=/sys/firmware/devicetree/base/model
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/thyme-camera-probe-retry
+TimeoutStartSec=15
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

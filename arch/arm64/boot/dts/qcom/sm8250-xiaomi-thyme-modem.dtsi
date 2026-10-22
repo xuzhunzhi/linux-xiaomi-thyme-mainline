@@ -1,0 +1,81 @@
+// SPDX-License-Identifier: BSD-3-Clause
+/* SDX55 Fusion wiring, adapted from sm8250-xiaomi-apollo.dts. */
+&soc {
+	mdm0: qcom,mdm0 {
+		compatible = "qcom,ext-sdx55m";
+		cell-index = <0>;
+		#address-cells = <0>;
+		interrupt-parent = <&mdm0>;
+		#interrupt-cells = <1>;
+		interrupt-map-mask = <0xffffffff>;
+		interrupt-names =
+			"err_fatal_irq",
+			"status_irq",
+			"mdm2ap_vddmin_irq";
+		/* modem attributes */
+		qcom,ramdump-delay-ms = <3000>;
+		qcom,ramdump-timeout-ms = <120000>;
+		qcom,vddmin-modes = "normal";
+		qcom,vddmin-drive-strength = <8>;
+		qcom,sfr-query;
+		qcom,sysmon-id = <20>;
+		qcom,ssctl-instance-id = <0x10>;
+		qcom,support-shutdown;
+		qcom,pil-force-shutdown;
+		qcom,esoc-skip-restart-for-mdm-crash;
+		qcom,ignore-ssr-failure;
+		pinctrl-names = "mdm_active", "mdm_suspend";
+		pinctrl-0 = <&ap2mdm_default &mdm2ap_default>;
+		pinctrl-1 = <&ap2mdm_sleep &mdm2ap_sleep>;
+		interrupt-map = <0 &tlmm 1 0x3
+				1 &tlmm 3 0x3>;
+		qcom,mdm2ap-errfatal-gpio = <&tlmm 1 0x00>;
+		qcom,ap2mdm-errfatal-gpio = <&tlmm 57 0x00>;
+		qcom,mdm2ap-status-gpio   = <&tlmm 3 0x00>;
+		qcom,ap2mdm-status-gpio   = <&tlmm 56 0x00>;
+		qcom,mdm-link-info = "0306_02.01.00";
+		status = "okay";
+	};
+};
+
+&pcieport2 {
+	modem@0 {
+		reg = <0x10000 0x0 0x0 0x0 0x0>;
+
+		qcom,iommu-group = <&thyme_mhi_iommu_group>;
+		esoc-names = "mdm";
+		esoc-0 = <&mdm0>;
+		mhi,timeout = <2000>;
+		mhi,buffer-len = <0x8000>;
+
+		qcom,vddmin-modes = "normal";
+		qcom,vddmin-drive-strength = <16>;
+		qcom,sfr-query;
+		qcom,sysmon-id = <20>;
+		qcom,ssctl-instance-id = <0x10>;
+		qcom,support-shutdown;
+		qcom,pil-force-shutdown;
+
+		thyme_mhi_iommu_group: thyme-mhi-iommu-group {
+			qcom,iommu-dma-addr-pool = <0x20000000 0x1fffffff>;
+			qcom,iommu-dma = "fastmap";
+			qcom,iommu-pagetable = "coherent";
+		};
+	};
+};
+
+
+&tlmm {
+	ap2mdm_sleep: ap2mdm-sleep-state {
+		pins = "gpio56", "gpio57";
+		function = "gpio";
+		drive-strength = <8>;
+		bias-disable;
+	};
+	mdm2ap_sleep: mdm2ap-sleep-state {
+		pins = "gpio1", "gpio3";
+		function = "gpio";
+		drive-strength = <8>;
+		bias-disable;
+	};
+};

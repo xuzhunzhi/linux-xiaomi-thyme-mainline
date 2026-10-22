@@ -1,0 +1,263 @@
+// SPDX-License-Identifier: BSD-3-Clause
+/*
+ * Xiaomi Mi 10S camera wiring, translated from thyme's downstream board data.
+ * Sensor mode tables and SM8250 C-PHY support come from linux-apollo-7.1.
+ * Do not substitute apollo's PM8008 rails, CCI masters or reset GPIOs here.
+ */
+
+#include <dt-bindings/clock/qcom,camcc-sm8250.h>
+#include <dt-bindings/media/video-interfaces.h>
+
+/ {
+	thyme_camera_macro_avdd: camera-macro-avdd-regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "thyme_camera_macro_avdd";
+		regulator-min-microvolt = <2800000>;
+		regulator-max-microvolt = <2800000>;
+		startup-delay-us = <135>;
+		gpio = <&pm8150l_gpios 1 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		vin-supply = <&vreg_bob>;
+	};
+
+	thyme_camera_wide_avdd: camera-wide-avdd-regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "thyme_camera_wide_avdd";
+		regulator-min-microvolt = <2800000>;
+		regulator-max-microvolt = <2800000>;
+		startup-delay-us = <135>;
+		gpio = <&pm8150l_gpios 3 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		vin-supply = <&vreg_bob>;
+	};
+
+	thyme_camera_front_avdd: camera-front-avdd-regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "thyme_camera_front_avdd";
+		regulator-min-microvolt = <2800000>;
+		regulator-max-microvolt = <2800000>;
+		startup-delay-us = <135>;
+		gpio = <&pm8150l_gpios 4 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		vin-supply = <&vreg_bob>;
+	};
+
+	thyme_camera_ultra_avdd: camera-ultra-avdd-regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "thyme_camera_ultra_avdd";
+		regulator-min-microvolt = <2800000>;
+		regulator-max-microvolt = <2800000>;
+		startup-delay-us = <135>;
+		gpio = <&pm8150l_gpios 5 GPIO_ACTIVE_HIGH>;
+		enable-active-high;
+		vin-supply = <&vreg_bob>;
+	};
+};
+
+&camss {
+	status = "okay";
+	vdda-phy-supply = <&vreg_l5a_0p875>;
+	vdda-pll-supply = <&vreg_l9a_1p2>;
+
+	ports {
+		port@2 {
+			thyme_csiphy2_ep: endpoint {
+				clock-lanes = <7>;
+				data-lanes = <0 1 2 3>;
+				bus-type = <MEDIA_BUS_TYPE_CSI2_DPHY>;
+				remote-endpoint = <&thyme_ov13b10_ep>;
+			};
+		};
+
+		port@3 {
+			thyme_csiphy3_ep: endpoint {
+				data-lanes = <0 1 2>;
+				bus-type = <MEDIA_BUS_TYPE_CSI2_CPHY>;
+				remote-endpoint = <&thyme_s5khmx_ep>;
+			};
+		};
+
+		port@4 {
+			thyme_csiphy4_ep: endpoint {
+				clock-lanes = <7>;
+				data-lanes = <0 1 2 3>;
+				bus-type = <MEDIA_BUS_TYPE_CSI2_DPHY>;
+				remote-endpoint = <&thyme_s5k3t2_ep>;
+			};
+		};
+	};
+};
+
+&cci0 {
+	status = "okay";
+};
+
+&cci0_i2c1 {
+	thyme_camera_wide: camera@3d {
+		compatible = "samsung,s5khmx";
+		reg = <0x3d>;
+
+		avdd-supply = <&thyme_camera_wide_avdd>;
+		dvdd-supply = <&vreg_l1f_cam_dvdd1_1p1>;
+		dovdd-supply = <&vreg_l7f_1p8>;
+		afvdd-supply = <&vreg_l6f_cam_avdd1_2p85>;
+		/* Downstream CUSTOM_REG1/2 keep the unused GC02M1 rails up. */
+		avdd2-supply = <&thyme_camera_macro_avdd>;
+		avdd3-supply = <&thyme_camera_front_avdd>;
+
+		clocks = <&camcc CAM_CC_MCLK1_CLK>;
+		clock-names = "xvclk";
+		assigned-clocks = <&camcc CAM_CC_MCLK1_CLK>;
+		assigned-clock-rates = <19200000>;
+		reset-gpios = <&tlmm 62 GPIO_ACTIVE_LOW>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&thyme_cam_mclk1 &thyme_cam_wide_reset>;
+		orientation = <1>;
+		rotation = <270>;
+
+		port {
+			thyme_s5khmx_ep: endpoint {
+				data-lanes = <1 2 3>;
+				bus-type = <MEDIA_BUS_TYPE_CSI2_CPHY>;
+				link-frequencies = /bits/ 64 <603114035>;
+				remote-endpoint = <&thyme_csiphy3_ep>;
+			};
+		};
+	};
+};
+
+&cci1 {
+	status = "okay";
+};
+
+&cci1_i2c0 {
+	thyme_camera_front: camera@10 {
+		compatible = "samsung,s5k3t2";
+		reg = <0x10>;
+
+		avdd-supply = <&thyme_camera_front_avdd>;
+		dvdd-supply = <&vreg_l4f_cam_dvdd_front_1p1>;
+		dovdd-supply = <&vreg_l7f_1p8>;
+		avdd2-supply = <&thyme_camera_macro_avdd>;
+
+		clocks = <&camcc CAM_CC_MCLK4_CLK>;
+		clock-names = "xvclk";
+		assigned-clocks = <&camcc CAM_CC_MCLK4_CLK>;
+		/* The thyme module's power sequence and PLL tables use 19.2 MHz. */
+		assigned-clock-rates = <19200000>;
+		reset-gpios = <&tlmm 109 GPIO_ACTIVE_LOW>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&thyme_cam_mclk4 &thyme_cam_front_reset>;
+		orientation = <0>;
+		rotation = <90>;
+
+		port {
+			thyme_s5k3t2_ep: endpoint {
+				clock-lanes = <0>;
+				data-lanes = <1 2 3 4>;
+				bus-type = <MEDIA_BUS_TYPE_CSI2_DPHY>;
+				link-frequencies = /bits/ 64 <310400000 896000000 300000000>;
+				remote-endpoint = <&thyme_csiphy4_ep>;
+			};
+		};
+	};
+};
+
+&cci1_i2c1 {
+	thyme_camera_ultra: camera@36 {
+		compatible = "ovti,ov13b10";
+		reg = <0x36>;
+
+		avdd-supply = <&thyme_camera_ultra_avdd>;
+		dvdd-supply = <&vreg_l3f_cam_dvdd2_1p05>;
+		dovdd-supply = <&vreg_l7f_1p8>;
+		avdd2-supply = <&thyme_camera_macro_avdd>;
+		avdd3-supply = <&thyme_camera_front_avdd>;
+
+		clocks = <&camcc CAM_CC_MCLK3_CLK>;
+		clock-names = "xvclk";
+		assigned-clocks = <&camcc CAM_CC_MCLK3_CLK>;
+		assigned-clock-rates = <19200000>;
+		reset-gpios = <&pm8009_gpios 3 GPIO_ACTIVE_LOW>;
+		pinctrl-names = "default";
+		pinctrl-0 = <&thyme_cam_mclk3 &thyme_cam_ultra_reset>;
+		orientation = <1>;
+		rotation = <270>;
+
+		port {
+			thyme_ov13b10_ep: endpoint {
+				clock-lanes = <0>;
+				data-lanes = <1 2 3 4>;
+				bus-type = <MEDIA_BUS_TYPE_CSI2_DPHY>;
+				link-frequencies = /bits/ 64 <560000000>;
+				remote-endpoint = <&thyme_csiphy2_ep>;
+			};
+		};
+	};
+};
+
+&tlmm {
+	thyme_cam_mclk1: camera-mclk1-state {
+		pins = "gpio95";
+		function = "cam_mclk";
+		drive-strength = <4>;
+		bias-disable;
+	};
+
+	thyme_cam_mclk3: camera-mclk3-state {
+		pins = "gpio97";
+		function = "cam_mclk";
+		drive-strength = <4>;
+		bias-disable;
+	};
+
+	thyme_cam_mclk4: camera-mclk4-state {
+		pins = "gpio98";
+		function = "cam_mclk";
+		drive-strength = <4>;
+		bias-disable;
+	};
+
+	thyme_cam_wide_reset: camera-wide-reset-state {
+		pins = "gpio62";
+		function = "gpio";
+		drive-strength = <2>;
+		bias-disable;
+	};
+
+	thyme_cam_front_reset: camera-front-reset-state {
+		pins = "gpio109";
+		function = "gpio";
+		drive-strength = <2>;
+		bias-disable;
+	};
+};
+
+&pm8009_gpios {
+	/* GPIO3 belongs to OV13B10; leave the unsupported GC02M1s in reset. */
+	/delete-node/ gpio3;
+
+	thyme_cam_ultra_reset: camera-ultra-reset-state {
+		pins = "gpio3";
+		function = "normal";
+		power-source = <1>;
+		bias-disable;
+	};
+};
+
+&vreg_l3f_cam_dvdd2_1p05 {
+	/* thyme's OV13B10 uses PM8009 L3 at 1.2 V. */
+	regulator-min-microvolt = <1200000>;
+	regulator-max-microvolt = <1200000>;
+};
+
+&apps_rsc {
+	regulators-2 {
+		vreg_l4f_cam_dvdd_front_1p1: ldo4 {
+			regulator-name = "vreg_l4f_cam_dvdd_front_1p1";
+			regulator-min-microvolt = <1104000>;
+			regulator-max-microvolt = <1104000>;
+			regulator-initial-mode = <RPMH_REGULATOR_MODE_HPM>;
+		};
+	};
+};

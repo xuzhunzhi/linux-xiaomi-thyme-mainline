@@ -1,0 +1,2 @@
+
+** (python3:7981): CRITICAL **: 20:13:10.449: handle_format_change: assertion 'gst_caps_is_fixed (pwsrc->caps)' failed

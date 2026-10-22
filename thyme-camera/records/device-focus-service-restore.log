@@ -1,0 +1,6 @@
+Removed '/run/user/1001/systemd/user/pipewire.service'.
+Removed '/run/user/1001/systemd/user/pipewire.socket'.
+Removed '/run/user/1001/systemd/user/wireplumber.service'.
+restored
+active
+active

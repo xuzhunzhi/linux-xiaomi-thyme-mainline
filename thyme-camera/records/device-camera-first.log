@@ -1,0 +1,19 @@
+Linux xiaomi-thyme 7.2.0-rc5-sm8250-modem #15 SMP PREEMPT Sun Oct 18 10:29:55 CST 2026 aarch64 GNU/Linux
+23-0036	i2c: wait for supplier /soc@0/spmi@c440000/pmic@a/gpio@c000/camera-ultra-reset-state
+s5khmx 21-003d:
+qcom-camss ac6a000.camss:
+ [fwnode] dev=23-0036, node=/soc@0/cci@ac50000/i2c-bus@1/camera@36/port/endpoint
+s5k3t2 22-0010:
+lrwxrwxrwx 1 root root 0 Oct 18 10:40 /sys/bus/i2c/devices/21-003d/driver -> ../../../../../../bus/i2c/drivers/s5khmx
+lrwxrwxrwx 1 root root 0 Oct 18 10:40 /sys/bus/i2c/devices/22-0010/driver -> ../../../../../../bus/i2c/drivers/s5k3t2
+[    0.362806] gpiochip_add_data_with_key: GPIOs 546..549 (c440000.spmi:pmic@a:gpio@c000) failed to register, -22
+[    0.362827] qcom-spmi-gpio c440000.spmi:pmic@a:gpio@c000: can't add gpio chip
+[    0.362839] qcom-spmi-gpio c440000.spmi:pmic@a:gpio@c000: probe with driver qcom-spmi-gpio failed with error -22
+[   12.775107] i2c 23-0036: deferred probe pending: i2c: wait for supplier /soc@0/spmi@c440000/pmic@a/gpio@c000/camera-ultra-reset-state
+[  169.337087] gpiochip_add_data_with_key: GPIOs 744..747 (c440000.spmi:pmic@a:gpio@c000) failed to register, -22
+[  169.337107] qcom-spmi-gpio c440000.spmi:pmic@a:gpio@c000: can't add gpio chip
+[  169.337113] qcom-spmi-gpio c440000.spmi:pmic@a:gpio@c000: probe with driver qcom-spmi-gpio failed with error -22
+Probing devices...
+
+[0:06:44.023177070] [5863]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0
+[0:06:44.047481865] [5866]  INFO SimplePipeline simple.cpp:1899 No sensor found for /dev/media0

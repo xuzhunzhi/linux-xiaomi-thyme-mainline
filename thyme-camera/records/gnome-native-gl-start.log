@@ -1,0 +1,282 @@
+Oct 18 19:50:23 xiaomi-thyme sshd-session[20613]: Accepted password for user from 172.16.42.211 port 41396 ssh2
+Oct 18 19:50:23 xiaomi-thyme sshd-session[20613]: pam_unix(sshd:session): session opened for user user(uid=1000) by user(uid=0)
+Oct 18 19:50:23 xiaomi-thyme systemd-logind[1968]: New session '74' of user 'user' with class 'user' and type 'tty'.
+Oct 18 19:50:23 xiaomi-thyme systemd[1]: Started session-74.scope - Session 74 of User user.
+Oct 18 19:50:23 xiaomi-thyme sshd-session[20649]: Received disconnect from 172.16.42.211 port 41396:11: disconnected by user
+Oct 18 19:50:23 xiaomi-thyme sshd-session[20649]: Disconnected from user user 172.16.42.211 port 41396
+Oct 18 19:50:23 xiaomi-thyme sshd-session[20613]: pam_unix(sshd:session): session closed for user user
+Oct 18 19:50:23 xiaomi-thyme systemd[1]: session-74.scope: Deactivated successfully.
+Oct 18 19:50:23 xiaomi-thyme systemd-logind[1968]: Session 74 logged out. Waiting for processes to exit.
+Oct 18 19:50:23 xiaomi-thyme systemd-logind[1968]: Removed session 74.
+Oct 18 19:50:23 xiaomi-thyme sshd-session[20652]: Accepted password for user from 172.16.42.211 port 41406 ssh2
+Oct 18 19:50:23 xiaomi-thyme sshd-session[20652]: pam_unix(sshd:session): session opened for user user(uid=1000) by user(uid=0)
+Oct 18 19:50:23 xiaomi-thyme systemd-logind[1968]: New session '75' of user 'user' with class 'user' and type 'tty'.
+Oct 18 19:50:23 xiaomi-thyme systemd[1]: Started session-75.scope - Session 75 of User user.
+Oct 18 19:50:24 xiaomi-thyme sudo[20691]: pam_unix(sudo:session): session opened for user root(uid=0) by user(uid=1000)
+Oct 18 19:50:24 xiaomi-thyme sudo[20691]: user :  PWD=/home/user ; USER=root ; COMMAND=/usr/bin/install -d -o ubuntu -g ubuntu /home/ubuntu/.config/systemd/user/org.gnome.Shell@ubuntu.service.d
+Oct 18 19:50:24 xiaomi-thyme sudo[20691]: pam_unix(sudo:session): session closed for user root
+Oct 18 19:50:24 xiaomi-thyme sudo[20694]: pam_unix(sudo:session): session opened for user root(uid=0) by user(uid=1000)
+Oct 18 19:50:24 xiaomi-thyme sudo[20694]: user :  PWD=/home/user ; USER=root ; COMMAND=/usr/bin/install -m 644 -o ubuntu -g ubuntu /tmp/90-thyme-native-gl.conf /home/ubuntu/.config/systemd/user/org.gnome.Shell@ubuntu.service.d/90-thyme-native-gl.conf
+Oct 18 19:50:24 xiaomi-thyme sudo[20694]: pam_unix(sudo:session): session closed for user root
+Oct 18 19:50:24 xiaomi-thyme sudo[20697]: pam_unix(sudo:session): session opened for user ubuntu(uid=1001) by user(uid=1000)
+Oct 18 19:50:24 xiaomi-thyme sudo[20697]: user :  PWD=/home/user ; USER=ubuntu ; COMMAND=/usr/bin/env XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus systemctl --user daemon-reload
+Oct 18 19:50:24 xiaomi-thyme systemd[18425]: Reload requested from client PID 20699 ('systemctl')...
+Oct 18 19:50:24 xiaomi-thyme systemd[18425]: Reloading...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: /usr/lib/systemd/user/spice-vdagent.service:23: Unknown key 'StandardError' in section [Install], ignoring.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Reloading finished in 912 ms.
+Oct 18 19:50:25 xiaomi-thyme sudo[20697]: pam_unix(sudo:session): session closed for user ubuntu
+Oct 18 19:50:25 xiaomi-thyme sudo[20707]: pam_unix(sudo:session): session opened for user ubuntu(uid=1001) by user(uid=1000)
+Oct 18 19:50:25 xiaomi-thyme sudo[20707]: user :  PWD=/home/user ; USER=ubuntu ; COMMAND=/usr/bin/env XDG_RUNTIME_DIR=/run/user/1001 DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1001/bus systemctl --user show org.gnome.Shell@ubuntu.service -p Environment -p DropInPaths
+Oct 18 19:50:25 xiaomi-thyme sudo[20707]: pam_unix(sudo:session): session closed for user ubuntu
+Oct 18 19:50:25 xiaomi-thyme sudo[20690]: pam_unix(sudo:session): session opened for user root(uid=0) by user(uid=1000)
+Oct 18 19:50:25 xiaomi-thyme sudo[20690]: user :  PWD=/home/user ; USER=root ; COMMAND=/usr/bin/systemctl restart display-manager.service
+Oct 18 19:50:25 xiaomi-thyme systemd[1]: Stopping gdm.service - GNOME Display Manager...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping app-gnome-net.nokyan.Resources-20036.scope - Application launched by gnome-shell...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping app-gnome-org.gnome.Evolution\x2dalarm\x2dnotify-18950.scope - Application launched by gnome-session-service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping app-gnome-org.gnome.SettingsDaemon.DiskUtilityNotify-18970.scope - Application launched by gnome-session-service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping app-gnome-update\x2dnotifier-18936.scope - Application launched by gnome-session-service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target gnome-session@ubuntu.target - GNOME Session (session: ubuntu).
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping at-spi-dbus-bus.service - Accessibility services bus...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping calls-daemon.service - A phone dialer and call handler (daemon mode)...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping gvfs-daemon.service - Virtual filesystem service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping gvfs-metadata.service - Virtual filesystem metadata service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping sm.puri.Chatty-daemon.service - SMS/MMS, Matrix and XMPP chat application (daemon mode)...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping xdg-desktop-portal-gnome.service - Portal service (GNOME implementation)...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation)...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping xdg-desktop-portal.service - Portal service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping xdg-document-portal.service - flatpak document portal service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping xdg-permission-store.service - sandboxed app permission store...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped at-spi-dbus-bus.service - Accessibility services bus.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped sm.puri.Chatty-daemon.service - SMS/MMS, Matrix and XMPP chat application (daemon mode).
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped gvfs-metadata.service - Virtual filesystem metadata service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped gvfs-udisks2-volume-monitor.service - Virtual filesystem service - disk device monitor.
+Oct 18 19:50:25 xiaomi-thyme gnome-shell[18742]: Owner of volume monitor org.gtk.vfs.AfcVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+Oct 18 19:50:25 xiaomi-thyme systemd[1]: run-user-1001-doc.mount: Deactivated successfully.
+Oct 18 19:50:25 xiaomi-thyme systemd[1]: run-user-1001-gvfs.mount: Deactivated successfully.
+Oct 18 19:50:25 xiaomi-thyme gnome-shell[18742]: Owner of volume monitor org.gtk.vfs.UDisks2VolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped gvfs-afc-volume-monitor.service - Virtual filesystem service - Apple File Conduit monitor.
+Oct 18 19:50:25 xiaomi-thyme gnome-shell[18742]: Owner of volume monitor org.gtk.vfs.GPhoto2VolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped gvfs-gphoto2-volume-monitor.service - Virtual filesystem service - digital camera monitor.
+Oct 18 19:50:25 xiaomi-thyme gnome-shell[18742]: Owner of volume monitor org.gtk.vfs.GoaVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped gvfs-mtp-volume-monitor.service - Virtual filesystem service - Media Transfer Protocol monitor.
+Oct 18 19:50:25 xiaomi-thyme gnome-shell[18742]: Owner of volume monitor org.gtk.vfs.MTPVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped gvfs-goa-volume-monitor.service - Virtual filesystem service - GNOME Online Accounts monitor.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped xdg-permission-store.service - sandboxed app permission store.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped xdg-desktop-portal-gtk.service - Portal service (GTK/GNOME implementation).
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped app-gnome-update\x2dnotifier-18936.scope - Application launched by gnome-session-service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: app-gnome-update\x2dnotifier-18936.scope: Consumed 2.502s CPU time over 3min 12.758s wall clock time, 149.1M memory peak.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped calls-daemon.service - A phone dialer and call handler (daemon mode).
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped app-gnome-org.gnome.SettingsDaemon.DiskUtilityNotify-18970.scope - Application launched by gnome-session-service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped xdg-desktop-portal.service - Portal service.
+Oct 18 19:50:25 xiaomi-thyme localsearch-3[19204]: Owner of volume monitor org.gtk.vfs.AfcVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+Oct 18 19:50:25 xiaomi-thyme localsearch-3[19204]: Owner of volume monitor org.gtk.vfs.UDisks2VolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+Oct 18 19:50:25 xiaomi-thyme localsearch-3[19204]: Owner of volume monitor org.gtk.vfs.GPhoto2VolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+Oct 18 19:50:25 xiaomi-thyme localsearch-3[19204]: Owner of volume monitor org.gtk.vfs.GoaVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+Oct 18 19:50:25 xiaomi-thyme localsearch-3[19204]: Owner of volume monitor org.gtk.vfs.MTPVolumeMonitor disconnected from the bus; removing drives/volumes/mounts
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped xdg-document-portal.service - flatpak document portal service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped xdg-desktop-portal-gnome.service - Portal service (GNOME implementation).
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped app-gnome-net.nokyan.Resources-20036.scope - Application launched by gnome-shell.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: app-gnome-net.nokyan.Resources-20036.scope: Consumed 26.311s CPU time over 3min 3.090s wall clock time, 163.5M memory peak.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped gnome-session-monitor.service - Monitor Session leader for GNOME Session.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped app-gnome-org.gnome.Evolution\x2dalarm\x2dnotify-18950.scope - Application launched by gnome-session-service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped gvfs-daemon.service - Virtual filesystem service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target graphical-session.target - Current graphical user session.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped update-notifier-crash.path - Path trigger for Apport crash notifications.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped update-notifier-release.path - Path trigger for new release of Ubuntu notifications.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target gnome-session.target - GNOME Session.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target gnome-session-basic-services.target - GNOME basic session services.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target gnome-session-services.target - GNOME session services.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target gnome-session-x11-services-ready.target - GNOME session X11 services.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.A11ySettings.target - GNOME accessibility target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.Color.target - GNOME color management target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.Datetime.target - GNOME date & time target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.Housekeeping.target - GNOME maintenance of expirable data target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.Keyboard.target - GNOME keyboard configuration target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.MediaKeys.target - GNOME keyboard shortcuts target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.Power.target - GNOME power management target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.PrintNotifications.target - GNOME printer notifications target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.Rfkill.target - GNOME RFKill support target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.ScreensaverProxy.target - GNOME FreeDesktop screensaver target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.Sharing.target - GNOME file sharing target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.Smartcard.target - GNOME smartcard target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.Sound.target - GNOME sound sample caching target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.UsbProtection.target - GNOME USB protection target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target org.gnome.SettingsDaemon.Wwan.target - GNOME WWan support target.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.freedesktop.IBus.session.GNOME.service - IBus Daemon for GNOME...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.A11ySettings.service - GNOME accessibility service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.Color.service - GNOME color management service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.Datetime.service - GNOME date & time service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.Housekeeping.service - GNOME maintenance of expirable data service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.Keyboard.service - GNOME keyboard configuration service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.MediaKeys.service - GNOME keyboard shortcuts service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.Power.service - GNOME power management service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.PrintNotifications.service - GNOME printer notifications service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.Rfkill.service - GNOME RFKill support service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.ScreensaverProxy.service - GNOME FreeDesktop screensaver service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.Sharing.service - GNOME file sharing service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.Smartcard.service - GNOME smartcard service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.Sound.service - GNOME sound sample caching service...
+Oct 18 19:50:25 xiaomi-thyme kernel: rfkill: input handler enabled
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.UsbProtection.service - GNOME USB protection service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.Wwan.service - GNOME WWan support service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.SettingsDaemon.XSettings.service - GNOME XSettings service...
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.freedesktop.IBus.session.GNOME.service - IBus Daemon for GNOME.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: org.freedesktop.IBus.session.GNOME.service: Consumed 3.595s CPU time over 3min 13.066s wall clock time, 56.8M memory peak.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.Keyboard.service - GNOME keyboard configuration service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.Wwan.service - GNOME WWan support service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.A11ySettings.service - GNOME accessibility service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.MediaKeys.service - GNOME keyboard shortcuts service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.Rfkill.service - GNOME RFKill support service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.Smartcard.service - GNOME smartcard service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.Color.service - GNOME color management service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.PrintNotifications.service - GNOME printer notifications service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.Sharing.service - GNOME file sharing service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.Sound.service - GNOME sound sample caching service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.UsbProtection.service - GNOME USB protection service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.Housekeeping.service - GNOME maintenance of expirable data service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.Datetime.service - GNOME date & time service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.Power.service - GNOME power management service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.XSettings.service - GNOME XSettings service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target gnome-session-x11-services.target - GNOME session X11 services.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped org.gnome.SettingsDaemon.ScreensaverProxy.service - GNOME FreeDesktop screensaver service.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopped target gnome-session-initialized.target - GNOME Session is initialized.
+Oct 18 19:50:25 xiaomi-thyme systemd[18425]: Stopping org.gnome.Shell@ubuntu.service - GNOME Shell...
+Oct 18 19:50:25 xiaomi-thyme gnome-shell[18742]: Connection to xwayland lost
+Oct 18 19:50:25 xiaomi-thyme gnome-shell[18742]: Using public X11 display :0, (using unix:/tmp/.X11-unix/X1 for managed services)
+Oct 18 19:50:25 xiaomi-thyme gnome-shell[18742]: Shutting down GNOME Shell
+Oct 18 19:50:25 xiaomi-thyme gnome-shell[18742]: JS ERROR: Error: incorrect pop
+                                                 popModal@resource:///org/gnome/shell/ui/main.js:830:15
+                                                 popModal@resource:///org/gnome/shell/ui/unlockDialog.js:1020:18
+                                                 _onDestroy@resource:///org/gnome/shell/ui/unlockDialog.js:961:14
+                                                 _init/<@resource:///org/gnome/shell/ui/layout.js:249:26
+Oct 18 19:50:26 xiaomi-thyme systemd[1]: Started whoopsie.service - Service uploading crash reports to the Ubuntu Error Tracker.
+Oct 18 19:50:26 xiaomi-thyme whoopsie[20828]: [19:50:26] Using lock path: /var/lock/whoopsie/lock
+Oct 18 19:50:26 xiaomi-thyme whoopsie[20828]: [19:50:26] Looking for .upload files in /var/crash
+Oct 18 19:50:26 xiaomi-thyme systemd[1]: whoopsie.service: Deactivated successfully.
+Oct 18 19:50:30 xiaomi-thyme gdm3[18408]: Gdm: GdmCommon: process (pid:18415, command 'gdm-session-worker [pam/gdm-autologin]') isn't dying after 5 seconds, now ignoring it.
+Oct 18 19:50:30 xiaomi-thyme systemd[1]: gdm.service: Deactivated successfully.
+Oct 18 19:50:30 xiaomi-thyme systemd[1]: Stopped gdm.service - GNOME Display Manager.
+Oct 18 19:50:30 xiaomi-thyme systemd[1]: Starting gdm.service - GNOME Display Manager...
+Oct 18 19:50:30 xiaomi-thyme systemd[1]: Started gdm.service - GNOME Display Manager.
+Oct 18 19:50:30 xiaomi-thyme sudo[20690]: pam_unix(sudo:session): session closed for user root
+Oct 18 19:50:30 xiaomi-thyme sshd-session[20689]: Received disconnect from 172.16.42.211 port 41406:11: disconnected by user
+Oct 18 19:50:30 xiaomi-thyme sshd-session[20689]: Disconnected from user user 172.16.42.211 port 41406
+Oct 18 19:50:30 xiaomi-thyme sshd-session[20652]: pam_unix(sshd:session): session closed for user user
+Oct 18 19:50:30 xiaomi-thyme systemd[1]: session-75.scope: Deactivated successfully.
+Oct 18 19:50:30 xiaomi-thyme systemd-logind[1968]: Session 75 logged out. Waiting for processes to exit.
+Oct 18 19:50:30 xiaomi-thyme systemd-logind[1968]: Removed session 75.
+Oct 18 19:50:30 xiaomi-thyme gdm-autologin][20850]: gkr-pam: no password is available for user
+Oct 18 19:50:30 xiaomi-thyme gdm-autologin][20850]: pam_unix(gdm-autologin:session): session opened for user ubuntu(uid=1001) by ubuntu(uid=0)
+Oct 18 19:50:30 xiaomi-thyme systemd-logind[1968]: New session '76' of user 'ubuntu' with class 'user' and type 'wayland'.
+Oct 18 19:50:30 xiaomi-thyme systemd[1]: Started session-76.scope - Session 76 of User ubuntu.
+Oct 18 19:50:30 xiaomi-thyme gdm-autologin][20850]: gkr-pam: couldn't unlock the login keyring.
+Oct 18 19:50:30 xiaomi-thyme systemd[18425]: org.gnome.Shell@ubuntu.service: State 'stop-sigterm' timed out. Killing.
+Oct 18 19:50:30 xiaomi-thyme systemd[18425]: org.gnome.Shell@ubuntu.service: Killing process 18742 (gnome-shell) with signal SIGKILL.
+Oct 18 19:50:30 xiaomi-thyme systemd[18425]: org.gnome.Shell@ubuntu.service: Main process exited, code=killed, status=9/KILL
+Oct 18 19:50:30 xiaomi-thyme im-config[20995]: @ IM_CONFIG_ENTRY='profile' XDG_SESSION_TYPE ='wayland' UID=1001 PID=20862 PPID=20857
+Oct 18 19:50:30 xiaomi-thyme systemd[18425]: org.gnome.Shell@ubuntu.service: Failed with result 'timeout'.
+Oct 18 19:50:30 xiaomi-thyme systemd[18425]: Stopped org.gnome.Shell@ubuntu.service - GNOME Shell.
+Oct 18 19:50:30 xiaomi-thyme systemd[18425]: org.gnome.Shell@ubuntu.service: Consumed 28.950s CPU time over 3min 19.632s wall clock time, 753.7M memory peak.
+Oct 18 19:50:30 xiaomi-thyme systemd[18425]: org.gnome.Shell@ubuntu.service: Triggering OnFailure= dependencies.
+Oct 18 19:50:30 xiaomi-thyme systemd[18425]: Stopped target gnome-session-manager.target - GNOME Session Manager is ready.
+Oct 18 19:50:30 xiaomi-thyme im-config[20998]:   GTK_IM_MODULE='fcitx' QT_IM_MODULE='fcitx' CLUTTER_IM_MODULE='' SDL_IM_MODULE='fcitx' XMODIFIERS='@im=fcitx'
+Oct 18 19:50:30 xiaomi-thyme systemd[18425]: Stopping gnome-session-manager@ubuntu.service - GNOME Session Manager (session: ubuntu)...
+Oct 18 19:50:30 xiaomi-thyme systemd[18425]: org.gnome.Shell-disable-extensions.service - Disable GNOME Shell extensions after failure skipped, unmet condition check ConditionPathExists=/run/user/1001/gnome-shell-disable-extensions
+Oct 18 19:50:30 xiaomi-thyme kernel: panel-j2s-mp-42-02-0b-dsc ae94000.dsi.0: thyme-panel: requested "1080x2340"=90Hz adjusted "1080x2340"=90Hz -> 0x2f=02
+Oct 18 19:50:30 xiaomi-thyme im-config[21001]:   Set IM_CONFIG_CURRENT_DESKTOP <- XDG_CURRENT_DESKTOP='ubuntu:GNOME'
+Oct 18 19:50:30 xiaomi-thyme gnome-session-i[20862]: Starting GNOME session target: gnome-session@ubuntu.target
+Oct 18 19:50:30 xiaomi-thyme systemd[18425]: Requested transaction contradicts existing jobs: Transaction for gnome-session@ubuntu.target/start is destructive (gnome-session-pre.target has 'stop' job queued, but 'start' is included in transaction).
+Oct 18 19:50:30 xiaomi-thyme gnome-session-i[20862]: Failed to start unit gnome-session@ubuntu.target: GDBus.Error:org.freedesktop.systemd1.TransactionIsDestructive: Transaction for gnome-session@ubuntu.target/start is destructive (gnome-session-pre.target has 'stop' job queued, but 'start' is included in transaction).
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Stopped gnome-session-manager@ubuntu.service - GNOME Session Manager (session: ubuntu).
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: gnome-session-manager@ubuntu.service: Consumed 578ms CPU time over 3min 20.565s wall clock time, 102.1M memory peak.
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Stopped target gnome-session-pre.target - Tasks to be run before GNOME Session starts.
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Stopped target graphical-session-pre.target - Session services which should run early before the graphical session is brought up.
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Reached target gnome-session-shutdown.target - Shutdown running GNOME Session.
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Starting gnome-session-restart-dbus.service - Restart DBus after GNOME Session shutdown...
+Oct 18 19:50:31 xiaomi-thyme gdm-autologin][18415]: pam_unix(gdm-autologin:session): session closed for user ubuntu
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Stopped target gnome-session-shutdown.target - Shutdown running GNOME Session.
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/ldac
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSink/aptx_hd
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/aptx_hd
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSink/aptx
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/aptx
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSink/opus_g
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/opus_g
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSink/sbc
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/sbc
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/aptx_ll_1
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/aptx_ll_0
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/aptx_ll_duplex_1
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/aptx_ll_duplex_0
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/faststream
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/faststream_duplex
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSink/opus_05
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/opus_05
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSink/opus_05_duplex
+Oct 18 19:50:31 xiaomi-thyme bluetoothd[1791]: Endpoint unregistered: sender=:1.358 path=/MediaEndpoint/A2DPSource/opus_05_duplex
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Started gnome-session-restart-dbus.service - Restart DBus after GNOME Session shutdown.
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Stopping filter-chain.service - PipeWire filter chain daemon...
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Stopping pipewire-pulse.service - PipeWire PulseAudio...
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Stopped filter-chain.service - PipeWire filter chain daemon.
+Oct 18 19:50:31 xiaomi-thyme callaudiod[19923]: Error in PulseAudio context: Connection terminated
+Oct 18 19:50:31 xiaomi-thyme systemd[1]: session-65.scope: Deactivated successfully.
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Stopped pipewire-pulse.service - PipeWire PulseAudio.
+Oct 18 19:50:31 xiaomi-thyme gdm-launch-environment][21022]: pam_unix(gdm-launch-environment:session): session opened for user gdm-greeter(uid=995) by (uid=0)
+Oct 18 19:50:31 xiaomi-thyme systemd-logind[1968]: Session 65 logged out. Waiting for processes to exit.
+Oct 18 19:50:31 xiaomi-thyme systemd-logind[1968]: Removed session 65.
+Oct 18 19:50:31 xiaomi-thyme systemd[18425]: Started pipewire-pulse.service - PipeWire PulseAudio.
+Oct 18 19:50:31 xiaomi-thyme systemd[1]: Created slice user-60578.slice - User Slice of UID 60578.
+Oct 18 19:50:31 xiaomi-thyme systemd[1]: Starting user-runtime-dir@60578.service - User Runtime Directory /run/user/60578...
+Oct 18 19:50:31 xiaomi-thyme systemd-logind[1968]: New session 'c3' of user 'gdm-greeter' with class 'greeter' and type 'wayland'.
+Oct 18 19:50:31 xiaomi-thyme systemd[1]: Finished user-runtime-dir@60578.service - User Runtime Directory /run/user/60578.
+Oct 18 19:50:31 xiaomi-thyme systemd[1]: Starting user@60578.service - User Manager for UID 60578...
+Oct 18 19:50:31 xiaomi-thyme (systemd)[21116]: user@60578.service: Failed to determine credentials for user '60578': Unknown user
+Oct 18 19:50:31 xiaomi-thyme (systemd)[21116]: user@60578.service: Failed at step USER spawning /usr/lib/systemd/systemd: Invalid argument
+Oct 18 19:50:31 xiaomi-thyme systemd[1]: user@60578.service: Main process exited, code=exited, status=217/USER
+Oct 18 19:50:31 xiaomi-thyme systemd[1]: user@60578.service: Failed with result 'exit-code'.
+Oct 18 19:50:31 xiaomi-thyme systemd[1]: Failed to start user@60578.service - User Manager for UID 60578.
+Oct 18 19:50:31 xiaomi-thyme systemd[1]: Started session-c3.scope - Session c3 of User gdm-greeter.
+Oct 18 19:50:31 xiaomi-thyme rtkit-daemon[2235]: Successfully made thread 21069 of process 21069 owned by '1001' high priority at nice level -11.
+Oct 18 19:50:31 xiaomi-thyme /usr/libexec/gdm-wayland-session[21134]: dbus[21134]: Unable to set up transient service directory: XDG_RUNTIME_DIR "/run/user/60578" is owned by uid 60578, not our uid 995
+Oct 18 19:50:31 xiaomi-thyme /usr/libexec/gdm-wayland-session[21134]: dbus-daemon[21134]: [session uid=995 pid=21134 pidfd=5] Activating service name='org.freedesktop.systemd1' requested by ':1.0' (uid=995 pid=21131 comm="/usr/libexec/gdm-wayland-session gnome-session")
+Oct 18 19:50:31 xiaomi-thyme callaudiod[19923]: No suitable card found, stopping here...
+Oct 18 19:50:31 xiaomi-thyme rtkit-daemon[2235]: Successfully made thread 21129 of process 21069 owned by '1001' RT at priority 20.
+Oct 18 19:50:31 xiaomi-thyme /usr/libexec/gdm-wayland-session[21134]: dbus-daemon[21134]: [session uid=995 pid=21134 pidfd=5] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Oct 18 19:50:31 xiaomi-thyme gnome-session[21139]: unable to create directory '/run/user/60578/dconf': 权限不够.  dconf will not work properly.
+Oct 18 19:50:31 xiaomi-thyme gnome-session[21139]: unable to create directory '/run/user/60578/dconf': 权限不够.  dconf will not work properly.
+Oct 18 19:50:31 xiaomi-thyme gnome-session[21139]: Failed to upload environment to systemd: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+Oct 18 19:50:31 xiaomi-thyme gnome-session[21139]: Failed to check if a graphical session is running: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+Oct 18 19:50:31 xiaomi-thyme gnome-session[21139]: Failed to reset failed state of units: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+Oct 18 19:50:31 xiaomi-thyme gnome-session[21139]: Starting GNOME session target: gnome-session@ubuntu.target
+Oct 18 19:50:31 xiaomi-thyme gnome-session[21139]: Failed to start unit gnome-session@ubuntu.target: GDBus.Error:org.freedesktop.DBus.Error.NameHasNoOwner: Name "org.freedesktop.systemd1" does not exist
+Oct 18 19:50:31 xiaomi-thyme systemd[1]: Started whoopsie.service - Service uploading crash reports to the Ubuntu Error Tracker.
+Oct 18 19:50:32 xiaomi-thyme whoopsie[21150]: [19:50:32] Using lock path: /var/lock/whoopsie/lock
+Oct 18 19:50:32 xiaomi-thyme whoopsie[21150]: [19:50:32] Looking for .upload files in /var/crash
+Oct 18 19:50:32 xiaomi-thyme systemd[1]: whoopsie.service: Deactivated successfully.
+Oct 18 19:50:33 xiaomi-thyme systemd[1]: Started whoopsie.service - Service uploading crash reports to the Ubuntu Error Tracker.
+Oct 18 19:50:33 xiaomi-thyme whoopsie[21160]: [19:50:33] Using lock path: /var/lock/whoopsie/lock
+Oct 18 19:50:33 xiaomi-thyme whoopsie[21160]: [19:50:33] Looking for .upload files in /var/crash
+Oct 18 19:50:33 xiaomi-thyme systemd[1]: whoopsie.service: Deactivated successfully.
+Oct 18 19:50:35 xiaomi-thyme systemd[1]: Started whoopsie.service - Service uploading crash reports to the Ubuntu Error Tracker.
+Oct 18 19:50:35 xiaomi-thyme gdm-autologin][20850]: pam_unix(gdm-autologin:session): session closed for user ubuntu
+Oct 18 19:50:35 xiaomi-thyme gdm3[20842]: Gdm: GdmDisplay: Session never registered, failing
+Oct 18 19:50:35 xiaomi-thyme systemd[1]: session-76.scope: Deactivated successfully.
+Oct 18 19:50:35 xiaomi-thyme systemd-logind[1968]: Session 76 logged out. Waiting for processes to exit.
+Oct 18 19:50:35 xiaomi-thyme systemd-logind[1968]: Removed session 76.
+Oct 18 19:50:35 xiaomi-thyme whoopsie[21178]: [19:50:35] Using lock path: /var/lock/whoopsie/lock
+Oct 18 19:50:35 xiaomi-thyme whoopsie[21178]: [19:50:35] Looking for .upload files in /var/crash
+Oct 18 19:50:35 xiaomi-thyme systemd[1]: whoopsie.service: Deactivated successfully.
+Oct 18 19:50:35 xiaomi-thyme gdm-launch-environment][21022]: pam_unix(gdm-launch-environment:session): session closed for user gdm-greeter
+Oct 18 19:50:35 xiaomi-thyme gdm3[20842]: Gdm: GdmDisplay: Session never registered, failing
+Oct 18 19:50:35 xiaomi-thyme systemd[1]: session-c3.scope: Deactivated successfully.
+Oct 18 19:50:35 xiaomi-thyme systemd-logind[1968]: Session c3 logged out. Waiting for processes to exit.
+Oct 18 19:50:35 xiaomi-thyme systemd-logind[1968]: Removed session c3.
+Oct 18 19:50:35 xiaomi-thyme gdm3[20842]: Gdm: Child process -21131 was already dead.
+Oct 18 19:50:35 xiaomi-thyme gdm3[20842]: Gdm: GdmDisplay: Session never registered, failing
+Oct 18 19:50:35 xiaomi-thyme gdm3[20842]: Gdm: Child process -21131 was already dead.
+Oct 18 19:50:35 xiaomi-thyme gdm-launch-environment][21191]: pam_unix(gdm-launch-environment:account): could not identify user (from getpwnam(gdm-greeter-2))

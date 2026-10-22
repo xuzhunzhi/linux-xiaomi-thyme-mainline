@@ -1,0 +1,105 @@
+[  227.020023] q6afe-dai 17300000.remoteproc:glink-edge:apr:service@4:dais: Q6I2S hw_params: ch=2 width=16 rate=48000 sd_line_mask=0x2
+[  227.020174] qcom-q6afe aprsvc:service:4:4: Q6AFE i2s prepare: ch=2 sd_mask=0x2 -> channel_mode=2 mono_stereo=1 ws_src=1 rate=48000 width=16
+[  227.026056] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0x1004 cfg_type=0x1020d
+[  227.027566] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: format 3 timestamp 0x5ddc3d36
+[  227.027597] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[  227.028001] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: format 3 timestamp 0x5ddc3d36
+[  227.028033] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[  227.606353] cs35l41 3-0042: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[  227.607359] cs35l41 3-0040: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[  227.609348] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.bin (v1): v0.3.0
+[  227.609383] cs35l41 3-0042: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-RCV-revb2.bin
+[  227.610680] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.bin (v1): v0.3.0
+[  227.610713] cs35l41 3-0040: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-revb2.bin
+[  227.723497] cs35l41 3-0042: DSP1: Legacy support not available
+[  227.735855] cs35l41 3-0040: DSP1: Legacy support not available
+[  227.785077] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[  227.785701] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[  227.785732] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[  227.786363] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[  227.786395] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[  227.786819] q6afe-dai 17300000.remoteproc:glink-edge:apr:service@4:dais: Q6I2S hw_params: ch=2 width=16 rate=48000 sd_line_mask=0x2
+[  227.787014] qcom-q6afe aprsvc:service:4:4: Q6AFE i2s prepare: ch=2 sd_mask=0x2 -> channel_mode=2 mono_stereo=1 ws_src=1 rate=48000 width=16
+[  227.792736] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0x1004 cfg_type=0x1020d
+[  227.794204] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: format 3 timestamp 0x5ddc3d36
+[  227.794237] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[  227.794475] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: format 3 timestamp 0x5ddc3d36
+[  227.794505] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[  228.373294] cs35l41 3-0042: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[  228.374207] cs35l41 3-0040: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[  228.376524] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.bin (v1): v0.3.0
+[  228.376539] cs35l41 3-0042: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-RCV-revb2.bin
+[  228.377415] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.bin (v1): v0.3.0
+[  228.377430] cs35l41 3-0040: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-revb2.bin
+[  228.489288] cs35l41 3-0042: DSP1: Legacy support not available
+[  228.501835] cs35l41 3-0040: DSP1: Legacy support not available
+[  228.519241] qcom-q6adm aprsvc:service:4:8: cmd = 0x10325 return error = 0x2
+[  228.519461] q6routing 17300000.remoteproc:glink-edge:apr:service@8:routing: DSP returned error[2]
+[  228.560793] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0xb037 cfg_type=0x102b8
+[  228.592827] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[  228.594516] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[  228.594552] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[  228.595464] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[  228.595497] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[  228.595917] q6afe-dai 17300000.remoteproc:glink-edge:apr:service@4:dais: Q6I2S hw_params: ch=2 width=16 rate=48000 sd_line_mask=0x2
+[  228.596119] qcom-q6afe aprsvc:service:4:4: Q6AFE i2s prepare: ch=2 sd_mask=0x2 -> channel_mode=2 mono_stereo=1 ws_src=1 rate=48000 width=16
+[  228.602185] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0x1004 cfg_type=0x1020d
+[  228.604085] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: format 3 timestamp 0x5ddc3d36
+[  228.604118] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[  228.604397] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: format 3 timestamp 0x5ddc3d36
+[  228.604427] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[  228.992872] cs35l41 3-0042: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[  229.183451] cs35l41 3-0040: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[  229.184190] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.bin (v1): v0.3.0
+[  229.184223] cs35l41 3-0042: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-RCV-revb2.bin
+[  229.226383] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.bin (v1): v0.3.0
+[  229.226417] cs35l41 3-0040: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-revb2.bin
+[  229.305626] cs35l41 3-0042: DSP1: Legacy support not available
+[  229.318155] cs35l41 3-0040: DSP1: Legacy support not available
+[  229.642518] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[  229.643934] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[  229.643973] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[  229.644678] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[  229.644710] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[  229.682296] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[  229.683489] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[  229.683524] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[  229.684180] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[  229.684211] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[  229.686623] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[  229.687308] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[  229.687342] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[  229.687985] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[  229.688081] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[  230.392493] thermal thermal_zone31: Unable to get temperature, disabling!
+[  230.392534] thermal thermal_zone28: Unable to get temperature, disabling!
+[  230.392646] thermal thermal_zone25: Unable to get temperature, disabling!
+[  230.393636] thermal thermal_zone26: Unable to get temperature, disabling!
+[  230.393668] thermal thermal_zone30: Unable to get temperature, disabling!
+[  230.394738] thermal thermal_zone27: Unable to get temperature, disabling!
+[  230.398136] thermal thermal_zone29: Unable to get temperature, disabling!
+[  269.205746] [ FTS ] fts_status_event_handler SS negative detect Force cal = 11 00 00 00 00 00
+[  269.228154] panel-j2s-mp-42-02-0b-dsc ae94000.dsi.0: thyme-panel: requested "1080x2340"=90Hz adjusted "1080x2340"=90Hz -> 0x2f=02
+[  269.368180] [ FTS ] fts_status_event_handler SS negative detect Force cal = 11 00 00 00 00 00
+[  272.892203] i2c-qcom-cci ac4f000.cci: master 1 queue 0 timeout
+[  281.306665] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[  281.307339] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[  281.307353] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[  281.307899] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[  281.307910] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[  281.308757] q6afe-dai 17300000.remoteproc:glink-edge:apr:service@4:dais: Q6I2S hw_params: ch=2 width=16 rate=48000 sd_line_mask=0x2
+[  281.308887] qcom-q6afe aprsvc:service:4:4: Q6AFE i2s prepare: ch=2 sd_mask=0x2 -> channel_mode=2 mono_stereo=1 ws_src=1 rate=48000 width=16
+[  281.314457] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0x1004 cfg_type=0x1020d
+[  281.315665] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: format 3 timestamp 0x5ddc3d36
+[  281.315682] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[  281.315708] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: format 3 timestamp 0x5ddc3d36
+[  281.315744] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[  281.890792] cs35l41 3-0040: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[  281.891305] cs35l41 3-0042: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[  281.892488] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.bin (v1): v0.3.0
+[  281.892508] cs35l41 3-0040: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-revb2.bin
+[  281.893012] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.bin (v1): v0.3.0
+[  281.893030] cs35l41 3-0042: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-RCV-revb2.bin
+[  282.014496] cs35l41 3-0042: DSP1: Legacy support not available
+[  282.025015] cs35l41 3-0040: DSP1: Legacy support not available
+[  282.091037] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0xb037 cfg_type=0x102b8

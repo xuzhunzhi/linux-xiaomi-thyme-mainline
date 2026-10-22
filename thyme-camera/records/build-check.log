@@ -1,0 +1,35 @@
+make[1]: 进入目录“/home/ubuntu/桌面/etc/thyme-call-repair/kernel-build”
+  SYNC    include/config/auto.conf.cmd
+  CC      drivers/media/i2c/s5khmx.o
+  CC      drivers/media/i2c/s5k3t2.o
+  CC      drivers/media/i2c/ov13b10.o
+  CC      drivers/media/platform/qcom/camss/camss.o
+  CC      drivers/media/platform/qcom/camss/camss-csid.o
+  CC      drivers/media/platform/qcom/camss/camss-csid-4-1.o
+  CC      drivers/media/platform/qcom/camss/camss-csid-4-7.o
+  CC      drivers/media/platform/qcom/camss/camss-csid-340.o
+  CC      drivers/media/platform/qcom/camss/camss-csid-680.o
+  CC      drivers/media/platform/qcom/camss/camss-csid-gen2.o
+  CC      drivers/media/platform/qcom/camss/camss-csid-gen3.o
+  CC      drivers/media/platform/qcom/camss/camss-csiphy.o
+  CC      drivers/media/platform/qcom/camss/camss-csiphy-2ph-1-0.o
+  CC      drivers/media/platform/qcom/camss/camss-csiphy-3ph-1-0.o
+  CC      drivers/media/platform/qcom/camss/camss-ispif.o
+  CC      drivers/media/platform/qcom/camss/camss-tpg.o
+  CC      drivers/media/platform/qcom/camss/camss-tpg-gen1.o
+  CC      drivers/media/platform/qcom/camss/camss-vfe.o
+  CC      drivers/media/platform/qcom/camss/camss-vfe-4-1.o
+  CC      drivers/media/platform/qcom/camss/camss-vfe-4-7.o
+  CC      drivers/media/platform/qcom/camss/camss-vfe-4-8.o
+  CC      drivers/media/platform/qcom/camss/camss-vfe-17x.o
+  CC      drivers/media/platform/qcom/camss/camss-vfe-340.o
+  CC      drivers/media/platform/qcom/camss/camss-vfe-480.o
+  CC      drivers/media/platform/qcom/camss/camss-vfe-680.o
+  CC      drivers/media/platform/qcom/camss/camss-vfe-gen1.o
+  CC      drivers/media/platform/qcom/camss/camss-vfe-gen3.o
+  CC      drivers/media/platform/qcom/camss/camss-vfe-vbif.o
+  CC      drivers/media/platform/qcom/camss/camss-video.o
+  AR      drivers/media/platform/qcom/camss/built-in.a
+  DTC     arch/arm64/boot/dts/qcom/sm8250-xiaomi-thyme.dtb
+  DTC     arch/arm64/boot/dts/qcom/sm8250-xiaomi-thyme-logdump.dtb
+make[1]: 离开目录“/home/ubuntu/桌面/etc/thyme-call-repair/kernel-build”

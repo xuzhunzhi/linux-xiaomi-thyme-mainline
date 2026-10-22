@@ -1,0 +1,2323 @@
+[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x51df805e]
+[    0.000000] Linux version 7.2.0-rc5-sm8250-modem (ubuntu@ubuntu) (aarch64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #15 SMP PREEMPT Sun Oct 18 10:29:55 CST 2026
+[    0.000000] KASLR enabled
+[    0.000000] random: crng init done
+[    0.000000] Machine model: Xiaomi Mi 10S (thyme)
+[    0.000000] printk: debug: ignoring loglevel setting.
+[    0.000000] efi: UEFI not found.
+[    0.000000] [Firmware Bug]: Kernel image misaligned at boot, please fix your bootloader!
+[    0.000000] Reserved memory: created CMA memory pool at 0x0000000278000000, size 128 MiB
+[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] OF: reserved mem: 0x0000000278000000..0x000000027fffffff (131072 KiB) map reusable linux,cma
+[    0.000000] Reserved memory: created DMA memory pool at 0x00000000ffc00000, size 0 MiB
+[    0.000000] OF: reserved mem: initialized node voice-mailbox, compatible id shared-dma-pool
+[    0.000000] OF: reserved mem: 0x00000000ffc00000..0x00000000ffc1ffff (128 KiB) nomap non-reusable voice-mailbox
+[    0.000000] OF: reserved mem: 0x0000000080000000..0x00000000805fffff (6144 KiB) nomap non-reusable memory@80000000
+[    0.000000] OF: reserved mem: 0x0000000080860000..0x000000008087ffff (128 KiB) nomap non-reusable memory@80860000
+[    0.000000] OF: reserved mem: 0x0000000080900000..0x0000000080afffff (2048 KiB) nomap non-reusable memory@80900000
+[    0.000000] OF: reserved mem: 0x0000000080b00000..0x000000008b9fffff (179200 KiB) nomap non-reusable memory@80b00000
+[    0.000000] OF: reserved mem: 0x0000000080600000..0x000000008085ffff (2432 KiB) nomap non-reusable memory@80600000
+[    0.000000] OF: reserved mem: 0x0000000080880000..0x0000000080893fff (80 KiB) nomap non-reusable memory@80880000
+[    0.000000] OF: reserved mem: 0x000000008c41a000..0x000000008c41bfff (8 KiB) nomap non-reusable memory@8c41a000
+[    0.000000] OF: reserved mem: 0x000000008ca00000..0x000000008cefffff (5120 KiB) nomap non-reusable memory@8ca00000
+[    0.000000] OF: reserved mem: 0x000000008d400000..0x000000008e7fffff (20480 KiB) nomap non-reusable memory@8d400000
+[    0.000000] OF: reserved mem: 0x000000008e800000..0x00000000916fffff (48128 KiB) nomap non-reusable memory@8e800000
+[    0.000000] OF: reserved mem: 0x0000000091700000..0x0000000093bfffff (37888 KiB) nomap non-reusable memory@91700000
+[    0.000000] OF: reserved mem: 0x0000000093c00000..0x0000000093cfffff (1024 KiB) nomap non-reusable memory@93c00000
+[    0.000000] OF: reserved mem: 0x0000000093d00000..0x00000000982fffff (71680 KiB) nomap non-reusable memory@93d00000
+[    0.000000] OF: reserved mem: 0x000000009e300000..0x000000009e3fffff (1024 KiB) nomap non-reusable memory@9e300000
+[    0.000000] OF: reserved mem: 0x00000000b0400000..0x00000000b13fffff (16384 KiB) nomap non-reusable memory@b0400000
+[    0.000000] Reserved memory: created DMA memory pool at 0x000000009e400000, size 12 MiB
+[    0.000000] OF: reserved mem: initialized node memory@9e400000, compatible id shared-dma-pool
+[    0.000000] OF: reserved mem: 0x000000009e400000..0x000000009effffff (12288 KiB) nomap non-reusable memory@9e400000
+[    0.000000] OF: reserved mem: 0x000000009c000000..0x000000009e2fffff (35840 KiB) nomap non-reusable memory@9c000000
+[    0.000000] OF: reserved mem: 0x00000000b0000000..0x00000000b03fffff (4096 KiB) map non-reusable ramoops@b0000000
+[    0.000000] NUMA: Faking a node at [mem 0x0000000080000000-0x000000027fffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x277005600-0x27700843f]
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.1 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.1
+[    0.000000] psci: OSI mode supported.
+[    0.000000] psci: [Firmware Bug]: failed to set PC mode: -3
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000080000000-0x00000000ffffffff]
+[    0.000000]   DMA32    empty
+[    0.000000]   Normal   [mem 0x0000000100000000-0x000000027fffffff]
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x0000000080893fff]
+[    0.000000]   node   0: [mem 0x0000000080894000-0x00000000808fffff]
+[    0.000000]   node   0: [mem 0x0000000080900000-0x000000008b9fffff]
+[    0.000000]   node   0: [mem 0x000000008ba00000-0x000000008c419fff]
+[    0.000000]   node   0: [mem 0x000000008c41a000-0x000000008c41bfff]
+[    0.000000]   node   0: [mem 0x000000008c41c000-0x000000008c9fffff]
+[    0.000000]   node   0: [mem 0x000000008ca00000-0x000000008cefffff]
+[    0.000000]   node   0: [mem 0x000000008cf00000-0x000000008d3fffff]
+[    0.000000]   node   0: [mem 0x000000008d400000-0x00000000982fffff]
+[    0.000000]   node   0: [mem 0x0000000098300000-0x000000009bffffff]
+[    0.000000]   node   0: [mem 0x000000009c000000-0x000000009effffff]
+[    0.000000]   node   0: [mem 0x000000009f000000-0x00000000b03fffff]
+[    0.000000]   node   0: [mem 0x00000000b0400000-0x00000000b13fffff]
+[    0.000000]   node   0: [mem 0x00000000b1400000-0x00000000bbafffff]
+[    0.000000]   node   0: [mem 0x00000000c0000000-0x00000000ffbfffff]
+[    0.000000]   node   0: [mem 0x00000000ffc00000-0x00000000ffc1ffff]
+[    0.000000]   node   0: [mem 0x00000000ffc20000-0x000000027fffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000027fffffff]
+[    0.000000] On node 0, zone DMA: 17664 pages in unavailable ranges
+[    0.000000] percpu: Embedded 26 pages/cpu s67544 r8192 d30760 u106496
+[    0.000000] pcpu-alloc: s67544 r8192 d30760 u106496 alloc=26*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: detected: GICv3 CPU interface
+[    0.000000] CPU features: kernel page table isolation forced ON by KASLR
+[    0.000000] CPU features: detected: Kernel page table isolation (KPTI)
+[    0.000000] CPU features: detected: ARM errata 1165522, 1319367, or 1530923
+[    0.000000] alternatives: applying boot alternatives
+[    0.000000] Kernel command line: root=/dev/sda38 rw rootwait console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused fbcon=font:TER16x32 log_buf_len=4M ignore_loglevel root=/dev/sda38 androidboot.verifiedbootstate=orange androidboot.keymaster=1  androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=b696f4ce androidboot.secureboot=1 androidboot.hwversion=A.9.0 androidboot.cpuid=0xdb970335 androidboot.hwc=CN androidboot.hwlevel=MP androidboot.baseband=mdm msm_drm.dsi_display0=qcom,mdss_dsi_j2s_mp_42_02_0b_dsc_cmd: androidboot.oled_panel_id=0B androidboot.oled_pmic_id=0A androidboot.oled_wp=01f4020909030105 androidboot.dtb_idx=-1347440721 androidboot.force_normal_boot=1 androidboot.ramdump=disable block2mtd.block2mtd=/dev/block/sda15,2097152 mtdoops.mtddev=0 mtdoops.record_size=2097152 mtdoops.dump_oops=0 printk.always_kmsg_dump=1 androidboot.profile_vendor_id=0B androidboot.dp=0x0 androidboot.cert=M2102J2SC
+[    0.000000] printk: log buffer data + meta data: 4194304 + 14680064 = 18874368 bytes
+[    0.000000] printk: early log buf free: 124216(94%)
+[    0.000000] Dentry cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+[    0.000000] software IO TLB: area num 8.
+[    0.000000] software IO TLB: mapped [mem 0x00000000fbc00000-0x00000000ffc00000] (64MB)
+[    0.000000] Fallback order for Node 0: 0 
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 2079488
+[    0.000000] Policy zone: Normal
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[    0.000000] rcu: Preemptible hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] 	Trampoline variant of Tasks RCU enabled.
+[    0.000000] 	Tracing variant of Tasks RCU enabled.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+[    0.000000] RCU Tasks: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=8.
+[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+[    0.000000] GICv3: 928 SPIs implemented
+[    0.000000] GICv3: 0 Extended SPIs implemented
+[    0.000000] Root IRQ handler: gic_handle_irq
+[    0.000000] GICv3: GICv3 features: 16 PPIs
+[    0.000000] GICv3: GICD_CTLR.DS=0, SCR_EL3.FIQ=1
+[    0.000000] GICv3: CPU0: found redistributor 0 region 0:0x0000000017a60000
+[    0.000000] ITS: No ITS available, not enabling LPIs
+[    0.000000] rcu: srcu_init: Setting srcu_struct sizes based on contention.
+[    0.000000] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+[    0.000000] arch_timer: cp15 timer running at 19.20MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000001] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000450] Console: colour dummy device 80x25
+[    0.000462] printk: legacy console [tty0] enabled
+[    0.001332] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=19200)
+[    0.001353] pid_max: default: 32768 minimum: 301
+[    0.001635] Mount-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.001667] Mountpoint-cache hash table entries: 16384 (order: 5, 131072 bytes, linear)
+[    0.001927] VFS: Finished mounting rootfs on nullfs
+[    0.003811] rcu: Hierarchical SRCU implementation.
+[    0.003825] rcu: 	Max phase no-delay instances is 400.
+[    0.003989] Timer migration: 1 hierarchy levels; 8 children per group; 1 crossnode level
+[    0.004781] EFI services will not be available.
+[    0.005035] smp: Bringing up secondary CPUs ...
+[    0.005993] Detected VIPT I-cache on CPU1
+[    0.006142] GICv3: CPU1: found redistributor 100 region 0:0x0000000017a80000
+[    0.006174] CPU1: Booted secondary processor 0x0000000100 [0x51df805e]
+[    0.006935] Detected VIPT I-cache on CPU2
+[    0.007074] GICv3: CPU2: found redistributor 200 region 0:0x0000000017aa0000
+[    0.007099] CPU2: Booted secondary processor 0x0000000200 [0x51df805e]
+[    0.007786] Detected VIPT I-cache on CPU3
+[    0.007916] GICv3: CPU3: found redistributor 300 region 0:0x0000000017ac0000
+[    0.007939] CPU3: Booted secondary processor 0x0000000300 [0x51df805e]
+[    0.008991] CPU features: detected: Spectre-v4
+[    0.009008] CPU features: detected: Spectre-BHB
+[    0.009018] CPU features: detected: ARM erratum 1508412 (kernel portion)
+[    0.009031] CPU features: detected: Broken broadcast TLBI completion
+[    0.009038] CPU features: detected: SSBS not fully self-synchronizing
+[    0.009046] Detected PIPT I-cache on CPU4
+[    0.009403] GICv3: CPU4: found redistributor 400 region 0:0x0000000017ae0000
+[    0.009441] CPU4: Booted secondary processor 0x0000000400 [0x411fd0d0]
+[    0.010426] Detected PIPT I-cache on CPU5
+[    0.010797] GICv3: CPU5: found redistributor 500 region 0:0x0000000017b00000
+[    0.010839] CPU5: Booted secondary processor 0x0000000500 [0x411fd0d0]
+[    0.011891] Detected PIPT I-cache on CPU6
+[    0.012264] GICv3: CPU6: found redistributor 600 region 0:0x0000000017b20000
+[    0.012305] CPU6: Booted secondary processor 0x0000000600 [0x411fd0d0]
+[    0.013395] Detected PIPT I-cache on CPU7
+[    0.013538] GICv3: CPU7: found redistributor 700 region 0:0x0000000017b40000
+[    0.013558] CPU7: Booted secondary processor 0x0000000700 [0x411fd0d0]
+[    0.013637] smp: Brought up 1 node, 8 CPUs
+[    0.013792] SMP: Total of 8 processors activated.
+[    0.013801] CPU: All CPU(s) started at EL1
+[    0.013821] CPU features: detected: 32-bit EL0 Support
+[    0.013830] CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+[    0.013843] CPU features: detected: Common not Private translations
+[    0.013852] CPU features: detected: CRC32 instructions
+[    0.013866] CPU features: detected: RCpc load-acquire (LDAPR)
+[    0.013875] CPU features: detected: LSE atomic instructions
+[    0.013884] CPU features: detected: Privileged Access Never
+[    0.013893] CPU features: detected: PMUv3
+[    0.013901] CPU features: detected: RAS Extension Support
+[    0.013911] CPU features: detected: XNX
+[    0.013921] CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+[    0.013987] alternatives: applying system-wide alternatives
+[    0.020575] CPU features: detected: Hardware dirty bit management on CPU4-7
+[    0.021583] Memory: 7415756K/8317952K available (27008K kernel code, 4874K rwdata, 16720K rodata, 26624K init, 1508K bss, 766636K reserved, 131072K cma-reserved)
+[    0.024179] devtmpfs: initialized
+[    0.035645] posixtimers hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.035704] futex hash table entries: 2048 (131072 bytes on 1 NUMA nodes, total 128 KiB, linear).
+[    0.036298] 2G module region forced by RANDOMIZE_MODULE_REGION_FULL
+[    0.036306] 0 pages in range for non-PLT usage
+[    0.036308] 505040 pages in range for PLT usage
+[    0.037210] DMI: not present or invalid.
+[    0.041834] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.042552] DMA: preallocated 1024 KiB GFP_KERNEL pool for atomic allocations
+[    0.042629] DMA: preallocated 1024 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+[    0.042658] audit: initializing netlink subsys (disabled)
+[    0.042744] audit: type=2000 audit(0.036:1): state=initialized audit_enabled=0 res=1
+[    0.044275] thermal_sys: Registered thermal governor 'step_wise'
+[    0.044280] thermal_sys: Registered thermal governor 'power_allocator'
+[    0.044339] cpuidle: using governor menu
+[    0.044450] NET: Registered PF_QIPCRTR protocol family
+[    0.044734] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.044864] ASID allocator initialised with 32768 entries
+[    0.045711] Serial: AMBA PL011 UART driver
+[    0.046182] printk: legacy console [ramoops-1] enabled
+[    0.046750] pstore: Registered ramoops as persistent store backend
+[    0.046760] ramoops: using 0x400000@0xb0000000, ecc: 0
+[    0.047920] CPUidle PSCI: Initialized CPU PM domain topology using OSI mode
+[    0.059480] /soc@0/geniqup@8c0000/i2c@884000/typec-mux@42: Fixed dependency cycle(s) with /soc@0/spmi@c440000/pmic@2/typec@1500/connector
+[    0.059686] /soc@0/ufshc@1d84000: Fixed dependency cycle(s) with /soc@0/phy@1d87000
+[    0.059712] /soc@0/phy@1d87000: Fixed dependency cycle(s) with /soc@0/ufshc@1d84000
+[    0.059844] /soc@0/stm@6002000: Fixed dependency cycle(s) with /soc@0/funnel@6041000
+[    0.059862] /soc@0/tpda@6004000: Fixed dependency cycle(s) with /soc@0/tpdm@684c000
+[    0.059879] /soc@0/tpda@6004000: Fixed dependency cycle(s) with /soc@0/funnel@6c2d000
+[    0.059919] /soc@0/tpda@6004000: Fixed dependency cycle(s) with /soc@0/funnel@6005000
+[    0.059943] /soc@0/funnel@6005000: Fixed dependency cycle(s) with /soc@0/tpda@6004000
+[    0.059982] /soc@0/funnel@6005000: Fixed dependency cycle(s) with /soc@0/funnel@6041000
+[    0.059999] /soc@0/funnel@6041000: Fixed dependency cycle(s) with /soc@0/stm@6002000
+[    0.060020] /soc@0/funnel@6041000: Fixed dependency cycle(s) with /soc@0/funnel@6005000
+[    0.060056] /soc@0/funnel@6041000: Fixed dependency cycle(s) with /soc@0/funnel@6045000
+[    0.060086] /soc@0/funnel@6042000: Fixed dependency cycle(s) with /soc@0/funnel@7810000
+[    0.060119] /soc@0/funnel@6042000: Fixed dependency cycle(s) with /soc@0/funnel@6045000
+[    0.060150] /soc@0/funnel@6045000: Fixed dependency cycle(s) with /soc@0/funnel@6042000
+[    0.060173] /soc@0/funnel@6045000: Fixed dependency cycle(s) with /soc@0/funnel@6041000
+[    0.060192] /soc@0/funnel@6045000: Fixed dependency cycle(s) with /soc@0/funnel@6b04000
+[    0.060241] /soc@0/replicator@6046000: Fixed dependency cycle(s) with /soc@0/replicator@6b06000
+[    0.060255] /soc@0/replicator@6046000: Fixed dependency cycle(s) with /soc@0/etr@6048000
+[    0.060305] /soc@0/etr@6048000: Fixed dependency cycle(s) with /soc@0/replicator@6046000
+[    0.060354] /soc@0/tpdm@684c000: Fixed dependency cycle(s) with /soc@0/tpda@6004000
+[    0.060397] /soc@0/funnel@6b04000: Fixed dependency cycle(s) with /soc@0/funnel@6045000
+[    0.060415] /soc@0/funnel@6b04000: Fixed dependency cycle(s) with /soc@0/etf@6b05000
+[    0.060460] /soc@0/etf@6b05000: Fixed dependency cycle(s) with /soc@0/funnel@6b04000
+[    0.060477] /soc@0/etf@6b05000: Fixed dependency cycle(s) with /soc@0/replicator@6b06000
+[    0.060524] /soc@0/replicator@6b06000: Fixed dependency cycle(s) with /soc@0/etf@6b05000
+[    0.060539] /soc@0/replicator@6b06000: Fixed dependency cycle(s) with /soc@0/replicator@6046000
+[    0.060589] /soc@0/tpdm@6c08000: Fixed dependency cycle(s) with /soc@0/funnel@6c0b000
+[    0.060605] /soc@0/funnel@6c0b000: Fixed dependency cycle(s) with /soc@0/tpdm@6c08000
+[    0.060649] /soc@0/funnel@6c0b000: Fixed dependency cycle(s) with /soc@0/funnel@6c2d000
+[    0.060668] /soc@0/funnel@6c2d000: Fixed dependency cycle(s) with /soc@0/funnel@6c0b000
+[    0.060711] /soc@0/funnel@6c2d000: Fixed dependency cycle(s) with /soc@0/tpda@6004000
+[    0.060761] /soc@0/etm@7040000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.060809] /soc@0/etm@7140000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.060862] /soc@0/etm@7240000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.060911] /soc@0/etm@7340000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.060959] /soc@0/etm@7440000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.061008] /soc@0/etm@7540000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.061056] /soc@0/etm@7640000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.061105] /soc@0/etm@7740000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.061121] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7740000
+[    0.061134] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7640000
+[    0.061147] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7540000
+[    0.061161] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7440000
+[    0.061174] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7340000
+[    0.061188] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7240000
+[    0.061201] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7140000
+[    0.061214] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7040000
+[    0.061249] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/funnel@7810000
+[    0.061282] /soc@0/funnel@7810000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.061315] /soc@0/funnel@7810000: Fixed dependency cycle(s) with /soc@0/funnel@6042000
+[    0.061393] /soc@0/phy@88e8000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/displayport-controller@ae90000
+[    0.061416] /soc@0/phy@88e8000: Fixed dependency cycle(s) with /soc@0/usb@a6f8800/usb@a600000
+[    0.061436] /soc@0/phy@88e8000: Fixed dependency cycle(s) with /soc@0/spmi@c440000/pmic@2/typec@1500/connector
+[    0.061529] /soc@0/usb@a6f8800/usb@a600000: Fixed dependency cycle(s) with /soc@0/spmi@c440000/pmic@2/typec@1500/connector
+[    0.061596] /soc@0/usb@a6f8800/usb@a600000: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.061666] /soc@0/cci@ac4f000/i2c-bus@1/camera@3d: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.061727] /soc@0/cci@ac50000/i2c-bus@0/camera@10: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.061778] /soc@0/cci@ac50000/i2c-bus@1/camera@36: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.061813] /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@0/camera@10
+[    0.061836] /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac4f000/i2c-bus@1/camera@3d
+[    0.061863] /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@1/camera@36
+[    0.061934] /soc@0/display-subsystem@ae00000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.062010] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/displayport-controller@ae90000
+[    0.062106] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/dsi@ae94000
+[    0.062147] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000
+[    0.062188] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.062323] /soc@0/display-subsystem@ae00000/displayport-controller@ae90000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/display-controller@ae01000
+[    0.062358] /soc@0/display-subsystem@ae00000/displayport-controller@ae90000: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.062393] /soc@0/display-subsystem@ae00000/displayport-controller@ae90000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.062430] /soc@0/display-subsystem@ae00000/displayport-controller@ae90000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000
+[    0.062454] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/dsi@ae94000/panel@0
+[    0.062581] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/display-controller@ae01000
+[    0.062628] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/phy@ae94400
+[    0.062675] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.062717] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000
+[    0.062936] /soc@0/display-subsystem@ae00000/dsi@ae94000/panel@0: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/dsi@ae94000
+[    0.063001] /soc@0/display-subsystem@ae00000/phy@ae94400: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.063055] /soc@0/clock-controller@af00000: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.063069] /soc@0/clock-controller@af00000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/phy@ae94400
+[    0.063123] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/geniqup@8c0000/i2c@884000/typec-mux@42
+[    0.063195] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.063263] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/usb@a6f8800/usb@a600000
+[    0.063403] /soc@0/interrupt-controller@17a00000: Fixed dependency cycle(s) with /soc@0/interrupt-controller@17a00000
+[    0.065012] /soc@0/geniqup@8c0000/i2c@884000/typec-mux@42: Fixed dependency cycle(s) with /soc@0/spmi@c440000/pmic@2/typec@1500/connector
+[    0.068151] /soc@0/ufshc@1d84000: Fixed dependency cycle(s) with /soc@0/phy@1d87000
+[    0.068382] /soc@0/ufshc@1d84000: Fixed dependency cycle(s) with /soc@0/phy@1d87000
+[    0.068428] /soc@0/phy@1d87000: Fixed dependency cycle(s) with /soc@0/ufshc@1d84000
+[    0.071575] /soc@0/stm@6002000: Fixed dependency cycle(s) with /soc@0/funnel@6041000
+[    0.071639] /soc@0/tpda@6004000: Fixed dependency cycle(s) with /soc@0/tpdm@684c000
+[    0.071657] /soc@0/tpda@6004000: Fixed dependency cycle(s) with /soc@0/funnel@6c2d000
+[    0.071693] /soc@0/tpda@6004000: Fixed dependency cycle(s) with /soc@0/funnel@6005000
+[    0.071767] /soc@0/tpda@6004000: Fixed dependency cycle(s) with /soc@0/funnel@6005000
+[    0.071812] /soc@0/funnel@6005000: Fixed dependency cycle(s) with /soc@0/tpda@6004000
+[    0.071867] /soc@0/funnel@6005000: Fixed dependency cycle(s) with /soc@0/funnel@6041000
+[    0.071951] /soc@0/funnel@6005000: Fixed dependency cycle(s) with /soc@0/funnel@6041000
+[    0.072013] /soc@0/stm@6002000: Fixed dependency cycle(s) with /soc@0/funnel@6041000
+[    0.072047] /soc@0/funnel@6041000: Fixed dependency cycle(s) with /soc@0/stm@6002000
+[    0.072085] /soc@0/funnel@6041000: Fixed dependency cycle(s) with /soc@0/funnel@6005000
+[    0.072138] /soc@0/funnel@6041000: Fixed dependency cycle(s) with /soc@0/funnel@6045000
+[    0.072202] /soc@0/funnel@6042000: Fixed dependency cycle(s) with /soc@0/funnel@7810000
+[    0.072230] /soc@0/funnel@6042000: Fixed dependency cycle(s) with /soc@0/funnel@6045000
+[    0.072299] /soc@0/funnel@6042000: Fixed dependency cycle(s) with /soc@0/funnel@6045000
+[    0.072351] /soc@0/funnel@6041000: Fixed dependency cycle(s) with /soc@0/funnel@6045000
+[    0.072396] /soc@0/funnel@6045000: Fixed dependency cycle(s) with /soc@0/funnel@6042000
+[    0.072438] /soc@0/funnel@6045000: Fixed dependency cycle(s) with /soc@0/funnel@6041000
+[    0.072475] /soc@0/funnel@6045000: Fixed dependency cycle(s) with /soc@0/funnel@6b04000
+[    0.072558] /soc@0/replicator@6046000: Fixed dependency cycle(s) with /soc@0/replicator@6b06000
+[    0.072573] /soc@0/replicator@6046000: Fixed dependency cycle(s) with /soc@0/etr@6048000
+[    0.072627] /soc@0/replicator@6046000: Fixed dependency cycle(s) with /soc@0/etr@6048000
+[    0.072690] /soc@0/etr@6048000: Fixed dependency cycle(s) with /soc@0/replicator@6046000
+[    0.072761] /soc@0/tpda@6004000: Fixed dependency cycle(s) with /soc@0/tpdm@684c000
+[    0.072822] /soc@0/tpdm@684c000: Fixed dependency cycle(s) with /soc@0/tpda@6004000
+[    0.072904] /soc@0/funnel@6045000: Fixed dependency cycle(s) with /soc@0/funnel@6b04000
+[    0.072967] /soc@0/funnel@6b04000: Fixed dependency cycle(s) with /soc@0/funnel@6045000
+[    0.073005] /soc@0/funnel@6b04000: Fixed dependency cycle(s) with /soc@0/etf@6b05000
+[    0.073061] /soc@0/funnel@6b04000: Fixed dependency cycle(s) with /soc@0/etf@6b05000
+[    0.073115] /soc@0/etf@6b05000: Fixed dependency cycle(s) with /soc@0/funnel@6b04000
+[    0.073151] /soc@0/etf@6b05000: Fixed dependency cycle(s) with /soc@0/replicator@6b06000
+[    0.073204] /soc@0/etf@6b05000: Fixed dependency cycle(s) with /soc@0/replicator@6b06000
+[    0.073261] /soc@0/replicator@6046000: Fixed dependency cycle(s) with /soc@0/replicator@6b06000
+[    0.073316] /soc@0/replicator@6b06000: Fixed dependency cycle(s) with /soc@0/etf@6b05000
+[    0.073353] /soc@0/replicator@6b06000: Fixed dependency cycle(s) with /soc@0/replicator@6046000
+[    0.073446] /soc@0/tpdm@6c08000: Fixed dependency cycle(s) with /soc@0/funnel@6c0b000
+[    0.073521] /soc@0/tpdm@6c08000: Fixed dependency cycle(s) with /soc@0/funnel@6c0b000
+[    0.073555] /soc@0/funnel@6c0b000: Fixed dependency cycle(s) with /soc@0/tpdm@6c08000
+[    0.073613] /soc@0/funnel@6c0b000: Fixed dependency cycle(s) with /soc@0/funnel@6c2d000
+[    0.073688] /soc@0/funnel@6c0b000: Fixed dependency cycle(s) with /soc@0/funnel@6c2d000
+[    0.073726] /soc@0/tpda@6004000: Fixed dependency cycle(s) with /soc@0/funnel@6c2d000
+[    0.073761] /soc@0/funnel@6c2d000: Fixed dependency cycle(s) with /soc@0/funnel@6c0b000
+[    0.073815] /soc@0/funnel@6c2d000: Fixed dependency cycle(s) with /soc@0/tpda@6004000
+[    0.073910] /soc@0/etm@7040000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.073994] /soc@0/etm@7140000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074068] /soc@0/etm@7240000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074141] /soc@0/etm@7340000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074213] /soc@0/etm@7440000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074284] /soc@0/etm@7540000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074362] /soc@0/etm@7640000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074436] /soc@0/etm@7740000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074513] /soc@0/etm@7740000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074572] /soc@0/etm@7640000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074627] /soc@0/etm@7540000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074686] /soc@0/etm@7440000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074742] /soc@0/etm@7340000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074797] /soc@0/etm@7240000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074853] /soc@0/etm@7140000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074907] /soc@0/etm@7040000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.074955] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7740000
+[    0.074989] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7640000
+[    0.075022] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7540000
+[    0.075053] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7440000
+[    0.075085] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7340000
+[    0.075117] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7240000
+[    0.075150] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7140000
+[    0.075181] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/etm@7040000
+[    0.075228] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/funnel@7810000
+[    0.075302] /soc@0/funnel@7800000: Fixed dependency cycle(s) with /soc@0/funnel@7810000
+[    0.075347] /soc@0/funnel@6042000: Fixed dependency cycle(s) with /soc@0/funnel@7810000
+[    0.075388] /soc@0/funnel@7810000: Fixed dependency cycle(s) with /soc@0/funnel@7800000
+[    0.075435] /soc@0/funnel@7810000: Fixed dependency cycle(s) with /soc@0/funnel@6042000
+[    0.076117] /soc@0/phy@88e8000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/displayport-controller@ae90000
+[    0.076145] /soc@0/phy@88e8000: Fixed dependency cycle(s) with /soc@0/usb@a6f8800/usb@a600000
+[    0.076169] /soc@0/phy@88e8000: Fixed dependency cycle(s) with /soc@0/spmi@c440000/pmic@2/typec@1500/connector
+[    0.077424] /soc@0/usb@a6f8800/usb@a600000: Fixed dependency cycle(s) with /soc@0/spmi@c440000/pmic@2/typec@1500/connector
+[    0.077493] /soc@0/usb@a6f8800/usb@a600000: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.078395] /soc@0/cci@ac4f000/i2c-bus@1/camera@3d: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.078651] /soc@0/cci@ac50000/i2c-bus@0/camera@10: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.078710] /soc@0/cci@ac50000/i2c-bus@1/camera@36: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.079048] /soc@0/cci@ac50000/i2c-bus@1/camera@36: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.079118] /soc@0/cci@ac50000/i2c-bus@0/camera@10: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.079163] /soc@0/cci@ac4f000/i2c-bus@1/camera@3d: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.079213] /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@0/camera@10
+[    0.079244] /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac4f000/i2c-bus@1/camera@3d
+[    0.079272] /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@1/camera@36
+[    0.079883] /soc@0/display-subsystem@ae00000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.080058] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/displayport-controller@ae90000
+[    0.080260] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/dsi@ae94000
+[    0.080307] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000
+[    0.080360] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.080634] /soc@0/display-subsystem@ae00000/displayport-controller@ae90000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/display-controller@ae01000
+[    0.080675] /soc@0/display-subsystem@ae00000/displayport-controller@ae90000: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.080741] /soc@0/display-subsystem@ae00000/displayport-controller@ae90000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.080784] /soc@0/display-subsystem@ae00000/displayport-controller@ae90000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000
+[    0.080838] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/dsi@ae94000/panel@0
+[    0.081056] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/display-controller@ae01000
+[    0.081182] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/phy@ae94400
+[    0.081257] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.081310] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000
+[    0.081690] /soc@0/display-subsystem@ae00000/dsi@ae94000/panel@0: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/dsi@ae94000
+[    0.081764] /soc@0/display-subsystem@ae00000/phy@ae94400: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.081965] /soc@0/display-subsystem@ae00000/phy@ae94400: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.082062] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.082106] /soc@0/display-subsystem@ae00000/displayport-controller@ae90000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.082154] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.082215] /soc@0/display-subsystem@ae00000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.082290] /soc@0/clock-controller@af00000: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.082335] /soc@0/clock-controller@af00000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/phy@ae94400
+[    0.084168] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/geniqup@8c0000/i2c@884000/typec-mux@42
+[    0.084247] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.084342] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/usb@a6f8800/usb@a600000
+[    0.089484] /soc@0/rsc@18200000/regulators-0: Fixed dependency cycle(s) with /soc@0/rsc@18200000/regulators-0/smps5
+[    0.089510] /soc@0/rsc@18200000/regulators-0: Fixed dependency cycle(s) with /soc@0/rsc@18200000/regulators-0/smps6
+[    0.089676] /soc@0/rsc@18200000/regulators-1: Fixed dependency cycle(s) with /soc@0/rsc@18200000/regulators-1/bob
+[    0.089696] /soc@0/rsc@18200000/regulators-1: Fixed dependency cycle(s) with /soc@0/rsc@18200000/regulators-1/smps8
+[    0.094298] HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.094316] HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+[    0.094329] HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+[    0.094342] HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+[    0.094351] HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.094358] HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+[    0.094365] HugeTLB: registered 64.0 KiB page size, pre-allocated 0 pages
+[    0.094372] HugeTLB: 0 KiB vmemmap can be freed for a 64.0 KiB page
+[    0.095393] raid6: using neon recovery algorithm
+[    0.111960] raid6: int64x1  gen()  1686 MB/s
+[    0.129026] raid6: int64x2  gen()  2104 MB/s
+[    0.146088] raid6: int64x4  gen()  2667 MB/s
+[    0.163144] raid6: int64x8  gen()  2518 MB/s
+[    0.180211] raid6: neonx1   gen()  3777 MB/s
+[    0.197270] raid6: neonx2   gen()  4103 MB/s
+[    0.214331] raid6: neonx4   gen()  4255 MB/s
+[    0.231390] raid6: neonx8   gen()  4057 MB/s
+[    0.231397] raid6: using algorithm neonx4 gen() 4255 MB/s
+[    0.248455] raid6: .... xor() 3528 MB/s, rmw enabled
+[    0.248652] ACPI: Interpreter disabled.
+[    0.252813] iommu: Default domain type: Translated
+[    0.252825] iommu: DMA domain TLB invalidation policy: strict mode
+[    0.253374] SCSI subsystem initialized
+[    0.253481] usbcore: registered new interface driver usbfs
+[    0.253507] usbcore: registered new interface driver hub
+[    0.253530] usbcore: registered new device driver usb
+[    0.253730] mc: Linux media interface: v0.10
+[    0.253753] videodev: Linux video capture interface: v2.00
+[    0.253789] pps_core: LinuxPPS API ver. 1 registered
+[    0.253797] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.253810] PTP clock support registered
+[    0.253844] EDAC MC: Ver: 3.0.0
+[    0.253988] scmi_core: SCMI protocol bus registered
+[    0.254136] qcom_scm: convention: smc arm 64
+[    0.255984] qcom_scm firmware:scm: qseecom: found qseecom with version 0x1402000
+[    0.256010] qcom_scm firmware:scm: qseecom: untested machine, skipping
+[    0.256665] Advanced Linux Sound Architecture Driver Initialized.
+[    0.257163] Bluetooth: Core ver 2.22
+[    0.257186] NET: Registered PF_BLUETOOTH protocol family
+[    0.257194] Bluetooth: HCI device and connection manager initialized
+[    0.257204] Bluetooth: HCI socket layer initialized
+[    0.257213] Bluetooth: L2CAP socket layer initialized
+[    0.257224] Bluetooth: SCO socket layer initialized
+[    0.257360] nfc: nfc_init: NFC Core ver 0.1
+[    0.257394] NET: Registered PF_NFC protocol family
+[    0.257457] vgaarb: loaded
+[    0.257773] clocksource: Switched to clocksource arch_sys_counter
+[    0.258020] VFS: Disk quotas dquot_6.6.0
+[    0.258036] VFS: Dquot-cache hash table entries: 512 (4096 bytes)
+[    0.258227] pnp: PnP ACPI: disabled
+[    0.261854] NET: Registered PF_INET protocol family
+[    0.261986] IP idents hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+[    0.265512] tcp_listen_portaddr_hash hash table entries: 4096 (order: 4, 65536 bytes, linear)
+[    0.265542] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.265555] TCP established hash table entries: 65536 (order: 7, 524288 bytes, linear)
+[    0.265690] TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+[    0.267321] TCP: Hash tables configured (established 65536 bind 65536)
+[    0.267371] UDP hash table entries: 4096 (order: 6, 262144 bytes, linear)
+[    0.267497] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.267722] RPC: Registered named UNIX socket transport module.
+[    0.267731] RPC: Registered udp transport module.
+[    0.267739] RPC: Registered tcp transport module.
+[    0.267747] RPC: Registered tcp-with-tls transport module.
+[    0.267755] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.268217] PCI: CLS 0 bytes, default 64
+[    0.271869] kvm [1]: HYP mode not available
+[    0.272494] Initialise system trusted keyrings
+[    0.272624] workingset: timestamp_bits=42 (anon: 37) max_order=21 bucket_order=0 (anon: 0)
+[    0.272891] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.273075] NFS: Registering the id_resolver key type
+[    0.273092] Key type id_resolver registered
+[    0.273100] Key type id_legacy registered
+[    0.273115] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    0.273128] nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+[    0.273663] Key type cifs.idmap registered
+[    0.273777] fuse: init (API version 7.45)
+[    0.274278] NET: Registered PF_ALG protocol family
+[    0.274307] Key type asymmetric registered
+[    0.274315] Asymmetric key parser 'x509' registered
+[    0.274323] Asymmetric key parser 'pkcs8' registered
+[    0.274359] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 237)
+[    0.274452] io scheduler mq-deadline registered
+[    0.274462] io scheduler kyber registered
+[    0.274484] io scheduler bfq registered
+[    0.274509] xor: measuring software checksum speed
+[    0.274948]    neon            :  7627 MB/sec
+[    0.275834]    32regs          :  3740 MB/sec
+[    0.276567]    8regs           :  4525 MB/sec
+[    0.276575] xor: using function: neon (7627 MB/sec)
+[    0.286820] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.288688] IPMI message handler: version 39.2
+[    0.288735] ipmi device interface
+[    0.288835] ipmi_si: IPMI System Interface driver
+[    0.289043] ipmi_si: Unable to find any System Interface(s)
+[    0.297252] /soc@0/display-subsystem@ae00000/phy@ae94400: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.297339] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.297408] /soc@0/display-subsystem@ae00000/displayport-controller@ae90000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.297481] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/clock-controller@af00000
+[    0.309164] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.310610] msm_serial: driver initialized
+[    0.311673] arm-smmu 3da0000.iommu: probing hardware configuration...
+[    0.311685] arm-smmu 3da0000.iommu: SMMUv2 with:
+[    0.311711] arm-smmu 3da0000.iommu: 	stage 1 translation
+[    0.311719] arm-smmu 3da0000.iommu: 	coherent table walk
+[    0.311727] arm-smmu 3da0000.iommu: 	stream matching with 6 register groups
+[    0.311744] arm-smmu 3da0000.iommu: 	5 context banks (0 stage-2 only)
+[    0.311761] arm-smmu 3da0000.iommu: 	Supported page sizes: 0x61311000
+[    0.311775] arm-smmu 3da0000.iommu: 	Stage-1: 48-bit VA -> 36-bit IPA
+[    0.311835] arm-smmu 3da0000.iommu: 	preserved 0 boot mappings
+[    0.312445] platform 3d00000.gpu: Adding to iommu group 0
+[    0.312524] platform 3d6a000.gmu: Adding to iommu group 1
+[    0.315313] arm-smmu 15000000.iommu: probing hardware configuration...
+[    0.315325] arm-smmu 15000000.iommu: SMMUv2 with:
+[    0.315341] arm-smmu 15000000.iommu: 	stage 1 translation
+[    0.315349] arm-smmu 15000000.iommu: 	coherent table walk
+[    0.315358] arm-smmu 15000000.iommu: 	stream matching with 87 register groups
+[    0.315372] arm-smmu 15000000.iommu: 	74 context banks (0 stage-2 only)
+[    0.315750] arm-smmu 15000000.iommu: 	Supported page sizes: 0x61311000
+[    0.315759] arm-smmu 15000000.iommu: 	Stage-1: 36-bit VA -> 36-bit IPA
+[    0.315813] arm-smmu 15000000.iommu: 	preserved 0 boot mappings
+[    0.316682] platform 800000.dma-controller: Adding to iommu group 2
+[    0.316751] platform 8c0000.geniqup: Adding to iommu group 3
+[    0.316823] platform 900000.dma-controller: Adding to iommu group 4
+[    0.316887] platform 9c0000.geniqup: Adding to iommu group 5
+[    0.316955] platform a00000.dma-controller: Adding to iommu group 6
+[    0.317018] platform ac0000.geniqup: Adding to iommu group 7
+[    0.317115] platform 1d84000.ufshc: Adding to iommu group 8
+[    0.317234] platform 1dc4000.dma-controller: Adding to iommu group 9
+[    0.317335] platform 1dfa000.crypto: Adding to iommu group 9
+[    0.317447] platform aa00000.video-codec: Adding to iommu group 10
+[    0.317832] platform ac6a000.camss: Adding to iommu group 11
+[    0.317897] platform ae00000.display-subsystem: Adding to iommu group 12
+[    0.325541] usbcore: registered new interface driver gud
+[    0.330004] brd: module loaded
+[    0.332508] loop: module loaded
+[    0.340600] zram: Added device: zram0
+[    0.342545] spmi_pmic_arb c440000.spmi: PMIC arbiter version v5 (0x50010000)
+[    0.348740] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/geniqup@8c0000/i2c@884000/typec-mux@42
+[    0.348872] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.348999] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/usb@a6f8800/usb@a600000
+[    0.349719] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/geniqup@8c0000/i2c@884000/typec-mux@42
+[    0.349874] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.350014] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/usb@a6f8800/usb@a600000
+[    0.362806] gpiochip_add_data_with_key: GPIOs 546..549 (c440000.spmi:pmic@a:gpio@c000) failed to register, -22
+[    0.362827] qcom-spmi-gpio c440000.spmi:pmic@a:gpio@c000: can't add gpio chip
+[    0.362839] qcom-spmi-gpio c440000.spmi:pmic@a:gpio@c000: probe with driver qcom-spmi-gpio failed with error -22
+[    0.363653] qcom,qpnp-power-on c440000.spmi:pmic@8:power-on@800: PMIC@SID8 Power-on reason: Triggered from PON1 (Secondary PMIC) and 'cold' boot
+[    0.363693] qcom,qpnp-power-on c440000.spmi:pmic@8:power-on@800: PMIC@SID8: Power-off reason: Triggered from SOFT (Software)
+[    0.363724] qcom,qpnp-power-on c440000.spmi:pmic@8:power-on@800: error -ENXIO: IRQ pmic-wd-bark not found
+[    0.364552] wireguard: WireGuard 1.0.0 loaded. See www.wireguard.com for information.
+[    0.364565] wireguard: Copyright (C) 2015-2019 Jason A. Donenfeld <Jason@zx2c4.com>. All Rights Reserved.
+[    0.366660] tun: Universal TUN/TAP device driver, 1.6
+[    0.367299] thunder_xcv, ver 1.0
+[    0.367340] thunder_bgx, ver 1.0
+[    0.367372] nicpf, ver 1.0
+[    0.367402] e1000: Intel(R) PRO/1000 Network Driver
+[    0.367409] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    0.367438] e1000e: Intel(R) PRO/1000 Network Driver
+[    0.367445] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    0.367569] sky2: driver version 1.30
+[    0.368610] usbcore: registered new interface driver mwifiex_usb
+[    0.368679] usbcore: registered new interface driver RSI-USB WLAN
+[    0.368715] pegasus: Pegasus/Pegasus II USB Ethernet driver
+[    0.368748] usbcore: registered new interface driver pegasus
+[    0.368788] usbcore: registered new interface driver rtl8150
+[    0.368803] usbcore: registered new device driver r8152-cfgselector
+[    0.368832] usbcore: registered new interface driver r8152
+[    0.368863] usbcore: registered new interface driver lan78xx
+[    0.368892] usbcore: registered new interface driver asix
+[    0.368926] usbcore: registered new interface driver ax88179_178a
+[    0.368956] usbcore: registered new interface driver cdc_ether
+[    0.368986] usbcore: registered new interface driver dm9601
+[    0.369015] usbcore: registered new interface driver CoreChips
+[    0.369044] usbcore: registered new interface driver smsc75xx
+[    0.369074] usbcore: registered new interface driver smsc95xx
+[    0.369107] usbcore: registered new interface driver net1080
+[    0.369140] usbcore: registered new interface driver cdc_subset
+[    0.369169] usbcore: registered new interface driver zaurus
+[    0.369199] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+[    0.369231] usbcore: registered new interface driver cdc_ncm
+[    0.369261] usbcore: registered new interface driver r8153_ecm
+[    0.369435] VFIO - User Level meta-driver version: 0.3
+[    0.370813] usbcore: registered new interface driver cdc_acm
+[    0.370822] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    0.370856] usbcore: registered new interface driver usb-storage
+[    0.370947] usbcore: registered new interface driver cp210x
+[    0.370963] usbserial: USB Serial support registered for cp210x
+[    0.370989] usbcore: registered new interface driver ftdi_sio
+[    0.371003] usbserial: USB Serial support registered for FTDI USB Serial Device
+[    0.371030] usbcore: registered new interface driver option
+[    0.371045] usbserial: USB Serial support registered for GSM modem (1-port)
+[    0.371150] usbcore: registered new device driver onboard-usb-dev
+[    0.371956] gadgetfs: USB Gadget filesystem, version 24 Aug 2004
+[    0.371992] UDC core: g_mass_storage: couldn't find an available UDC
+[    0.379735] rtc-pm8xxx c440000.spmi:pmic@0:rtc@6000: registered as rtc0
+[    0.379788] rtc-pm8xxx c440000.spmi:pmic@0:rtc@6000: setting system clock to 1975-03-09T22:59:13 UTC (163637953)
+[    0.380000] i2c_dev: i2c /dev entries driver
+[    0.382121] usbcore: registered new interface driver uvcvideo
+[    0.383386] input: pm8941_pwrkey as /devices/platform/soc@0/c440000.spmi/spmi-0/0-00/c440000.spmi:pmic@0:pon@800/c440000.spmi:pmic@0:pon@800:pwrkey/input/input0
+[    0.384230] input: pm8941_resin as /devices/platform/soc@0/c440000.spmi/spmi-0/0-00/c440000.spmi:pmic@0:pon@800/c440000.spmi:pmic@0:pon@800:resin/input/input1
+[    0.384416] sysfs: cannot create duplicate filename '/devices/virtual/reboot-mode/qcom-pon'
+[    0.384430] CPU: 7 UID: 0 PID: 1 Comm: swapper/0 Not tainted 7.2.0-rc5-sm8250-modem #15 PREEMPT 
+[    0.384437] Hardware name: Xiaomi Mi 10S (thyme) (DT)
+[    0.384440] Call trace:
+[    0.384442]  show_stack+0x18/0x24 (C)
+[    0.384453]  dump_stack_lvl+0x78/0x90
+[    0.384466]  dump_stack+0x18/0x24
+[    0.384473]  sysfs_warn_dup+0x64/0x80
+[    0.384482]  sysfs_create_dir_ns+0xf0/0x110
+[    0.384487]  kobject_add_internal+0x98/0x26c
+[    0.384495]  kobject_add+0x98/0x114
+[    0.384502]  device_add+0xf0/0x7c0
+[    0.384510]  device_create_groups_vargs+0xe0/0x134
+[    0.384516]  device_create+0x60/0x8c
+[    0.384522]  reboot_mode_register+0x26c/0x2f0
+[    0.384528]  devm_reboot_mode_register+0x4c/0xa4
+[    0.384532]  qcom_pon_probe+0xa0/0x104
+[    0.384540]  platform_probe+0x5c/0xac
+[    0.384546]  really_probe+0xbc/0x298
+[    0.384553]  __driver_probe_device+0x164/0x184
+[    0.384560]  driver_probe_device+0x3c/0x114
+[    0.384567]  __driver_attach+0x94/0x180
+[    0.384574]  bus_for_each_dev+0x78/0xdc
+[    0.384581]  driver_attach+0x24/0x30
+[    0.384588]  bus_add_driver+0xe4/0x208
+[    0.384594]  driver_register+0x60/0x128
+[    0.384602]  __platform_driver_register+0x28/0x34
+[    0.384606]  qcom_pon_driver_init+0x24/0x30
+[    0.384615]  do_one_initcall+0x70/0x1b8
+[    0.384620]  kernel_init_freeable+0x208/0x2f0
+[    0.384628]  kernel_init+0x24/0x1dc
+[    0.384634]  ret_from_fork+0x10/0x20
+[    0.384640] kobject: kobject_add_internal failed for qcom-pon with -EEXIST, don't try to register things with the same name in the same directory.
+[    0.384818] qcom-pon c440000.spmi:pmic@a:pon@800: can't register reboot mode
+[    0.384827] qcom-pon c440000.spmi:pmic@a:pon@800: probe with driver qcom-pon failed with error -17
+[    0.396253] device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+[    0.396387] Bluetooth: HCI UART driver ver 2.3
+[    0.396398] Bluetooth: HCI UART protocol H4 registered
+[    0.396419] Bluetooth: HCI UART protocol LL registered
+[    0.396523] Bluetooth: HCI UART protocol Broadcom registered
+[    0.396540] Bluetooth: HCI UART protocol QCA registered
+[    0.396556] Bluetooth: HCI UART protocol Marvell registered
+[    0.396605] usbcore: registered new interface driver btusb
+[    0.400273] clocksource: arch_mmio_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.400293] arch-timer-mmio 17c20000.timer: mmio timer running at 19.20MHz (virt)
+[    0.400562] hid: raw HID events driver (C) Jiri Kosina
+[    0.400850] usbcore: registered new interface driver usbhid
+[    0.400861] usbhid: USB HID core driver
+[    0.403759] Failed to setup esoc-mdm IPC logging
+[    0.406026] SPI driver st-magn-spi has no spi_device_id for st,lis3mdl-magn
+[    0.406038] SPI driver st-magn-spi has no spi_device_id for st,lsm303agr-magn
+[    0.406048] SPI driver st-magn-spi has no spi_device_id for st,lsm9ds1-magn
+[    0.406056] SPI driver st-magn-spi has no spi_device_id for st,lsm303c-magn
+[    0.407522] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 (0,8000003f) counters available
+[    0.409086]  cs_system_cfg: CoreSight Configuration manager initialised
+[    0.415183] coresight-stm 6002000.stm: stm0 : stm_register_device failed, probing deferred
+[    0.782559] qcomtee: QTEE version 0.0.0
+[    0.782899] gnss: GNSS driver registered with major 501
+[    0.789713] usbcore: registered new interface driver snd-usb-audio
+[    0.796091] IPVS: Registered protocols (TCP, UDP)
+[    0.796106] IPVS: Connection hash table configured (size=4096, memory=32Kbytes)
+[    0.796180] IPVS: ipvs loaded.
+[    0.796188] IPVS: [rr] scheduler registered.
+[    0.796280] Initializing XFRM netlink socket
+[    0.796319] NET: Registered PF_INET6 protocol family
+[    0.797170] Segment Routing with IPv6
+[    0.797189] In-situ OAM (IOAM) with IPv6
+[    0.797232] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    0.797453] NET: Registered PF_PACKET protocol family
+[    0.797484] Bridge firewalling registered
+[    0.797601] Bluetooth: RFCOMM TTY layer initialized
+[    0.797611] Bluetooth: RFCOMM socket layer initialized
+[    0.797622] Bluetooth: RFCOMM ver 1.11
+[    0.797631] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+[    0.797638] Bluetooth: BNEP filters: protocol multicast
+[    0.797647] Bluetooth: BNEP socket layer initialized
+[    0.797653] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+[    0.797661] Bluetooth: HIDP socket layer initialized
+[    0.797688] 8021q: 802.1Q VLAN Support v1.8
+[    0.797848] Key type dns_resolver registered
+[    0.812493] registered taskstats version 1
+[    0.812600] Loading compiled-in X.509 certificates
+[    0.817474] Demotion targets for Node 0: null
+[    0.817504] Key type .fscrypt registered
+[    0.817511] Key type fscrypt-provisioning registered
+[    0.818239] Btrfs loaded, zoned=no, fsverity=no
+[    0.827698] coresight stm0: STM32 initialized
+[    0.831865] cpu cpu0: EM: created perf domain
+[    0.841229] cpu cpu4: EM: created perf domain
+[    0.849795] cpu cpu7: EM: created perf domain
+[    0.859117] /soc@0/geniqup@8c0000/i2c@884000/typec-mux@42: Fixed dependency cycle(s) with /soc@0/spmi@c440000/pmic@2/typec@1500/connector
+[    0.859822] geni_i2c 884000.i2c: Bus frequency not specified, default to 100kHz.
+[    0.862772] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/geniqup@8c0000/i2c@884000/typec-mux@42
+[    0.862830] /soc@0/geniqup@8c0000/i2c@884000/typec-mux@42: Fixed dependency cycle(s) with /soc@0/spmi@c440000/pmic@2/typec@1500/connector
+[    0.873290] geni_i2c 984000.i2c: Bus frequency not specified, default to 100kHz.
+[    0.905091] 998000.serial: ttyHS1 at MMIO 0x998000 (irq = 179, base_baud = 0) is a MSM
+[    0.905230] serial serial0: tty port ttyHS1 registered
+[    0.910267] geni_se_qup a90000.serial: invalid clocks count at /soc@0/geniqup@ac0000/serial@a90000, expected 2 entries
+[    0.910283] geni_se_qup a90000.serial: probe with driver geni_se_qup failed with error -22
+[    0.920187] vreg_bob: Setting 3032000-3992000uV
+[    0.921434] vreg_s8c_1p3: Setting 1352000-1352000uV
+[    0.922198] vreg_l1c_1p8: Setting 1800000-1800000uV
+[    0.922889] vreg_l2c_1p2: Setting 1200000-1200000uV
+[    0.923625] vreg_l3c_0p92: Setting 920000-920000uV
+[    0.924256] vreg_l4c_1p7: Setting 1704000-2928000uV
+[    0.924974] vreg_l5c_1p8: Setting 1800000-2928000uV
+[    0.925482] vreg_l6c_2p9: Setting 1800000-2960000uV
+[    0.925985] vreg_l7c_cam_vcm0_2p85: Setting 2856000-3104000uV
+[    0.926494] vreg_l8c_1p8: Setting 1800000-1800000uV
+[    0.927045] vreg_l9c_2p9: Setting 2704000-2960000uV
+[    0.927553] vreg_l10c_3p0: Setting 3000000-3000000uV
+[    0.928076] vreg_l11c_3p3: Setting 3000000-3312000uV
+[    0.942793] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/displayport-controller@ae90000
+[    0.942826] /soc@0/display-subsystem@ae00000/display-controller@ae01000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/dsi@ae94000
+[    0.945002] /soc@0/phy@88e8000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/displayport-controller@ae90000
+[    0.945140] /soc@0/display-subsystem@ae00000/displayport-controller@ae90000: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.949496] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/dsi@ae94000/panel@0
+[    0.949821] /soc@0/display-subsystem@ae00000/dsi@ae94000/panel@0: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/dsi@ae94000
+[    0.956173] platform a600000.usb: Adding to iommu group 13
+[    0.956288] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/usb@a6f8800/usb@a600000
+[    0.956328] /soc@0/phy@88e8000: Fixed dependency cycle(s) with /soc@0/usb@a6f8800/usb@a600000
+[    0.956370] /soc@0/usb@a6f8800/usb@a600000: Fixed dependency cycle(s) with /soc@0/spmi@c440000/pmic@2/typec@1500/connector
+[    0.956391] /soc@0/usb@a6f8800/usb@a600000: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    0.958714] /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac4f000/i2c-bus@1/camera@3d
+[    0.958805] /soc@0/cci@ac4f000/i2c-bus@1/camera@3d: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.960427] /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@0/camera@10
+[    0.960490] /soc@0/cci@ac50000/i2c-bus@0/camera@10: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.960946] /soc@0/camss@ac6a000: Fixed dependency cycle(s) with /soc@0/cci@ac50000/i2c-bus@1/camera@36
+[    0.961028] /soc@0/cci@ac50000/i2c-bus@1/camera@36: Fixed dependency cycle(s) with /soc@0/camss@ac6a000
+[    0.969535] thermal thermal_zone25: Temperature check failed (-22)
+[    0.971202] thermal thermal_zone26: Temperature check failed (-22)
+[    0.972829] thermal thermal_zone27: Temperature check failed (-22)
+[    0.975056] thermal thermal_zone28: Temperature check failed (-22)
+[    0.977456] thermal thermal_zone29: Temperature check failed (-22)
+[    0.978790] thermal thermal_zone30: Temperature check failed (-22)
+[    0.980112] thermal thermal_zone31: Temperature check failed (-22)
+[    0.992733] remoteproc remoteproc0: slpi is available
+[    0.992877] remoteproc remoteproc0: Direct firmware load for qcom/sm8250/umi/slpi.mbn failed with error -2
+[    0.992891] remoteproc remoteproc0: powering up slpi
+[    0.992932] remoteproc remoteproc0: Direct firmware load for qcom/sm8250/umi/slpi.mbn failed with error -2
+[    0.992942] remoteproc remoteproc0: request_firmware failed: -2
+[    0.995499] remoteproc remoteproc1: cdsp is available
+[    0.995607] remoteproc remoteproc1: Direct firmware load for qcom/sm8250/umi/cdsp.mbn failed with error -2
+[    0.995622] remoteproc remoteproc1: powering up cdsp
+[    0.995666] remoteproc remoteproc1: Direct firmware load for qcom/sm8250/umi/cdsp.mbn failed with error -2
+[    0.995676] remoteproc remoteproc1: request_firmware failed: -2
+[    0.997776] remoteproc remoteproc2: adsp is available
+[    1.001759] ------------[ cut here ]------------
+[    1.001789] workqueue: mdm_queue is using neither WQ_PERCPU or WQ_UNBOUND. Setting WQ_PERCPU.
+[    1.001804] WARNING: kernel/workqueue.c:5851 at __alloc_workqueue+0x664/0x6e8, CPU#7: kworker/u32:3/69
+[    1.001827] Modules linked in:
+[    1.001838] CPU: 7 UID: 0 PID: 69 Comm: kworker/u32:3 Not tainted 7.2.0-rc5-sm8250-modem #15 PREEMPT 
+[    1.001851] Hardware name: Xiaomi Mi 10S (thyme) (DT)
+[    1.001859] Workqueue: events_unbound deferred_probe_work_func
+[    1.001876] pstate: 60400005 (nZCv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[    1.001886] pc : __alloc_workqueue+0x664/0x6e8
+[    1.001896] lr : __alloc_workqueue+0x664/0x6e8
+[    1.001905] sp : ffff800080a0ba00
+[    1.001911] x29: ffff800080a0ba00 x28: ffffa33df9b65a00 x27: ffff00008399ccb8
+[    1.001925] x26: 0000000000000000 x25: 0000000000000000 x24: ffffa33df8026708
+[    1.001937] x23: 0000000000000000 x22: ffff800080a0ba90 x21: ffff000081872080
+[    1.001948] x20: 0000000000000000 x19: ffff00008399cc00 x18: 00000000ffffffff
+[    1.001960] x17: 53202e444e554f42 x16: 4e555f515720726f x15: 205550435245505f
+[    1.001972] x14: 5157207265687469 x13: ffff0001edc00000 x12: 00000000000002e3
+[    1.001984] x11: 00000000000008a9 x10: ffff0001ee9fffe8 x9 : ffff0001edc00000
+[    1.001996] x8 : 3ffffffffffe0000 x7 : 0000000000000001 x6 : 0000000000000001
+[    1.002008] x5 : ffff0001ee700000 x4 : 0000000000000000 x3 : 0000000000000000
+[    1.002019] x2 : 0000000000000000 x1 : 0000000000000000 x0 : ffff000080ed4ec0
+[    1.002031] Call trace:
+[    1.002037]  __alloc_workqueue+0x664/0x6e8 (P)
+[    1.002050]  alloc_workqueue_noprof+0x64/0x90
+[    1.002062]  sdx55m_setup_hw+0x6c/0x390
+[    1.002075]  mdm_probe+0x74/0xb8
+[    1.002086]  platform_probe+0x5c/0xac
+[    1.002095]  really_probe+0xbc/0x298
+[    1.002107]  __driver_probe_device+0x164/0x184
+[    1.002119]  driver_probe_device+0x3c/0x114
+[    1.002131]  __device_attach_driver+0xb8/0x118
+[    1.002143]  bus_for_each_drv+0x84/0xe4
+[    1.002154]  __device_attach+0xac/0x1b8
+[    1.002165]  device_initial_probe+0x50/0x54
+[    1.002178]  bus_probe_device+0x38/0xa0
+[    1.002190]  deferred_probe_work_func+0x88/0xc0
+[    1.002201]  process_one_work+0x15c/0x29c
+[    1.002212]  worker_thread+0x18c/0x2ec
+[    1.002221]  kthread+0x120/0x12c
+[    1.002229]  ret_from_fork+0x10/0x20
+[    1.002241] ---[ end trace 0000000000000000 ]---
+[    1.003143] esoc-mdm: [mdm_disable_irqs]: Disabling the interrupts
+[    1.003282] mdm-4x esoc0: esoc: adding sysmon subdev name=esoc0 ssctl_id=0x10
+[    1.003401] mdm-4x esoc0: esoc: sysmon subdev added OK
+[    1.003686] remoteproc remoteproc3: esoc0 is available
+[    1.003754] esoc-mdm: [mdm_handle_clink_evt]: evt_state: ESOC_REQ_ENG_ON; Registered a req engine
+[    1.004109] esoc-mdm: [sdx55m_setup_hw]: Done configuring the GPIOs and esoc registration
+[    1.004128] esoc-mdm: [mdm_debug_gpio_ipc_log]: MDM2AP_ERRFATAL gpio = 00000000766c44e6
+[    1.004143] esoc-mdm: [mdm_debug_gpio_ipc_log]: AP2MDM_ERRFATAL gpio = 0000000004471508
+[    1.004155] esoc-mdm: [mdm_debug_gpio_ipc_log]: MDM2AP_STATUS gpio = 000000005ee5f6bd
+[    1.004168] esoc-mdm: [mdm_debug_gpio_ipc_log]: AP2MDM_STATUS gpio = 0000000048ba2438
+[    1.004180] esoc-mdm: [mdm_debug_gpio_ipc_log]: AP2MDM_SOFT_RESET gpio = 0000000000000000
+[    1.005623] remoteproc remoteproc2: powering up adsp
+[    1.005641] remoteproc remoteproc2: Booting fw image qcom/sm8250/umi/adsp.mbn, size 20517084
+[    1.077347] cs35l41 3-0040: Subsystem ID: thyme
+[    1.085300] cs35l41 3-0040: Cirrus Logic CS35L41 (35a40), Revision: B2
+[    1.135637] remoteproc remoteproc2: remote processor adsp is now up
+[    1.141418] qcom,fastrpc 17300000.remoteproc:glink-edge.fastrpcglink-apps-dsp.-1.-1: reserved memory is beyond device's set DMA address range
+[    1.141484] qcom,fastrpc 17300000.remoteproc:glink-edge.fastrpcglink-apps-dsp.-1.-1: assigned reserved memory node memory@9e400000
+[    1.142494] platform 17300000.remoteproc:glink-edge:fastrpc:compute-cb@3: Adding to iommu group 14
+[    1.143481] platform 17300000.remoteproc:glink-edge:fastrpc:compute-cb@4: Adding to iommu group 15
+[    1.144289] platform 17300000.remoteproc:glink-edge:fastrpc:compute-cb@5: Adding to iommu group 16
+[    1.149067] cs35l41 3-0042: Subsystem ID: thyme
+[    1.151799] cs35l41 3-0042: Cirrus Logic CS35L41 (35a40), Revision: B2
+[    1.153240] vreg_s5a_1p9: Setting 1904000-2000000uV
+[    1.153521] vreg_s6a_0p95: Setting 920000-1128000uV
+[    1.153809] vreg_l2a_3p1: Setting 3072000-3072000uV
+[    1.154049] vreg_l3a_0p9: Setting 928000-928000uV
+[    1.154249] vreg_s2f_0p95: Setting 912000-944000uV
+[    1.154299] vreg_l5a_0p875: Setting 880000-880000uV
+[    1.154560] vreg_l6a_1p2: Setting 1200000-1200000uV
+[    1.154595] vreg_l1f_cam_dvdd1_1p1: Setting 1104000-1104000uV
+[    1.154839] vreg_l7a_1p7: Setting 1704000-1800000uV
+[    1.155023] vreg_l2f_cam_dvdd0_1p2: Setting 1200000-1200000uV
+[    1.155158] vreg_l9a_1p2: Setting 1200000-1200000uV
+[    1.155253] vreg_l3f_cam_dvdd2_1p05: Setting 1200000-1200000uV
+[    1.155460] vreg_l10a_1p8: Setting 1800000-1800000uV
+[    1.155505] vreg_l5f_cam_avdd0_2p85: Setting 2800000-2800000uV
+[    1.155669] vreg_l12a_1p8: Setting 1800000-1800000uV
+[    1.155709] vreg_l6f_cam_avdd1_2p85: Setting 2856000-2856000uV
+[    1.155875] vreg_l13a_ts_3p0: Setting 3008000-3008000uV
+[    1.156103] vreg_l7f_1p8: Setting 1800000-1800000uV
+[    1.156227] vreg_l14a_1p8: Setting 1800000-1880000uV
+[    1.156366] vreg_l4f_cam_dvdd_front_1p1: Setting 1104000-1104000uV
+[    1.156447] vreg_l15a_11ad_io_1p8: Setting 1800000-1800000uV
+[    1.156633] vreg_l16a_3p3: Setting 3024000-3304000uV
+[    1.156856] vreg_l17a_3p0: Setting 2856000-3008000uV
+[    1.157021] vreg_l18a_0p9: Setting 912000-912000uV
+[    1.165530] PDR: Indication received from msm/adsp/audio_pd, state: 0x1fffffff, trans-id: 1
+[    1.167626] qcom,apr 17300000.remoteproc:glink-edge.apr_audio_svc.-1.-1: Adding APR/GPR dev: aprsvc:service:4:3
+[    1.167825] ------------[ cut here ]------------
+[    1.167838] qcom-q6core aprsvc:service:4:3: late IOMMU probe at driver bind, something fishy here!
+[    1.167882] WARNING: drivers/iommu/iommu.c:654 at __iommu_probe_device.part.0+0x44/0x1c8, CPU#1: kworker/u33:0/99
+[    1.167910] Modules linked in:
+[    1.167928] CPU: 1 UID: 0 PID: 99 Comm: kworker/u33:0 Tainted: G        W           7.2.0-rc5-sm8250-modem #15 PREEMPT 
+[    1.167946] Tainted: [W]=WARN
+[    1.167954] Hardware name: Xiaomi Mi 10S (thyme) (DT)
+[    1.167966] Workqueue: pdr_indack_wq pdr_indack_work
+[    1.167983] pstate: 60400005 (nZCv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[    1.167996] pc : __iommu_probe_device.part.0+0x44/0x1c8
+[    1.168010] lr : __iommu_probe_device.part.0+0x44/0x1c8
+[    1.168022] sp : ffff800080e7b860
+[    1.168032] x29: ffff800080e7b860 x28: ffff000086611350 x27: ffff000086611000
+[    1.168051] x26: 0000000000000000 x25: ffffa33df7ee4770 x24: 0000000000000000
+[    1.168070] x23: 0000000000000001 x22: 0000000000000000 x21: ffff000086611000
+[    1.168089] x20: ffff000086611000 x19: ffffa33dfa0809e8 x18: 00000000ffffffff
+[    1.168108] x17: 2c646e6962207265 x16: 7669726420746120 x15: 65626f727020554d
+[    1.168127] x14: 4d4f49206574616c x13: ffff0001edc00000 x12: 000000000000033d
+[    1.168146] x11: 00000000000009b7 x10: ffff0001ee9fffe8 x9 : ffff0001edc00000
+[    1.168165] x8 : 3ffffffffffe0000 x7 : 0000000000000001 x6 : 0000000000000001
+[    1.168184] x5 : ffff0001ee700000 x4 : 0000000000000000 x3 : 0000000000000000
+[    1.168203] x2 : 0000000000000000 x1 : 0000000000000000 x0 : ffff000080ef6e40
+[    1.168222] Call trace:
+[    1.168232]  __iommu_probe_device.part.0+0x44/0x1c8 (P)
+[    1.168248]  iommu_probe_device+0x90/0xb0
+[    1.168262]  of_iommu_configure+0x240/0x274
+[    1.168276]  of_dma_configure_id+0x90/0x34c
+[    1.168294]  apr_dma_configure+0x68/0x98
+[    1.168309]  really_probe+0x70/0x298
+[    1.168326]  __driver_probe_device+0x164/0x184
+[    1.168342]  driver_probe_device+0x3c/0x114
+[    1.168356]  __device_attach_driver+0xb8/0x118
+[    1.168372]  bus_for_each_drv+0x84/0xe4
+[    1.168386]  __device_attach+0xac/0x1b8
+[    1.168400]  device_initial_probe+0x50/0x54
+[    1.168414]  bus_probe_device+0x38/0xa0
+[    1.168428]  device_add+0x5d4/0x7c0
+[    1.168440]  device_register+0x20/0x30
+[    1.168453]  of_register_apr_devices+0x1dc/0x320
+[    1.168466]  apr_pd_status+0x2c/0x54
+[    1.168477]  pdr_indack_work+0x80/0xf8
+[    1.168490]  process_one_work+0x15c/0x29c
+[    1.168505]  worker_thread+0x18c/0x2ec
+[    1.168517]  kthread+0x120/0x12c
+[    1.168530]  ret_from_fork+0x10/0x20
+[    1.168546] ---[ end trace 0000000000000000 ]---
+[    1.168565] qcom-q6core aprsvc:service:4:3: Adding to iommu group 17
+[    1.168710] qcom,apr 17300000.remoteproc:glink-edge.apr_audio_svc.-1.-1: Adding APR/GPR dev: aprsvc:service:4:4
+[    1.173245] qcom,apr 17300000.remoteproc:glink-edge.apr_audio_svc.-1.-1: Adding APR/GPR dev: aprsvc:service:4:7
+[    1.173342] platform 17300000.remoteproc:glink-edge:apr:service@7:dais: Adding to iommu group 17
+[    1.173603] qcom,apr 17300000.remoteproc:glink-edge.apr_audio_svc.-1.-1: Adding APR/GPR dev: aprsvc:service:4:8
+[    1.173898] qcom,apr 17300000.remoteproc:glink-edge.apr_audio_svc.-1.-1: Adding APR/GPR dev: aprsvc:service:4:9
+[    1.174230] platform 17300000.remoteproc:glink-edge:apr:service@9:mailbox: Adding to iommu group 17
+[    1.174574] platform 17300000.remoteproc:glink-edge:apr:service@9:calibration: Adding to iommu group 17
+[    1.174829] qcom,apr 17300000.remoteproc:glink-edge.apr_audio_svc.-1.-1: Adding APR/GPR dev: aprsvc:service:4:a
+[    1.174860] qcom,apr 17300000.remoteproc:glink-edge.apr_audio_svc.-1.-1: Adding APR/GPR dev: aprsvc:service:4:b
+[    1.201912] ufshcd-qcom 1d84000.ufshc: freq-table-hz property not specified
+[    1.201947] ufshcd-qcom 1d84000.ufshc: ufshcd_populate_vreg: Unable to find vdd-hba-supply regulator, assuming enabled
+[    1.218727] va_macro 3370000.codec: qcom,dmic-sample-rate dt entry missing
+[    1.227723] /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Fixed dependency cycle(s) with /soc@0/phy@88e8000
+[    1.237099] qcom-pcie 1c10000.pcie: supply vdda not found, using dummy regulator
+[    1.237269] qcom-pcie 1c10000.pcie: supply vddpe-3v3 not found, using dummy regulator
+[    1.237552] qcom-pcie 1c10000.pcie: host bridge /soc@0/pcie@1c10000 ranges:
+[    1.237613] qcom-pcie 1c10000.pcie:       IO 0x0064200000..0x00642fffff -> 0x0000000000
+[    1.237697] qcom-pcie 1c10000.pcie:      MEM 0x0064300000..0x0067ffffff -> 0x0064300000
+[    1.238871] qcom-pcie 1c00000.pcie: supply vdda not found, using dummy regulator
+[    1.238962] qcom-pcie 1c00000.pcie: supply vddpe-3v3 not found, using dummy regulator
+[    1.239246] qcom-pcie 1c00000.pcie: host bridge /soc@0/pcie@1c00000 ranges:
+[    1.239274] qcom-pcie 1c00000.pcie:       IO 0x0060200000..0x00602fffff -> 0x0000000000
+[    1.239291] qcom-pcie 1c00000.pcie:      MEM 0x0060300000..0x0063ffffff -> 0x0060300000
+[    1.241452] Bluetooth: hci0: setting up ROME/QCA6390
+[    1.294457] DSI PLL(0) lock failed, status=0x00000000
+[    1.294474] PLL(0) lock failed
+[    1.294488] ------------[ cut here ]------------
+[    1.294495] dsi0_phy_pll_out_dsiclk already disabled
+[    1.294521] WARNING: drivers/clk/clk.c:1188 at clk_core_disable+0xa4/0xac, CPU#4: kworker/u32:3/69
+[    1.294544] Modules linked in:
+[    1.294556] CPU: 4 UID: 0 PID: 69 Comm: kworker/u32:3 Tainted: G        W           7.2.0-rc5-sm8250-modem #15 PREEMPT 
+[    1.294571] Tainted: [W]=WARN
+[    1.294577] Hardware name: Xiaomi Mi 10S (thyme) (DT)
+[    1.294585] Workqueue: events_unbound deferred_probe_work_func
+[    1.294603] pstate: 604000c5 (nZCv daIF +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[    1.294613] pc : clk_core_disable+0xa4/0xac
+[    1.294622] lr : clk_core_disable+0xa4/0xac
+[    1.294631] sp : ffff800080a0ba50
+[    1.294638] x29: ffff800080a0ba50 x28: ffffa33df9b65a00 x27: ffffa33dfa029a20
+[    1.294652] x26: 0000000000000000 x25: ffff000085bf08c0 x24: ffffa33df60b3360
+[    1.294665] x23: ffffa33df60b3360 x22: ffff000085bf08c0 x21: ffff000082b95a00
+[    1.294677] x20: 0000000000000000 x19: ffff000082b95a00 x18: 00000000ffffffff
+[    1.294690] x17: 0000000000000014 x16: 0000000000000030 x15: ffff800100a0b657
+[    1.294702] x14: 0000000000000000 x13: ffff0001edc00000 x12: 0000000000000386
+[    1.294715] x11: 0000000000000a92 x10: ffff0001ee9fffe8 x9 : ffff0001edc00000
+[    1.294727] x8 : 3ffffffffffe0000 x7 : 0000000000000001 x6 : 0000000000000001
+[    1.294740] x5 : ffff0001ee700000 x4 : 0000000000000000 x3 : 0000000000000000
+[    1.294752] x2 : 0000000000000000 x1 : 0000000000000000 x0 : ffff000080ed4ec0
+[    1.294763] Call trace:
+[    1.294770]  clk_core_disable+0xa4/0xac (P)
+[    1.294780]  __clk_set_parent_after+0x9c/0xf0
+[    1.294793]  clk_core_reparent_orphans_nolock+0x88/0xc4
+[    1.294806]  of_clk_add_hw_provider.part.0+0x90/0x12c
+[    1.294817]  devm_of_clk_add_hw_provider+0x90/0x118
+[    1.294829]  dsi_phy_driver_probe+0x2e8/0x3b8
+[    1.294841]  platform_probe+0x5c/0xac
+[    1.294850]  really_probe+0xbc/0x298
+[    1.294862]  __driver_probe_device+0x164/0x184
+[    1.294875]  driver_probe_device+0x3c/0x114
+[    1.294888]  __device_attach_driver+0xb8/0x118
+[    1.294901]  bus_for_each_drv+0x84/0xe4
+[    1.294912]  __device_attach+0xac/0x1b8
+[    1.294924]  device_initial_probe+0x50/0x54
+[    1.294937]  bus_probe_device+0x38/0xa0
+[    1.294949]  deferred_probe_work_func+0x88/0xc0
+[    1.294961]  process_one_work+0x15c/0x29c
+[    1.294972]  worker_thread+0x18c/0x2ec
+[    1.294983]  kthread+0x120/0x12c
+[    1.294992]  ret_from_fork+0x10/0x20
+[    1.295003] ---[ end trace 0000000000000000 ]---
+[    1.295019] ------------[ cut here ]------------
+[    1.295025] dsi0_phy_pll_out_dsiclk already unprepared
+[    1.295045] WARNING: drivers/clk/clk.c:1047 at clk_core_unprepare+0xe4/0x104, CPU#4: kworker/u32:3/69
+[    1.295060] Modules linked in:
+[    1.295068] CPU: 4 UID: 0 PID: 69 Comm: kworker/u32:3 Tainted: G        W           7.2.0-rc5-sm8250-modem #15 PREEMPT 
+[    1.295081] Tainted: [W]=WARN
+[    1.295087] Hardware name: Xiaomi Mi 10S (thyme) (DT)
+[    1.295094] Workqueue: events_unbound deferred_probe_work_func
+[    1.295109] pstate: 60400005 (nZCv daif +PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[    1.295118] pc : clk_core_unprepare+0xe4/0x104
+[    1.295128] lr : clk_core_unprepare+0xe4/0x104
+[    1.295138] sp : ffff800080a0ba50
+[    1.295145] x29: ffff800080a0ba50 x28: ffffa33df9b65a00 x27: ffffa33dfa029a20
+[    1.295157] x26: 0000000000000000 x25: ffff000085bf08c0 x24: ffffa33df60b3360
+[    1.295169] x23: ffffa33df60b3360 x22: ffff000085bf08c0 x21: ffff000082b95a00
+[    1.295181] x20: 0000000000000000 x19: ffff000082b95a00 x18: 00000000ffffffff
+[    1.295193] x17: 0000000000000014 x16: 0000000000000030 x15: ffff800100a0b657
+[    1.295205] x14: 0000000000000000 x13: ffff0001edc00000 x12: 00000000000003b2
+[    1.295217] x11: 0000000000000b16 x10: ffff0001ee9fffe8 x9 : ffff0001edc00000
+[    1.295230] x8 : 3ffffffffffe0000 x7 : 0000000000000001 x6 : 0000000000000001
+[    1.295241] x5 : ffff0001ee700000 x4 : 0000000000000000 x3 : 0000000000000000
+[    1.295252] x2 : 0000000000000000 x1 : 0000000000000000 x0 : ffff000080ed4ec0
+[    1.295264] Call trace:
+[    1.295270]  clk_core_unprepare+0xe4/0x104 (P)
+[    1.295282]  __clk_set_parent_after+0xb0/0xf0
+[    1.295293]  clk_core_reparent_orphans_nolock+0x88/0xc4
+[    1.295305]  of_clk_add_hw_provider.part.0+0x90/0x12c
+[    1.295316]  devm_of_clk_add_hw_provider+0x90/0x118
+[    1.295329]  dsi_phy_driver_probe+0x2e8/0x3b8
+[    1.295340]  platform_probe+0x5c/0xac
+[    1.295350]  really_probe+0xbc/0x298
+[    1.295362]  __driver_probe_device+0x164/0x184
+[    1.295375]  driver_probe_device+0x3c/0x114
+[    1.295388]  __device_attach_driver+0xb8/0x118
+[    1.295400]  bus_for_each_drv+0x84/0xe4
+[    1.295411]  __device_attach+0xac/0x1b8
+[    1.295423]  device_initial_probe+0x50/0x54
+[    1.295435]  bus_probe_device+0x38/0xa0
+[    1.295447]  deferred_probe_work_func+0x88/0xc0
+[    1.295459]  process_one_work+0x15c/0x29c
+[    1.295469]  worker_thread+0x18c/0x2ec
+[    1.295479]  kthread+0x120/0x12c
+[    1.295487]  ret_from_fork+0x10/0x20
+[    1.295496] ---[ end trace 0000000000000000 ]---
+[    1.313221] Bluetooth: Received HCI_IBS_WAKE_ACK in tx state 0
+[    1.372111] OF: /soc@0/spmi@c440000/pmic@2/typec@1500/connector: Read of boolean property 'accessory-mode-audio' with a value.
+[    1.401296] qcom-pcie 1c10000.pcie: iATU: unroll T, 8 ob, 8 ib, align 4K, limit 1024G
+[    1.404032] Mass Storage Function, version: 2009/09/11
+[    1.404049] LUN: removable file: (no medium)
+[    1.404067] no file given for LUN0
+[    1.404084] udc a600000.usb: failed to start g_mass_storage: -22
+[    1.404095] g_mass_storage gadget.0: probe with driver g_mass_storage failed with error -22
+[    1.415613] ufshcd-qcom 1d84000.ufshc: freq-table-hz property not specified
+[    1.415641] ufshcd-qcom 1d84000.ufshc: ufshcd_populate_vreg: Unable to find vdd-hba-supply regulator, assuming enabled
+[    1.418015] ufshcd-qcom 1d84000.ufshc: Disabling inline encryption support
+[    1.428536] scsi host0: ufshcd
+[    1.512918] qcom-pcie 1c00000.pcie: iATU: unroll T, 8 ob, 8 ib, align 4K, limit 1024G
+[    1.598817] qcom-pcie 1c10000.pcie: PCIe Gen.3 x2 link up
+[    1.599367] qcom-pcie 1c10000.pcie: PCI host bridge to bus 0002:00
+[    1.599410] pci_bus 0002:00: root bus resource [bus 00-ff]
+[    1.599447] pci_bus 0002:00: root bus resource [io  0x0000-0xfffff]
+[    1.599480] pci_bus 0002:00: root bus resource [mem 0x64300000-0x67ffffff]
+[    1.599684] pci 0002:00:00.0: [17cb:010b] type 01 class 0x060400 PCIe Root Port
+[    1.599745] pci 0002:00:00.0: BAR 0 [mem 0x00000000-0x00000fff]
+[    1.599805] pci 0002:00:00.0: PCI bridge to [bus 01-ff]
+[    1.599842] pci 0002:00:00.0:   bridge window [io  0x0000-0x0fff]
+[    1.599875] pci 0002:00:00.0:   bridge window [mem 0x00000000-0x000fffff]
+[    1.599915] pci 0002:00:00.0:   bridge window [mem 0x00000000-0x000fffff 64bit pref]
+[    1.600013] pci 0002:00:00.0: PME# supported from D0 D3hot D3cold
+[    1.600438] OF: /soc@0/pcie@1c10000: iommu-map has 1-cell entries targeting 2-cell #iommu-cells, treating as 1-cell output
+[    1.600726] pci 0002:00:00.0: Adding to iommu group 18
+[    1.609457] pci 0002:01:00.0: [17cb:0306] type 00 class 0xff0000 PCIe Endpoint
+[    1.609679] pci 0002:01:00.0: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+[    1.609705] pci 0002:01:00.0: BAR 2 [mem 0x00000000-0x00000fff 64bit]
+[    1.610260] pci 0002:01:00.0: PME# supported from D0 D3hot D3cold
+[    1.610635] pci 0002:01:00.0: 15.752 Gb/s available PCIe bandwidth, limited by 8.0 GT/s PCIe x2 link at 0002:00:00.0 (capable of 31.506 Gb/s with 16.0 GT/s PCIe x2 link)
+[    1.611004] pci 0002:01:00.0: Adding to iommu group 18
+[    1.612908] pci 0002:01:00.0: ASPM: default states L0s L1
+[    1.613142] pci 0002:00:00.0: bridge window [io  0x1000-0x0fff] to [bus 01-ff] add_size 1000
+[    1.613226] pci 0002:00:00.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 01-ff] add_size 200000 add_align 100000
+[    1.613281] pci 0002:00:00.0: bridge window [mem 0x00100000-0x001fffff] to [bus 01-ff] add_size 100000 add_align 100000
+[    1.613341] pci 0002:00:00.0: bridge window [mem 0x64300000-0x644fffff]: assigned
+[    1.613384] pci 0002:00:00.0: bridge window [mem 0x64500000-0x646fffff 64bit pref]: assigned
+[    1.613423] pci 0002:00:00.0: BAR 0 [mem 0x64700000-0x64700fff]: assigned
+[    1.613463] pci 0002:00:00.0: bridge window [io  0x1000-0x1fff]: assigned
+[    1.613506] pci 0002:01:00.0: BAR 0 [mem 0x64300000-0x64300fff 64bit]: assigned
+[    1.613620] pci 0002:01:00.0: BAR 2 [mem 0x64301000-0x64301fff 64bit]: assigned
+[    1.613738] pci 0002:00:00.0: PCI bridge to [bus 01-ff]
+[    1.613788] pci 0002:00:00.0:   bridge window [io  0x1000-0x1fff]
+[    1.613828] pci 0002:00:00.0:   bridge window [mem 0x64300000-0x644fffff]
+[    1.613854] pci 0002:00:00.0:   bridge window [mem 0x64500000-0x646fffff 64bit pref]
+[    1.613874] pci_bus 0002:00: resource 4 [io  0x0000-0xfffff]
+[    1.613887] pci_bus 0002:00: resource 5 [mem 0x64300000-0x67ffffff]
+[    1.613921] pci_bus 0002:01: resource 0 [io  0x1000-0x1fff]
+[    1.613934] pci_bus 0002:01: resource 1 [mem 0x64300000-0x644fffff]
+[    1.613949] pci_bus 0002:01: resource 2 [mem 0x64500000-0x646fffff 64bit pref]
+[    1.614193] pcieport 0002:00:00.0: PME: Signaling with IRQ 267
+[    1.615501] pcieport 0002:00:00.0: AER: enabled with IRQ 267
+[    1.616753] mhi-pci-generic 0002:01:00.0: MHI PCI device found: qcom-sdx55m-fusion
+[    1.616754] Bluetooth: hci0: QCA Product ID   :0x00000010
+[    1.616791] Bluetooth: hci0: QCA SOC Version  :0x400a0200
+[    1.616826] mhi-pci-generic 0002:01:00.0: using DT IOVA window start=0x0 stop=0x3fffffff
+[    1.616842] Bluetooth: hci0: QCA ROM Version  :0x00000200
+[    1.616891] mhi-pci-generic 0002:01:00.0: enabling device (0000 -> 0002)
+[    1.616899] Bluetooth: hci0: QCA Patch Version:0x00000d2b
+[    1.616946] Bluetooth: hci0: QCA controller version 0x02000200
+[    1.616974] Bluetooth: hci0: QCA Downloading qca/htbtfw20.tlv
+[    1.616990] mhi-pci-generic 0002:01:00.0: DMA mask constrained to 0x3fffffff for modem IOVA window
+[    1.618206] mhi-pci-generic 0002:01:00.0: MSI target page 0x0x0000000064100000 mapped in SMMU domain (type 3)
+[    1.621532] mhi-pci-generic 0002:01:00.0: using DT MHI timeout 2000 ms
+[    1.621574] mhi-pci-generic 0002:01:00.0: using DT MHI buffer length 0x8000
+[    1.621683] mhi-pci-generic 0002:01:00.0: registered modem ESOC hook from DT node
+[    1.621720] mhi-pci-generic 0002:01:00.0: ESOC client registered, deferring MHI power-up to ESOC hook
+[    1.630305] scsi 0:0:0:49488: Well-known LUN    SAMSUNG  KLUEG8UHDC-B0E1  0200 PQ: 0 ANSI: 6
+[    1.634477] scsi 0:0:0:49476: Well-known LUN    SAMSUNG  KLUEG8UHDC-B0E1  0200 PQ: 0 ANSI: 6
+[    1.637150] scsi 0:0:0:49456: Well-known LUN    SAMSUNG  KLUEG8UHDC-B0E1  0200 PQ: 0 ANSI: 6
+[    1.642336] /soc@0/display-subsystem@ae00000/dsi@ae94000: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/dsi@ae94000/panel@0
+[    1.642427] /soc@0/display-subsystem@ae00000/dsi@ae94000/panel@0: Fixed dependency cycle(s) with /soc@0/display-subsystem@ae00000/dsi@ae94000
+[    1.643039] msm_dpu ae01000.display-controller: bound ae94000.dsi (ops dsi_ops)
+[    1.643383] scsi 0:0:0:0: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0200 PQ: 0 ANSI: 6
+[    1.644509] msm_dpu ae01000.display-controller: bound ae90000.displayport-controller (ops msm_dp_display_comp_ops)
+[    1.645680] scsi 0:0:0:1: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0200 PQ: 0 ANSI: 6
+[    1.646020] adreno 3d00000.gpu: supply vdd not found, using dummy regulator
+[    1.646219] adreno 3d00000.gpu: supply vddcx not found, using dummy regulator
+[    1.647876] scsi 0:0:0:2: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0200 PQ: 0 ANSI: 6
+[    1.651942] scsi 0:0:0:3: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0200 PQ: 0 ANSI: 6
+[    1.654130] scsi 0:0:0:4: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0200 PQ: 0 ANSI: 6
+[    1.656570] scsi 0:0:0:5: Direct-Access     SAMSUNG  KLUEG8UHDC-B0E1  0200 PQ: 0 ANSI: 6
+[    1.659037] sd 0:0:0:0: [sda] 61880320 4096-byte logical blocks: (253 GB/236 GiB)
+[    1.659126] sd 0:0:0:0: [sda] Write Protect is off
+[    1.659141] sd 0:0:0:0: [sda] Mode Sense: 00 32 00 10
+[    1.659292] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.659382] sd 0:0:0:0: [sda] Preferred minimum I/O size 524288 bytes
+[    1.659398] sd 0:0:0:0: [sda] Optimal transfer size 524288 bytes
+[    1.660985] sd 0:0:0:1: [sdb] 4096 4096-byte logical blocks: (16.8 MB/16.0 MiB)
+[    1.661352] sd 0:0:0:1: [sdb] Write Protect is off
+[    1.661382] sd 0:0:0:1: [sdb] Mode Sense: 00 32 00 10
+[    1.662108] sd 0:0:0:2: [sdc] 4096 4096-byte logical blocks: (16.8 MB/16.0 MiB)
+[    1.662130] sd 0:0:0:1: [sdb] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.662459] sd 0:0:0:2: [sdc] Write Protect is off
+[    1.662466] sd 0:0:0:2: [sdc] Mode Sense: 00 32 00 10
+[    1.662464] sd 0:0:0:1: [sdb] Preferred minimum I/O size 524288 bytes
+[    1.662518] sd 0:0:0:1: [sdb] Optimal transfer size 524288 bytes
+[    1.662976] sd 0:0:0:4: [sde] 557056 4096-byte logical blocks: (2.28 GB/2.13 GiB)
+[    1.663249] sd 0:0:0:4: [sde] Write Protect is off
+[    1.663292] sd 0:0:0:4: [sde] Mode Sense: 00 32 00 10
+[    1.663352] sd 0:0:0:2: [sdc] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.663515] sd 0:0:0:2: [sdc] Preferred minimum I/O size 524288 bytes
+[    1.663531] sd 0:0:0:2: [sdc] Optimal transfer size 524288 bytes
+[    1.664196] sd 0:0:0:5: [sdf] 16384 4096-byte logical blocks: (67.1 MB/64.0 MiB)
+[    1.664227] sd 0:0:0:4: [sde] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.664337] sd 0:0:0:5: [sdf] Write Protect is off
+[    1.664348] sd 0:0:0:5: [sdf] Mode Sense: 00 32 00 10
+[    1.664391] sd 0:0:0:4: [sde] Preferred minimum I/O size 524288 bytes
+[    1.664427] sd 0:0:0:4: [sde] Optimal transfer size 524288 bytes
+[    1.664795] sd 0:0:0:5: [sdf] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.665268] sd 0:0:0:5: [sdf] Preferred minimum I/O size 524288 bytes
+[    1.665291] sd 0:0:0:5: [sdf] Optimal transfer size 524288 bytes
+[    1.666037] sd 0:0:0:3: [sdd] 8192 4096-byte logical blocks: (33.6 MB/32.0 MiB)
+[    1.666214] sd 0:0:0:3: [sdd] Write Protect is off
+[    1.666236] sd 0:0:0:3: [sdd] Mode Sense: 00 32 00 10
+[    1.666888] sd 0:0:0:3: [sdd] Write cache: enabled, read cache: enabled, supports DPO and FUA
+[    1.666982] sd 0:0:0:3: [sdd] Preferred minimum I/O size 524288 bytes
+[    1.666997] sd 0:0:0:3: [sdd] Optimal transfer size 524288 bytes
+[    1.673512]  sda: sda1 sda2 sda3 sda4 sda5 sda6 sda7 sda8 sda9 sda10 sda11 sda12 sda13 sda14 sda15 sda16 sda17 sda18 sda19 sda20 sda21 sda22 sda23 sda24 sda25 sda26 sda27 sda28 sda29 sda30 sda31 sda32 sda33 sda34 sda35 sda36 sda37 sda38
+[    1.676068]  sdb: sdb1 sdb2
+[    1.676302] sd 0:0:0:1: [sdb] Attached SCSI disk
+[    1.681470] msm_dpu ae01000.display-controller: bound 3d00000.gpu (ops a3xx_ops)
+[    1.684120] [drm:dpu_kms_hw_init:1168] dpu hardware revision:0x60000000
+[    1.684482]  sdc: sdc1 sdc2
+[    1.684717] sd 0:0:0:2: [sdc] Attached SCSI disk
+[    1.684849] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.685294]  sde: sde1 sde2 sde3 sde4 sde5 sde6 sde7 sde8 sde9 sde10 sde11 sde12 sde13 sde14 sde15 sde16 sde17 sde18 sde19 sde20 sde21 sde22 sde23 sde24 sde25 sde26 sde27 sde28 sde29 sde30 sde31 sde32 sde33 sde34 sde35 sde36 sde37 sde38 sde39 sde40 sde41 sde42 sde43 sde44 sde45 sde46 sde47 sde48 sde49 sde50 sde51 sde52 sde53 sde54 sde55 sde56 sde57 sde58 sde59 sde60 sde61 sde62 sde63 sde64 sde65 sde66
+[    1.688025]  sdf: sdf1 sdf2 sdf3 sdf4 sdf5 sdf6 sdf7 sdf8 sdf9 sdf10
+[    1.688748] [drm] Initialized msm 1.13.0 for ae01000.display-controller on minor 0
+[    1.688888] msm_dpu ae01000.display-controller: [drm:adreno_request_fw] loaded qcom/a650_sqe.fw from new location
+[    1.688912] sd 0:0:0:5: [sdf] Attached SCSI disk
+[    1.688970] msm_dpu ae01000.display-controller: [drm:adreno_request_fw] loaded qcom/a650_gmu.bin from new location
+[    1.689240]  sdd: sdd1 sdd2 sdd3 sdd4
+[    1.689693] [drm] Loaded GMU firmware v2.1.8
+[    1.691173] sd 0:0:0:4: [sde] Attached SCSI disk
+[    1.691280] sd 0:0:0:3: [sdd] Attached SCSI disk
+[    1.710804] qcom-pcie 1c00000.pcie: PCIe Gen.2 x1 link up
+[    1.710909] qcom-pcie 1c00000.pcie: PCI host bridge to bus 0000:00
+[    1.710931] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    1.710949] pci_bus 0000:00: root bus resource [io  0x100000-0x1fffff] (bus address [0x0000-0xfffff])
+[    1.710965] pci_bus 0000:00: root bus resource [mem 0x60300000-0x63ffffff]
+[    1.711156] pci 0000:00:00.0: [17cb:010b] type 01 class 0x060400 PCIe Root Port
+[    1.711188] pci 0000:00:00.0: BAR 0 [mem 0x00000000-0x00000fff]
+[    1.711212] pci 0000:00:00.0: PCI bridge to [bus 01-ff]
+[    1.711229] pci 0000:00:00.0:   bridge window [io  0x100000-0x100fff]
+[    1.711244] pci 0000:00:00.0:   bridge window [mem 0x00000000-0x000fffff]
+[    1.711262] pci 0000:00:00.0:   bridge window [mem 0x00000000-0x000fffff 64bit pref]
+[    1.711325] pci 0000:00:00.0: PME# supported from D0 D3hot D3cold
+[    1.711735] pci 0000:00:00.0: Adding to iommu group 19
+[    1.717439] pci 0000:01:00.0: [17cb:1101] type 00 class 0x028000 PCIe Endpoint
+[    1.717686] pci 0000:01:00.0: BAR 0 [mem 0x00000000-0x000fffff 64bit]
+[    1.718196] pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+[    1.718805] pci 0000:01:00.0: Adding to iommu group 19
+[    1.720873] pci 0000:01:00.0: ASPM: default states L0s L1
+[    1.721014] pci 0000:00:00.0: bridge window [io  0x1000-0x0fff] to [bus 01-ff] add_size 1000
+[    1.721035] pci 0000:00:00.0: bridge window [mem 0x00100000-0x000fffff 64bit pref] to [bus 01-ff] add_size 200000 add_align 100000
+[    1.721056] pci 0000:00:00.0: bridge window [mem 0x00100000-0x001fffff] to [bus 01-ff] add_size 100000 add_align 100000
+[    1.721083] pci 0000:00:00.0: bridge window [mem 0x60300000-0x604fffff]: assigned
+[    1.721100] pci 0000:00:00.0: bridge window [mem 0x60500000-0x606fffff 64bit pref]: assigned
+[    1.721116] pci 0000:00:00.0: BAR 0 [mem 0x60700000-0x60700fff]: assigned
+[    1.721133] pci 0000:00:00.0: bridge window [io  0x100000-0x100fff]: assigned
+[    1.721151] pci 0000:01:00.0: BAR 0 [mem 0x60300000-0x603fffff 64bit]: assigned
+[    1.721228] pci 0000:00:00.0: PCI bridge to [bus 01-ff]
+[    1.721242] pci 0000:00:00.0:   bridge window [io  0x100000-0x100fff]
+[    1.721258] pci 0000:00:00.0:   bridge window [mem 0x60300000-0x604fffff]
+[    1.721273] pci 0000:00:00.0:   bridge window [mem 0x60500000-0x606fffff 64bit pref]
+[    1.721290] pci_bus 0000:00: resource 4 [io  0x100000-0x1fffff]
+[    1.721303] pci_bus 0000:00: resource 5 [mem 0x60300000-0x63ffffff]
+[    1.721316] pci_bus 0000:01: resource 0 [io  0x100000-0x100fff]
+[    1.721328] pci_bus 0000:01: resource 1 [mem 0x60300000-0x604fffff]
+[    1.721341] pci_bus 0000:01: resource 2 [mem 0x60500000-0x606fffff 64bit pref]
+[    1.721630] pcieport 0000:00:00.0: PME: Signaling with IRQ 290
+[    1.721867] pcieport 0000:00:00.0: AER: enabled with IRQ 290
+[    1.722832] ath11k_pci 0000:01:00.0: BAR 0 [mem 0x60300000-0x603fffff 64bit]: assigned
+[    1.722936] ath11k_pci 0000:01:00.0: enabling device (0000 -> 0002)
+[    1.723847] ath11k_pci 0000:01:00.0: MSI vectors: 32
+[    1.723891] ath11k_pci 0000:01:00.0: qca6390 hw2.0
+[    1.766057] panel-j2s-mp-42-02-0b-dsc ae94000.dsi.0: thyme-panel: requested "1080x2340"=90Hz adjusted "1080x2340"=90Hz -> 0x2f=02
+[    1.881003] mhi mhi1: Requested to power ON
+[    1.881019] mhi mhi1: Power on setup success
+[    1.882042] mhi mhi1: Loading firmware ath11k/QCA6390/hw2.0/amss.bin (4352144 bytes)
+[    1.945688] fb0: sys_fillrect: framebuffer is not in virtual address space.
+[    1.945953] fb0: sys_imageblit: framebuffer is not in virtual address space.
+[    1.977390] Console: switching to colour frame buffer device 67x73
+[    2.011088] msm_dpu ae01000.display-controller: [drm] fb0: msmdrmfb frame buffer device
+[    2.015738] qcom-soundwire 3210000.soundwire: din-ports (0) mismatch with controller (1)
+[    2.016031] qcom-soundwire 3210000.soundwire: dout-ports (5) mismatch with controller (6)
+[    2.018930] qcom-soundwire 3230000.soundwire: din-ports (5) mismatch with controller (6)
+[    2.019031] qcom-soundwire 3230000.soundwire: dout-ports (0) mismatch with controller (1)
+[    2.019514] wcd938x_codec audio-codec: bound sdw:2:0:0217:010d:00:4 (ops wcd_sdw_component_ops)
+[    2.019622] wcd938x_codec audio-codec: bound sdw:3:0:0217:010d:00:3 (ops wcd_sdw_component_ops)
+[    2.059622] snd-sm8250 sound: SM8250 init: set_sysclk(TER_MI2S)=0
+[    2.104444] input: XIAOMI-UMI-WCD9380-CS35L41-VA-D Headset Jack as /devices/platform/sound/sound/card1/input2
+[    2.105582] input: gpio-keys as /devices/platform/gpio-keys/input/input3
+[    2.106117] [ FTS ] fts_probe: driver ver: 5.2.4
+[    2.106161] [ FTS ] parse_dt:tp vendor: 72
+[    2.106162] [ FTS ] Unable to read tp color
+[    2.106194] [ FTS ] Unable to read tp hw version
+[    2.106211] [ FTS ] parse_dt:fw_name: st_fts_j2_2.ftb
+[    2.106212] [ FTS ] parse_dt:limit_name: stm_fts_production_limits_2.csv
+[    2.116920] input: fts as /devices/platform/soc@0/ac0000.geniqup/a94000.i2c/i2c-13/13-0049/input/input4
+[    2.117137] fts_input_symlink: driver_path=/sys/devices/platform/soc@0/ac0000.geniqup/a94000.i2c/i2c-13/13-0049/input/input4
+[    2.117231] [ FTS ] System resetting...
+[    2.141558] [ FTS ] System reset DONE!
+[    2.146566] [ FTS ] FW VER = 0124 
+[    2.149711] [ FTS ] SVN REV = 3444 
+[    2.152499] [ FTS ] CONFIG VER = 0008 
+[    2.155293] [ FTS ] CONFIG PROJECT ID = 0000 
+[    2.157908] [ FTS ] CX VER = FFFF 
+[    2.160337] [ FTS ] CX PROJECT ID = 0000 
+[    2.162738] [ FTS ] AFE VER: CFG = 05 - CX = 05 - PANEL = 05 
+[    2.165152] [ FTS ] Release Info =  
+[    2.180363] [ FTS ] Echo FOUND... OK!
+[    2.183275] [ FTS ] fts_get_lockdown_info signature:A5 id:70 70 beforecnt:1,aftercnt:2
+[    2.187958] [ FTS ] Interrupt Enabled!
+[    2.190239] [ FTS ] Lockdown:0x53,0x42,0x32,0x02,0x74,0x02,0x32,0x02
+[    2.194878] [ FTS ] FW Update and Sensing Initialization: 
+[    2.196979] [ FTS ] Fw Auto Update is starting... 
+[    2.199179] [ FTS ] fts_crc_check: Verifying if Config CRC Error...
+[    2.203382] [ FTS ] System resetting...
+[    2.229709] [ FTS ] System reset DONE!
+[    2.231777] [ FTS ] fts_crc_check: No Config CRC Error Found! 
+[    2.233952] [ FTS ] fts_crc_check: Verifying if Cx CRC Error...
+[    2.235598] [ FTS ] fts_crc_check: No Cx CRC Error Found! 
+[    2.237226] [ FTS ] fts_fw_update: NO CRC Error or Impossible to read CRC register! 
+[    2.240514] [ FTS ] fts_get_lockdown_info aleady get,skip
+[    2.240516] mhi mhi1: Initializing MHI registers
+[    2.242033] [ FTS ] Interrupt Enabled!
+[    2.244149] mhi mhi1: MMIO ctxt addrs: CCABAP=0xfffc4000 ECABAP=0xfffc3000 CRCBAP=0xfffbf000 iova=[0x0-0xfffffffff]
+[    2.245546] [ FTS ] can't find right config
+[    2.249724] mhi mhi1: Wait for device to enter SBL or Mission mode
+[    2.249868] [ FTS ] fts_fw_update: Verifying if CX CRC Error...
+[    2.254356] [ FTS ] System resetting...
+[    2.279853] [ FTS ] System reset DONE!
+[    2.281233] [ FTS ] fts_fw_update: No Cx CRC Error Found! 
+[    2.282612] [ FTS ] fts_fw_update: Verifying if Panel CRC Error... 
+[    2.285143] [ FTS ] fts_fw_update: No Panel CRC Error Found! 
+[    2.286414] [ FTS ] Interrupt Mode
+[    2.287961] [ FTS ] fts_mode_handler: Screen ON... 
+[    2.289106] [ FTS ] fts_mode_handler: Sense ON! 
+[    2.290380] [ FTS ] Interrupt Enabled!
+[    2.291185] [ FTS ] fts_status_event_handler Mutual negative detect Force cal = 01 00 00 00 00 01
+[    2.291489] [ FTS ] Fw Update Finished! error = 00000000
+[    2.291506] [ FTS ] fts_proc_init: proc entry CREATED! 
+[    2.298339] [ FTS ] Probe Finished! 
+[    2.299252] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    2.301716] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    2.303076] Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+[    2.305178] clk: Not disabling unused clocks
+[    2.306255] faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+[    2.308246] cfg80211: failed to load regulatory.db
+[    2.309199] PM: genpd: Not disabling unused power domains
+[    2.310196] ALSA device list:
+[    2.311066]   #0: Loopback 1
+[    2.311938]   #1: XIAOMI-UMI-WCD9380-CS35L41-VA-DMIC
+[    2.353674] Freeing unused kernel memory: 26624K
+[    2.354891] Run /init as init process
+[    2.355847]   with arguments:
+[    2.356869]     /init
+[    2.357950]   with environment:
+[    2.358882]     HOME=/
+[    2.359781]     TERM=linux
+[    2.385631] THYME_MAINLINE M3n-ubuntu-acm initramfs_reached
+[    2.389476] ath11k_pci 0000:01:00.0: chip_id 0x0 chip_family 0xb board_id 0xff soc_id 0xffffffff
+[    2.389495] ath11k_pci 0000:01:00.0: fw_version 0x101f046e fw_build_timestamp 2022-06-30 10:27 fw_build_id WLAN.HST.1.0.1.r1-01134-QCAHSTSWPL_SILICONZ-1.496061.3.508880.2
+[    2.413698] THYME_MAINLINE M3n-ubuntu-acm cmdline root=/dev/sda38 rw rootwait console=tty0 loglevel=8 clk_ignore_unused pd_ignore_unused fbcon=font:TER16x32 log_buf_len=4M ignore_loglevel root=/dev/sda38 androidboot.verifiedbootstate=orange androidboot.keymaster=1  androidboot.bootdevice=1d84000.ufshc androidboot.fstab_suffix=default androidboot.boot_devices=soc/1d84000.ufshc androidboot.serialno=b696f4ce androidboot.secureboot=1 androidboot.hwversion=A.9.0 androidboot.cpuid=0xdb970335 androidboot.hwc=CN androidboot.hwlevel=MP androidboot.baseband=mdm msm_drm.dsi_display0=qcom,mdss_dsi_j2s_mp_42_02_0b_dsc_cmd: androidboot.oled_panel_id=0B androidboot.oled_pmic_id=0A androidboot.oled_wp=01f4020909030105 androidboot.dtb_idx=-1347440721 androidboot.force_normal_boot=1 androidboot.ramdump=disable block2mtd.block2mtd=/dev/block/sda15,2097152 mtdoops.mtddev=0 mtdoops.record_size=2097152 mtdoops.dump_oops=0 printk.always_kmsg_dump=1 androidboot.profile_vendor_id=0B androidboot.dp=0x0 androidboot.cert=M2102J2SC
+[    2.422818] Bluetooth: hci0: QCA Downloading qca/htnv20.bin
+[    2.437982] THYME_MAINLINE M3n-ubuntu-acm uname begin
+[    2.447934] THYME_MAINLINE M3n-ubuntu-acm uname Linux (none) 7.2.0-rc5-sm8250-modem #15 SMP PREEMPT Sun Oct 18 10:29:55 CST 2026 aarch64 GNU/Linux
+[    2.461763] THYME_MAINLINE M3n-ubuntu-acm uname end
+[    2.466802] THYME_MAINLINE M3n-ubuntu-acm dt_model=Xiaomi Mi 10S (thyme)
+[    2.471408] THYME_MAINLINE M3n-ubuntu-acm dt_compatible begin
+[    2.478557] THYME_MAINLINE M3n-ubuntu-acm dt_compatible xiaomi,thyme
+[    2.489542] THYME_MAINLINE M3n-ubuntu-acm dt_compatible qcom,sm8250
+[    2.499140] THYME_MAINLINE M3n-ubuntu-acm dt_compatible end
+[    2.505449] THYME_MAINLINE M3n-ubuntu-acm panel_backlight_on dev=ae94000.dsi.0/ brightness=2047
+[    2.543755] THYME_MAINLINE M3n-ubuntu-acm root_policy profile=debug label=ubuntu-rootfs spec=none dev_hint=/dev/sda38 strict=1 list_strict=0
+[    2.555402] THYME_MAINLINE M3n-ubuntu-acm scan_policy stable=2s max=8s fallback_devs=/dev/sda38
+[    2.562114] THYME_MAINLINE M3n-ubuntu-acm block_names begin
+[    2.571333] THYME_MAINLINE M3n-ubuntu-acm block_names loop0
+[    2.579879] THYME_MAINLINE M3n-ubuntu-acm block_names loop1
+[    2.587180] THYME_MAINLINE M3n-ubuntu-acm block_names loop2
+[    2.593735] THYME_MAINLINE M3n-ubuntu-acm block_names loop3
+[    2.599473] THYME_MAINLINE M3n-ubuntu-acm block_names loop4
+[    2.604460] THYME_MAINLINE M3n-ubuntu-acm block_names loop5
+[    2.608910] THYME_MAINLINE M3n-ubuntu-acm block_names loop6
+[    2.613086] THYME_MAINLINE M3n-ubuntu-acm block_names loop7
+[    2.616905] THYME_MAINLINE M3n-ubuntu-acm block_names nbd0
+[    2.620593] THYME_MAINLINE M3n-ubuntu-acm block_names nbd1
+[    2.624038] THYME_MAINLINE M3n-ubuntu-acm block_names nbd10
+[    2.627274] THYME_MAINLINE M3n-ubuntu-acm block_names nbd11
+[    2.630345] THYME_MAINLINE M3n-ubuntu-acm block_names nbd12
+[    2.633557] THYME_MAINLINE M3n-ubuntu-acm block_names nbd13
+[    2.636411] THYME_MAINLINE M3n-ubuntu-acm block_names nbd14
+[    2.639112] THYME_MAINLINE M3n-ubuntu-acm block_names nbd15
+[    2.641682] THYME_MAINLINE M3n-ubuntu-acm block_names nbd2
+[    2.644163] THYME_MAINLINE M3n-ubuntu-acm block_names nbd3
+[    2.646611] THYME_MAINLINE M3n-ubuntu-acm block_names nbd4
+[    2.648939] THYME_MAINLINE M3n-ubuntu-acm block_names nbd5
+[    2.651208] THYME_MAINLINE M3n-ubuntu-acm block_names nbd6
+[    2.653366] THYME_MAINLINE M3n-ubuntu-acm block_names nbd7
+[    2.655513] THYME_MAINLINE M3n-ubuntu-acm block_names nbd8
+[    2.657589] THYME_MAINLINE M3n-ubuntu-acm block_names nbd9
+[    2.659644] THYME_MAINLINE M3n-ubuntu-acm block_names ram0
+[    2.661655] THYME_MAINLINE M3n-ubuntu-acm block_names ram1
+[    2.663674] THYME_MAINLINE M3n-ubuntu-acm block_names ram10
+[    2.665692] THYME_MAINLINE M3n-ubuntu-acm block_names ram11
+[    2.667705] THYME_MAINLINE M3n-ubuntu-acm block_names ram12
+[    2.669703] THYME_MAINLINE M3n-ubuntu-acm block_names ram13
+[    2.671699] THYME_MAINLINE M3n-ubuntu-acm block_names ram14
+[    2.673684] THYME_MAINLINE M3n-ubuntu-acm block_names ram15
+[    2.675679] THYME_MAINLINE M3n-ubuntu-acm block_names ram2
+[    2.677696] THYME_MAINLINE M3n-ubuntu-acm block_names ram3
+[    2.679680] THYME_MAINLINE M3n-ubuntu-acm block_names ram4
+[    2.681667] THYME_MAINLINE M3n-ubuntu-acm block_names ram5
+[    2.683651] THYME_MAINLINE M3n-ubuntu-acm block_names ram6
+[    2.685634] THYME_MAINLINE M3n-ubuntu-acm block_names ram7
+[    2.687617] THYME_MAINLINE M3n-ubuntu-acm block_names ram8
+[    2.689595] THYME_MAINLINE M3n-ubuntu-acm block_names ram9
+[    2.691572] THYME_MAINLINE M3n-ubuntu-acm block_names sda
+[    2.693542] THYME_MAINLINE M3n-ubuntu-acm block_names sda1
+[    2.695523] THYME_MAINLINE M3n-ubuntu-acm block_names sda10
+[    2.697504] THYME_MAINLINE M3n-ubuntu-acm block_names sda11
+[    2.699492] THYME_MAINLINE M3n-ubuntu-acm block_names sda12
+[    2.701482] THYME_MAINLINE M3n-ubuntu-acm block_names sda13
+[    2.703460] THYME_MAINLINE M3n-ubuntu-acm block_names sda14
+[    2.705452] THYME_MAINLINE M3n-ubuntu-acm block_names sda15
+[    2.707433] THYME_MAINLINE M3n-ubuntu-acm block_names sda16
+[    2.709411] THYME_MAINLINE M3n-ubuntu-acm block_names sda17
+[    2.711410] THYME_MAINLINE M3n-ubuntu-acm block_names sda18
+[    2.713400] THYME_MAINLINE M3n-ubuntu-acm block_names sda19
+[    2.715381] THYME_MAINLINE M3n-ubuntu-acm block_names sda2
+[    2.717367] THYME_MAINLINE M3n-ubuntu-acm block_names sda20
+[    2.719354] THYME_MAINLINE M3n-ubuntu-acm block_names sda21
+[    2.721347] THYME_MAINLINE M3n-ubuntu-acm block_names sda22
+[    2.723330] THYME_MAINLINE M3n-ubuntu-acm block_names sda23
+[    2.725323] THYME_MAINLINE M3n-ubuntu-acm block_names sda24
+[    2.727308] THYME_MAINLINE M3n-ubuntu-acm block_names sda25
+[    2.729307] THYME_MAINLINE M3n-ubuntu-acm block_names sda26
+[    2.731302] THYME_MAINLINE M3n-ubuntu-acm block_names sda27
+[    2.733301] THYME_MAINLINE M3n-ubuntu-acm block_names sda28
+[    2.735294] THYME_MAINLINE M3n-ubuntu-acm block_names sda29
+[    2.737283] THYME_MAINLINE M3n-ubuntu-acm block_names sda3
+[    2.739283] THYME_MAINLINE M3n-ubuntu-acm block_names sda30
+[    2.741267] THYME_MAINLINE M3n-ubuntu-acm block_names sda31
+[    2.743264] THYME_MAINLINE M3n-ubuntu-acm block_names sda32
+[    2.745264] THYME_MAINLINE M3n-ubuntu-acm block_names sda33
+[    2.747253] THYME_MAINLINE M3n-ubuntu-acm block_names sda34
+[    2.749251] THYME_MAINLINE M3n-ubuntu-acm block_names sda35
+[    2.751252] THYME_MAINLINE M3n-ubuntu-acm block_names sda36
+[    2.753245] THYME_MAINLINE M3n-ubuntu-acm block_names sda37
+[    2.755237] THYME_MAINLINE M3n-ubuntu-acm block_names sda38
+[    2.757235] THYME_MAINLINE M3n-ubuntu-acm block_names sda4
+[    2.759241] THYME_MAINLINE M3n-ubuntu-acm block_names sda5
+[    2.761239] THYME_MAINLINE M3n-ubuntu-acm block_names sda6
+[    2.763247] THYME_MAINLINE M3n-ubuntu-acm block_names sda7
+[    2.765244] THYME_MAINLINE M3n-ubuntu-acm block_names sda8
+[    2.767242] THYME_MAINLINE M3n-ubuntu-acm block_names sda9
+[    2.769230] THYME_MAINLINE M3n-ubuntu-acm block_names sdb
+[    2.771227] THYME_MAINLINE M3n-ubuntu-acm block_names sdb1
+[    2.773214] THYME_MAINLINE M3n-ubuntu-acm block_names sdb2
+[    2.775218] THYME_MAINLINE M3n-ubuntu-acm block_names sdc
+[    2.777205] THYME_MAINLINE M3n-ubuntu-acm block_names sdc1
+[    2.779192] THYME_MAINLINE M3n-ubuntu-acm block_names sdc2
+[    2.781173] THYME_MAINLINE M3n-ubuntu-acm block_names sdd
+[    2.783160] THYME_MAINLINE M3n-ubuntu-acm block_names sdd1
+[    2.785139] THYME_MAINLINE M3n-ubuntu-acm block_names sdd2
+[    2.787123] THYME_MAINLINE M3n-ubuntu-acm block_names sdd3
+[    2.789091] THYME_MAINLINE M3n-ubuntu-acm block_names sdd4
+[    2.791063] THYME_MAINLINE M3n-ubuntu-acm block_names sde
+[    2.793040] THYME_MAINLINE M3n-ubuntu-acm block_names sde1
+[    2.795023] THYME_MAINLINE M3n-ubuntu-acm block_names sde10
+[    2.797006] THYME_MAINLINE M3n-ubuntu-acm block_names sde11
+[    2.798993] THYME_MAINLINE M3n-ubuntu-acm block_names sde12
+[    2.800983] THYME_MAINLINE M3n-ubuntu-acm block_names sde13
+[    2.802966] THYME_MAINLINE M3n-ubuntu-acm block_names sde14
+[    2.804945] THYME_MAINLINE M3n-ubuntu-acm block_names sde15
+[    2.806927] THYME_MAINLINE M3n-ubuntu-acm block_names sde16
+[    2.808916] THYME_MAINLINE M3n-ubuntu-acm block_names sde17
+[    2.810905] THYME_MAINLINE M3n-ubuntu-acm block_names sde18
+[    2.812885] THYME_MAINLINE M3n-ubuntu-acm block_names sde19
+[    2.814865] THYME_MAINLINE M3n-ubuntu-acm block_names sde2
+[    2.816840] THYME_MAINLINE M3n-ubuntu-acm block_names sde20
+[    2.818754] Bluetooth: hci0: QCA setup on UART is completed
+[    2.819798] THYME_MAINLINE M3n-ubuntu-acm block_names sde21
+[    2.821773] THYME_MAINLINE M3n-ubuntu-acm block_names sde22
+[    2.823739] THYME_MAINLINE M3n-ubuntu-acm block_names sde23
+[    2.825716] THYME_MAINLINE M3n-ubuntu-acm block_names sde24
+[    2.827694] THYME_MAINLINE M3n-ubuntu-acm block_names sde25
+[    2.829677] THYME_MAINLINE M3n-ubuntu-acm block_names sde26
+[    2.831651] THYME_MAINLINE M3n-ubuntu-acm block_names sde27
+[    2.833630] THYME_MAINLINE M3n-ubuntu-acm block_names sde28
+[    2.835612] THYME_MAINLINE M3n-ubuntu-acm block_names sde29
+[    2.837590] THYME_MAINLINE M3n-ubuntu-acm block_names sde3
+[    2.839573] THYME_MAINLINE M3n-ubuntu-acm block_names sde30
+[    2.841556] THYME_MAINLINE M3n-ubuntu-acm block_names sde31
+[    2.843535] THYME_MAINLINE M3n-ubuntu-acm block_names sde32
+[    2.845516] THYME_MAINLINE M3n-ubuntu-acm block_names sde33
+[    2.847498] THYME_MAINLINE M3n-ubuntu-acm block_names sde34
+[    2.849493] THYME_MAINLINE M3n-ubuntu-acm block_names sde35
+[    2.851484] THYME_MAINLINE M3n-ubuntu-acm block_names sde36
+[    2.853471] THYME_MAINLINE M3n-ubuntu-acm block_names sde37
+[    2.855488] THYME_MAINLINE M3n-ubuntu-acm block_names sde38
+[    2.857481] THYME_MAINLINE M3n-ubuntu-acm block_names sde39
+[    2.859460] THYME_MAINLINE M3n-ubuntu-acm block_names sde4
+[    2.861444] THYME_MAINLINE M3n-ubuntu-acm block_names sde40
+[    2.863441] THYME_MAINLINE M3n-ubuntu-acm block_names sde41
+[    2.865437] THYME_MAINLINE M3n-ubuntu-acm block_names sde42
+[    2.867435] THYME_MAINLINE M3n-ubuntu-acm block_names sde43
+[    2.869440] THYME_MAINLINE M3n-ubuntu-acm block_names sde44
+[    2.871436] THYME_MAINLINE M3n-ubuntu-acm block_names sde45
+[    2.873430] THYME_MAINLINE M3n-ubuntu-acm block_names sde46
+[    2.875421] THYME_MAINLINE M3n-ubuntu-acm block_names sde47
+[    2.877410] THYME_MAINLINE M3n-ubuntu-acm block_names sde48
+[    2.879400] THYME_MAINLINE M3n-ubuntu-acm block_names sde49
+[    2.881393] THYME_MAINLINE M3n-ubuntu-acm block_names sde5
+[    2.883382] THYME_MAINLINE M3n-ubuntu-acm block_names sde50
+[    2.885381] THYME_MAINLINE M3n-ubuntu-acm block_names sde51
+[    2.887375] THYME_MAINLINE M3n-ubuntu-acm block_names sde52
+[    2.889369] THYME_MAINLINE M3n-ubuntu-acm block_names sde53
+[    2.891374] THYME_MAINLINE M3n-ubuntu-acm block_names sde54
+[    2.893377] THYME_MAINLINE M3n-ubuntu-acm block_names sde55
+[    2.895377] THYME_MAINLINE M3n-ubuntu-acm block_names sde56
+[    2.897375] THYME_MAINLINE M3n-ubuntu-acm block_names sde57
+[    2.899373] THYME_MAINLINE M3n-ubuntu-acm block_names sde58
+[    2.901376] THYME_MAINLINE M3n-ubuntu-acm block_names sde59
+[    2.903382] THYME_MAINLINE M3n-ubuntu-acm block_names sde6
+[    2.905387] THYME_MAINLINE M3n-ubuntu-acm block_names sde60
+[    2.907387] THYME_MAINLINE M3n-ubuntu-acm block_names sde61
+[    2.909384] THYME_MAINLINE M3n-ubuntu-acm block_names sde62
+[    2.911381] THYME_MAINLINE M3n-ubuntu-acm block_names sde63
+[    2.913369] THYME_MAINLINE M3n-ubuntu-acm block_names sde64
+[    2.915370] THYME_MAINLINE M3n-ubuntu-acm block_names sde65
+[    2.917373] THYME_MAINLINE M3n-ubuntu-acm block_names sde66
+[    2.919389] THYME_MAINLINE M3n-ubuntu-acm block_names sde7
+[    2.921393] THYME_MAINLINE M3n-ubuntu-acm block_names sde8
+[    2.923389] THYME_MAINLINE M3n-ubuntu-acm block_names sde9
+[    2.925385] THYME_MAINLINE M3n-ubuntu-acm block_names sdf
+[    2.927381] THYME_MAINLINE M3n-ubuntu-acm block_names sdf1
+[    2.929385] THYME_MAINLINE M3n-ubuntu-acm block_names sdf10
+[    2.931385] THYME_MAINLINE M3n-ubuntu-acm block_names sdf2
+[    2.933383] THYME_MAINLINE M3n-ubuntu-acm block_names sdf3
+[    2.935364] THYME_MAINLINE M3n-ubuntu-acm block_names sdf4
+[    2.937363] THYME_MAINLINE M3n-ubuntu-acm block_names sdf5
+[    2.939353] THYME_MAINLINE M3n-ubuntu-acm block_names sdf6
+[    2.941347] THYME_MAINLINE M3n-ubuntu-acm block_names sdf7
+[    2.943352] THYME_MAINLINE M3n-ubuntu-acm block_names sdf8
+[    2.945349] THYME_MAINLINE M3n-ubuntu-acm block_names sdf9
+[    2.947343] THYME_MAINLINE M3n-ubuntu-acm block_names zram0
+[    2.952536] THYME_MAINLINE M3n-ubuntu-acm block_names end
+[    2.957475] THYME_MAINLINE M3n-ubuntu-acm blkid_bins begin
+[    2.969250] THYME_MAINLINE M3n-ubuntu-acm blkid_bins lrwxrwxrwx    1 0        0                9 Mar  9 22:59 /bin/blkid -> lmi-blkid
+[    2.987176] THYME_MAINLINE M3n-ubuntu-acm blkid_bins lrwxrwxrwx    1 0        0                9 Mar  9 22:59 /bin/findfs -> lmi-blkid
+[    2.998744] THYME_MAINLINE M3n-ubuntu-acm blkid_bins -rwxrwxr-x    1 0        0           550960 Oct 18  2026 /bin/lmi-blkid
+[    3.005820] THYME_MAINLINE M3n-ubuntu-acm blkid_bins end
+[    3.040160] qcom,pmic-typec c440000.spmi:pmic@2:typec@1500: isr: tx_sig
+[    4.106568] qcom,pmic-typec c440000.spmi:pmic@2:typec@1500: isr: tx_sig
+[    5.071271] THYME_MAINLINE M3n-ubuntu-acm media_ready devices=169 waited=2s
+[    5.123924] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda1 fstype=none reason=unsupported_fs
+[    5.143052] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda10 fstype=none reason=unsupported_fs
+[    5.164174] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda11 fstype=none reason=unsupported_fs
+[    5.181416] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda12 fstype=none reason=unsupported_fs
+[    5.198817] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda13 fstype=none reason=unsupported_fs
+[    5.215867] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda14 fstype=none reason=unsupported_fs
+[    5.231123] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda15 fstype=none reason=unsupported_fs
+[    5.246153] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda16 fstype=none reason=unsupported_fs
+[    5.260796] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda17 fstype=none reason=unsupported_fs
+[    5.273625] EXT4-fs (sda18): mounted filesystem 9b027f25-4aac-4009-a0a2-08a7f36c5c78 ro with ordered data mode. Quota mode: none.
+[    5.292749] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda18 fstype=ext4 reason=no_rootfs os_release=no init=none
+[    5.299649] EXT4-fs (sda18): unmounting filesystem 9b027f25-4aac-4009-a0a2-08a7f36c5c78.
+[    5.313198] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda19 fstype=none reason=unsupported_fs
+[    5.329216] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda2 fstype=none reason=unsupported_fs
+[    5.344488] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda20 fstype=none reason=unsupported_fs
+[    5.359725] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda21 fstype=none reason=unsupported_fs
+[    5.374339] EXT4-fs (sda22): mounted filesystem e9f9421f-ca7c-4d36-8dd3-d9b5c35d54ba ro with ordered data mode. Quota mode: none.
+[    5.393442] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda22 fstype=ext4 reason=no_rootfs os_release=no init=none
+[    5.401151] EXT4-fs (sda22): unmounting filesystem e9f9421f-ca7c-4d36-8dd3-d9b5c35d54ba.
+[    5.415880] EXT4-fs (sda23): mounted filesystem e9f9421f-ca7c-4d36-8dd3-d9b5c35d54ba ro with ordered data mode. Quota mode: none.
+[    5.436000] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda23 fstype=ext4 reason=no_rootfs os_release=no init=none
+[    5.444112] EXT4-fs (sda23): unmounting filesystem e9f9421f-ca7c-4d36-8dd3-d9b5c35d54ba.
+[    5.458607] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda24 fstype=none reason=unsupported_fs
+[    5.476122] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda25 fstype=none reason=unsupported_fs
+[    5.492960] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda26 fstype=none reason=unsupported_fs
+[    5.508396] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda27 fstype=none reason=unsupported_fs
+[    5.523287] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda28 fstype=none reason=unsupported_fs
+[    5.534853] EXT4-fs (sda29): mounted filesystem f00b9a3b-4d08-c450-8c71-e78719096954 ro without journal. Quota mode: none.
+[    5.554663] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda29 fstype=ext4 reason=no_rootfs os_release=no init=none
+[    5.562670] EXT4-fs (sda29): unmounting filesystem f00b9a3b-4d08-c450-8c71-e78719096954.
+[    5.578515] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda3 fstype=none reason=unsupported_fs
+[    5.593958] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda30 fstype=none reason=unsupported_fs
+[    5.609241] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda31 fstype=none reason=unsupported_fs
+[    5.624515] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda32 fstype=none reason=unsupported_fs
+[    5.636822] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda33 fstype=none reason=unsupported_fs
+[    5.646634] EXT4-fs (sda34): mounted filesystem 1b0deda5-6821-4d99-bdb1-cbccc3d57b02 ro with ordered data mode. Quota mode: none.
+[    5.664919] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda34 fstype=ext4 reason=no_rootfs os_release=no init=none
+[    5.672092] EXT4-fs (sda34): unmounting filesystem 1b0deda5-6821-4d99-bdb1-cbccc3d57b02.
+[    5.686348] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda35 fstype=none reason=unsupported_fs
+[    5.701388] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda36 fstype=none reason=unsupported_fs
+[    5.715890] EXT4-fs (sda37): mounted filesystem 5c2d374e-0aaf-47a1-ba79-f92f168fcfa1 ro with ordered data mode. Quota mode: none.
+[    5.746861] THYME_MAINLINE M3n-ubuntu-acm probe_root_found dev=/dev/sda37 label=none fstype=ext4 subdir=. init=/sbin/init name=Arch Linux ARM
+[    5.758320] EXT4-fs (sda37): unmounting filesystem 5c2d374e-0aaf-47a1-ba79-f92f168fcfa1.
+[    5.769223] EXT4-fs (sda38): INFO: recovery required on readonly filesystem
+[    5.777521] EXT4-fs (sda38): write access will be enabled during recovery
+[    5.864352] EXT4-fs (sda38): recovery complete
+[    5.869578] EXT4-fs (sda38): mounted filesystem eb109613-86bb-4996-929f-07bd43800f80 ro with ordered data mode. Quota mode: none.
+[    5.917396] THYME_MAINLINE M3n-ubuntu-acm probe_root_found dev=/dev/sda38 label=none fstype=ext4 subdir=. init=/sbin/init name=Ubuntu 26.04 LTS
+[    5.934252] EXT4-fs (sda38): unmounting filesystem eb109613-86bb-4996-929f-07bd43800f80.
+[    5.959274] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda4 fstype=none reason=unsupported_fs
+[    5.981312] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda5 fstype=none reason=unsupported_fs
+[    6.001539] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda6 fstype=none reason=unsupported_fs
+[    6.020566] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda7 fstype=none reason=unsupported_fs
+[    6.036251] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda8 fstype=none reason=unsupported_fs
+[    6.051679] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sda9 fstype=none reason=unsupported_fs
+[    6.066807] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdb1 fstype=none reason=unsupported_fs
+[    6.081955] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdb2 fstype=none reason=unsupported_fs
+[    6.092385] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdc1 fstype=none reason=unsupported_fs
+[    6.099911] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdc2 fstype=none reason=unsupported_fs
+[    6.112726] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdd1 fstype=none reason=unsupported_fs
+[    6.124003] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdd2 fstype=none reason=unsupported_fs
+[    6.136092] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdd3 fstype=none reason=unsupported_fs
+[    6.147899] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdd4 fstype=none reason=unsupported_fs
+[    6.158128] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde1 fstype=none reason=unsupported_fs
+[    6.168964] EXT4-fs (sde10): mounted filesystem af32c008-2a39-7e5b-a5dc-201456d93103 ro with ordered data mode. Quota mode: none.
+[    6.184566] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde10 fstype=ext4 reason=no_rootfs os_release=no init=none
+[    6.189340] EXT4-fs (sde10): unmounting filesystem af32c008-2a39-7e5b-a5dc-201456d93103.
+[    6.204906] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde11 fstype=none reason=unsupported_fs
+[    6.216226] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde12 fstype=none reason=unsupported_fs
+[    6.226912] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde13 fstype=none reason=unsupported_fs
+[    6.237914] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde14 fstype=none reason=unsupported_fs
+[    6.248083] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde15 fstype=none reason=unsupported_fs
+[    6.259779] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde16 fstype=none reason=unsupported_fs
+[    6.270562] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde17 fstype=none reason=unsupported_fs
+[    6.279932] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde18 fstype=none reason=unsupported_fs
+[    6.288555] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde19 fstype=none reason=unsupported_fs
+[    6.297187] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde2 fstype=none reason=unsupported_fs
+[    6.307489] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde20 fstype=none reason=unsupported_fs
+[    6.316849] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde21 fstype=none reason=unsupported_fs
+[    6.325194] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde22 fstype=none reason=unsupported_fs
+[    6.334812] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde23 fstype=none reason=unsupported_fs
+[    6.343589] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde24 fstype=none reason=unsupported_fs
+[    6.352394] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde25 fstype=none reason=unsupported_fs
+[    6.360338] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde26 fstype=none reason=unsupported_fs
+[    6.368831] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde27 fstype=none reason=unsupported_fs
+[    6.378118] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde28 fstype=none reason=unsupported_fs
+[    6.387402] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde29 fstype=none reason=unsupported_fs
+[    6.396691] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde3 fstype=none reason=unsupported_fs
+[    6.406678] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde30 fstype=none reason=unsupported_fs
+[    6.415858] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde31 fstype=none reason=unsupported_fs
+[    6.424599] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde32 fstype=none reason=unsupported_fs
+[    6.433660] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde33 fstype=none reason=unsupported_fs
+[    6.441177] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde34 fstype=none reason=unsupported_fs
+[    6.449123] EXT4-fs (sde35): mounted filesystem af32c008-2a39-7e5b-a5dc-201456d93103 ro with ordered data mode. Quota mode: none.
+[    6.458525] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde35 fstype=ext4 reason=no_rootfs os_release=no init=none
+[    6.462833] EXT4-fs (sde35): unmounting filesystem af32c008-2a39-7e5b-a5dc-201456d93103.
+[    6.477982] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde36 fstype=none reason=unsupported_fs
+[    6.488586] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde37 fstype=none reason=unsupported_fs
+[    6.499650] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde38 fstype=none reason=unsupported_fs
+[    6.510414] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde39 fstype=none reason=unsupported_fs
+[    6.520347] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde4 fstype=none reason=unsupported_fs
+[    6.532475] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde40 fstype=none reason=unsupported_fs
+[    6.542819] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde41 fstype=none reason=unsupported_fs
+[    6.553750] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde42 fstype=none reason=unsupported_fs
+[    6.562797] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde43 fstype=none reason=unsupported_fs
+[    6.573428] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde44 fstype=none reason=unsupported_fs
+[    6.584025] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde45 fstype=none reason=unsupported_fs
+[    6.593821] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde46 fstype=none reason=unsupported_fs
+[    6.604548] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde47 fstype=none reason=unsupported_fs
+[    6.614996] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde48 fstype=none reason=unsupported_fs
+[    6.625246] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde49 fstype=none reason=unsupported_fs
+[    6.635482] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde5 fstype=none reason=unsupported_fs
+[    6.645091] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde50 fstype=none reason=unsupported_fs
+[    6.655002] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde51 fstype=none reason=unsupported_fs
+[    6.665155] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde52 fstype=none reason=unsupported_fs
+[    6.674314] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde53 fstype=none reason=unsupported_fs
+[    6.682578] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde54 fstype=none reason=unsupported_fs
+[    6.692348] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde55 fstype=none reason=unsupported_fs
+[    6.701579] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde56 fstype=none reason=unsupported_fs
+[    6.710328] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde57 fstype=none reason=unsupported_fs
+[    6.719453] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde58 fstype=none reason=unsupported_fs
+[    6.728571] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde59 fstype=none reason=unsupported_fs
+[    6.738223] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde6 fstype=none reason=unsupported_fs
+[    6.747435] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde60 fstype=none reason=unsupported_fs
+[    6.756855] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde61 fstype=none reason=unsupported_fs
+[    6.767179] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde62 fstype=none reason=unsupported_fs
+[    6.775847] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde63 fstype=none reason=unsupported_fs
+[    6.784492] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde64 fstype=none reason=unsupported_fs
+[    6.792805] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde65 fstype=none reason=unsupported_fs
+[    6.800688] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde66 fstype=none reason=unsupported_fs
+[    6.808934] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde7 fstype=none reason=unsupported_fs
+[    6.816377] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde8 fstype=none reason=unsupported_fs
+[    6.824291] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sde9 fstype=none reason=unsupported_fs
+[    6.831649] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdf1 fstype=none reason=unsupported_fs
+[    6.840288] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdf10 fstype=none reason=unsupported_fs
+[    6.847601] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdf2 fstype=none reason=unsupported_fs
+[    6.855659] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdf3 fstype=none reason=unsupported_fs
+[    6.864136] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdf4 fstype=none reason=unsupported_fs
+[    6.872519] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdf5 fstype=none reason=unsupported_fs
+[    6.880836] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdf6 fstype=none reason=unsupported_fs
+[    6.889023] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdf7 fstype=none reason=unsupported_fs
+[    6.897417] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdf8 fstype=none reason=unsupported_fs
+[    6.905855] THYME_MAINLINE M3n-ubuntu-acm probe_root_skip dev=/dev/sdf9 fstype=none reason=unsupported_fs
+[    6.978299] EXT4-fs (sda22): mounted filesystem e9f9421f-ca7c-4d36-8dd3-d9b5c35d54ba ro with ordered data mode. Quota mode: none.
+[    6.987255] EXT4-fs (sda22): unmounting filesystem e9f9421f-ca7c-4d36-8dd3-d9b5c35d54ba.
+[    7.005922] THYME_MAINLINE M3n-ubuntu-acm root_candidates count=2 actions=3 default=2
+[    9.748268] THYME_MAINLINE M3n-ubuntu-acm root_selected index=2 count=2 dev=/dev/sda38 label=none fstype=ext4 subdir=. name=Ubuntu 26.04 LTS
+[    9.748826] THYME_MAINLINE M3n-ubuntu-acm root_partition_ready dev=/dev/sda38
+[    9.749207] THYME_MAINLINE M3n-ubuntu-acm root_blkid begin
+[    9.755233] THYME_MAINLINE M3n-ubuntu-acm root_blkid /dev/sda38: UUID="eb109613-86bb-4996-929f-07bd43800f80" TYPE="ext4" PARTLABEL="linux" PARTUUID="202c7eb9-a03a-4a86-ae43-f9d6b3fcd49a"
+[    9.755573] THYME_MAINLINE M3n-ubuntu-acm root_blkid end
+[    9.799989] EXT4-fs (sda22): mounted filesystem e9f9421f-ca7c-4d36-8dd3-d9b5c35d54ba ro with ordered data mode. Quota mode: none.
+[    9.825513] THYME_MAINLINE M3n-ubuntu-acm wireless_identity wlan_mac=8c:aa:ce:8f:e7:f8 bt_addr=8c:aa:ce:8f:e7:f9
+[    9.846741] THYME_MAINLINE M3n-ubuntu-acm wifi_mac_ready iface=wlan0 addr=8c:aa:ce:8f:e7:f8
+[    9.853294] Bluetooth: MGMT ver 1.23
+[    9.857412] Bluetooth: hci0: setting up ROME/QCA6390
+[    9.928553] Bluetooth: Received HCI_IBS_WAKE_ACK in tx state 0
+[   10.232351] Bluetooth: hci0: QCA Product ID   :0x00000010
+[   10.238074] Bluetooth: hci0: QCA SOC Version  :0x400a0200
+[   10.240239] Bluetooth: hci0: QCA ROM Version  :0x00000200
+[   10.245821] Bluetooth: hci0: QCA Patch Version:0x00000d2b
+[   10.248324] Bluetooth: hci0: QCA controller version 0x02000200
+[   10.253800] Bluetooth: hci0: QCA Downloading qca/htbtfw20.tlv
+[   11.097032] Bluetooth: hci0: QCA Downloading qca/htnv20.bin
+[   11.371090] THYME_MAINLINE M3n-ubuntu-acm bt_addr_deferred hci0=8c:aa:ce:8f:e7:f9
+[   11.379303] EXT4-fs (sda22): unmounting filesystem e9f9421f-ca7c-4d36-8dd3-d9b5c35d54ba.
+[   11.394031] EXT4-fs (sda38): mounted filesystem eb109613-86bb-4996-929f-07bd43800f80 r/w with ordered data mode. Quota mode: none.
+[   11.409106] THYME_MAINLINE M3n-ubuntu-acm firmware_staged rel=ath11k/QCA6390/hw2.0/amss.bin dst=/run/firmware/ath11k/QCA6390/hw2.0/amss.bin
+[   11.433873] THYME_MAINLINE M3n-ubuntu-acm firmware_staged rel=ath11k/QCA6390/hw2.0/board-2.bin dst=/run/firmware/ath11k/QCA6390/hw2.0/board-2.bin
+[   11.438274] Bluetooth: hci0: QCA setup on UART is completed
+[   11.466151] THYME_MAINLINE M3n-ubuntu-acm firmware_staged rel=ath11k/QCA6390/hw2.0/m3.bin dst=/run/firmware/ath11k/QCA6390/hw2.0/m3.bin
+[   11.491179] THYME_MAINLINE M3n-ubuntu-acm firmware_staged rel=qca/htbtfw20.tlv dst=/run/firmware/qca/htbtfw20.tlv
+[   11.509283] THYME_MAINLINE M3n-ubuntu-acm firmware_staged rel=qca/htnv20.bin dst=/run/firmware/qca/htnv20.bin
+[   11.528148] THYME_MAINLINE M3n-ubuntu-acm firmware_staged rel=qcom/sm8250/umi/venus.mbn dst=/run/firmware/qcom/sm8250/umi/venus.mbn
+[   11.539516] THYME_MAINLINE M3n-ubuntu-acm firmware_path_set path=/run/firmware
+[   11.562672] THYME_MAINLINE M3n-ubuntu-acm newroot_init path=/sbin/init
+[   11.571414] THYME_MAINLINE M3n-ubuntu-acm uvc_demand_skip missing_helper
+[   11.580112] THYME_MAINLINE M3n-ubuntu-acm uvc_demand_install_failed
+[   11.770727] systemd[1]: System time advanced to built-in epoch: Tue 2026-07-28 04:44:02 CST
+[   11.824524] systemd[1]: systemd 259.5-0ubuntu3.4 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +IPE +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF -XKBCOMMON -UTMP +SYSVINIT +LIBARCHIVE)
+[   11.849228] systemd[1]: Detected architecture arm64.
+[   11.871050] systemd[1]: Hostname set to <xiaomi-thyme>.
+[   11.996417] systemd[1]: bpf-restrict-fs: BPF LSM hook not enabled in the kernel, BPF LSM not supported.
+[   12.775107] i2c 23-0036: deferred probe pending: i2c: wait for supplier /soc@0/spmi@c440000/pmic@a/gpio@c000/camera-ultra-reset-state
+[   12.782161] qnoc-sm8250 163d000.interconnect: sync_state() pending due to 1dfa000.crypto
+[   12.786494] qnoc-sm8250 1700000.interconnect: sync_state() pending due to 1dfa000.crypto
+[   12.790398] gcc-sm8250 100000.clock-controller: sync_state() pending due to 3d6a000.gmu
+[   12.793984] sm8250-gpucc 3d90000.clock-controller: sync_state() pending due to 3d6a000.gmu
+[   12.796576] qnoc-sm8250 1500000.interconnect: sync_state() pending due to a90000.serial
+[   12.799157] qnoc-sm8250 9100000.interconnect: sync_state() pending due to a90000.serial
+[   12.802067] qnoc-sm8250 interconnect-qup-virt: sync_state() pending due to a90000.serial
+[   12.804819] qcom-rpmhpd 18200000.rsc:power-controller: sync_state() pending due to a90000.serial
+[   12.807465] gcc-sm8250 100000.clock-controller: sync_state() pending due to a90000.serial
+[   12.809544] cam_cc-sm8250 ad00000.clock-controller: sync_state() pending due to 23-0036
+[   12.858854] systemd[1]: Queued start job for default target graphical.target.
+[   12.872149] systemd[1]: Created slice system-cups.slice - CUPS Slice.
+[   12.876440] systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+[   12.880168] systemd[1]: Created slice user.slice - User and Session Slice.
+[   12.883521] systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+[   12.887015] systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+[   12.891117] systemd[1]: Reached target imports.target - Image Downloads.
+[   12.893954] systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+[   12.896727] systemd[1]: Reached target remote-fs.target - Remote File Systems.
+[   12.899464] systemd[1]: Reached target slices.target - Slice Units.
+[   12.902197] systemd[1]: Reached target snapd.mounts-pre.target - Mounting snaps.
+[   12.904839] systemd[1]: Reached target snapd.mounts.target - Mounted snaps.
+[   12.907555] systemd[1]: Reached target swap.target - Swaps.
+[   12.909321] systemd[1]: Reached target time-set.target - System Time Set.
+[   12.911968] systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+[   12.914762] systemd[1]: Listening on syslog.socket - Syslog Socket.
+[   12.918550] systemd[1]: Listening on systemd-ask-password.socket - Query the User Interactively for a Password.
+[   12.922588] systemd[1]: Listening on systemd-creds.socket - Credential Encryption/Decryption.
+[   12.926749] systemd[1]: Listening on systemd-factory-reset.socket - Factory Reset Management.
+[   12.929980] systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+[   12.933210] systemd[1]: Listening on systemd-journald.socket - Journal Sockets.
+[   12.937567] systemd[1]: Listening on systemd-mute-console.socket - Console Output Muting Service Socket.
+[   12.940976] systemd[1]: Listening on systemd-oomd.socket - Userspace Out-Of-Memory (OOM) Killer Socket.
+[   12.944214] systemd[1]: systemd-pcrextend.socket - TPM PCR Measurements skipped, unmet condition check ConditionSecurity=measured-uki
+[   12.947399] systemd[1]: systemd-pcrlock.socket - Make TPM PCR Policy skipped, unmet condition check ConditionSecurity=measured-uki
+[   12.949583] systemd[1]: Listening on systemd-resolved-monitor.socket - Resolve Monitor Varlink Socket.
+[   12.952857] systemd[1]: Listening on systemd-resolved-varlink.socket - Resolve Service Varlink Socket.
+[   12.956155] systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+[   12.959438] systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+[   12.962713] systemd[1]: Listening on systemd-udevd-varlink.socket - udev Varlink Socket.
+[   12.967077] systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+[   12.971144] systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+[   12.974435] systemd[1]: sys-kernel-tracing.mount - Kernel Trace File System skipped, unmet condition check ConditionPathExists=/sys/kernel/tracing
+[   12.977982] systemd[1]: tmp.mount: Directory /tmp to mount over is not empty, mounting anyway.
+[   12.980140] systemd[1]: tmp.mount: x-systemd.graceful-option=usrquota specified, but option is not available, suppressing.
+[   12.983409] systemd[1]: Mounting tmp.mount - Temporary Directory /tmp...
+[   12.990305] systemd[1]: Starting systemd-journald.service - Journal Service...
+[   12.995233] systemd[1]: Starting keyboard-setup.service - Set the console keyboard layout...
+[   12.998564] systemd[1]: kmod-static-nodes.service - Create List of Static Device Nodes skipped, unmet condition check ConditionFileNotEmpty=/lib/modules/7.2.0-rc5-sm8250-modem/modules.devname
+[   13.001837] systemd[1]: modprobe@configfs.service - Load Kernel Module configfs skipped, unmet condition check ConditionKernelModuleLoaded=!configfs
+[   13.005050] systemd[1]: modprobe@drm.service - Load Kernel Module drm skipped, unmet condition check ConditionKernelModuleLoaded=!drm
+[   13.008248] systemd[1]: modprobe@efi_pstore.service - Load Kernel Module efi_pstore skipped, unmet condition check ConditionKernelModuleLoaded=!efi_pstore
+[   13.011450] systemd[1]: modprobe@fuse.service - Load Kernel Module fuse skipped, unmet condition check ConditionKernelModuleLoaded=!fuse
+[   13.015371] systemd[1]: Mounting sys-fs-fuse-connections.mount - FUSE Control File System...
+[   13.018821] systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info skipped, unmet condition check ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67
+[   13.024731] systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+[   13.028295] systemd[1]: systemd-pcrmachine.service - TPM PCR Machine ID Measurement skipped, unmet condition check ConditionSecurity=measured-uki
+[   13.031472] systemd[1]: systemd-pcrproduct.service - TPM NvPCR Product ID Measurement skipped, unmet condition check ConditionSecurity=measured-uki
+[   13.035562] systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+[   13.039971] systemd-journald[1272]: Collecting audit messages is disabled.
+[   13.040052] systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+[   13.046076] systemd[1]: systemd-tpm2-setup-early.service - Early TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-uki
+[   13.050358] systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+[   13.054815] systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+[   13.059041] systemd[1]: Started thyme-debug-shell.service - thyme debug shell on USB serial.
+[   13.064988] systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+[   13.068512] systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+[   13.071884] systemd[1]: Mounted tmp.mount - Temporary Directory /tmp.
+[   13.075331] systemd[1]: Mounted sys-fs-fuse-connections.mount - FUSE Control File System.
+[   13.078909] systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+[   13.082414] systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+[   13.086049] systemd[1]: Finished systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully.
+[   13.090003] systemd[1]: Finished systemd-udev-load-credentials.service - Load udev Rules from Credentials.
+[   13.093809] systemd[1]: thyme-debug-shell.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+[   13.096131] systemd[1]: thyme-debug-shell.service: Failed with result 'exit-code'.
+[   13.099922] systemd[1]: systemd-hwdb-update.service - Rebuild Hardware Database skipped, unmet condition check ConditionNeedsUpdate=/etc
+[   13.103170] systemd[1]: systemd-pstore.service - Platform Persistent Storage Archival skipped, unmet condition check ConditionDirectoryNotEmpty=/sys/fs/pstore
+[   13.107406] systemd[1]: Starting systemd-random-seed.service - Load/Save OS Random Seed...
+[   13.111787] systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+[   13.115121] systemd[1]: systemd-sysusers.service - Create System Users skipped, no trigger condition checks were met.
+[   13.119586] systemd[1]: Starting systemd-oomd.service - Userspace Out-Of-Memory (OOM) Killer...
+[   13.127585] systemd[1]: Starting systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev...
+[   13.130930] systemd[1]: systemd-tpm2-setup.service - TPM SRK Setup skipped, unmet condition check ConditionSecurity=measured-uki
+[   13.133085] systemd[1]: systemd-pcrnvdone.service - TPM PCR NvPCR Initialization Separator skipped, unmet condition check ConditionSecurity=measured-uki
+[   13.136944] systemd[1]: Started systemd-journald.service - Journal Service.
+[   13.161006] systemd-journald[1272]: Received client request to flush runtime journal.
+[   13.169364] systemd-journald[1272]: File /var/log/journal/6cbfed07465a3bd381c2b8b16a7a9afc/system.journal corrupted or uncleanly shut down, renaming and replacing.
+[   13.853401] ath11k_pci 0000:01:00.0 wlp1s0: renamed from wlan0
+[   14.689282] esoc-mdm: [esoc_dev_open]: mdm_helper_nati successfully attached to esoc driver
+[   14.921115] Bluetooth: hci0: setting up ROME/QCA6390
+[   15.259987] loop0: detected capacity change from 0 to 8
+[   15.303480] Bluetooth: hci0: QCA Product ID   :0x00000010
+[   15.303551] Bluetooth: hci0: QCA SOC Version  :0x400a0200
+[   15.303580] Bluetooth: hci0: QCA ROM Version  :0x00000200
+[   15.303605] Bluetooth: hci0: QCA Patch Version:0x00000d2b
+[   15.303632] Bluetooth: hci0: QCA controller version 0x02000200
+[   15.305893] Bluetooth: hci0: QCA Downloading qca/htbtfw20.tlv
+[   15.327491] remoteproc remoteproc3: powering up esoc0
+[   15.329654] remoteproc remoteproc3: Booting fw image sdx55m/sbl1.mbn, size 548056
+[   15.330531] esoc-mdm: [mdm_rproc_powerup]: Powerup request from SSR
+[   15.331108] esoc-mdm: [mdm_rproc_powerup]: Boot trial: 0
+[   15.331673] esoc-mdm: [mdm_rproc_powerup]: Req eng available
+[   15.332245] esoc-mdm: [mdm_rproc_powerup]: In normal power-on mode
+[   15.332810] esoc-mdm: [mdm_rproc_powerup]: Executing the ESOC_PWR_ON command
+[   15.333368] esoc-mdm: before ESOC_PWR_ON ap2mdm_status=0 ap2mdm_errfatal=0 mdm2ap_status=0 mdm2ap_errfatal=0 ready=0 init=0
+[   15.333929] esoc-mdm: [mdm_cmd_exe]: ESOC_PWR_ON: Setting AP2MDM_ERRFATAL = 0
+[   15.334496] esoc-mdm: [mdm4x_do_first_power_on]: Powering on modem for the first time
+[   15.335058] esoc-mdm: [sdx55m_toggle_soft_reset]: Doing a Warm reset using SPMI
+[   15.335619] esoc-mdm: doing warm reset using SPMI (first power-on)
+[   15.337243] esoc-mdm: [sdx55m_toggle_soft_reset]: Warm reset done using SPMI
+[   15.337825] esoc-mdm: warm reset done using SPMI
+[   15.449874] configfs-gadget.g1 gadget.0: HOST MAC de:ea:3e:67:dd:ab
+[   15.450649] configfs-gadget.g1 gadget.0: MAC 8e:86:60:62:0d:e7
+[   15.495800] esoc-mdm: [mdm4x_do_first_power_on]: Setting AP2MDM_STATUS = 1
+[   15.498260] esoc-mdm: [mdm4x_do_first_power_on]: Queueing the request: ESOC_REQ_IMG
+[   15.500295] esoc-mdm: queue REQ_IMG ap2mdm_status=1 ap2mdm_errfatal=0 mdm2ap_status=0 mdm2ap_errfatal=0
+[   15.500304] esoc-mdm: [mdm_enable_irqs]: Enabling the interrupts
+[   15.500328] esoc-mdm: after ESOC_PWR_ON ap2mdm_status=1 ap2mdm_errfatal=0 mdm2ap_status=0 mdm2ap_errfatal=0 ready=0 init=1
+[   15.505332] esoc-mdm: [esoc_client_link_power_on]: Calling power_on hooks with flags: 0x0
+[   15.505342] mhi-pci-generic 0002:01:00.0: ESOC requested MHI power on (flags=0x0)
+[   15.508312] mhi-pci-generic 0002:01:00.0: modem PCIe endpoint ready after ~0 ms
+[   15.526336] mhi-pci-generic 0002:01:00.0: RDDM buffer allocated: size=67108864 seg_len=65536 image=ok
+[   15.527153] mhi mhi0: Requested to power ON
+[   15.554785] mhi mhi0: Power on setup success
+[   15.554812] mhi mhi0: Loading firmware sdx55m/sbl1.mbn (548056 bytes)
+[   15.555468] mhi-pci-generic 0002:01:00.0: MHI controller started asynchronously
+[   15.558130] mhi-pci-generic 0002:01:00.0: IOMMU DMA domain detected (type 3), enabling MSI poll timer (2 ms)
+[   15.558733] esoc-mdm: [mdm_rproc_powerup]: Modem turned-on. Waiting for pon_done notification..
+[   15.692719] esoc-mdm: [mdm_notify]: Notification: 1
+[   15.693579] esoc-mdm: notify XFER_DONE ap2mdm_status=1 ap2mdm_errfatal=0 mdm2ap_status=0 mdm2ap_errfatal=0 ready=0 init=1
+[   15.694603] esoc-mdm: [mdm_notify]: ESOC_IMG_XFER_DONE: Begin timeout of 120000 ms for modem_status
+[   15.853798] mhi mhi0: Initializing MHI registers
+[   15.855701] mhi mhi0: MMIO ctxt addrs: CCABAP=0x3fffe000 ECABAP=0x3fffd000 CRCBAP=0x3ffaf000 iova=[0x0-0x3fffffff]
+[   15.856807] mhi mhi0: After READY: EE=SECONDARY BOOTLOADER (1), PM=POWER ON RESET, dev_state=READY
+[   15.857944] mhi mhi0: Wait for device to enter SBL or Mission mode
+[   15.864795] mhi_sahara_modem mhi0_SAHARA: Sahara: MHI channels ready, waiting for modem
+[   15.867786] mhi_bl_logger mhi0_BL: BL: boot logger channel ready
+[   15.870785] mhi_bl_logger mhi0_BL: BL: 
+               Format: Log Type - Time(microsec) - Message - Optional Info
+               Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+               S - Secure Boot: Off
+               S - QC_IMAGE_VERSION_STRING=BOOT.SBL.4.1-00168
+               S - IMAGE_VARIANT_STRING=MAAHANAZA
+               S - OEM_IMAGE_VERSION_STRING=pangu-build-bp-25620-8svz4-fzp9j-7k7xh
+               S - Boot Interface: PCIe
+               S - Boot Config @ 0x00786070 = 0x00000043
+               S - JTAG ID @ 0x00786130 = 0x200e50e1
+               S - OEM ID @ 0x00786138 = 0x00000000
+               S - Serial Number @ 0x00786134 = 0x7327bb6d
+               S - OEM Config Row 0 @ 0x007841c8 = 0x0000000000000000
+               S - OEM Config Row 1 @ 0x007841d0 = 0x0000000000000000
+               S - Feature Config Row 0 @ 0x007841e0 = 0x0040600000000010
+               S - Feature Config Row 1 @ 0x007841e8 = 0x0800000000000000
+               B -       381 - PBL, Start
+               B -      3682 - bootable_media_detect_entry
+               B -    157871 - bootable_media_detect_success
+               B -    158142 - elf_loader_entry
+               B -    158416 - auth_hash_seg_entry
+               B -    158947 - auth_hash_seg_exit
+               B -    175167 - elf_segs_hash_verify_e
+[   15.901673] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=0
+[   15.902964] mhi_bl_logger mhi0_BL: BL: B -    487024 - Sahara: Hello pkt sent
+
+[   15.905785] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=34 offset=0 length=40
+[   15.907032] mhi_sahara_modem mhi0_SAHARA: Sahara: image 34 -> loaded sdx55m/multi_image.mbn (13232 bytes)
+[   15.907961] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+40] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   15.908896] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   15.911783] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=34), sending DONE
+[   15.914813] mhi_bl_logger mhi0_BL: BL: D -     83692 - TRDATA Image Loaded, Delta - (40 Bytes)
+
+[   15.916403] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   15.917772] mhi_bl_logger mhi0_BL: BL: B -    532011 - xblconfig_init, Start
+
+[   15.920767] mhi_bl_logger mhi0_BL: BL: D -        61 - xblconfig_init, Delta
+
+[   15.923762] mhi_bl_logger mhi0_BL: BL: B -    538264 - sbl1_ddr_init, Start
+
+[   15.926762] mhi_bl_logger mhi0_BL: BL: D -      2928 - sbl1_ddr_init, Delta
+
+[   15.929774] mhi_bl_logger mhi0_BL: BL: B -    544394 - DSF version = 105.6, DSF SHRM version = 60.1
+
+[   15.932771] mhi_bl_logger mhi0_BL: BL: B -    547292 - Manufacturer ID = 1, Device Type = 7
+
+[   15.935770] mhi_bl_logger mhi0_BL: BL: B -    550342 - Rank 0 size = 256 MB, Rank 1 size = 0 MB
+
+[   15.938772] mhi_bl_logger mhi0_BL: BL: B -    553605 - do_ddr_training, Start
+
+[   15.941770] mhi_bl_logger mhi0_BL: BL: B -    558882 - 
+                Training : identify training frequencies() ,no_of_times_executed : 1 ,total_time : 0
+
+[   15.944771] mhi_bl_logger mhi0_BL: BL: B -    559278 - 
+                Training : pre training setup() ,no_of_times_executed : 1 ,total_time : 91
+
+[   15.947787] mhi_bl_logger mhi0_BL: BL: B -    562938 - 
+                Training : DDRSS_PLLPRECAL() ,no_of_times_executed : 1 ,total_time : 1464
+
+[   15.950769] mhi_bl_logger mhi0_BL: BL: B -    565927 - 
+                Training : DDRSS_RCW() ,no_of_times_executed : 1 ,total_time : 976
+
+[   16.111796] Bluetooth: hci0: QCA Downloading qca/htnv20.bin
+[   16.352265] Bluetooth: hci0: QCA setup on UART is completed
+[   16.356454] systemd-journald[1272]: File /var/log/journal/6cbfed07465a3bd381c2b8b16a7a9afc/user-1000.journal corrupted or uncleanly shut down, renaming and replacing.
+[   16.965344] systemd-journald[1272]: File /var/log/journal/6cbfed07465a3bd381c2b8b16a7a9afc/user-1001.journal corrupted or uncleanly shut down, renaming and replacing.
+[   17.357349]  MultiMedia1: ASoC: no backend DAIs enabled for MultiMedia1, possibly missing ALSA mixer-based routing or UCM profile
+[   17.360031] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[   17.360825] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[   17.360947] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[   17.361714] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[   17.361718] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[   17.362346] q6afe-dai 17300000.remoteproc:glink-edge:apr:service@4:dais: Q6I2S hw_params: ch=2 width=16 rate=48000 sd_line_mask=0x2
+[   17.362369] qcom-q6afe aprsvc:service:4:4: Q6AFE i2s prepare: ch=2 sd_mask=0x2 -> channel_mode=2 mono_stereo=1 ws_src=1 rate=48000 width=16
+[   17.367792] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0x1004 cfg_type=0x1020d
+[   17.372467] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: format 3 timestamp 0x5ddc3d36
+[   17.372487] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[   17.372540] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: format 3 timestamp 0x5ddc3d36
+[   17.372553] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[   17.948198] cs35l41 3-0042: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[   17.948798] cs35l41 3-0040: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[   17.949787] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.bin (v1): v0.3.0
+[   17.949819] cs35l41 3-0042: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-RCV-revb2.bin
+[   17.950193] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.bin (v1): v0.3.0
+[   17.950215] cs35l41 3-0040: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-revb2.bin
+[   18.050007] cs35l41 3-0040: DSP1: Legacy support not available
+[   18.053609] cs35l41 3-0042: DSP1: Legacy support not available
+[   18.071046] qcom-soundwire 3230000.soundwire: qcom_swrm_irq_handler: SWR read enable valid mismatch
+[   18.076408] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0xb037 cfg_type=0x102b8
+[   18.122465] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[   18.124666] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[   18.124699] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[   18.125419] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[   18.125450] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[   18.129369] q6afe-dai 17300000.remoteproc:glink-edge:apr:service@4:dais: Q6I2S hw_params: ch=2 width=16 rate=48000 sd_line_mask=0x2
+[   18.129451] qcom-q6afe aprsvc:service:4:4: Q6AFE i2s prepare: ch=2 sd_mask=0x2 -> channel_mode=2 mono_stereo=1 ws_src=1 rate=48000 width=16
+[   18.137745] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0x1004 cfg_type=0x1020d
+[   18.138837] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: format 3 timestamp 0x5ddc3d36
+[   18.138868] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[   18.139103] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: format 3 timestamp 0x5ddc3d36
+[   18.139130] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[   18.664092] wlp1s0: authenticate with d6:21:b3:a2:6e:a2 (local address=8c:aa:ce:8f:e7:f8)
+[   18.664141] wlp1s0: send auth to d6:21:b3:a2:6e:a2 (try 1/3)
+[   18.714903] cs35l41 3-0042: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[   18.715421] cs35l41 3-0040: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[   18.716204] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.bin (v1): v0.3.0
+[   18.716219] cs35l41 3-0042: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-RCV-revb2.bin
+[   18.716576] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.bin (v1): v0.3.0
+[   18.716591] cs35l41 3-0040: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-revb2.bin
+[   18.774758] wlp1s0: send auth to d6:21:b3:a2:6e:a2 (try 2/3)
+[   18.776686] wlp1s0: authenticated
+[   18.777766] wlp1s0: associate with d6:21:b3:a2:6e:a2 (try 1/3)
+[   18.781245] wlp1s0: RX AssocResp from d6:21:b3:a2:6e:a2 (capab=0x1421 status=0 aid=6)
+[   18.803919] wlp1s0: associated
+[   18.817331] cs35l41 3-0040: DSP1: Legacy support not available
+[   18.821231] cs35l41 3-0042: DSP1: Legacy support not available
+[   18.845056] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0xb037 cfg_type=0x102b8
+[   18.850821] wlp1s0: Limiting TX power to 20 (20 - 0) dBm as advertised by d6:21:b3:a2:6e:a2
+[   18.894612] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[   18.895246] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[   18.895274] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[   18.895954] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[   18.895980] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[   18.896416] q6afe-dai 17300000.remoteproc:glink-edge:apr:service@4:dais: Q6I2S hw_params: ch=2 width=16 rate=48000 sd_line_mask=0x2
+[   18.896520] qcom-q6afe aprsvc:service:4:4: Q6AFE i2s prepare: ch=2 sd_mask=0x2 -> channel_mode=2 mono_stereo=1 ws_src=1 rate=48000 width=16
+[   18.902775] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0x1004 cfg_type=0x1020d
+[   18.903440] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: format 3 timestamp 0x5ddc3d36
+[   18.903464] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[   18.903478] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: format 3 timestamp 0x5ddc3d36
+[   18.903509] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[   19.074784] mhi_bl_logger mhi0_BL: BL: B -   3690500 - 
+                Training : DDRSS_DCC() ,no_of_times_executed : 6 ,total_time : 8235
+
+[   19.077717] mhi_bl_logger mhi0_BL: BL: B -   3690652 - 
+                Training : DDRSS_WR_TDQS2DQ() ,no_of_times_executed : 6 ,total_time : 763
+
+[   19.081727] mhi_bl_logger mhi0_BL: BL: B -   3691720 - 
+                Training : DDRSS_WRLVL() ,no_of_times_executed : 6 ,total_time : 2775
+
+[   19.085741] mhi_bl_logger mhi0_BL: BL: B -   3694617 - 
+                Training : DDRSS_RD_DQDQS() ,no_of_times_executed : 6 ,total_time : 386465
+
+[   19.088745] mhi_bl_logger mhi0_BL: BL: B -   3698613 - 
+                Training : DDRSS_DIT() ,no_of_times_executed : 6 ,total_time : 152
+
+[   19.092725] mhi_bl_logger mhi0_BL: BL: B -   3702639 - 
+                Training : DDRSS_WR_DQDQS() ,no_of_times_executed : 6 ,total_time : 2722553
+
+[   19.096742] mhi_bl_logger mhi0_BL: BL: B -   3706055 - 
+                Training : post training setup() ,no_of_times_executed : 1 ,total_time : 397
+
+[   19.100728] mhi_bl_logger mhi0_BL: BL: B -   3709654 - Frequency = 547 MHz
+
+[   19.104725] mhi_bl_logger mhi0_BL: BL: D -   3157451 - do_ddr_training, Delta
+
+[   19.108748] mhi_bl_logger mhi0_BL: BL: B -   3718133 - Enter ddi entry
+
+[   19.110727] mhi_bl_logger mhi0_BL: BL: B -   3721610 - Exit ddi entry
+
+[   19.117716] mhi_bl_logger mhi0_BL: BL: S - QC_IMAGE_VERSION_STRING=BOOT.SBL.4.1-00168
+
+[   19.120746] mhi_bl_logger mhi0_BL: BL: S - IMAGE_VARIANT_STRING=MAAHANAZA
+
+[   19.124716] mhi_bl_logger mhi0_BL: BL: S - OEM_IMAGE_VERSION_STRING=pangu-build-bp-25620-8svz4-fzp9j-7k7xh
+
+[   19.128723] mhi_bl_logger mhi0_BL: BL: S - Boot Interface: PCIe
+
+[   19.132752] mhi_bl_logger mhi0_BL: BL: S - Secure Boot: Off
+
+[   19.136723] mhi_bl_logger mhi0_BL: BL: S - Boot Config @ 0x00786070 = 0x00000043
+
+[   19.140751] mhi_bl_logger mhi0_BL: BL: S - JTAG ID @ 0x00786130 = 0x200e50e1
+
+[   19.144741] mhi_bl_logger mhi0_BL: BL: S - OEM ID @ 0x00786138 = 0x00000000
+
+[   19.148726] mhi_bl_logger mhi0_BL: BL: S - Serial Number @ 0x00786134 = 0x7327bb6d
+
+[   19.152713] mhi_bl_logger mhi0_BL: BL: S - OEM Config Row 0 @ 0x007841c8 = 0x0000000000000000
+
+[   19.156753] mhi_bl_logger mhi0_BL: BL: S - OEM Config Row 1 @ 0x007841d0 = 0x0000000000000000
+
+[   19.160719] mhi_bl_logger mhi0_BL: BL: S - Feature Config Row 0 @ 0x007841e0 = 0x0040600000000010
+
+[   19.164711] mhi_bl_logger mhi0_BL: BL: S - Feature Config Row 1 @ 0x007841e8 = 0x0800000000000000
+
+[   19.168741] mhi_bl_logger mhi0_BL: BL: B -   3777577 - clock_init, Start
+
+[   19.172765] mhi_bl_logger mhi0_BL: BL: D -        61 - clock_init, Delta
+
+[   19.175728] mhi_bl_logger mhi0_BL: BL: B -   3786758 - APDP Image Load, Start
+
+[   19.175770] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=3
+[   19.178718] mhi_bl_logger mhi0_BL: BL: B -   3790509 - Sahara: Hello pkt sent
+
+[   19.178880] mhi_sahara_modem mhi0_SAHARA: Sahara: CMD_READY, sending CMD_SWITCH_MODE -> image TX
+[   19.181773] mhi_bl_logger mhi0_BL: BL: B -   3795847 - Sahara: Hello pkt sent
+
+[   19.182004] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=0
+[   19.184770] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=40 offset=0 length=52
+[   19.185737] mhi_sahara_modem mhi0_SAHARA: Sahara: image 40 -> loaded sdx55m/apdp.mbn (13508 bytes)
+[   19.185746] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+52] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   19.185752] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   19.188757] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=40 offset=52 length=96
+[   19.188765] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x34..+96] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   19.188770] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   19.192745] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=40 offset=4096 length=6712
+[   19.192754] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x1000..+6712] = 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   19.192761] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   19.195742] mhi_bl_logger mhi0_BL: BL: D -      2654 - Auth Metadata
+
+[   19.199741] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=40 offset=12288 length=1220
+[   19.199767] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x3000..+1220] = 44 42 47 50 c4 04 00 00 05 00 00 00 0b 00 00 01
+[   19.199774] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 44 42 47 50 c4 04 00 00 05 00 00 00 0b 00 00 01
+[   19.202746] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=40), sending DONE
+[   19.205728] mhi_bl_logger mhi0_BL: BL: D -     32971 - APDP Image Loaded, Delta - (8080 Bytes)
+
+[   19.205739] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   19.208712] mhi_bl_logger mhi0_BL: BL: B -   3819850 - QSEE Dev Config Image Load, Start
+
+[   19.208750] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=0
+[   19.211713] mhi_bl_logger mhi0_BL: BL: B -   3823175 - Sahara: Hello pkt sent
+
+[   19.211752] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=41 offset=0 length=52
+[   19.212293] mhi_sahara_modem mhi0_SAHARA: Sahara: image 41 -> loaded sdx55m/devcfg.mbn (42515 bytes)
+[   19.212298] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+52] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   19.212303] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   19.214773] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=41 offset=52 length=128
+[   19.214784] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x34..+128] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   19.214791] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   19.217744] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=41 offset=4096 length=6760
+[   19.217755] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x1000..+6760] = 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   19.217769] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   19.220723] mhi_bl_logger mhi0_BL: BL: D -      2287 - Auth Metadata
+
+[   19.220805] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=41 offset=12288 length=30227
+[   19.220814] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x3000..+30227] = 0b 60 00 00 20 60 fe 8f 00 00 00 00 00 00 00 00
+[   19.220842] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 0b 60 00 00 20 60 fe 8f 00 00 00 00 00 00 00 00
+[   19.223762] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=41), sending DONE
+[   19.226732] mhi_bl_logger mhi0_BL: BL: D -     20862 - QSEE Dev Config Image Loaded, Delta - (37167 Bytes)
+
+[   19.226750] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   19.229719] mhi_bl_logger mhi0_BL: BL: B -   3840895 - QSEE Image Load, Start
+
+[   19.229761] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=0
+[   19.232713] mhi_bl_logger mhi0_BL: BL: B -   3844159 - Sahara: Hello pkt sent
+
+[   19.232797] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=25 offset=0 length=52
+[   19.234819] mhi_sahara_modem mhi0_SAHARA: Sahara: image 25 -> loaded sdx55m/tz.mbn (913408 bytes)
+[   19.234831] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+52] = 7f 45 4c 46 01 01 01 03 00 00 00 00 00 00 00 00
+[   19.234839] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 7f 45 4c 46 01 01 01 03 00 00 00 00 00 00 00 00
+[   19.235793] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=25 offset=52 length=544
+[   19.235803] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x34..+544] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   19.235813] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   19.238761] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=25 offset=4096 length=20512
+[   19.238771] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x1000..+20512] = 00 00 00 00 06 00 00 00 00 01 00 00 00 18 00 00
+[   19.238781] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 06 00 00 00 00 01 00 00 00 18 00 00
+[   19.257708] mhi_bl_logger mhi0_BL: BL: D -     16623 - Auth Metadata
+
+[   19.257754] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=25 offset=28672 length=884736
+[   19.257757] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x7000..+884736] = c0 f2 9f e5 c0 f2 9f e5 c0 f2 9f e5 c0 f2 9f e5
+[   19.257770] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = c0 f2 9f e5 c0 f2 9f e5 c0 f2 9f e5 c0 f2 9f e5
+[   19.306749] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=25), sending DONE
+[   19.309742] mhi_bl_logger mhi0_BL: BL: D -     82777 - QSEE Image Loaded, Delta - (887184 Bytes)
+
+[   19.309757] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   19.312719] mhi_bl_logger mhi0_BL: BL: D -       976 - boot_pm_post_tz_device_init, Delta
+
+[   19.315707] mhi_bl_logger mhi0_BL: BL: B -   3926509 - QHEE Image Load, Start
+
+[   19.315745] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=0
+[   19.318711] mhi_bl_logger mhi0_BL: BL: B -   3930077 - Sahara: Hello pkt sent
+
+[   19.318769] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=33 offset=0 length=52
+[   19.319469] mhi_sahara_modem mhi0_SAHARA: Sahara: image 33 -> loaded sdx55m/hyp.mbn (84416 bytes)
+[   19.319477] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+52] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   19.319482] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   19.321742] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=33 offset=52 length=128
+[   19.321748] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x34..+128] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   19.321752] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   19.325737] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=33 offset=4096 length=6760
+[   19.325746] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x1000..+6760] = 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   19.325752] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   19.329717] mhi_bl_logger mhi0_BL: BL: D -      2318 - Auth Metadata
+
+[   19.329750] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=33 offset=12288 length=72128
+[   19.329755] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x3000..+72128] = f0 41 9f e5 10 4f 8c ee b0 3f 10 ee ff 4c 03 e2
+[   19.329767] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = f0 41 9f e5 10 4f 8c ee b0 3f 10 ee ff 4c 03 e2
+[   19.336727] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=33), sending DONE
+[   19.339756] mhi_bl_logger mhi0_BL: BL: D -     27084 - QHEE Image Loaded, Delta - (79068 Bytes)
+
+[   19.339789] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   19.342725] mhi_bl_logger mhi0_BL: BL: B -   3956124 - PM: PM Total Mem Allocated: 828 
+
+[   19.476250] cs35l41 3-0040: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[   19.476974] cs35l41 3-0042: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[   19.477782] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.bin (v1): v0.3.0
+[   19.477791] cs35l41 3-0040: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-revb2.bin
+[   19.478139] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.bin (v1): v0.3.0
+[   19.478156] cs35l41 3-0042: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-RCV-revb2.bin
+[   19.610735] cs35l41 3-0040: DSP1: Legacy support not available
+[   19.617786] cs35l41 3-0042: DSP1: Legacy support not available
+[   19.656429] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[   19.657496] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[   19.657507] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[   19.658211] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[   19.658229] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[   19.658667] q6afe-dai 17300000.remoteproc:glink-edge:apr:service@4:dais: Q6I2S hw_params: ch=2 width=16 rate=48000 sd_line_mask=0x2
+[   19.658779] qcom-q6afe aprsvc:service:4:4: Q6AFE i2s prepare: ch=2 sd_mask=0x2 -> channel_mode=2 mono_stereo=1 ws_src=1 rate=48000 width=16
+[   19.664154] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0x1004 cfg_type=0x1020d
+[   19.664901] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: format 3 timestamp 0x5ddc3d36
+[   19.664917] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[   19.664982] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: format 3 timestamp 0x5ddc3d36
+[   19.664999] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[   19.676715] mhi_bl_logger mhi0_BL: BL: B -   4291319 - AOP Image Load, Start
+
+[   19.677723] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=0
+[   19.679717] mhi_bl_logger mhi0_BL: BL: B -   4292051 - Sahara: Hello pkt sent
+
+[   19.679767] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=23 offset=0 length=52
+[   19.680889] mhi_sahara_modem mhi0_SAHARA: Sahara: image 23 -> loaded sdx55m/aop.mbn (154688 bytes)
+[   19.680896] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+52] = 7f 45 4c 46 01 01 01 03 00 00 00 00 00 00 00 00
+[   19.680902] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 7f 45 4c 46 01 01 01 03 00 00 00 00 00 00 00 00
+[   19.682741] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=23 offset=52 length=160
+[   19.682749] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x34..+160] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   19.682754] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   19.686765] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=23 offset=4096 length=6808
+[   19.686775] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x1000..+6808] = 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   19.686782] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   19.689713] mhi_bl_logger mhi0_BL: BL: D -      2501 - Auth Metadata
+
+[   19.689751] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=23 offset=12288 length=142400
+[   19.689755] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x3000..+142400] = 00 80 0e 00 09 00 00 00 01 48 80 47 01 48 00 47
+[   19.689767] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 80 0e 00 09 00 00 00 01 48 80 47 01 48 00 47
+[   19.699742] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=23), sending DONE
+[   19.703734] mhi_bl_logger mhi0_BL: BL: D -     25071 - AOP Image Loaded, Delta - (149412 Bytes)
+
+[   19.703754] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   19.707723] mhi_bl_logger mhi0_BL: BL: B -   4317275 - EFS1 Image Load, Start
+
+[   19.707766] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=0
+[   19.711723] mhi_bl_logger mhi0_BL: BL: B -   4320630 - Sahara: Hello pkt sent
+
+[   19.711773] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=16 offset=0 length=40
+[   19.744235] mhi_sahara_modem mhi0_SAHARA: Sahara: image 16 -> loaded sdx55m/efs1.bin (8388608 bytes)
+[   19.744250] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+40] = 10 00 00 00 03 00 00 00 d8 01 00 00 00 02 00 80
+[   19.744256] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 10 00 00 00 03 00 00 00 d8 01 00 00 00 02 00 80
+[   19.744738] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=16 offset=512 length=1048576
+[   19.744745] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x200..+1048576] = 64 31 30 fc 88 19 fd d4 73 ec f9 53 c0 bb cd c9
+[   19.744757] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 64 31 30 fc 88 19 fd d4 73 ec f9 53 c0 bb cd c9
+[   19.795739] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=16 offset=1049088 length=1048064
+[   19.795754] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x100200..+1048064] = f4 74 08 d1 eb 89 14 60 05 23 2b a9 31 43 92 bd
+[   19.795767] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = f4 74 08 d1 eb 89 14 60 05 23 2b a9 31 43 92 bd
+[   19.843756] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=16), sending DONE
+[   19.846735] mhi_bl_logger mhi0_BL: BL: D -    142984 - EFS1 Image Loaded, Delta - (2096680 Bytes)
+
+[   19.846758] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   19.849705] mhi_bl_logger mhi0_BL: BL: B -   4460930 - EFS2 Image Load, Start
+
+[   19.850697] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=0
+[   19.852704] mhi_bl_logger mhi0_BL: BL: B -   4463522 - Sahara: Hello pkt sent
+
+[   19.852743] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=17 offset=0 length=40
+[   19.859516] mhi_sahara_modem mhi0_SAHARA: Sahara: image 17 -> loaded sdx55m/efs2.bin (8388608 bytes)
+[   19.859530] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+40] = 11 00 00 00 03 00 00 00 d8 01 00 00 00 02 20 80
+[   19.859535] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 11 00 00 00 03 00 00 00 d8 01 00 00 00 02 20 80
+[   19.861737] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=17 offset=512 length=1048576
+[   19.861744] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x200..+1048576] = 04 2c 39 79 4a 64 eb c9 25 37 e1 f2 fc 60 d1 45
+[   19.861757] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 04 2c 39 79 4a 64 eb c9 25 37 e1 f2 fc 60 d1 45
+[   19.913699] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=17 offset=1049088 length=1048064
+[   19.913714] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x100200..+1048064] = be aa 8c 2f 49 41 64 2e 6f f9 2d b8 93 a5 37 c1
+[   19.913727] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = be aa 8c 2f 49 41 64 2e 6f f9 2d b8 93 a5 37 c1
+[   19.963705] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=17), sending DONE
+[   19.964731] mhi_bl_logger mhi0_BL: BL: D -    119224 - EFS2 Image Loaded, Delta - (2096680 Bytes)
+
+[   19.964747] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   19.967696] mhi_bl_logger mhi0_BL: BL: B -   4580795 - EFS3 Image Load, Start
+
+[   19.967733] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=0
+[   19.970700] mhi_bl_logger mhi0_BL: BL: B -   4581435 - Sahara: Hello pkt sent
+
+[   19.970734] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=20 offset=0 length=40
+[   19.977535] mhi_sahara_modem mhi0_SAHARA: Sahara: image 20 -> loaded sdx55m/efs3.bin (8388608 bytes)
+[   19.977551] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+40] = 14 00 00 00 03 00 00 00 d8 01 00 00 00 02 40 80
+[   19.977555] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 14 00 00 00 03 00 00 00 d8 01 00 00 00 02 40 80
+[   19.979728] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=20 offset=512 length=1048576
+[   19.979737] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x200..+1048576] = 19 93 31 b1 d3 c0 5a b1 63 0d 87 82 28 0d 1a 38
+[   19.979748] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 19 93 31 b1 d3 c0 5a b1 63 0d 87 82 28 0d 1a 38
+[   20.032713] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=20 offset=1049088 length=1048064
+[   20.032729] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x100200..+1048064] = 1c 85 2d c3 46 d3 f9 0f 00 26 f2 9f 7b 16 2a 56
+[   20.032740] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 1c 85 2d c3 46 d3 f9 0f 00 26 f2 9f 7b 16 2a 56
+[   20.083734] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=20), sending DONE
+[   20.087720] mhi_bl_logger mhi0_BL: BL: D -    119285 - EFS3 Image Loaded, Delta - (2096680 Bytes)
+
+[   20.087735] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   20.090699] mhi_bl_logger mhi0_BL: BL: B -   4700263 - ACDB Image Load, Start
+
+[   20.090730] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=0
+[   20.094689] mhi_bl_logger mhi0_BL: BL: B -   4704320 - Sahara: Hello pkt sent
+
+[   20.094721] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=29 offset=0 length=40
+[   20.095317] mhi_sahara_modem mhi0_SAHARA: Sahara: image 29 -> loaded sdx55m/acdb.mbn (131112 bytes)
+[   20.095321] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+40] = 1d 00 00 00 03 00 00 00 00 00 00 00 00 00 6e 80
+[   20.095324] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 1d 00 00 00 03 00 00 00 00 00 00 00 00 00 6e 80
+[   20.097719] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=29 offset=40 length=131072
+[   20.097722] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x28..+131072] = db ac db ac 01 00 00 00 03 00 00 00 20 00 00 00
+[   20.097730] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = db ac db ac 01 00 00 00 03 00 00 00 20 00 00 00
+[   20.109716] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=29), sending DONE
+[   20.112713] mhi_bl_logger mhi0_BL: BL: D -     25773 - ACDB Image Loaded, Delta - (131112 Bytes)
+
+[   20.112725] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   20.114709] mhi_bl_logger mhi0_BL: BL: B -   4726188 - Q6 Image Load, Start
+
+[   20.116692] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=0
+[   20.117709] mhi_bl_logger mhi0_BL: BL: B -   4729543 - Sahara: Hello pkt sent
+
+[   20.117750] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=8 offset=0 length=52
+[   20.161971] mhi_sahara_modem mhi0_SAHARA: Sahara: image 8 -> loaded sdx55m/qdsp6sw.mbn (84004996 bytes)
+[   20.161986] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+52] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   20.161991] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   20.163745] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=8 offset=52 length=928
+[   20.163786] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x34..+928] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   20.163802] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   20.165735] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=8 offset=4096 length=7960
+[   20.165742] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x1000..+7960] = 0c 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   20.165750] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 0c 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   20.171723] mhi_bl_logger mhi0_BL: BL: D -      5124 - Auth Metadata
+
+[   20.171802] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=8 offset=12288 length=83992708
+[   20.171822] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x3000..+83992708] = 0e c0 00 58 00 c0 00 58 00 c0 00 58 00 c0 00 58
+[   20.171872] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 0e c0 00 58 00 c0 00 58 00 c0 00 58 00 c0 00 58
+[   20.241547] cs35l41 3-0040: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[   20.243710] cs35l41 3-0042: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[   20.246587] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.bin (v1): v0.3.0
+[   20.246623] cs35l41 3-0040: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-revb2.bin
+[   20.246994] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.bin (v1): v0.3.0
+[   20.247009] cs35l41 3-0042: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-RCV-revb2.bin
+[   20.351057] cs35l41 3-0040: DSP1: Legacy support not available
+[   20.355254] cs35l41 3-0042: DSP1: Legacy support not available
+[   20.367164] qcom-q6adm aprsvc:service:4:8: cmd = 0x10325 return error = 0x2
+[   20.367395] q6routing 17300000.remoteproc:glink-edge:apr:service@8:routing: DSP returned error[2]
+[   20.393715] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0xb037 cfg_type=0x102b8
+[   20.421356] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[   20.421862] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[   20.421870] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[   20.422352] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[   20.422357] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[   20.422479] q6afe-dai 17300000.remoteproc:glink-edge:apr:service@4:dais: Q6I2S hw_params: ch=2 width=16 rate=48000 sd_line_mask=0x2
+[   20.422518] qcom-q6afe aprsvc:service:4:4: Q6AFE i2s prepare: ch=2 sd_mask=0x2 -> channel_mode=2 mono_stereo=1 ws_src=1 rate=48000 width=16
+[   20.427821] qcom-q6afe aprsvc:service:4:4: Q6AFE port_start ok: port_id=0x1004 cfg_type=0x1020d
+[   20.428229] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: format 3 timestamp 0x5ddc3d36
+[   20.428237] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[   20.428301] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: format 3 timestamp 0x5ddc3d36
+[   20.428317] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.wmfw: Mon 25 Nov 2019 20:44:38 GMT Standard Time
+[   21.006872] cs35l41 3-0040: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[   21.007445] cs35l41 3-0042: DSP1: Firmware: 400a4 vendor: 0x2 v0.3.0, 1 algorithms
+[   21.008212] cs35l41 3-0040: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-l.bin (v1): v0.3.0
+[   21.008231] cs35l41 3-0040: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-revb2.bin
+[   21.008749] cs35l41 3-0042: DSP1: cirrus/cs35l41-dsp1-spk-prot-thyme-r.bin (v1): v0.3.0
+[   21.008765] cs35l41 3-0042: DSP1: Protection: D:\Projects\Xiaomi\J2S\DC_detection\613\cs35l41-dsp1-spk-prot-RCV-revb2.bin
+[   21.011174] rfkill: input handler disabled
+[   21.116713] cs35l41 3-0040: DSP1: Legacy support not available
+[   21.121798] cs35l41 3-0042: DSP1: Legacy support not available
+[   21.353585] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[   21.354701] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[   21.354717] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[   21.355256] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[   21.355267] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[   21.364927] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[   21.365931] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[   21.365945] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[   21.367069] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[   21.367079] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[   21.368240] snd-sm8250 sound: SM8250 startup: set_sysclk(TER_MI2S)=0
+[   21.368934] snd-sm8250 sound: SM8250 startup: codec[0] set_sysclk(SCLK,1536000)=0
+[   21.368946] snd-sm8250 sound: SM8250 startup: codec[0] RX slots=1,0
+[   21.369561] snd-sm8250 sound: SM8250 startup: codec[1] set_sysclk(SCLK,1536000)=0
+[   21.369571] snd-sm8250 sound: SM8250 startup: codec[1] RX slots=0,1
+[   24.283684] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=8), sending DONE
+[   24.286658] mhi_bl_logger mhi0_BL: BL: D -   4170997 - Q6 Image Loaded, Delta - (83971233 Bytes)
+
+[   24.286727] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   24.289640] mhi_bl_logger mhi0_BL: BL: B -   8897338 - APPS Image Load, Start
+
+[   24.289709] mhi_sahara_modem mhi0_SAHARA: Sahara: HELLO received, mode=1
+[   24.292641] mhi_bl_logger mhi0_BL: BL: B -   8902187 - Sahara: Hello pkt sent
+
+[   24.292738] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=6 offset=0 length=52
+[   24.304128] mhi_sahara_modem mhi0_SAHARA: Sahara: image 6 -> loaded sdx55m/apps.mbn (2632704 bytes)
+[   24.304146] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x0..+52] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   24.304151] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00
+[   24.304678] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=6 offset=52 length=416
+[   24.304689] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x34..+416] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   24.304693] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+[   24.307671] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=6 offset=4096 length=7192
+[   24.307684] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x1000..+7192] = 04 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   24.307690] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = 04 00 00 00 06 00 00 00 00 00 00 00 00 00 00 00
+[   24.313645] mhi_bl_logger mhi0_BL: BL: D -      3416 - Auth Metadata
+
+[   24.313828] mhi_sahara_modem mhi0_SAHARA: Sahara: READ_DATA image=6 offset=12288 length=2620416
+[   24.313836] mhi_sahara_modem mhi0_SAHARA: Sahara: fw[0x3000..+2620416] = d3 f0 29 e3 34 00 9f e5 10 0f 01 ee 00 00 a0 e3
+[   24.313853] mhi_sahara_modem mhi0_SAHARA: Sahara: tx[0][0..15] = d3 f0 29 e3 34 00 9f e5 10 0f 01 ee 00 00 a0 e3
+[   24.440673] mhi_sahara_modem mhi0_SAHARA: Sahara: END_OF_IMAGE OK (image=6), sending DONE
+[   24.443656] mhi_bl_logger mhi0_BL: BL: D -    156739 - APPS Image Loaded, Delta - (2584430 Bytes)
+
+[   24.443680] mhi_sahara_modem mhi0_SAHARA: Sahara: DONE_RESP received, session complete
+[   24.446632] mhi_bl_logger mhi0_BL: BL: B -   9054230 - sbl1_efs_handle_cookies, Start
+
+[   24.449644] mhi_bl_logger mhi0_BL: BL: D -         0 - sbl1_efs_handle_cookies, Delta
+
+[   24.452629] mhi_bl_logger mhi0_BL: BL: B -   9059964 - SBL1, End
+
+[   24.455625] mhi_bl_logger mhi0_BL: BL: D -   8832342 - SBL1, Delta
+
+[   24.458628] mhi_bl_logger mhi0_BL: BL: S - Throughput, 19000 KB/s  (94137794 Bytes,  4829502 us)
+
+[   24.461649] mhi_bl_logger mhi0_BL: BL: S - DDR Frequency, 1017 MHz
+
+[   24.464621] mhi_bl_logger mhi0_BL: BL: S - Core 0 Frequency, 1497 MHz
+
+[   24.563278] esoc-mdm: [mdm_status_change]: MDM2AP_STATUS IRQ received!
+[   24.563320] esoc-mdm: status IRQ ap2mdm_status=1 ap2mdm_errfatal=0 mdm2ap_status=1 mdm2ap_errfatal=0 ready=0 init=1
+[   24.563334] esoc-mdm: [mdm_status_change]: Modem ready. Cancelling the status_check work
+[   24.563347] esoc-mdm: [mdm_handle_clink_evt]: ESOC_BOOT_STATE: Observed status high from modem.
+[   24.563384] esoc-mdm: mdm_status_fn ap2mdm_status=1 ap2mdm_errfatal=0 mdm2ap_status=1 mdm2ap_errfatal=0 ready=1 init=1
+[   24.712166] esoc-mdm: [mdm_notify]: Notification: 2
+[   24.712221] esoc-mdm: notify BOOT_DONE ap2mdm_status=1 ap2mdm_errfatal=0 mdm2ap_status=1 mdm2ap_errfatal=0 ready=1 init=1
+[   24.712244] esoc-mdm: [mdm_notify]: ESOC_BOOT_DONE: Sending the notification: ESOC_RUN_STATE
+[   24.712263] esoc-mdm: [mdm_handle_clink_evt]: ESOC_RUN_STATE: Calling complete with state: PON_SUCCESS
+[   24.713177] remoteproc remoteproc3: remote processor esoc0 is now up
+[   24.742105] mhi-pci-generic 0002:01:00.0: mission mode: forbidding runtime PM to prevent ERRFATAL on SDX55 fusion
+[   24.742504] wwan wwan0: port wwan0qcdm0 attached
+[   24.742919] wwan wwan0: port wwan0efs0 attached
+[   24.743288] wwan wwan0: port wwan0mbim0 attached
+[   24.743809] wwan wwan0: port wwan0qmi0 attached
+[   24.755482] q6voice-mhi 17300000.remoteproc:glink-edge:apr:service@9:mailbox: voice mailbox configured
+[   25.672679] command 6 from 2:4294967294 failed: -22 (service=3 instance=20 node=0 port=0)
+[   25.684725] command 6 from 2:4294967294 failed: -22 (service=3 instance=25 node=0 port=0)
+[   25.684753] command 6 from 2:4294967294 failed: -22 (service=3 instance=26 node=0 port=0)
+[   25.698686] command 6 from 2:4294967294 failed: -22 (service=3 instance=28 node=0 port=0)
+[   25.705658] command 6 from 2:4294967294 failed: -22 (service=3 instance=27 node=0 port=0)
+[   25.721654] command 6 from 2:4294967294 failed: -22 (service=3 instance=29 node=0 port=0)
+[   25.744655] command 6 from 2:4294967294 failed: -22 (service=3 instance=30 node=0 port=0)
+[   25.762674] command 6 from 2:4294967294 failed: -22 (service=3 instance=31 node=0 port=0)
+[   25.807892] command 6 from 2:4294967294 failed: -22 (service=3 instance=32 node=0 port=0)
+[   25.944799] command 6 from 2:4294967294 failed: -22 (service=3 instance=33 node=0 port=0)
+[   35.015561] command 6 from 2:4294967294 failed: -22 (service=3 instance=89 node=0 port=0)
+[   35.036399] command 6 from 2:4294967294 failed: -22 (service=3 instance=90 node=0 port=0)
+[   35.043426] command 6 from 2:4294967294 failed: -22 (service=3 instance=91 node=0 port=0)
+[   35.061402] command 6 from 2:4294967294 failed: -22 (service=3 instance=92 node=0 port=0)
+[   35.070360] command 6 from 2:4294967294 failed: -22 (service=3 instance=93 node=0 port=0)
+[   35.089396] command 6 from 2:4294967294 failed: -22 (service=3 instance=94 node=0 port=0)
+[   35.104361] command 6 from 2:4294967294 failed: -22 (service=3 instance=95 node=0 port=0)
+[   35.119820] command 6 from 2:4294967294 failed: -22 (service=3 instance=96 node=0 port=0)
+[   37.383591] FAT-fs (sda36): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.

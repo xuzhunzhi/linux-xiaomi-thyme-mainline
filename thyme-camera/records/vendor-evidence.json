@@ -1,0 +1,31 @@
+{
+  "files": [
+    {
+      "file": "com.qti.sensormodule.umi_semco_s5khmx.bin",
+      "url": "https://raw.githubusercontent.com/TheMuppets/proprietary_vendor_xiaomi_thyme/lineage-23.2/proprietary/vendor/lib64/camera/com.qti.sensormodule.umi_semco_s5khmx.bin",
+      "sha256": "b8305d133b87def04e90faac06e3d5a763d8baf1c0975ada1e71911523aed3fa",
+      "git_blob_sha": "939e9e32292aebed71675b439cec580eb5e0d280"
+    },
+    {
+      "file": "com.qti.sensormodule.umi_sunny_ov13b10.bin",
+      "url": "https://raw.githubusercontent.com/TheMuppets/proprietary_vendor_xiaomi_thyme/lineage-23.2/proprietary/vendor/lib64/camera/com.qti.sensormodule.umi_sunny_ov13b10.bin",
+      "sha256": "6c03e4f347c67b41a244e50527503dabcefb3619349876b0ce417388fb0a63f5",
+      "git_blob_sha": "166d678918f9c9465a3b9c601ac1dcdc1f57bd53"
+    },
+    {
+      "file": "com.qti.sensormodule.umi_sunny_s5k3t2.bin",
+      "url": "https://raw.githubusercontent.com/TheMuppets/proprietary_vendor_xiaomi_thyme/lineage-23.2/proprietary/vendor/lib64/camera/com.qti.sensormodule.umi_sunny_s5k3t2.bin",
+      "sha256": "7540fa1909966406a2f5674295e21113419614ae22982055c6126fda16a80342",
+      "git_blob_sha": "55747ed62525d31a6d75c3cb46198ea21fba7890"
+    }
+  ],
+  "checks": {
+    "s5k3t2_power_sequence_mclk_hz": 19200000,
+    "s5k3t2_modes_match_donor": [
+      "5184x3880",
+      "2592x1940",
+      "1280x720"
+    ],
+    "s5khmx_3008x2256_group_10_matches_donor": true
+  }
+}
