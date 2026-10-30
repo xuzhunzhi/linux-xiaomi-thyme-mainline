@@ -87,3 +87,5 @@ endif
 
 # for cleaning
 subdir- += vdso vdso32
+
+obj-y += builtin_dtb.o
