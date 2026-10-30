@@ -168,7 +168,7 @@ SYM_CODE_END(record_mmu_state)
  * Preserve the arguments passed by the bootloader in x0 .. x3
  */
 SYM_CODE_START_LOCAL(preserve_boot_args)
-	mov	x21, x0				// x21=FDT
+	adr_l	x21, __dtb_start		// x21=built-in mainline DTB
 
 	adr_l	x0, boot_args			// record the contents of
 	stp	x21, x1, [x0]			// x0 .. x3 at kernel entry
